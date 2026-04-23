@@ -742,7 +742,7 @@ function updateHeatmap(selectedSport) {
       orient: "horizontal",
       left: "center",
       bottom: "0%",
-      inRange: { color: ["#d73027", "#fef8f8", "#1a9850"] },
+      inRange: { color: ["#e74c3c", "#f5f7fa", "#2ecc71"] },
     },
     series: [
       {

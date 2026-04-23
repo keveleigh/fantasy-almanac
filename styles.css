@@ -150,6 +150,11 @@ h2 {
   line-height: 1.4;
 }
 
+.score-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
 .platform-icon {
   width: 14px;
   height: 14px;
@@ -162,9 +167,9 @@ h2 {
   background-color: rgba(241, 196, 15, 0.1);
   color: #b8860b;
   font-size: 0.8rem;
-  padding: 2px 6px;
+  padding: 4px 10px;
   border: 1px solid #f1c40f;
-  border-radius: 4px;
+  border-radius: 12px;
   margin-left: 0;
   font-weight: 800;
   vertical-align: middle;
@@ -251,6 +256,10 @@ select {
   cursor: pointer;
 }
 
+select:hover {
+  border-color: #90caf9;
+}
+
 #heatmap-container {
   width: 100%;
   height: 600px;
@@ -331,6 +340,11 @@ select:focus {
 #standings-table tbody tr:nth-child(3) {
   background-color: rgba(205, 127, 50, 0.08);
 } /* Bronze */
+
+#standings-table tbody tr:hover {
+  /* A subtle highlight when mousing over the Hall of Fame */
+  background-color: rgba(0, 0, 0, 0.03);
+}
 
 /* Smooth Transitions */
 tr,
