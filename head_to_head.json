@@ -1,0 +1,6466 @@
+[
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 7,
+        "manager_2_wins": 18,
+        "ties": 0,
+        "total_matchups": 25,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 13,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 29,
+        "manager_2_wins": 40,
+        "ties": 0,
+        "total_matchups": 69,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 12
+            },
+            "NFL": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 9,
+                "ties": 0,
+                "total_matchups": 16
+            },
+            "MLB": {
+                "manager_1_wins": 15,
+                "manager_2_wins": 26,
+                "ties": 0,
+                "total_matchups": 41
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 22,
+        "manager_2_wins": 16,
+        "ties": 0,
+        "total_matchups": 38,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "MLB": {
+                "manager_1_wins": 12,
+                "manager_2_wins": 10,
+                "ties": 0,
+                "total_matchups": 22
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Michael Hong",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Evan Farley",
+        "manager_1_wins": 11,
+        "manager_2_wins": 11,
+        "ties": 0,
+        "total_matchups": 22,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 23,
+        "manager_2_wins": 32,
+        "ties": 0,
+        "total_matchups": 55,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 12
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 10,
+                "ties": 0,
+                "total_matchups": 14
+            },
+            "MLB": {
+                "manager_1_wins": 14,
+                "manager_2_wins": 15,
+                "ties": 0,
+                "total_matchups": 29
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Michael Hong",
+        "manager_1_wins": 3,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 39,
+        "manager_2_wins": 31,
+        "ties": 0,
+        "total_matchups": 70,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NFL": {
+                "manager_1_wins": 11,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 16
+            },
+            "MLB": {
+                "manager_1_wins": 20,
+                "manager_2_wins": 19,
+                "ties": 0,
+                "total_matchups": 39
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 16,
+        "manager_2_wins": 40,
+        "ties": 0,
+        "total_matchups": 56,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 9,
+                "ties": 0,
+                "total_matchups": 14
+            },
+            "NFL": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 13
+            },
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 24,
+                "ties": 0,
+                "total_matchups": 29
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 7,
+        "manager_2_wins": 30,
+        "ties": 0,
+        "total_matchups": 37,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 12,
+                "ties": 0,
+                "total_matchups": 12
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 9
+            },
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 13,
+                "ties": 0,
+                "total_matchups": 16
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Evan Farley",
+        "manager_1_wins": 13,
+        "manager_2_wins": 12,
+        "ties": 0,
+        "total_matchups": 25,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 13
+            },
+            "NFL": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Michael Hong",
+        "manager_1_wins": 3,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 31,
+        "manager_2_wins": 10,
+        "ties": 0,
+        "total_matchups": 41,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 12
+            },
+            "NFL": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "MLB": {
+                "manager_1_wins": 17,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 21
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 4,
+        "manager_2_wins": 19,
+        "ties": 0,
+        "total_matchups": 23,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 11,
+                "ties": 0,
+                "total_matchups": 13
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 24,
+        "manager_2_wins": 33,
+        "ties": 0,
+        "total_matchups": 57,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 9,
+                "ties": 0,
+                "total_matchups": 14
+            },
+            "MLB": {
+                "manager_1_wins": 13,
+                "manager_2_wins": 20,
+                "ties": 0,
+                "total_matchups": 33
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Michael Hong",
+        "manager_1_wins": 3,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Evan Farley",
+        "manager_1_wins": 10,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 17,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 31,
+        "manager_2_wins": 21,
+        "ties": 0,
+        "total_matchups": 52,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 9,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 14
+            },
+            "MLB": {
+                "manager_1_wins": 14,
+                "manager_2_wins": 14,
+                "ties": 0,
+                "total_matchups": 28
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 27,
+        "manager_2_wins": 34,
+        "ties": 0,
+        "total_matchups": 61,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "NFL": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 8,
+                "ties": 0,
+                "total_matchups": 16
+            },
+            "MLB": {
+                "manager_1_wins": 15,
+                "manager_2_wins": 19,
+                "ties": 0,
+                "total_matchups": 34
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Michael Hong",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 8,
+        "manager_2_wins": 33,
+        "ties": 0,
+        "total_matchups": 41,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 22,
+                "ties": 0,
+                "total_matchups": 25
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 26,
+        "manager_2_wins": 28,
+        "ties": 0,
+        "total_matchups": 54,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "NFL": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 12
+            },
+            "MLB": {
+                "manager_1_wins": 15,
+                "manager_2_wins": 16,
+                "ties": 0,
+                "total_matchups": 31
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 37,
+        "manager_2_wins": 27,
+        "ties": 0,
+        "total_matchups": 64,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 11,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "MLB": {
+                "manager_1_wins": 21,
+                "manager_2_wins": 18,
+                "ties": 0,
+                "total_matchups": 39
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Michael Hong",
+        "manager_1_wins": 3,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Asa Morgan",
+        "manager_1_wins": 27,
+        "manager_2_wins": 34,
+        "ties": 0,
+        "total_matchups": 61,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 12
+            },
+            "NFL": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 8,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "MLB": {
+                "manager_1_wins": 15,
+                "manager_2_wins": 19,
+                "ties": 0,
+                "total_matchups": 34
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 10,
+        "manager_2_wins": 33,
+        "ties": 0,
+        "total_matchups": 43,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 23,
+                "ties": 0,
+                "total_matchups": 25
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 5,
+        "manager_2_wins": 16,
+        "ties": 0,
+        "total_matchups": 21,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 9,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Michael Hong",
+        "manager_1_wins": 3,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 10,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 17,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 10,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 17
+            }
+        }
+    },
+    {
+        "manager_1": "Rishi Gopinath",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 8,
+        "manager_2_wins": 9,
+        "ties": 0,
+        "total_matchups": 17,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 9,
+                "ties": 0,
+                "total_matchups": 17
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 16,
+        "manager_2_wins": 11,
+        "ties": 0,
+        "total_matchups": 27,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 8,
+                "ties": 0,
+                "total_matchups": 14
+            },
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 7,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 8,
+        "manager_2_wins": 10,
+        "ties": 0,
+        "total_matchups": 18,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 10,
+                "ties": 0,
+                "total_matchups": 18
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 18,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 25,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 10,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 7,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 20,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 26,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 13
+            },
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 19,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 24,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 10,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 14
+            },
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 6,
+        "manager_2_wins": 8,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 8,
+                "ties": 0,
+                "total_matchups": 14
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 13,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 18,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 8,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 14
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 0,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 18,
+        "manager_2_wins": 12,
+        "ties": 0,
+        "total_matchups": 30,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 11,
+                "ties": 0,
+                "total_matchups": 16
+            },
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "VinceYoungTen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 4,
+        "manager_2_wins": 8,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 5,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 12
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 21,
+        "manager_2_wins": 17,
+        "ties": 0,
+        "total_matchups": 38,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 21,
+                "manager_2_wins": 17,
+                "ties": 0,
+                "total_matchups": 38
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 9,
+        "manager_2_wins": 19,
+        "ties": 0,
+        "total_matchups": 28,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 9,
+                "manager_2_wins": 19,
+                "ties": 0,
+                "total_matchups": 28
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 23,
+        "manager_2_wins": 16,
+        "ties": 0,
+        "total_matchups": 39,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 23,
+                "manager_2_wins": 16,
+                "ties": 0,
+                "total_matchups": 39
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 22,
+        "manager_2_wins": 13,
+        "ties": 1,
+        "total_matchups": 36,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 22,
+                "manager_2_wins": 13,
+                "ties": 1,
+                "total_matchups": 36
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 11,
+        "manager_2_wins": 12,
+        "ties": 0,
+        "total_matchups": 23,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 11,
+                "manager_2_wins": 12,
+                "ties": 0,
+                "total_matchups": 23
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 7,
+        "manager_2_wins": 22,
+        "ties": 0,
+        "total_matchups": 29,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 9
+            },
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 11,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "H-twn_Allstars",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 15,
+        "manager_2_wins": 30,
+        "ties": 0,
+        "total_matchups": 45,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 19,
+                "ties": 0,
+                "total_matchups": 25
+            },
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 8,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 12,
+        "manager_2_wins": 18,
+        "ties": 0,
+        "total_matchups": 30,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 11,
+                "ties": 0,
+                "total_matchups": 16
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Asa Morgan",
+        "manager_1_wins": 19,
+        "manager_2_wins": 27,
+        "ties": 0,
+        "total_matchups": 46,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 21,
+                "ties": 0,
+                "total_matchups": 27
+            },
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 8,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "H-twn_Allstars",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 8,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Evan Farley",
+        "manager_1_wins": 10,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 15,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 9
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "H-twn_Allstars",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 3,
+        "manager_2_wins": 26,
+        "ties": 0,
+        "total_matchups": 29,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 10,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 13,
+                "ties": 0,
+                "total_matchups": 14
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 1,
+        "manager_2_wins": 21,
+        "ties": 0,
+        "total_matchups": 22,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 11,
+                "ties": 0,
+                "total_matchups": 12
+            },
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 11,
+        "manager_2_wins": 17,
+        "ties": 0,
+        "total_matchups": 28,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 8,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 8,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            },
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "H-twn_Allstars",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 5,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            },
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Dominic Moore",
+        "manager_1_wins": 16,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 22,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 9,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 24,
+        "manager_2_wins": 8,
+        "ties": 0,
+        "total_matchups": 32,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 14,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 21
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "H-twn_Allstars",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 14,
+        "manager_2_wins": 24,
+        "ties": 0,
+        "total_matchups": 38,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 16,
+                "ties": 0,
+                "total_matchups": 23
+            },
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 4,
+        "manager_2_wins": 11,
+        "ties": 0,
+        "total_matchups": 15,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 6,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "H-twn_Allstars",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 6,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 9,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            },
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 18,
+        "manager_2_wins": 9,
+        "ties": 0,
+        "total_matchups": 27,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "H-twn_Allstars",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Evan Farley",
+        "manager_1_wins": 8,
+        "manager_2_wins": 7,
+        "ties": 1,
+        "total_matchups": 16,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 9
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 1,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 16,
+        "manager_2_wins": 25,
+        "ties": 0,
+        "total_matchups": 41,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 17,
+                "ties": 0,
+                "total_matchups": 22
+            },
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Dominic Moore",
+        "manager_1_wins": 18,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 21,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 11,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 5,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 10,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            },
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 15,
+        "manager_2_wins": 17,
+        "ties": 0,
+        "total_matchups": 32,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 9
+            },
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 11,
+                "ties": 0,
+                "total_matchups": 18
+            },
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "H-twn_Allstars",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "H-twn_Allstars",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 4,
+        "manager_2_wins": 22,
+        "ties": 0,
+        "total_matchups": 26,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 14,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 14,
+        "manager_2_wins": 15,
+        "ties": 0,
+        "total_matchups": 29,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "MLB": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 9,
+                "ties": 0,
+                "total_matchups": 17
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 5,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Dominic Moore",
+        "manager_1_wins": 20,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 26,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 9,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 13
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 9,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "H-twn_Allstars",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "H-twn_Allstars",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Andrew Mitchell",
+        "manager_1_wins": 24,
+        "manager_2_wins": 20,
+        "ties": 0,
+        "total_matchups": 44,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 13,
+                "manager_2_wins": 12,
+                "ties": 0,
+                "total_matchups": 25
+            },
+            "NFL": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 12
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 11,
+        "manager_2_wins": 17,
+        "ties": 0,
+        "total_matchups": 28,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 10,
+                "ties": 0,
+                "total_matchups": 16
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 4,
+        "manager_2_wins": 19,
+        "ties": 0,
+        "total_matchups": 23,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 12,
+                "ties": 0,
+                "total_matchups": 13
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Asa Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Jillyyybean",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Adam Carl",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 22,
+        "manager_2_wins": 12,
+        "ties": 0,
+        "total_matchups": 34,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 22,
+                "manager_2_wins": 12,
+                "ties": 0,
+                "total_matchups": 34
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Jillyyybean",
+        "manager_1_wins": 4,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jillyyybean",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jillyyybean",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Jillyyybean",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Jillyyybean",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 12,
+        "ties": 0,
+        "total_matchups": 15,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 12,
+                "ties": 0,
+                "total_matchups": 15
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Jillyyybean",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Asa Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 7,
+        "manager_2_wins": 11,
+        "ties": 1,
+        "total_matchups": 19,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 11,
+                "ties": 1,
+                "total_matchups": 19
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Jillyyybean",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Dominic Moore",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 7,
+        "manager_2_wins": 6,
+        "ties": 1,
+        "total_matchups": 14,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 6,
+                "ties": 1,
+                "total_matchups": 14
+            }
+        }
+    },
+    {
+        "manager_1": "Jillyyybean",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jillyyybean",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Andrew Mitchell",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Sonya Morgan",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Jillyyybean",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "ATL Red sox",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jillyyybean",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Cullen",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Cullen",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Cullen",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Josh Cullen",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 6,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 2,
+        "manager_2_wins": 11,
+        "ties": 1,
+        "total_matchups": 14,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 5
+            },
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 1,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 10,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 13,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            },
+            "NBA": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 11,
+        "manager_2_wins": 8,
+        "ties": 0,
+        "total_matchups": 19,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 4
+            },
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Richie_N",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 3,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Richie_N",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Rishi Gopinath",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "nytoatl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Richie_N",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NBA": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Korey Bryant",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Korey Bryant",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Korey Bryant",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Korey Bryant",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Rishi Gopinath",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 7,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Robert Mann",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Rishi Gopinath",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Rishi Gopinath",
+        "manager_2": "Tre Wells",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Evan Farley",
+        "manager_2": "Robert Mann",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 4,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 6,
+        "manager_2_wins": 2,
+        "ties": 1,
+        "total_matchups": 9,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 2,
+                "ties": 1,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 8,
+        "manager_2_wins": 9,
+        "ties": 0,
+        "total_matchups": 17,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 8
+            },
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 6,
+        "manager_2_wins": 10,
+        "ties": 0,
+        "total_matchups": 16,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 10
+            },
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Dominic Moore",
+        "manager_1_wins": 4,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 6,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 13,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 3,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Austin Baldwin",
+        "manager_1_wins": 8,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Austin Baldwin",
+        "manager_1_wins": 2,
+        "manager_2_wins": 10,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 7
+            },
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Austin Baldwin",
+        "manager_1_wins": 8,
+        "manager_2_wins": 8,
+        "ties": 0,
+        "total_matchups": 16,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 9
+            },
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 14,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 14,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 14
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 5,
+        "manager_2_wins": 4,
+        "ties": 1,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
+                "ties": 1,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 11,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 11,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 14
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 4,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 9,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 4,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Dominic Moore",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 0,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 3,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Nikolai Washington",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 4,
+        "manager_2_wins": 10,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 10,
+                "ties": 0,
+                "total_matchups": 14
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 10,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 10,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 12
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 10,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 10,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Matt Jacobson",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Joe Bernstein",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Joe Bernstein",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Jesten Mann",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Joe Bernstein",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Bill Berry",
+        "manager_1_wins": 5,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Joe Bernstein",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Bill Berry",
+        "manager_1_wins": 1,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Joe Bernstein",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Bill Berry",
+        "manager_1_wins": 2,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 7,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Joe Bernstein",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Joe Bernstein",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Matt Jacobson",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Joe Bernstein",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Joe Bernstein",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Bill Berry",
+        "manager_1_wins": 3,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Joe Bernstein",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Joe Bernstein",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jesten Mann",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Joe Bernstein",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Matt Jacobson",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Bill Berry",
+        "manager_2": "Joe Bernstein",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 6,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 13,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 13
+            }
+        }
+    },
+    {
+        "manager_1": "Marshawn Lunch",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 5,
+        "manager_2_wins": 8,
+        "ties": 0,
+        "total_matchups": 13,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 8,
+                "ties": 0,
+                "total_matchups": 13
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Daniel Bailey",
+        "manager_1_wins": 3,
+        "manager_2_wins": 9,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 8,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 13,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 13
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Daniel Bailey",
+        "manager_1_wins": 6,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            },
+            "NFL": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 8,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 12,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 12
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Daniel Bailey",
+        "manager_1_wins": 13,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 19,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 9,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 13
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Eric Carl",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 6,
+        "manager_2_wins": 12,
+        "ties": 0,
+        "total_matchups": 18,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 11
+            },
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 11,
+        "manager_2_wins": 11,
+        "ties": 0,
+        "total_matchups": 22,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 9,
+                "ties": 0,
+                "total_matchups": 15
+            },
+            "NFL": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 4,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 13,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 16,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 13,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 16
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 10,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 13,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 10,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 13
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Eric Carl",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 2,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 7,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 11,
+        "manager_2_wins": 14,
+        "ties": 0,
+        "total_matchups": 25,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 10,
+                "ties": 0,
+                "total_matchups": 17
+            },
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 9,
+        "manager_2_wins": 2,
+        "ties": 1,
+        "total_matchups": 12,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 9,
+                "manager_2_wins": 2,
+                "ties": 1,
+                "total_matchups": 12
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 6,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Marshawn Lunch",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 7,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Josh Shapiro",
+        "manager_1_wins": 8,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 14,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 8,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 14
+            }
+        }
+    },
+    {
+        "manager_1": "Kristina Morgan",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 5,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 6,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 7,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 7,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Josh Shapiro",
+        "manager_1_wins": 5,
+        "manager_2_wins": 4,
+        "ties": 1,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
+                "ties": 1,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 9,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 9,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Kristina Morgan",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 6,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Josh Shapiro",
+        "manager_1_wins": 0,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Kristina Morgan",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 4,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 7,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Josh Shapiro",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Kristina Morgan",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 4,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 4,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Kristina Morgan",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Josh Shapiro",
+        "manager_1_wins": 3,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 5,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 6,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 2,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 5,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 10,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 10
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 2,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 6,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 2,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 9,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Max Shapiro",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 6,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 7,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 6,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 7
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 4,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 9,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Marshawn Lunch",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 3,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Andrew Mitchell",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 3,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Max Shapiro",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 5,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 6,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 5,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 6,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Kevin Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 6,
+        "ties": 0,
+        "total_matchups": 8,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 6,
+                "ties": 0,
+                "total_matchups": 8
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Rishi Gopinath",
+        "manager_1_wins": 4,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 9,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Daniel Bailey",
+        "manager_1_wins": 4,
+        "manager_2_wins": 5,
+        "ties": 0,
+        "total_matchups": 9,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 5,
+                "ties": 0,
+                "total_matchups": 9
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 6,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 6
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Daniel Bailey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 3,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Kristina Morgan",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 1,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 5,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 5
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Brandon Cope",
+        "manager_1_wins": 1,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 0,
+        "manager_2_wins": 4,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 4,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Josh Shapiro",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 3,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 4
+            }
+        }
+    },
+    {
+        "manager_1": "Brandon Cope",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Sonya Morgan",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Malachi Morgan",
+        "manager_1_wins": 3,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 3,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Max Shapiro",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Jordan Naegele",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Marshawn Lunch",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 0,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 3,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Daniel Bailey",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 0,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Marshawn Lunch",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Nikolai Washington",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Daniel Bailey",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Josh Shapiro",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 1,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 1,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Nikolai Washington",
+        "manager_1_wins": 2,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 2,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Kurtis Eveleigh",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 2,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Asa Morgan",
+        "manager_2": "Brad Dodson",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Malachi Morgan",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 3,
+        "ties": 0,
+        "total_matchups": 4,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            },
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Josh Shapiro",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Jordan Naegele",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            },
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Kurtis Eveleigh",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Adam Carl",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Rishi Gopinath",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 3,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 3
+            }
+        }
+    },
+    {
+        "manager_1": "Austin Baldwin",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 1,
+        "manager_2_wins": 0,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 0,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Kevin Morgan",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 0,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 1,
+        "by_sport": {
+            "NFL": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 1
+            }
+        }
+    }
+]

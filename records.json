@@ -1,0 +1,2247 @@
+{
+    "deep_cuts": {
+        "NFL": {
+            "highest_score": {
+                "score": 200.1,
+                "manager": "Daniel Bailey",
+                "opponent": "Rishi Gopinath",
+                "opp_score": 91.3,
+                "year": 2022,
+                "period": 8,
+                "platform": "Sleeper"
+            },
+            "lowest_score": {
+                "score": 32.45,
+                "manager": "Korey Bryant",
+                "opponent": "Jordan Naegele",
+                "opp_score": 74.55,
+                "year": 2012,
+                "period": 7,
+                "platform": "Fleaflicker"
+            },
+            "heartbreak": {
+                "score": 148.3,
+                "manager": "Kevin Morgan",
+                "opponent": "Daniel Bailey",
+                "opp_score": 155.55,
+                "year": 2025,
+                "period": 8,
+                "platform": "Sleeper"
+            },
+            "ugly_win": {
+                "score": 50.8,
+                "manager": "Rishi Gopinath",
+                "opponent": "Dominic Moore",
+                "opp_score": 50.6,
+                "year": 2013,
+                "period": 6,
+                "platform": "Fleaflicker"
+            },
+            "biggest_blowout": {
+                "margin": 108.8,
+                "winner": "Daniel Bailey",
+                "loser": "Rishi Gopinath",
+                "winning_score": 200.1,
+                "losing_score": 91.3,
+                "year": 2022,
+                "period": 8,
+                "platform": "Sleeper"
+            },
+            "closest_game": {
+                "margin": 0.05,
+                "winner": "Malachi Morgan",
+                "loser": "Kurtis Eveleigh",
+                "winning_score": 120.1,
+                "losing_score": 120.05,
+                "year": 2022,
+                "period": 10,
+                "platform": "Sleeper"
+            },
+            "longest_win_streak": {
+                "count": 9,
+                "manager": "Jesten Mann",
+                "start_p": 11,
+                "start_y": 2011,
+                "end_p": 6,
+                "end_y": 2012
+            },
+            "longest_loss_streak": {
+                "count": 8,
+                "manager": "Korey Bryant",
+                "start_p": 2,
+                "start_y": 2012,
+                "end_p": 9,
+                "end_y": 2012
+            },
+            "luck_box": {
+                "wins": 18,
+                "manager": "Rishi Gopinath"
+            },
+            "unlucky_box": {
+                "losses": 21,
+                "manager": "Adam Carl"
+            },
+            "glass_cannon": {
+                "ppgf": 120.64642857142859,
+                "manager": "Kevin Morgan",
+                "year": 2025,
+                "platform": "Sleeper"
+            },
+            "failing_upwards": {
+                "ppgf": 79.61538461538461,
+                "manager": "Rishi Gopinath",
+                "year": 2013,
+                "platform": "Fleaflicker"
+            },
+            "schedule_victim": {
+                "ppga": 124.92142857142858,
+                "manager": "Adam Carl",
+                "year": 2025,
+                "platform": "Sleeper"
+            },
+            "highest_ppg": {
+                "ppgf": 134.23214285714286,
+                "manager": "Asa Morgan",
+                "year": 2024,
+                "platform": "Sleeper"
+            },
+            "tank_commander": {
+                "ppgf": 63.853846153846156,
+                "manager": "Korey Bryant",
+                "year": 2012,
+                "platform": "Fleaflicker"
+            },
+            "golden_horseshoe": {
+                "ppga": 76.92692307692307,
+                "manager": "Jesten Mann",
+                "year": 2012,
+                "platform": "Fleaflicker"
+            }
+        },
+        "NBA": {
+            "highest_score": {
+                "score": 2119.7,
+                "manager": "Jordan Naegele",
+                "opponent": "Kurtis Eveleigh",
+                "opp_score": 1762.8,
+                "year": 2009,
+                "period": 8,
+                "platform": "Fleaflicker"
+            },
+            "lowest_score": {
+                "score": 314.5,
+                "manager": "Rishi Gopinath",
+                "opponent": "Adam Carl",
+                "opp_score": 930.6,
+                "year": 2013,
+                "period": 16,
+                "platform": "Fleaflicker"
+            },
+            "heartbreak": {
+                "score": 1816.0,
+                "manager": "Eric Carl",
+                "opponent": "Kurtis Eveleigh",
+                "opp_score": 1874.5,
+                "year": 2009,
+                "period": 14,
+                "platform": "Fleaflicker"
+            },
+            "ugly_win": {
+                "score": 485.0,
+                "manager": "Dominic Moore",
+                "opponent": "Evan Farley",
+                "opp_score": 385.3,
+                "year": 2013,
+                "period": 16,
+                "platform": "Fleaflicker"
+            },
+            "biggest_blowout": {
+                "margin": 1202.6,
+                "winner": "Andrew Mitchell",
+                "loser": "Evan Farley",
+                "winning_score": 1960.2,
+                "losing_score": 757.6,
+                "year": 2012,
+                "period": 21,
+                "platform": "Fleaflicker"
+            },
+            "closest_game": {
+                "margin": 0.1,
+                "winner": "Andrew Mitchell",
+                "loser": "Eric Carl",
+                "winning_score": 1422.6,
+                "losing_score": 1422.5,
+                "year": 2010,
+                "period": 8,
+                "platform": "Fleaflicker"
+            },
+            "longest_win_streak": {
+                "count": 14,
+                "manager": "Jesten Mann",
+                "start_p": 15,
+                "start_y": 2010,
+                "end_p": 7,
+                "end_y": 2011
+            },
+            "longest_loss_streak": {
+                "count": 21,
+                "manager": "nytoatl",
+                "start_p": 1,
+                "start_y": 2012,
+                "end_p": 21,
+                "end_y": 2012
+            },
+            "luck_box": {
+                "wins": 13,
+                "manager": "Kurtis Eveleigh & Adam Carl & Eric Carl & Rishi Gopinath"
+            },
+            "unlucky_box": {
+                "losses": 19,
+                "manager": "Asa Morgan"
+            },
+            "glass_cannon": {
+                "ppgf": 1518.9857142857145,
+                "manager": "Dominic Moore",
+                "year": 2011,
+                "platform": "Fleaflicker"
+            },
+            "failing_upwards": {
+                "ppgf": 1206.0428571428572,
+                "manager": "Dominic Moore",
+                "year": 2012,
+                "platform": "Fleaflicker"
+            },
+            "schedule_victim": {
+                "ppga": 1500.4571428571428,
+                "manager": "Josh Cullen",
+                "year": 2011,
+                "platform": "Fleaflicker"
+            },
+            "highest_ppg": {
+                "ppgf": 1645.161904761905,
+                "manager": "Jordan Naegele",
+                "year": 2009,
+                "platform": "Fleaflicker"
+            },
+            "tank_commander": {
+                "ppgf": 790.7857142857143,
+                "manager": "Evan Farley",
+                "year": 2013,
+                "platform": "Fleaflicker"
+            },
+            "golden_horseshoe": {
+                "ppga": 1155.514285714286,
+                "manager": "Adam Carl",
+                "year": 2013,
+                "platform": "Fleaflicker"
+            }
+        },
+        "MLB": {
+            "highest_score": {
+                "score": 583.0,
+                "manager": "Sonya Morgan",
+                "opponent": "Eric Carl",
+                "opp_score": 411.0,
+                "year": 2019,
+                "period": 1,
+                "platform": "ESPN"
+            },
+            "lowest_score": {
+                "score": 36.0,
+                "manager": "Rishi Gopinath",
+                "opponent": "Sonya Morgan",
+                "opp_score": 84.0,
+                "year": 2014,
+                "period": 16,
+                "platform": "Fleaflicker"
+            },
+            "heartbreak": {
+                "score": 542.0,
+                "manager": "Malachi Morgan",
+                "opponent": "Sonya Morgan",
+                "opp_score": 577.0,
+                "year": 2020,
+                "period": 1,
+                "platform": "ESPN"
+            },
+            "ugly_win": {
+                "score": 84.0,
+                "manager": "Sonya Morgan",
+                "opponent": "Rishi Gopinath",
+                "opp_score": 36.0,
+                "year": 2014,
+                "period": 16,
+                "platform": "Fleaflicker"
+            },
+            "biggest_blowout": {
+                "margin": 287.0,
+                "winner": "Malachi Morgan",
+                "loser": "Asa Morgan",
+                "winning_score": 513.0,
+                "losing_score": 226.0,
+                "year": 2020,
+                "period": 4,
+                "platform": "ESPN"
+            },
+            "closest_game": {
+                "margin": 0.5,
+                "winner": "Andrew Mitchell",
+                "loser": "Dominic Moore",
+                "winning_score": 195.5,
+                "losing_score": 195.0,
+                "year": 2011,
+                "period": 5,
+                "platform": "Fleaflicker"
+            },
+            "longest_win_streak": {
+                "count": 17,
+                "manager": "Asa Morgan",
+                "start_p": 19,
+                "start_y": 2021,
+                "end_p": 16,
+                "end_y": 2022
+            },
+            "longest_loss_streak": {
+                "count": 35,
+                "manager": "Dominic Moore",
+                "start_p": 1,
+                "start_y": 2015,
+                "end_p": 16,
+                "end_y": 2016
+            },
+            "luck_box": {
+                "wins": 40,
+                "manager": "Kurtis Eveleigh"
+            },
+            "unlucky_box": {
+                "losses": 46,
+                "manager": "Asa Morgan"
+            },
+            "glass_cannon": {
+                "ppgf": 354.7142857142857,
+                "manager": "Kurtis Eveleigh",
+                "year": 2020,
+                "platform": "ESPN"
+            },
+            "failing_upwards": {
+                "ppgf": 206.51136363636363,
+                "manager": "Asa Morgan",
+                "year": 2011,
+                "platform": "Fleaflicker"
+            },
+            "schedule_victim": {
+                "ppga": 386.85714285714283,
+                "manager": "Asa Morgan",
+                "year": 2020,
+                "platform": "ESPN"
+            },
+            "highest_ppg": {
+                "ppgf": 423.57142857142856,
+                "manager": "Malachi Morgan",
+                "year": 2020,
+                "platform": "ESPN"
+            },
+            "tank_commander": {
+                "ppgf": 144.04761904761904,
+                "manager": "Dominic Moore",
+                "year": 2013,
+                "platform": "Fleaflicker"
+            },
+            "golden_horseshoe": {
+                "ppga": 196.52272727272728,
+                "manager": "Jesten Mann",
+                "year": 2011,
+                "platform": "Fleaflicker"
+            }
+        }
+    },
+    "manager_lifetime_stats": [
+        {
+            "manager": "Malachi Morgan",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [
+                    2014,
+                    2014,
+                    2015,
+                    2015,
+                    2016,
+                    2019,
+                    2020,
+                    2022,
+                    2024
+                ],
+                "reg_wins": 345,
+                "reg_losses": 179,
+                "reg_ties": 0,
+                "post_wins": 34,
+                "post_losses": 24,
+                "post_ties": 0,
+                "consolation_wins": 1,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 275498.45
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [
+                        2015
+                    ],
+                    "reg_wins": 64,
+                    "reg_losses": 34,
+                    "reg_ties": 0,
+                    "post_wins": 3,
+                    "post_losses": 6,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 154892.8
+                },
+                "NFL": {
+                    "championships": [
+                        2014,
+                        2019,
+                        2022,
+                        2024
+                    ],
+                    "reg_wins": 70,
+                    "reg_losses": 51,
+                    "reg_ties": 0,
+                    "post_wins": 8,
+                    "post_losses": 6,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 13786.65
+                },
+                "MLB": {
+                    "championships": [
+                        2014,
+                        2015,
+                        2016,
+                        2020
+                    ],
+                    "reg_wins": 211,
+                    "reg_losses": 94,
+                    "reg_ties": 0,
+                    "post_wins": 23,
+                    "post_losses": 12,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 106819.0
+                }
+            }
+        },
+        {
+            "manager": "Jordan Naegele",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [
+                    2009,
+                    2012,
+                    2013,
+                    2016,
+                    2017,
+                    2018,
+                    2019,
+                    2023
+                ],
+                "reg_wins": 315,
+                "reg_losses": 185,
+                "reg_ties": 1,
+                "post_wins": 29,
+                "post_losses": 30,
+                "post_ties": 0,
+                "consolation_wins": 3,
+                "consolation_losses": 7,
+                "consolation_ties": 0,
+                "points": 275490.3
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [
+                        2009,
+                        2012
+                    ],
+                    "reg_wins": 73,
+                    "reg_losses": 25,
+                    "reg_ties": 0,
+                    "post_wins": 8,
+                    "post_losses": 4,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 165430.0
+                },
+                "NFL": {
+                    "championships": [
+                        2016,
+                        2018,
+                        2023
+                    ],
+                    "reg_wins": 65,
+                    "reg_losses": 56,
+                    "reg_ties": 0,
+                    "post_wins": 3,
+                    "post_losses": 8,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 3,
+                    "consolation_ties": 0,
+                    "points": 13646.8
+                },
+                "MLB": {
+                    "championships": [
+                        2013,
+                        2017,
+                        2019
+                    ],
+                    "reg_wins": 177,
+                    "reg_losses": 104,
+                    "reg_ties": 1,
+                    "post_wins": 18,
+                    "post_losses": 18,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 96413.5
+                }
+            }
+        },
+        {
+            "manager": "Asa Morgan",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [
+                    2010,
+                    2010,
+                    2015,
+                    2018,
+                    2021,
+                    2022
+                ],
+                "reg_wins": 317,
+                "reg_losses": 229,
+                "reg_ties": 0,
+                "post_wins": 28,
+                "post_losses": 23,
+                "post_ties": 1,
+                "consolation_wins": 13,
+                "consolation_losses": 6,
+                "consolation_ties": 0,
+                "points": 278465.75
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 54,
+                    "reg_losses": 44,
+                    "reg_ties": 0,
+                    "post_wins": 4,
+                    "post_losses": 4,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 155848.0
+                },
+                "NFL": {
+                    "championships": [
+                        2010,
+                        2015
+                    ],
+                    "reg_wins": 64,
+                    "reg_losses": 57,
+                    "reg_ties": 0,
+                    "post_wins": 7,
+                    "post_losses": 5,
+                    "post_ties": 0,
+                    "consolation_wins": 6,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 14440.25
+                },
+                "MLB": {
+                    "championships": [
+                        2010,
+                        2018,
+                        2021,
+                        2022
+                    ],
+                    "reg_wins": 199,
+                    "reg_losses": 128,
+                    "reg_ties": 0,
+                    "post_wins": 17,
+                    "post_losses": 14,
+                    "post_ties": 1,
+                    "consolation_wins": 5,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 108177.5
+                }
+            }
+        },
+        {
+            "manager": "Kurtis Eveleigh",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [
+                    2009,
+                    2012,
+                    2017
+                ],
+                "reg_wins": 304,
+                "reg_losses": 220,
+                "reg_ties": 0,
+                "post_wins": 17,
+                "post_losses": 28,
+                "post_ties": 0,
+                "consolation_wins": 17,
+                "consolation_losses": 5,
+                "consolation_ties": 0,
+                "points": 255825.5
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 57,
+                    "reg_losses": 41,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 3,
+                    "post_ties": 0,
+                    "consolation_wins": 3,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 141779.1
+                },
+                "NFL": {
+                    "championships": [
+                        2009,
+                        2017
+                    ],
+                    "reg_wins": 64,
+                    "reg_losses": 57,
+                    "reg_ties": 0,
+                    "post_wins": 8,
+                    "post_losses": 9,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 14576.9
+                },
+                "MLB": {
+                    "championships": [
+                        2012
+                    ],
+                    "reg_wins": 183,
+                    "reg_losses": 122,
+                    "reg_ties": 0,
+                    "post_wins": 9,
+                    "post_losses": 16,
+                    "post_ties": 0,
+                    "consolation_wins": 12,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 99469.5
+                }
+            }
+        },
+        {
+            "manager": "Adam Carl",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [
+                    2011,
+                    2011,
+                    2013
+                ],
+                "reg_wins": 232,
+                "reg_losses": 232,
+                "reg_ties": 1,
+                "post_wins": 20,
+                "post_losses": 14,
+                "post_ties": 0,
+                "consolation_wins": 11,
+                "consolation_losses": 14,
+                "consolation_ties": 0,
+                "points": 236554.7
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [
+                        2011,
+                        2013
+                    ],
+                    "reg_wins": 51,
+                    "reg_losses": 47,
+                    "reg_ties": 0,
+                    "post_wins": 8,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 149402.8
+                },
+                "NFL": {
+                    "championships": [
+                        2011
+                    ],
+                    "reg_wins": 54,
+                    "reg_losses": 67,
+                    "reg_ties": 0,
+                    "post_wins": 4,
+                    "post_losses": 2,
+                    "post_ties": 0,
+                    "consolation_wins": 5,
+                    "consolation_losses": 7,
+                    "consolation_ties": 0,
+                    "points": 13618.4
+                },
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 127,
+                    "reg_losses": 118,
+                    "reg_ties": 1,
+                    "post_wins": 8,
+                    "post_losses": 11,
+                    "post_ties": 0,
+                    "consolation_wins": 5,
+                    "consolation_losses": 6,
+                    "consolation_ties": 0,
+                    "points": 73533.5
+                }
+            }
+        },
+        {
+            "manager": "Andrew Mitchell",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [
+                    2010,
+                    2012,
+                    2013
+                ],
+                "reg_wins": 173,
+                "reg_losses": 201,
+                "reg_ties": 0,
+                "post_wins": 15,
+                "post_losses": 10,
+                "post_ties": 0,
+                "consolation_wins": 9,
+                "consolation_losses": 14,
+                "consolation_ties": 1,
+                "points": 192870.3
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [
+                        2010
+                    ],
+                    "reg_wins": 52,
+                    "reg_losses": 25,
+                    "reg_ties": 0,
+                    "post_wins": 4,
+                    "post_losses": 3,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 122952.9
+                },
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 86,
+                    "reg_losses": 130,
+                    "reg_ties": 0,
+                    "post_wins": 5,
+                    "post_losses": 7,
+                    "post_ties": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 11,
+                    "consolation_ties": 1,
+                    "points": 60468.0
+                },
+                "NFL": {
+                    "championships": [
+                        2012,
+                        2013
+                    ],
+                    "reg_wins": 35,
+                    "reg_losses": 46,
+                    "reg_ties": 0,
+                    "post_wins": 6,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 5,
+                    "consolation_losses": 3,
+                    "consolation_ties": 0,
+                    "points": 9449.4
+                }
+            }
+        },
+        {
+            "manager": "Max Shapiro",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [
+                    2023,
+                    2024,
+                    2025
+                ],
+                "reg_wins": 52,
+                "reg_losses": 25,
+                "reg_ties": 0,
+                "post_wins": 10,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 29163.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [
+                        2023,
+                        2024,
+                        2025
+                    ],
+                    "reg_wins": 52,
+                    "reg_losses": 25,
+                    "reg_ties": 0,
+                    "post_wins": 10,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 29163.0
+                }
+            }
+        },
+        {
+            "manager": "Jesten Mann",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [
+                    2014
+                ],
+                "reg_wins": 164,
+                "reg_losses": 95,
+                "reg_ties": 0,
+                "post_wins": 13,
+                "post_losses": 11,
+                "post_ties": 0,
+                "consolation_wins": 4,
+                "consolation_losses": 4,
+                "consolation_ties": 0,
+                "points": 172931.0
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 56,
+                    "reg_losses": 21,
+                    "reg_ties": 0,
+                    "post_wins": 4,
+                    "post_losses": 5,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 126921.2
+                },
+                "MLB": {
+                    "championships": [
+                        2014
+                    ],
+                    "reg_wins": 81,
+                    "reg_losses": 62,
+                    "reg_ties": 0,
+                    "post_wins": 5,
+                    "post_losses": 3,
+                    "post_ties": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 41685.0
+                },
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 27,
+                    "reg_losses": 12,
+                    "reg_ties": 0,
+                    "post_wins": 4,
+                    "post_losses": 3,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 4324.8
+                }
+            }
+        },
+        {
+            "manager": "Sonya Morgan",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [
+                    2011
+                ],
+                "reg_wins": 156,
+                "reg_losses": 148,
+                "reg_ties": 1,
+                "post_wins": 7,
+                "post_losses": 12,
+                "post_ties": 0,
+                "consolation_wins": 4,
+                "consolation_losses": 17,
+                "consolation_ties": 1,
+                "points": 93613.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [
+                        2011
+                    ],
+                    "reg_wins": 156,
+                    "reg_losses": 148,
+                    "reg_ties": 1,
+                    "post_wins": 7,
+                    "post_losses": 12,
+                    "post_ties": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 17,
+                    "consolation_ties": 1,
+                    "points": 93613.0
+                }
+            }
+        },
+        {
+            "manager": "Thomas Ramey",
+            "sports_played": [
+                "NFL",
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN",
+                "Sleeper"
+            ],
+            "overall": {
+                "championships": [
+                    2025
+                ],
+                "reg_wins": 22,
+                "reg_losses": 11,
+                "reg_ties": 1,
+                "post_wins": 4,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 9381.15
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 13,
+                    "reg_losses": 6,
+                    "reg_ties": 1,
+                    "post_wins": 2,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 7455.0
+                },
+                "NFL": {
+                    "championships": [
+                        2025
+                    ],
+                    "reg_wins": 9,
+                    "reg_losses": 5,
+                    "reg_ties": 0,
+                    "post_wins": 2,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 1926.15
+                }
+            }
+        },
+        {
+            "manager": "Eric Carl",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 124,
+                "reg_losses": 241,
+                "reg_ties": 0,
+                "post_wins": 4,
+                "post_losses": 9,
+                "post_ties": 0,
+                "consolation_wins": 17,
+                "consolation_losses": 12,
+                "consolation_ties": 0,
+                "points": 189084.65
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 36,
+                    "reg_losses": 62,
+                    "reg_ties": 0,
+                    "post_wins": 1,
+                    "post_losses": 3,
+                    "post_ties": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 131576.7
+                },
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 26,
+                    "reg_losses": 39,
+                    "reg_ties": 0,
+                    "post_wins": 3,
+                    "post_losses": 4,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 3,
+                    "consolation_ties": 0,
+                    "points": 6603.45
+                },
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 62,
+                    "reg_losses": 140,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 2,
+                    "post_ties": 0,
+                    "consolation_wins": 12,
+                    "consolation_losses": 7,
+                    "consolation_ties": 0,
+                    "points": 50904.5
+                }
+            }
+        },
+        {
+            "manager": "Rishi Gopinath",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 87,
+                "reg_losses": 137,
+                "reg_ties": 0,
+                "post_wins": 6,
+                "post_losses": 8,
+                "post_ties": 0,
+                "consolation_wins": 8,
+                "consolation_losses": 8,
+                "consolation_ties": 0,
+                "points": 75916.25
+            },
+            "by_sport": {
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 56,
+                    "reg_losses": 65,
+                    "reg_ties": 0,
+                    "post_wins": 5,
+                    "post_losses": 6,
+                    "post_ties": 0,
+                    "consolation_wins": 6,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 13587.95
+                },
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 15,
+                    "reg_losses": 27,
+                    "reg_ties": 0,
+                    "post_wins": 1,
+                    "post_losses": 2,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 49435.3
+                },
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 16,
+                    "reg_losses": 45,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 5,
+                    "consolation_ties": 0,
+                    "points": 12893.0
+                }
+            }
+        },
+        {
+            "manager": "Daniel Bailey",
+            "sports_played": [
+                "NFL",
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 86,
+                "reg_losses": 91,
+                "reg_ties": 0,
+                "post_wins": 6,
+                "post_losses": 10,
+                "post_ties": 0,
+                "consolation_wins": 6,
+                "consolation_losses": 5,
+                "consolation_ties": 0,
+                "points": 48601.8
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 58,
+                    "reg_losses": 63,
+                    "reg_ties": 0,
+                    "post_wins": 4,
+                    "post_losses": 5,
+                    "post_ties": 0,
+                    "consolation_wins": 5,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 41140.0
+                },
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 28,
+                    "reg_losses": 28,
+                    "reg_ties": 0,
+                    "post_wins": 2,
+                    "post_losses": 5,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 7461.8
+                }
+            }
+        },
+        {
+            "manager": "Evan Farley",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 75,
+                "reg_losses": 110,
+                "reg_ties": 0,
+                "post_wins": 4,
+                "post_losses": 8,
+                "post_ties": 0,
+                "consolation_wins": 2,
+                "consolation_losses": 5,
+                "consolation_ties": 1,
+                "points": 136109.1
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 31,
+                    "reg_losses": 67,
+                    "reg_ties": 0,
+                    "post_wins": 3,
+                    "post_losses": 4,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 125291.8
+                },
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 31,
+                    "reg_losses": 34,
+                    "reg_ties": 0,
+                    "post_wins": 1,
+                    "post_losses": 3,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 1,
+                    "consolation_ties": 1,
+                    "points": 6089.3
+                },
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 13,
+                    "reg_losses": 9,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 4728.0
+                }
+            }
+        },
+        {
+            "manager": "Austin Baldwin",
+            "sports_played": [
+                "NFL",
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN",
+                "Sleeper"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 69,
+                "reg_losses": 61,
+                "reg_ties": 1,
+                "post_wins": 7,
+                "post_losses": 8,
+                "post_ties": 0,
+                "consolation_wins": 4,
+                "consolation_losses": 2,
+                "consolation_ties": 0,
+                "points": 32772.75
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 39,
+                    "reg_losses": 35,
+                    "reg_ties": 1,
+                    "post_wins": 4,
+                    "post_losses": 2,
+                    "post_ties": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 25347.0
+                },
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 30,
+                    "reg_losses": 26,
+                    "reg_ties": 0,
+                    "post_wins": 3,
+                    "post_losses": 6,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 7425.75
+                }
+            }
+        },
+        {
+            "manager": "Kevin Morgan",
+            "sports_played": [
+                "NFL"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "Sleeper",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 66,
+                "reg_losses": 55,
+                "reg_ties": 0,
+                "post_wins": 6,
+                "post_losses": 6,
+                "post_ties": 0,
+                "consolation_wins": 4,
+                "consolation_losses": 4,
+                "consolation_ties": 0,
+                "points": 14402.7
+            },
+            "by_sport": {
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 66,
+                    "reg_losses": 55,
+                    "reg_ties": 0,
+                    "post_wins": 6,
+                    "post_losses": 6,
+                    "post_ties": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 14402.7
+                }
+            }
+        },
+        {
+            "manager": "Dominic Moore",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 61,
+                "reg_losses": 179,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 3,
+                "post_ties": 0,
+                "consolation_wins": 9,
+                "consolation_losses": 8,
+                "consolation_ties": 1,
+                "points": 126363.65
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 25,
+                    "reg_losses": 52,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 2,
+                    "post_ties": 0,
+                    "consolation_wins": 3,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 99198.8
+                },
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 20,
+                    "reg_losses": 104,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 6,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 23648.0
+                },
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 16,
+                    "reg_losses": 23,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 3,
+                    "consolation_ties": 1,
+                    "points": 3516.85
+                }
+            }
+        },
+        {
+            "manager": "Josh Shapiro",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 54,
+                "reg_losses": 40,
+                "reg_ties": 2,
+                "post_wins": 5,
+                "post_losses": 7,
+                "post_ties": 0,
+                "consolation_wins": 3,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 34859.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 54,
+                    "reg_losses": 40,
+                    "reg_ties": 2,
+                    "post_wins": 5,
+                    "post_losses": 7,
+                    "post_ties": 0,
+                    "consolation_wins": 3,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 34859.0
+                }
+            }
+        },
+        {
+            "manager": "Marshawn Lunch",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 51,
+                "reg_losses": 70,
+                "reg_ties": 0,
+                "post_wins": 2,
+                "post_losses": 2,
+                "post_ties": 1,
+                "consolation_wins": 8,
+                "consolation_losses": 6,
+                "consolation_ties": 0,
+                "points": 39080.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 51,
+                    "reg_losses": 70,
+                    "reg_ties": 0,
+                    "post_wins": 2,
+                    "post_losses": 2,
+                    "post_ties": 1,
+                    "consolation_wins": 8,
+                    "consolation_losses": 6,
+                    "consolation_ties": 0,
+                    "points": 39080.0
+                }
+            }
+        },
+        {
+            "manager": "Tre Wells",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "Manual"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 35,
+                "reg_losses": 57,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 2,
+                "post_ties": 0,
+                "consolation_wins": 3,
+                "consolation_losses": 4,
+                "consolation_ties": 0,
+                "points": 54964.15
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 12,
+                    "reg_losses": 23,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 3,
+                    "consolation_ties": 0,
+                    "points": 45027.3
+                },
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 17,
+                    "reg_losses": 27,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 8758.5
+                },
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 6,
+                    "reg_losses": 7,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 1178.35
+                }
+            }
+        },
+        {
+            "manager": "Nikolai Washington",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 32,
+                "reg_losses": 101,
+                "reg_ties": 1,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 7,
+                "consolation_losses": 12,
+                "consolation_ties": 0,
+                "points": 35040.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 32,
+                    "reg_losses": 101,
+                    "reg_ties": 1,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 7,
+                    "consolation_losses": 12,
+                    "consolation_ties": 0,
+                    "points": 35040.0
+                }
+            }
+        },
+        {
+            "manager": "Kristina Morgan",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 26,
+                "reg_losses": 32,
+                "reg_ties": 0,
+                "post_wins": 1,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 5,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 18255.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 26,
+                    "reg_losses": 32,
+                    "reg_ties": 0,
+                    "post_wins": 1,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 5,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 18255.0
+                }
+            }
+        },
+        {
+            "manager": "Bill Berry",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 19,
+                "reg_losses": 18,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 2,
+                "post_ties": 0,
+                "consolation_wins": 2,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 11502.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 19,
+                    "reg_losses": 18,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 2,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 11502.0
+                }
+            }
+        },
+        {
+            "manager": "Richie_N",
+            "sports_played": [
+                "NBA"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 17,
+                "reg_losses": 4,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 32367.4
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 17,
+                    "reg_losses": 4,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 32367.4
+                }
+            }
+        },
+        {
+            "manager": "Brandon Cope",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 15,
+                "reg_losses": 24,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 3,
+                "consolation_losses": 3,
+                "consolation_ties": 0,
+                "points": 11954.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 15,
+                    "reg_losses": 24,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 3,
+                    "consolation_losses": 3,
+                    "consolation_ties": 0,
+                    "points": 11954.0
+                }
+            }
+        },
+        {
+            "manager": "Brad Dodson",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 15,
+                "reg_losses": 5,
+                "reg_ties": 0,
+                "post_wins": 1,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 6901.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 15,
+                    "reg_losses": 5,
+                    "reg_ties": 0,
+                    "post_wins": 1,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 6901.0
+                }
+            }
+        },
+        {
+            "manager": "VinceYoungTen",
+            "sports_played": [
+                "NFL"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 13,
+                "reg_losses": 13,
+                "reg_ties": 0,
+                "post_wins": 2,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 1,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 2758.25
+            },
+            "by_sport": {
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 13,
+                    "reg_losses": 13,
+                    "reg_ties": 0,
+                    "post_wins": 2,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 2758.25
+                }
+            }
+        },
+        {
+            "manager": "H-twn_Allstars",
+            "sports_played": [
+                "NBA"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 9,
+                "reg_losses": 12,
+                "reg_ties": 0,
+                "post_wins": 2,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 32405.5
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 9,
+                    "reg_losses": 12,
+                    "reg_ties": 0,
+                    "post_wins": 2,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 32405.5
+                }
+            }
+        },
+        {
+            "manager": "ATL Red sox",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 7,
+                "reg_losses": 15,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 2,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 3896.5
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 7,
+                    "reg_losses": 15,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 3896.5
+                }
+            }
+        },
+        {
+            "manager": "Joe Bernstein",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 7,
+                "reg_losses": 12,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 2,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 5606.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 7,
+                    "reg_losses": 12,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 5606.0
+                }
+            }
+        },
+        {
+            "manager": "Robert Mann",
+            "sports_played": [
+                "NFL"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 6,
+                "reg_losses": 7,
+                "reg_ties": 0,
+                "post_wins": 2,
+                "post_losses": 1,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 1540.75
+            },
+            "by_sport": {
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 6,
+                    "reg_losses": 7,
+                    "reg_ties": 0,
+                    "post_wins": 2,
+                    "post_losses": 1,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 1540.75
+                }
+            }
+        },
+        {
+            "manager": "Matt Jacobson",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 5,
+                "reg_losses": 14,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 1,
+                "consolation_losses": 2,
+                "consolation_ties": 0,
+                "points": 4769.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 5,
+                    "reg_losses": 14,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 4769.0
+                }
+            }
+        },
+        {
+            "manager": "Jillyyybean",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 4,
+                "reg_losses": 18,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 3559.5
+            },
+            "by_sport": {
+                "MLB": {
+                    "championships": [],
+                    "reg_wins": 4,
+                    "reg_losses": 18,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 3559.5
+                }
+            }
+        },
+        {
+            "manager": "Michael Hong",
+            "sports_played": [
+                "NBA"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 2,
+                "reg_losses": 19,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 0,
+                "consolation_ties": 0,
+                "points": 21190.7
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 2,
+                    "reg_losses": 19,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 21190.7
+                }
+            }
+        },
+        {
+            "manager": "Korey Bryant",
+            "sports_played": [
+                "NFL"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 2,
+                "reg_losses": 11,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 2,
+                "consolation_ties": 0,
+                "points": 930.5
+            },
+            "by_sport": {
+                "NFL": {
+                    "championships": [],
+                    "reg_wins": 2,
+                    "reg_losses": 11,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 930.5
+                }
+            }
+        },
+        {
+            "manager": "Josh Cullen",
+            "sports_played": [
+                "NBA"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 0,
+                "reg_losses": 14,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 0,
+                "consolation_losses": 2,
+                "consolation_ties": 0,
+                "points": 14239.5
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 0,
+                    "reg_losses": 14,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 2,
+                    "consolation_ties": 0,
+                    "points": 14239.5
+                }
+            }
+        },
+        {
+            "manager": "nytoatl",
+            "sports_played": [
+                "NBA"
+            ],
+            "platforms_played": [
+                "Fleaflicker"
+            ],
+            "overall": {
+                "championships": [],
+                "reg_wins": 0,
+                "reg_losses": 21,
+                "reg_ties": 0,
+                "post_wins": 0,
+                "post_losses": 0,
+                "post_ties": 0,
+                "consolation_wins": 1,
+                "consolation_losses": 1,
+                "consolation_ties": 0,
+                "points": 18597.5
+            },
+            "by_sport": {
+                "NBA": {
+                    "championships": [],
+                    "reg_wins": 0,
+                    "reg_losses": 21,
+                    "reg_ties": 0,
+                    "post_wins": 0,
+                    "post_losses": 0,
+                    "post_ties": 0,
+                    "consolation_wins": 1,
+                    "consolation_losses": 1,
+                    "consolation_ties": 0,
+                    "points": 18597.5
+                }
+            }
+        }
+    ]
+}
