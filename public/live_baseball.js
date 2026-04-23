@@ -1,4 +1,6 @@
 // --- Theme Toggle ---
+document.body.classList.add("preload-theme");
+
 const themeToggle = document.getElementById("theme-toggle");
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 let luckChartInstance = null;
@@ -21,6 +23,11 @@ const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark" || (!savedTheme && prefersDarkScheme.matches)) {
   setTheme(true);
 }
+
+// Remove the preload class after the initial theme is set to re-enable transitions
+setTimeout(() => {
+  document.body.classList.remove("preload-theme");
+}, 100);
 
 themeToggle.addEventListener("click", () =>
   setTheme(!document.body.classList.contains("dark-theme")),
