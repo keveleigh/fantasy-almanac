@@ -8,6 +8,40 @@
   --highlight: #e74c3c;
 }
 
+/* Dark Mode Overrides */
+body.dark-theme {
+  --surface: #1e293b;
+  --background: #0f172a;
+  --primary: #93c5fd;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --divider: #334155;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  color: var(--text-main);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
   background-color: var(--background);
@@ -72,6 +106,10 @@ h2 {
   padding: 1rem;
   background: #fafafa;
   border-top: 4px solid var(--primary);
+}
+
+body.dark-theme .score-card {
+  background: #0f172a;
 }
 
 .score-card.highest-score {
@@ -204,6 +242,31 @@ h2 {
   align-items: flex-start;
 }
 
+/* Dark Mode Badge Overrides for WCAG Compliance */
+body.dark-theme .reigning-badge {
+  color: #fde047;
+  border-color: #fde047;
+  background-color: rgba(253, 224, 71, 0.1);
+}
+
+body.dark-theme .reigning-badge.streak {
+  color: #fdba74;
+  border-color: #fdba74;
+  background-color: rgba(253, 186, 116, 0.1);
+}
+
+body.dark-theme .reigning-badge.undisputed {
+  color: #d8b4fe;
+  border-color: #d8b4fe;
+  background-color: rgba(216, 180, 254, 0.1);
+}
+
+body.dark-theme .reigning-badge.historical {
+  color: #cbd5e1;
+  border-color: #cbd5e1;
+  background-color: rgba(203, 213, 225, 0.1);
+}
+
 .table-responsive {
   width: 100%;
   overflow-x: auto;
@@ -254,6 +317,8 @@ select {
   border: 1px solid var(--divider);
   font-size: 1rem;
   cursor: pointer;
+  background-color: var(--surface);
+  color: var(--text-main);
 }
 
 select:hover {
@@ -300,6 +365,10 @@ select:hover {
   background-color: rgba(0, 0, 0, 0.02); /* Slight highlight on the year row */
 }
 
+body.dark-theme .history-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0.5rem;
@@ -344,6 +413,10 @@ select:focus {
 #standings-table tbody tr:hover {
   /* A subtle highlight when mousing over the Hall of Fame */
   background-color: rgba(0, 0, 0, 0.03);
+}
+
+body.dark-theme #standings-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 /* Smooth Transitions */

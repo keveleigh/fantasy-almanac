@@ -15,6 +15,36 @@ const platformIcons = {
 const getPlatformIcon = (platform) => platformIcons[platform] || platform;
 const sportOrder = ["MLB", "NFL", "NBA"];
 
+// --- Theme Toggle ---
+const themeToggle = document.getElementById("theme-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+function setTheme(isDark) {
+  if (isDark) {
+    document.body.classList.add("dark-theme");
+    themeToggle.innerText = "☀️";
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.body.classList.remove("dark-theme");
+    themeToggle.innerText = "🌙";
+    localStorage.setItem("theme", "light");
+  }
+
+  // Refresh charts if they are initialized
+  if (echartInstance)
+    updateHeatmap(document.getElementById("sport-filter").value);
+  if (radarInstance) updateRadar();
+}
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark" || (!savedTheme && prefersDarkScheme.matches)) {
+  setTheme(true);
+}
+
+themeToggle.addEventListener("click", () =>
+  setTheme(!document.body.classList.contains("dark-theme")),
+);
+
 async function loadDashboard() {
   try {
     const [recordsRes, h2hRes] = await Promise.all([
@@ -664,6 +694,7 @@ function initHeatmap() {
 }
 
 function updateHeatmap(selectedSport) {
+  const isDark = document.body.classList.contains("dark-theme");
   const heatmapData = [];
 
   // Pre-compute H2H map for O(1) lookups instead of using .find() inside a nested loop
@@ -732,9 +763,18 @@ function updateHeatmap(selectedSport) {
       type: "category",
       data: allManagers,
       splitArea: { show: true },
-      axisLabel: { interval: 0, rotate: 45 },
+      axisLabel: {
+        interval: 0,
+        rotate: 45,
+        color: isDark ? "#94a3b8" : "#666",
+      },
     },
-    yAxis: { type: "category", data: allManagers, splitArea: { show: true } },
+    yAxis: {
+      type: "category",
+      data: allManagers,
+      splitArea: { show: true },
+      axisLabel: { color: isDark ? "#94a3b8" : "#666" },
+    },
     visualMap: {
       min: 0,
       max: 100,
@@ -742,7 +782,12 @@ function updateHeatmap(selectedSport) {
       orient: "horizontal",
       left: "center",
       bottom: "0%",
-      inRange: { color: ["#e74c3c", "#f5f7fa", "#2ecc71"] },
+      textStyle: {
+        color: isDark ? "#f1f5f9" : "#1a1a1a",
+      },
+      inRange: {
+        color: ["#e74c3c", isDark ? "#1e293b" : "#f5f7fa", "#2ecc71"],
+      },
     },
     series: [
       {
@@ -753,7 +798,7 @@ function updateHeatmap(selectedSport) {
           show: true,
           formatter: (params) =>
             params.value[2] !== "-" ? Math.round(params.value[2]) + "%" : "",
-          color: "#333",
+          color: isDark ? "#f1f5f9" : "#333",
         },
         emphasis: {
           itemStyle: { shadowBlur: 10, shadowColor: "rgba(0, 0, 0, 0.5)" },
@@ -792,6 +837,7 @@ function initRadar() {
 }
 
 function updateRadar() {
+  const isDark = document.body.classList.contains("dark-theme");
   const p1Name = document.getElementById("radar-p1-filter").value;
   const p2Name = document.getElementById("radar-p2-filter").value;
 
@@ -837,7 +883,11 @@ function updateRadar() {
 
   const option = {
     tooltip: { trigger: "item" },
-    legend: { data: [p1.manager, p2.manager], bottom: 0 },
+    legend: {
+      data: [p1.manager, p2.manager],
+      bottom: 0,
+      textStyle: { color: isDark ? "#f1f5f9" : "#1a1a1a" },
+    },
     radar: {
       indicator: [
         { name: "Win %", max: 100 },
@@ -848,8 +898,12 @@ function updateRadar() {
       ],
       shape: "polygon",
       splitNumber: 5,
-      axisName: { color: "#2c3e50", fontWeight: "bold" },
-      splitArea: { areaStyle: { color: ["#f5f7fa", "#ffffff"] } }, // Alternating web colors
+      axisName: { color: isDark ? "#93c5fd" : "#2c3e50", fontWeight: "bold" },
+      splitArea: {
+        areaStyle: {
+          color: isDark ? ["#0f172a", "#1e293b"] : ["#f5f7fa", "#ffffff"],
+        },
+      }, // Alternating web colors
     },
     series: [
       {
