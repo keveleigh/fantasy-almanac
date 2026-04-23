@@ -141,12 +141,12 @@
         /* --- Table Styles --- */
         table { width: 100%; border-collapse: collapse; text-align: left; }
         td { padding: 12px; border-bottom: 1px solid var(--divider); }
-        th { 
+        th {
             padding: 12px;
-            font-weight: 600; 
-            color: var(--text-muted); 
-            font-size: 0.85rem; 
-            text-transform: uppercase; 
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            text-transform: uppercase;
             position: sticky;
             top: 0;
             background-color: var(--surface);
@@ -262,7 +262,7 @@
                         <tr>
                             <th>Manager</th>
                             <th>Active Reign</th>
-                            <th>Sports</th>
+                            <th style="text-align: right;">Sports</th>
                             <th>Championships</th>
                             <th title="Regular Season">Reg. Season</th>
                             <th title="Playoff Bracket">Playoff</th>
@@ -334,6 +334,7 @@
         let radarInstance = null;
 
         const sportIcons = { "NFL": "🏈", "MLB": "⚾", "NBA": "🏀", "NHL": "🏒" };
+        const sportOrder = ["NFL", "NBA", "MLB"];
 
         async function loadDashboard() {
             try {
@@ -506,8 +507,8 @@
             });
 
             const latestYears = {};
-            const sportChamps = {}; 
-            const champStreaks = {}; 
+            const sportChamps = {};
+            const champStreaks = {};
             let globalMaxYear = 0;
 
             for (const sp in sportYears) {
@@ -524,7 +525,7 @@
                     const data = stat.by_sport[sp];
                     if (data && data.championships && data.championships.includes(latestYears[sp])) {
                         sportChamps[sp].push(stat.manager);
-                        
+
                         let streak = 1;
                         for (let i = 1; i < sportYears[sp].length; i++) {
                             if (data.championships.includes(sportYears[sp][i])) streak++;
@@ -549,31 +550,38 @@
                 if (!activeData) return;
 
                 const tr = document.createElement('tr');
-                const sportsStr = stat.sports_played.map(s => `<span title="${s}">${sportIcons[s] || s}</span>`).join(' ');
 
-                // Format Championships with Tooltips
-                let champHtml = '-';
-                const champsArray = activeData.championships || [];
+                const renderSports = selectedSport === 'All'
+                    ? [...new Set(stat.sports_played)].sort((a, b) => {
+                        const idxA = sportOrder.indexOf(a);
+                        const idxB = sportOrder.indexOf(b);
+                        return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
+                    })
+                    : [selectedSport];
 
-                if (champsArray.length > 0) {
-                    if (selectedSport === 'All') {
-                        const lines = [];
-                        for (const [sp, data] of Object.entries(stat.by_sport)) {
-                            if (data.championships && data.championships.length > 0) {
-                                const yearsStr = [...data.championships].sort((a,b)=>b-a).join(', ');
-                                lines.push(`<span title="Won in: ${yearsStr}" style="cursor:help;">${sportIcons[sp] || sp} ${'🏆'.repeat(data.championships.length)}</span>`);
-                            }
-                        }
-                        champHtml = lines.join('<br>');
-                    } else {
-                        const yearsStr = [...champsArray].sort((a,b)=>b-a).join(', ');
-                        champHtml = `<span title="Won in: ${yearsStr}" style="cursor:help;">${'🏆'.repeat(champsArray.length)}</span>`;
+                let sportsHtmlLines = [];
+                let champsHtmlLines = [];
+
+                renderSports.forEach(sp => {
+                    sportsHtmlLines.push(`<div style="height: 28px; display: flex; align-items: center; justify-content: flex-end;" title="${sp}">${sportIcons[sp] || sp}</div>`);
+
+                    const data = stat.by_sport[sp];
+                    let champHtmlForSport = '<span style="color:var(--divider)">-</span>';
+
+                    if (data && data.championships && data.championships.length > 0) {
+                        const uniqueYears = [...new Set(data.championships)].sort((a,b)=>b-a);
+                        const yearsStr = uniqueYears.join(', ');
+                        champHtmlForSport = `<span title="Won in: ${yearsStr}" style="cursor:help; letter-spacing: 2px;">${'🏆'.repeat(uniqueYears.length)}</span>`;
                     }
-                }
+                    champsHtmlLines.push(`<div style="height: 28px; display: flex; align-items: center;">${champHtmlForSport}</div>`);
+                });
+
+                const sportsStr = sportsHtmlLines.join('');
+                const champHtml = champsHtmlLines.join('');
 
                 // Reigning Champ Badge Logic (Streaks & Stale Tracking)
                 let reigningText = '';
-                const reigningSports = selectedSport !== 'All' 
+                const reigningSports = selectedSport !== 'All'
                     ? (sportChamps[selectedSport] && sportChamps[selectedSport].includes(stat.manager) ? [selectedSport] : [])
                     : Object.keys(sportChamps).filter(sp => sportChamps[sp].includes(stat.manager));
 
@@ -582,13 +590,13 @@
                 if (activeReigningSports.length > 0) {
                     const badgesHtml = activeReigningSports.map(sp => {
                         const streak = champStreaks[sp][stat.manager];
-                        
+
                         let classes = 'reigning-badge';
                         if (streak > 1) classes += ' streak';
 
                         let badgeTitle = `${latestYears[sp]} ${sp} Champion`;
                         let badgeLabel = ` Champion`;
-                        
+
                         if (streak > 1) badgeLabel = `${streak}-Peat Champion`;
 
                         let iconStr = sportIcons[sp] || sp;
@@ -626,7 +634,7 @@
 
                     let currentStreak = 0;
                     let streakYears = [];
-                    
+
                     const evaluateStreak = () => {
                         if (currentStreak >= 2 && !streakYears.includes(latestYears[sp])) {
                             const iconStr = sportIcons[sp] || sp;
@@ -697,7 +705,6 @@
             // 2. Sort the axes
             const yearsArray = Array.from(yearsSet).sort((a, b) => b - a); // Descending (Newest first)
 
-            const sportOrder = ["MLB", "NFL", "NBA"];
             const sportsArray = Array.from(sportsSet).sort((a, b) => {
                 const indexA = sportOrder.indexOf(a);
                 const indexB = sportOrder.indexOf(b);
@@ -752,7 +759,11 @@
             globalStatsData.forEach(stat => {
                 stat.sports_played.forEach(s => sportsSet.add(s));
             });
-            return Array.from(sportsSet).sort();
+            return Array.from(sportsSet).sort((a, b) => {
+                const idxA = sportOrder.indexOf(a);
+                const idxB = sportOrder.indexOf(b);
+                return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
+            });
         }
 
         // --- Initialize Hall of Fame ---
