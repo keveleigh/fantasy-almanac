@@ -6,6 +6,13 @@ let radarInstance = null;
 let globalLeagueSuperlatives = {};
 
 const sportIcons = { NFL: "🏈", MLB: "⚾", NBA: "🏀", NHL: "🏒" };
+const platformIcons = {
+  ESPN: `<img src="https://www.google.com/s2/favicons?domain=espn.com&sz=32" alt="ESPN" title="ESPN" class="platform-icon">`,
+  Sleeper: `<img src="https://www.google.com/s2/favicons?domain=sleeper.com&sz=32" alt="Sleeper" title="Sleeper" class="platform-icon">`,
+  Fleaflicker: `<img src="https://www.google.com/s2/favicons?domain=fleaflicker.com&sz=32" alt="Fleaflicker" title="Fleaflicker" class="platform-icon">`,
+  Manual: `<span title="Manual" class="platform-icon" style="font-size: 14px; line-height: 1;">📝</span>`,
+};
+const getPlatformIcon = (platform) => platformIcons[platform] || platform;
 const sportOrder = ["MLB", "NFL", "NBA"];
 
 async function loadDashboard() {
@@ -58,7 +65,7 @@ function renderSuperlatives(superlativesData) {
     const lowestPpgText =
       superlative.lowest_ppg.ppgf >= 99999
         ? "No seasons recorded."
-        : `Lowest scoring offense | ${superlative.lowest_ppg.year} | ${superlative.lowest_ppg.platform}`;
+        : `Lowest scoring offense | ${superlative.lowest_ppg.year} | ${getPlatformIcon(superlative.lowest_ppg.platform)}`;
     const lowestPpgaVal =
       superlative.lowest_ppga.ppga >= 99999
         ? "N/A"
@@ -66,7 +73,7 @@ function renderSuperlatives(superlativesData) {
     const lowestPpgaText =
       superlative.lowest_ppga.ppga >= 99999
         ? "No seasons recorded."
-        : `Easiest schedule | ${superlative.lowest_ppga.year} | ${superlative.lowest_ppga.platform}`;
+        : `Easiest schedule | ${superlative.lowest_ppga.year} | ${getPlatformIcon(superlative.lowest_ppga.platform)}`;
     const lowestWinVal =
       superlative.lowest_winning_score.score >= 99999
         ? "N/A"
@@ -74,7 +81,7 @@ function renderSuperlatives(superlativesData) {
     const lowestWinText =
       superlative.lowest_winning_score.score >= 99999
         ? "No wins recorded."
-        : `Defeated ${superlative.lowest_winning_score.opponent} (${superlative.lowest_winning_score.score} to ${superlative.lowest_winning_score.opp_score})<br>Week ${superlative.lowest_winning_score.period}, ${superlative.lowest_winning_score.year} | ${superlative.lowest_winning_score.platform}`;
+        : `Defeated ${superlative.lowest_winning_score.opponent} (${superlative.lowest_winning_score.score} to ${superlative.lowest_winning_score.opp_score})<br>Week ${superlative.lowest_winning_score.period}, ${superlative.lowest_winning_score.year} | ${getPlatformIcon(superlative.lowest_winning_score.platform)}`;
     const highestLossVal =
       superlative.highest_losing_score.score === 0
         ? "N/A"
@@ -82,7 +89,7 @@ function renderSuperlatives(superlativesData) {
     const highestLossText =
       superlative.highest_losing_score.score === 0
         ? "No losses recorded."
-        : `Lost to ${superlative.highest_losing_score.opponent} (${superlative.highest_losing_score.score} to ${superlative.highest_losing_score.opp_score})<br>Week ${superlative.highest_losing_score.period}, ${superlative.highest_losing_score.year} | ${superlative.highest_losing_score.platform}`;
+        : `Lost to ${superlative.highest_losing_score.opponent} (${superlative.highest_losing_score.score} to ${superlative.highest_losing_score.opp_score})<br>Week ${superlative.highest_losing_score.period}, ${superlative.highest_losing_score.year} | ${getPlatformIcon(superlative.highest_losing_score.platform)}`;
     const largestMarginVal =
       superlative.largest_victory_margin.margin === 0
         ? "N/A"
@@ -90,7 +97,7 @@ function renderSuperlatives(superlativesData) {
     const largestMarginText =
       superlative.largest_victory_margin.margin === 0
         ? "No wins recorded."
-        : `Destroyed ${superlative.largest_victory_margin.loser} (${superlative.largest_victory_margin.winning_score} to ${superlative.largest_victory_margin.losing_score})<br>Week ${superlative.largest_victory_margin.period}, ${superlative.largest_victory_margin.year} | ${superlative.largest_victory_margin.platform}`;
+        : `Destroyed ${superlative.largest_victory_margin.loser} (${superlative.largest_victory_margin.winning_score} to ${superlative.largest_victory_margin.losing_score})<br>Week ${superlative.largest_victory_margin.period}, ${superlative.largest_victory_margin.year} | ${getPlatformIcon(superlative.largest_victory_margin.platform)}`;
     const smallestMarginVal =
       superlative.smallest_victory_margin.margin >= 99999
         ? "N/A"
@@ -98,7 +105,7 @@ function renderSuperlatives(superlativesData) {
     const smallestMarginText =
       superlative.smallest_victory_margin.margin >= 99999
         ? "No wins recorded."
-        : `Survived ${superlative.smallest_victory_margin.loser} (${superlative.smallest_victory_margin.winning_score} to ${superlative.smallest_victory_margin.losing_score})<br>Week ${superlative.smallest_victory_margin.period}, ${superlative.smallest_victory_margin.year} | ${superlative.smallest_victory_margin.platform}`;
+        : `Survived ${superlative.smallest_victory_margin.loser} (${superlative.smallest_victory_margin.winning_score} to ${superlative.smallest_victory_margin.losing_score})<br>Week ${superlative.smallest_victory_margin.period}, ${superlative.smallest_victory_margin.year} | ${getPlatformIcon(superlative.smallest_victory_margin.platform)}`;
     const lowestPlayoffPpgVal =
       superlative.lowest_playoff_ppg.ppgf >= 99999
         ? "N/A"
@@ -106,7 +113,7 @@ function renderSuperlatives(superlativesData) {
     const lowestPlayoffPpgText =
       superlative.lowest_playoff_ppg.ppgf >= 99999
         ? "Never made the playoffs."
-        : `Lowest scoring offense to make the playoffs | ${superlative.lowest_playoff_ppg.year} | ${superlative.lowest_playoff_ppg.platform}`;
+        : `Lowest scoring offense to make the playoffs | ${superlative.lowest_playoff_ppg.year} | ${getPlatformIcon(superlative.lowest_playoff_ppg.platform)}`;
     const highestMissPlayoffsPpgVal =
       superlative.highest_miss_playoffs_ppg.ppgf === 0
         ? "N/A"
@@ -114,7 +121,7 @@ function renderSuperlatives(superlativesData) {
     const highestMissPlayoffsPpgText =
       superlative.highest_miss_playoffs_ppg.ppgf === 0
         ? "Never missed the playoffs."
-        : `Highest scoring offense to miss the playoffs | ${superlative.highest_miss_playoffs_ppg.year} | ${superlative.highest_miss_playoffs_ppg.platform}`;
+        : `Highest scoring offense to miss the playoffs | ${superlative.highest_miss_playoffs_ppg.year} | ${getPlatformIcon(superlative.highest_miss_playoffs_ppg.platform)}`;
 
     const mostWinsUnderMedianVal =
       superlative.most_wins_under_median.wins === 0
@@ -140,14 +147,14 @@ function renderSuperlatives(superlativesData) {
                         <h3>🌋 All-Time High</h3>
                         <p class="metric">${superlative.highest_score.score.toLocaleString()} pts</p>
                         <p class="manager">${superlative.highest_score.manager}</p>
-                        <p class="meta">Against ${superlative.highest_score.opponent} (${superlative.highest_score.score} to ${superlative.highest_score.opp_score})<br>Week ${superlative.highest_score.period}, ${superlative.highest_score.year} | ${superlative.highest_score.platform}</p>
+                        <p class="meta">Against ${superlative.highest_score.opponent} (${superlative.highest_score.score} to ${superlative.highest_score.opp_score})<br>Week ${superlative.highest_score.period}, ${superlative.highest_score.year} | ${getPlatformIcon(superlative.highest_score.platform)}</p>
                     </div>
 
                     <div class="score-card lowest-score">
                         <h3>🪫 All-Time Low</h3>
                         <p class="metric">${superlative.lowest_score.score.toLocaleString()} pts</p>
                         <p class="manager">${superlative.lowest_score.manager}</p>
-                        <p class="meta">Against ${superlative.lowest_score.opponent} (${superlative.lowest_score.score} to ${superlative.lowest_score.opp_score})<br>Week ${superlative.lowest_score.period}, ${superlative.lowest_score.year} | ${superlative.lowest_score.platform}</p>
+                        <p class="meta">Against ${superlative.lowest_score.opponent} (${superlative.lowest_score.score} to ${superlative.lowest_score.opp_score})<br>Week ${superlative.lowest_score.period}, ${superlative.lowest_score.year} | ${getPlatformIcon(superlative.lowest_score.platform)}</p>
                     </div>
 
                     <div class="score-card longest-win-streak">
@@ -168,7 +175,7 @@ function renderSuperlatives(superlativesData) {
                         <h3 title="Highest Points Per Game For in a single season">🚂 The Juggernaut</h3>
                         <p class="metric">${superlative.highest_ppg.ppgf.toFixed(1)} PF Avg</p>
                         <p class="manager">${superlative.highest_ppg.manager}</p>
-                        <p class="meta">Highest scoring offense | ${superlative.highest_ppg.year} | ${superlative.highest_ppg.platform}</p>
+                        <p class="meta">Highest scoring offense | ${superlative.highest_ppg.year} | ${getPlatformIcon(superlative.highest_ppg.platform)}</p>
                     </div>
 
                     <div class="score-card lowest-ppg">
@@ -182,7 +189,7 @@ function renderSuperlatives(superlativesData) {
                         <h3 title="Highest Points Per Game Against in a single season">🌩️ Schedule Victim</h3>
                         <p class="metric">${superlative.highest_ppga.ppga.toFixed(1)} PA Avg</p>
                         <p class="manager">${superlative.highest_ppga.manager}</p>
-                        <p class="meta">Hardest schedule | ${superlative.highest_ppga.year} | ${superlative.highest_ppga.platform}</p>
+                        <p class="meta">Hardest schedule | ${superlative.highest_ppga.year} | ${getPlatformIcon(superlative.highest_ppga.platform)}</p>
                     </div>
 
                     <div class="score-card lowest-ppga">

@@ -150,6 +150,14 @@ h2 {
   line-height: 1.4;
 }
 
+.platform-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  border-radius: 2px;
+  margin-top: -2px;
+}
+
 .reigning-badge {
   background-color: rgba(241, 196, 15, 0.1);
   color: #b8860b;
