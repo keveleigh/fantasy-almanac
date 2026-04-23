@@ -371,14 +371,14 @@
                         <div class="scores-grid">
 
                             <div class="score-card highest">
-                                <h3>🔥 All-Time High</h3>
+                                <h3>🌋 All-Time High</h3>
                                 <p class="metric">${cuts.highest_score.score.toLocaleString()} pts</p>
                                 <p class="manager">${cuts.highest_score.manager}</p>
                                 <p class="meta">Against ${cuts.highest_score.opponent} (${cuts.highest_score.score} to ${cuts.highest_score.opp_score})<br>Week ${cuts.highest_score.period}, ${cuts.highest_score.year} | ${cuts.highest_score.platform}</p>
                             </div>
 
                             <div class="score-card lowest">
-                                <h3>🧊 All-Time Low</h3>
+                                <h3>🪫 All-Time Low</h3>
                                 <p class="metric">${cuts.lowest_score.score.toLocaleString()} pts</p>
                                 <p class="manager">${cuts.lowest_score.manager}</p>
                                 <p class="meta">Against ${cuts.lowest_score.opponent} (${cuts.lowest_score.score} to ${cuts.lowest_score.opp_score})<br>Week ${cuts.lowest_score.period}, ${cuts.lowest_score.year} | ${cuts.lowest_score.platform}</p>
@@ -388,42 +388,42 @@
                                 <h3 title="Most consecutive regular season wins">🔥 On Fire</h3>
                                 <p class="metric">${cuts.longest_win_streak.count} Straight Wins</p>
                                 <p class="manager">${cuts.longest_win_streak.manager}</p>
-                                <p class="meta">Reg. Season: Wk ${cuts.longest_win_streak.start_p}, ${cuts.longest_win_streak.start_y} to<br>Wk ${cuts.longest_win_streak.end_p}, ${cuts.longest_win_streak.end_y}</p>
+                                <p class="meta">Regular Season<br>Wk ${cuts.longest_win_streak.start_p}, ${cuts.longest_win_streak.start_y} to Wk ${cuts.longest_win_streak.end_p}, ${cuts.longest_win_streak.end_y}</p>
                             </div>
 
                             <div class="score-card streak-l">
                                 <h3 title="Most consecutive regular season losses">🧊 Ice Cold</h3>
                                 <p class="metric">${cuts.longest_loss_streak.count} Straight Losses</p>
                                 <p class="manager">${cuts.longest_loss_streak.manager}</p>
-                                <p class="meta">Reg. Season: Wk ${cuts.longest_loss_streak.start_p}, ${cuts.longest_loss_streak.start_y} to<br>Wk ${cuts.longest_loss_streak.end_p}, ${cuts.longest_loss_streak.end_y}</p>
+                                <p class="meta">Regular Season<br>Wk ${cuts.longest_loss_streak.start_p}, ${cuts.longest_loss_streak.start_y} to Wk ${cuts.longest_loss_streak.end_p}, ${cuts.longest_loss_streak.end_y}</p>
                             </div>
 
                             <div class="score-card highest-ppg">
                                 <h3 title="Highest Points Per Game For in a single season">🚂 The Juggernaut</h3>
                                 <p class="metric">${cuts.highest_ppg.ppgf.toFixed(1)} PF Avg</p>
                                 <p class="manager">${cuts.highest_ppg.manager}</p>
-                                <p class="meta">Dominant season in ${cuts.highest_ppg.year} | ${cuts.highest_ppg.platform}</p>
+                                <p class="meta">Highest scoring offense | ${cuts.highest_ppg.year} | ${cuts.highest_ppg.platform}</p>
                             </div>
 
                             <div class="score-card tank-commander">
                                 <h3 title="Lowest Points Per Game For in a single season">🪖 Tank Commander</h3>
                                 <p class="metric">${cuts.tank_commander.ppgf.toFixed(1)} PF Avg</p>
                                 <p class="manager">${cuts.tank_commander.manager}</p>
-                                <p class="meta">Offensive futility in ${cuts.tank_commander.year} | ${cuts.tank_commander.platform}</p>
+                                <p class="meta">Lowest scoring offense | ${cuts.tank_commander.year} | ${cuts.tank_commander.platform}</p>
                             </div>
 
                             <div class="score-card schedule-victim">
-                                <h3 title="Highest Points Per Game Against in a single season">🎯 Schedule Victim</h3>
+                                <h3 title="Highest Points Per Game Against in a single season">🌩️ Schedule Victim</h3>
                                 <p class="metric">${cuts.schedule_victim.ppga.toFixed(1)} PA Avg</p>
                                 <p class="manager">${cuts.schedule_victim.manager}</p>
-                                <p class="meta">Brutalized in ${cuts.schedule_victim.year} | ${cuts.schedule_victim.platform}</p>
+                                <p class="meta">Hardest schedule | ${cuts.schedule_victim.year} | ${cuts.schedule_victim.platform}</p>
                             </div>
 
                             <div class="score-card golden-horseshoe">
                                 <h3 title="Lowest Points Per Game Against in a single season">🐴 Golden Horseshoe</h3>
                                 <p class="metric">${cuts.golden_horseshoe.ppga.toFixed(1)} PA Avg</p>
                                 <p class="manager">${cuts.golden_horseshoe.manager}</p>
-                                <p class="meta">Easiest schedule in ${cuts.golden_horseshoe.year} | ${cuts.golden_horseshoe.platform}</p>
+                                <p class="meta">Easiest schedule | ${cuts.golden_horseshoe.year} | ${cuts.golden_horseshoe.platform}</p>
                             </div>
 
                             <div class="score-card heartbreak">
@@ -434,10 +434,10 @@
                             </div>
 
                             <div class="score-card ugly">
-                                <h3 title="Lowest score in a win">🤢 The Ugly Win</h3>
+                                <h3 title="Lowest score in a win">🦝 The Heist</h3>
                                 <p class="metric">${cuts.ugly_win.score.toLocaleString()} pts</p>
                                 <p class="manager">${cuts.ugly_win.manager}</p>
-                                <p class="meta">Beat ${cuts.ugly_win.opponent} (${cuts.ugly_win.score} to ${cuts.ugly_win.opp_score})<br>Week ${cuts.ugly_win.period}, ${cuts.ugly_win.year} | ${cuts.ugly_win.platform}</p>
+                                <p class="meta">Defeated ${cuts.ugly_win.opponent} (${cuts.ugly_win.score} to ${cuts.ugly_win.opp_score})<br>Week ${cuts.ugly_win.period}, ${cuts.ugly_win.year} | ${cuts.ugly_win.platform}</p>
                             </div>
 
                             <div class="score-card blowout">
@@ -458,28 +458,28 @@
                                 <h3 title="Most wins while scoring in the bottom half of the league">🍀 The Luck Box</h3>
                                 <p class="metric">${cuts.luck_box.wins} Wins</p>
                                 <p class="manager">${cuts.luck_box.manager}</p>
-                                <p class="meta">Reg. season wins despite scoring<br>below the weekly median.</p>
+                                <p class="meta">Career wins despite scoring<br>below the weekly median.</p>
                             </div>
 
                             <div class="score-card unlucky">
                                 <h3 title="Most career losses despite scoring in the top half of the league">🌧️ The Unlucky Box</h3>
                                 <p class="metric">${cuts.unlucky_box.losses} Losses</p>
                                 <p class="manager">${cuts.unlucky_box.manager}</p>
-                                <p class="meta">Most career losses despite<br>scoring in the top half.</p>
+                                <p class="meta">Career losses despite scoring<br>above the weekly median.</p>
                             </div>
 
                             <div class="score-card failing-upwards">
                                 <h3 title="Lowest Points Per Game For while still making the playoffs">🤞 Failing Upwards</h3>
                                 <p class="metric">${cuts.failing_upwards.ppgf.toFixed(1)} PF Avg</p>
                                 <p class="manager">${cuts.failing_upwards.manager}</p>
-                                <p class="meta">Made playoffs in ${cuts.failing_upwards.year} | ${cuts.failing_upwards.platform}</p>
+                                <p class="meta">Lowest scoring offense to make the playoffs | ${cuts.failing_upwards.year} | ${cuts.failing_upwards.platform}</p>
                             </div>
 
                             <div class="score-card glass-cannon">
                                 <h3 title="Highest Points Per Game For without making the playoffs">🏹 Glass Cannon</h3>
                                 <p class="metric">${cuts.glass_cannon.ppgf.toFixed(1)} PF Avg</p>
                                 <p class="manager">${cuts.glass_cannon.manager}</p>
-                                <p class="meta">Missed playoffs in ${cuts.glass_cannon.year} | ${cuts.glass_cannon.platform}</p>
+                                <p class="meta">Highest scoring offense to miss the playoffs | ${cuts.glass_cannon.year} | ${cuts.glass_cannon.platform}</p>
                             </div>
 
                         </div>
