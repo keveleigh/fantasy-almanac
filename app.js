@@ -209,7 +209,7 @@ function renderSuperlatives(superlativesData) {
                     </div>
 
                     <div class="score-card lowest-ppg">
-                        <h3 title="Lowest Points Per Game For in a single season">🪖 Tank Commander</h3>
+                        <h3 title="Lowest Points Per Game For in a single season">📉 Rough Season</h3>
                         <p class="metric">${lowestPpgVal}</p>
                         <p class="manager">${superlative.lowest_ppg.manager}</p>
                         <p class="meta">${lowestPpgText}</p>
@@ -272,7 +272,7 @@ function renderSuperlatives(superlativesData) {
                     </div>
 
                     <div class="score-card lowest-playoff-ppg">
-                        <h3 title="Lowest Points Per Game For while still making the playoffs">🤞 Failing Upwards</h3>
+                        <h3 title="Lowest Points Per Game For while still making the playoffs">🤞 Lucky Breaks</h3>
                         <p class="metric">${lowestPlayoffPpgVal}</p>
                         <p class="manager">${superlative.lowest_playoff_ppg.manager}</p>
                         <p class="meta">${lowestPlayoffPpgText}</p>
