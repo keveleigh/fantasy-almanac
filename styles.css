@@ -1,0 +1,349 @@
+:root {
+  --surface: #ffffff;
+  --background: #f5f7fa;
+  --primary: #2c3e50;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --divider: #e0e0e0;
+  --highlight: #e74c3c;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: var(--background);
+  color: var(--text-main);
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: var(--primary);
+  margin-top: 0;
+}
+.section-title {
+  border-bottom: 2px solid var(--divider);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Superlatives Grid --- */
+.sport-section {
+  margin-bottom: 2rem;
+}
+.sport-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.score-card {
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  padding: 1rem;
+  background: #fafafa;
+  border-top: 4px solid var(--primary);
+}
+
+.score-card.highest-score {
+  border-top-color: #f1c40f;
+}
+.score-card.lowest-score {
+  border-top-color: #3498db;
+}
+.score-card.longest-win-streak {
+  border-top-color: #e67e22;
+}
+.score-card.longest-loss-streak {
+  border-top-color: #34495e;
+}
+
+.score-card.highest-ppg {
+  border-top-color: #f39c12;
+}
+.score-card.lowest-ppg {
+  border-top-color: #4b6584;
+}
+.score-card.highest-ppga {
+  border-top-color: #6d214f;
+}
+.score-card.lowest-ppga {
+  border-top-color: #f6b93b;
+}
+
+.score-card.highest-losing-score {
+  border-top-color: #e74c3c;
+}
+.score-card.lowest-winning-score {
+  border-top-color: #95a5a6;
+}
+.score-card.largest-victory-margin {
+  border-top-color: #8e44ad;
+}
+.score-card.smallest-victory-margin {
+  border-top-color: #1abc9c;
+}
+
+.score-card.most-wins-under-median {
+  border-top-color: #2ecc71;
+}
+.score-card.most-losses-over-median {
+  border-top-color: #2980b9;
+}
+.score-card.lowest-playoff-ppg {
+  border-top-color: #badc58;
+}
+.score-card.highest-miss-playoffs-ppg {
+  border-top-color: #fd79a8;
+}
+
+.score-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.score-card .metric {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-main);
+  margin: 0;
+}
+.score-card .manager {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  font-weight: 600;
+}
+.score-card .meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.reigning-badge {
+  background-color: rgba(241, 196, 15, 0.1);
+  color: #b8860b;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border: 1px solid #f1c40f;
+  border-radius: 4px;
+  margin-left: 0;
+  font-weight: 800;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.reigning-badge.streak {
+  border-color: #e67e22;
+  color: #d35400;
+  background-color: rgba(230, 126, 34, 0.1);
+}
+
+.reigning-badge.undisputed {
+  border-color: #9b59b6;
+  color: #8e44ad;
+  background-color: rgba(155, 89, 182, 0.1);
+}
+
+.reigning-badge.historical {
+  border-color: #95a5a6;
+  color: #34495e;
+  background-color: rgba(149, 165, 166, 0.1);
+}
+
+.badge-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* --- Table Styles --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--divider);
+}
+th {
+  padding: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  background-color: var(--surface);
+  z-index: 10;
+  box-shadow: inset 0 -1px 0 var(--divider); /* Replaces border-bottom for sticky headers */
+}
+.points-cell {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* --- Heatmap UI --- */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--divider);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#heatmap-container {
+  width: 100%;
+  height: 600px;
+}
+
+/* Roll of Honor Matrix Styles */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  min-width: 600px; /* Ensures columns don't crush too tight */
+}
+.history-table th,
+.history-table td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+.history-table th {
+  background-color: var(--surface);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.history-table .history-year-cell {
+  font-weight: 800;
+  color: var(--text-muted);
+  text-align: left;
+  width: 60px;
+}
+.history-table td {
+  font-weight: 600;
+}
+.history-table .no-champ {
+  color: var(--border-color); /* Makes empty gaps visually quiet */
+  font-weight: 400;
+}
+.history-table tr:hover {
+  background-color: rgba(0, 0, 0, 0.02); /* Slight highlight on the year row */
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .sport-header {
+    font-size: 1.1rem;
+  }
+  .controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Dropdowns */
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"><path d="M4 6l4 4 4-4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  padding-right: 32px !important;
+  transition: all 0.2s ease;
+}
+select:focus {
+  box-shadow: 0 0 0 2px rgba(144, 202, 249, 0.3);
+  outline: none;
+}
+
+/* Podium Colors */
+#standings-table tbody tr:nth-child(1) {
+  background-color: rgba(241, 196, 15, 0.08);
+} /* Gold */
+#standings-table tbody tr:nth-child(2) {
+  background-color: rgba(189, 195, 199, 0.08);
+} /* Silver */
+#standings-table tbody tr:nth-child(3) {
+  background-color: rgba(205, 127, 50, 0.08);
+} /* Bronze */
+
+/* Smooth Transitions */
+tr,
+.score-card {
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.5);
+}
