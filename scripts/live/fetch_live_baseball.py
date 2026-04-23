@@ -1,19 +1,38 @@
 import os
 import json
-from espn_api.baseball import League
+import argparse
 
-os.makedirs("data/live", exist_ok=True)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+LIVE_DIR = os.path.join(BASE_DIR, "public", "data", "live")
+os.makedirs(LIVE_DIR, exist_ok=True)
 
 # --- CONFIGURATION ---
-LEAGUE_ID = int(os.environ.get("ESPN_LEAGUE_ID", 114502))
-YEAR = int(os.environ.get("ESPN_YEAR", 2026))
+parser = argparse.ArgumentParser(description="Fetch live ESPN Fantasy Sports data.")
+parser.add_argument('--sport', type=str, required=True,
+                    choices=['NFL', 'MLB', 'NBA'], help="The sport (NFL, MLB, or NBA)")
+parser.add_argument('--year', type=int, required=True,
+                    help="The season year (e.g., 2026)")
+parser.add_argument('--league_id', type=int, required=True,
+                    help="The ESPN League ID")
+args = parser.parse_args()
+
+SPORT = args.sport.upper()
+YEAR = args.year
+LEAGUE_ID = args.league_id
+
 SWID = os.environ.get("ESPN_SWID")
 ESPN_S2 = os.environ.get("ESPN_S2")
 
+if SPORT == 'MLB':
+    from espn_api.baseball import League
+elif SPORT == 'NBA':
+    from espn_api.basketball import League
+else:
+    from espn_api.football import League
 
 def compile_live_stats():
     print(
-        f"Fetching live season data for ESPN MLB League {LEAGUE_ID} ({YEAR})...")
+        f"Fetching live season data for ESPN {SPORT} League {LEAGUE_ID} ({YEAR})...")
 
     league = League(league_id=LEAGUE_ID, year=YEAR, swid=SWID, espn_s2=ESPN_S2)
 
@@ -152,7 +171,7 @@ def compile_live_stats():
     # 5. Remaining Strength of Schedule (SOS)
     remaining_sos = []
 
-    # ESPN API MLB Quirk: reg_season_count is often 0 or missing entirely in the settings object.
+    # ESPN API Quirk: reg_season_count is often 0 or missing entirely in the settings object for MLB.
     reg_season_count = getattr(league.settings, 'reg_season_count', 0)
     if reg_season_count == 0:
         reg_season_count = 22  # Standard fallback for MLB regular seasons
@@ -229,7 +248,8 @@ def compile_live_stats():
         "remaining_sos": remaining_sos
     }
 
-    with open("data/live/baseball_current_season.json", "w") as f:
+    filename = f"{SPORT.lower()}_current_season.json"
+    with open(os.path.join(LIVE_DIR, filename), "w") as f:
         json.dump(live_data, f, indent=4)
 
     print("✅ Successfully generated live season data!")

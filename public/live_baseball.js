@@ -29,7 +29,7 @@ themeToggle.addEventListener("click", () =>
 // --- Live Dashboard Initializer ---
 async function loadLiveDashboard() {
   try {
-    const res = await fetch("data/live/baseball_current_season.json");
+    const res = await fetch("data/live/mlb_current_season.json");
     const data = await res.json();
 
     document.getElementById("week-subtitle").innerText = `Week ${data.week}`;
@@ -46,7 +46,11 @@ async function loadLiveDashboard() {
     initLuckQuadrant();
 
     renderPreviousMatchups(data.previous_matchups);
-    renderCurrentMatchups(data.current_matchups, data.true_standings, data.playoff_team_count);
+    renderCurrentMatchups(
+      data.current_matchups,
+      data.true_standings,
+      data.playoff_team_count,
+    );
   } catch (error) {
     console.error("Error loading live JSON data:", error);
     document.getElementById("week-subtitle").innerHTML =
@@ -340,8 +344,12 @@ function renderCurrentMatchups(matchups, standings, playoffCount = 6) {
       }
     }
 
-    const awayRankStr = rank2 ? `<span style="color:var(--text-muted); font-size:0.85rem; margin-right:4px;">#${rank2}</span>` : "";
-    const homeRankStr = rank1 ? `<span style="color:var(--text-muted); font-size:0.85rem; margin-right:4px;">#${rank1}</span>` : "";
+    const awayRankStr = rank2
+      ? `<span style="color:var(--text-muted); font-size:0.85rem; margin-right:4px;">#${rank2}</span>`
+      : "";
+    const homeRankStr = rank1
+      ? `<span style="color:var(--text-muted); font-size:0.85rem; margin-right:4px;">#${rank1}</span>`
+      : "";
 
     container.innerHTML += `
             <div class="score-card" style="display: flex; flex-direction: column; ${borderColor}">

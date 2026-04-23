@@ -2,8 +2,8 @@ name: Update Live Baseball Data
 
 on:
   schedule:
-    # Runs at 10:00 AM UTC (6:00 AM EST) every Tuesday morning
-    - cron: "0 10 * * 2"
+    # Runs at 10:00 AM UTC (6:00 AM EST) every Monday morning
+    - cron: "0 10 * * 1"
   workflow_dispatch: # Allows you to manually click "Run workflow" from the Actions tab
 
 jobs:
@@ -30,12 +30,12 @@ jobs:
         env:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           ESPN_S2: ${{ secrets.ESPN_S2 }}
-        run: python fetch_live_baseball.py
+        run: python scripts/live/fetch_live_baseball.py --sport MLB --year 2026 --league_id 114502
 
       - name: Commit and Push Data
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/live/
-          git commit -m "Automated Tuesday Live Data Update" || echo "No changes to commit"
+          git add public/data/live/
+          git commit -m "Automated Monday Live Data Update" || echo "No changes to commit"
           git push

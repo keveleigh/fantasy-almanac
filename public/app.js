@@ -48,8 +48,8 @@ themeToggle.addEventListener("click", () =>
 async function loadDashboard() {
   try {
     const [recordsRes, h2hRes] = await Promise.all([
-      fetch("records.json"),
-      fetch("head_to_head.json"),
+      fetch("data/compiled/records.json"),
+      fetch("data/compiled/head_to_head.json"),
     ]);
     const recordsData = await recordsRes.json();
     globalH2HData = await h2hRes.json();
