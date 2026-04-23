@@ -363,7 +363,7 @@
                 if (!cuts.highest_score || cuts.highest_score.score === 0) continue;
 
                 const icon = sportIcons[sport] || "🏆";
-                const espnNote = (sport === 'NBA' || sport === 'NFL') ? "<span style='font-size: 0.85rem; font-weight: normal; color: var(--text-muted);'>(Not including ESPN years)</span>" : "";
+                const espnNote = (sport === 'NBA') ? "<span style='font-size: 0.85rem; font-weight: normal; color: var(--text-muted);'>(Not including ESPN years)</span>" : "";
 
                 const sectionHtml = `
                     <div class="sport-section">
