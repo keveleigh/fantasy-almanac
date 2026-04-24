@@ -645,7 +645,6 @@ function renderHallOfFame(selectedSport = "All") {
             <td>${regStr}</td>
             <td>${postStr}</td>
             <td>${consStr}</td>
-            <td class="points-cell">${activeData.points.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</td>
         `;
     tbody.appendChild(tr);
   });
@@ -1162,7 +1161,7 @@ function openPlayerCard(managerName) {
             </div>
             <div class="score-card" style="padding: 0.5rem 1rem; border-top-color: #3498db; min-width: 100px;">
                 <h3 style="margin:0; font-size:0.8rem;">Total Points</h3>
-                <div style="font-size:1.2rem; font-weight:bold; color: var(--text-main);">${stat.overall.points.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</div>
+                <div style="font-size:1.2rem; font-weight:bold; color: var(--text-main);">${stat.overall.points.toLocaleString(undefined, { maximumFractionDigits: 2 })}</div>
             </div>
         </div>
     </div>
@@ -1193,6 +1192,9 @@ function openPlayerCard(managerName) {
             <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">${sp}</h3>
             <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
                 Record: <strong style="color: var(--text-main);">${sWins}-${sLosses}${sTies > 0 ? "-" + sTies : ""}</strong> (${sWinPct})
+            </div>
+            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                Points: <strong style="color: var(--text-main);">${(sData.points || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}</strong>
             </div>
             <div style="font-size: 0.9rem; color: var(--text-muted);">
                 🏆 <strong>${(sData.championships || []).length}</strong> | 
