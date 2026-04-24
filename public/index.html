@@ -72,12 +72,20 @@
               The best, worst, and weirdest single-game and season records.
             </p>
           </div>
-          <select
-            id="superlatives-manager-filter"
-            aria-label="Filter Superlatives by Manager"
-          >
-            <option value="League">League-Wide Records</option>
-          </select>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <select
+              id="superlatives-sport-filter"
+              aria-label="Filter Superlatives by Sport"
+            >
+              <option value="All">All Sports</option>
+            </select>
+            <select
+              id="superlatives-manager-filter"
+              aria-label="Filter Superlatives by Manager"
+            >
+              <option value="League">League-Wide Records</option>
+            </select>
+          </div>
         </div>
         <div id="superlatives-container">
           <p

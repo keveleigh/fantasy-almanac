@@ -77,7 +77,7 @@ async function loadDashboard() {
 }
 
 // --- Render Superlatives (The Trophy Cabinet) ---
-function renderSuperlatives(superlativesData) {
+function renderSuperlatives(superlativesData, selectedSport = "All") {
   const container = document.getElementById("superlatives-container");
   container.innerHTML = ""; // Clear loading message
   if (!superlativesData) return;
@@ -88,7 +88,17 @@ function renderSuperlatives(superlativesData) {
     return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
   });
 
-  for (const sport of sortedSports) {
+  const sportsToRender =
+    selectedSport === "All"
+      ? sortedSports
+      : sortedSports.filter((s) => s === selectedSport);
+  if (sportsToRender.length === 0) {
+    container.innerHTML =
+      '<p style="text-align:center; padding:2rem; color:var(--text-muted);">No records found for this selection.</p>';
+    return;
+  }
+
+  for (const sport of sportsToRender) {
     const superlative = superlativesData[sport];
     // Skip if no actual data was parsed for this sport yet
     if (!superlative.highest_score || superlative.highest_score.value === 0)
@@ -605,7 +615,10 @@ function getUniqueSports() {
 
 // --- Initialize Superlatives Filter ---
 function initSuperlativesFilter() {
-  const dropdown = document.getElementById("superlatives-manager-filter");
+  const managerDropdown = document.getElementById(
+    "superlatives-manager-filter",
+  );
+  const sportDropdown = document.getElementById("superlatives-sport-filter");
 
   // Populate managers
   const managers = globalStatsData.map((m) => m.manager).sort();
@@ -613,38 +626,51 @@ function initSuperlativesFilter() {
     const option = document.createElement("option");
     option.value = mgr;
     option.innerText = mgr;
-    dropdown.appendChild(option);
+    managerDropdown.appendChild(option);
   });
 
-  dropdown.addEventListener("change", (e) => {
-    const selected = e.target.value;
-    if (selected === "League") {
-      renderSuperlatives(globalLeagueSuperlatives);
-    } else {
-      const mgrData = globalStatsData.find((m) => m.manager === selected);
-      const mgrSuperlatives = mgrData ? mgrData.superlatives : null;
-      if (mgrSuperlatives) {
-        renderSuperlatives(mgrSuperlatives);
-      } else {
-        document.getElementById("superlatives-container").innerHTML =
-          '<p style="text-align:center; padding:2rem; color:var(--text-muted);">No records found for this manager.</p>';
-      }
-    }
+  // Populate sports
+  const uniqueSports = getUniqueSports();
+  uniqueSports.forEach((sport) => {
+    const option = document.createElement("option");
+    option.value = sport;
+    option.innerText = sport;
+    sportDropdown.appendChild(option);
   });
+
+  const updateFilters = () => {
+    const selectedManager = managerDropdown.value;
+    const selectedSport = sportDropdown.value;
+
+    let dataToRender = globalLeagueSuperlatives;
+    if (selectedManager !== "League") {
+      const mgrData = globalStatsData.find(
+        (m) => m.manager === selectedManager,
+      );
+      dataToRender = mgrData ? mgrData.superlatives : null;
+    }
+
+    if (dataToRender) {
+      renderSuperlatives(dataToRender, selectedSport);
+    } else {
+      document.getElementById("superlatives-container").innerHTML =
+        '<p style="text-align:center; padding:2rem; color:var(--text-muted);">No records found for this selection.</p>';
+    }
+  };
+
+  managerDropdown.addEventListener("change", updateFilters);
+  sportDropdown.addEventListener("change", updateFilters);
 }
 
-// --- Initialize Hall of Fame ---
 function initHallOfFame() {
   const hofDropdown = document.getElementById("hof-sport-filter");
   const uniqueSports = getUniqueSports();
-
   uniqueSports.forEach((sport) => {
     const option = document.createElement("option");
     option.value = sport;
     option.innerText = sport;
     hofDropdown.appendChild(option);
   });
-
   hofDropdown.addEventListener("change", (e) =>
     renderHallOfFame(e.target.value),
   );
