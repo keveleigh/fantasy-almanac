@@ -197,12 +197,12 @@ function renderLuckQuadrant() {
         if (params.componentType === "markLine") {
           return `<strong>${params.name}</strong>: ${params.value}`;
         }
-        return `<strong>${params.data.name}</strong><br/>PF: ${params.value[1]}<br/>PA: ${params.value[0]}`;
+        return `<strong>${params.data.name}</strong><br/>Avg PF: ${params.value[1]}<br/>Avg PA: ${params.value[0]}`;
       },
     },
     grid: { left: "10%", right: "10%", bottom: "10%", top: "10%" },
     xAxis: {
-      name: "Points Against (PA)",
+      name: "Avg Points Against (PA)",
       nameLocation: "middle",
       nameGap: 30,
       type: "value",
@@ -212,7 +212,7 @@ function renderLuckQuadrant() {
       splitLine: { lineStyle: { type: "dashed", color: splitLineColor } },
     },
     yAxis: {
-      name: "Points For (PF)",
+      name: "Avg Points For (PF)",
       nameLocation: "middle",
       nameGap: 40,
       type: "value",

@@ -134,8 +134,10 @@ def compile_live_stats():
         x["true_win_pct"], x["pf"]), reverse=True)
 
     # 3. Format Luck Quadrant
-    luck_quadrant = [{"team": data["name"], "pf": round(
-        data["pf"], 2), "pa": round(data["pa"], 2)} for data in teams_data.values()]
+    luck_quadrant = [{"team": data["name"], 
+                      "pf": round(data["pf"] / completed_weeks, 2) if completed_weeks > 0 else 0.0, 
+                      "pa": round(data["pa"] / completed_weeks, 2) if completed_weeks > 0 else 0.0} 
+                     for data in teams_data.values()]
 
     # 4. Matchup Center (Last Week & This Week)
     previous_matchups = []
