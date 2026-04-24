@@ -27,8 +27,8 @@ body.dark-theme {
 
 .theme-toggle {
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  top: 2rem;
+  right: max(2rem, calc(50vw - 600px));
   z-index: 1000;
   background: var(--surface);
   border: 1px solid var(--divider);
@@ -38,12 +38,30 @@ body.dark-theme {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease,
+    top 0.3s ease;
   width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Smoothly transition positional changes on smaller screens, but disable 'right' transition on desktop to prevent calc() lag */
+@media (max-width: 1200px) {
+  .theme-toggle {
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease,
+      border-color 0.3s ease,
+      transform 0.2s ease,
+      top 0.3s ease,
+      right 0.3s ease;
+  }
 }
 
 @media (hover: hover) {
@@ -110,6 +128,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: font-size 0.3s ease;
 }
 
 .scores-grid {
@@ -486,6 +505,10 @@ select {
   body {
     padding: 0.5rem;
   }
+  .theme-toggle {
+    top: 0.5rem;
+    right: max(0.5rem, calc(50vw - 600px));
+  }
   .container {
     gap: 1rem;
   }
@@ -519,7 +542,14 @@ select {
   background-repeat: no-repeat;
   background-position: right 8px center;
   padding-right: 32px !important;
-  transition: all 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.2s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 select:focus {
   box-shadow: 0 0 0 2px rgba(144, 202, 249, 0.3);
@@ -556,8 +586,16 @@ select:focus {
   padding: 8px 16px;
   border-radius: 20px;
   background: var(--surface);
-  display: inline-block;
-  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 @media (hover: hover) {
   .nav-button:hover {
@@ -573,19 +611,22 @@ body.dark-theme .nav-button {
 body,
 .card,
 th,
-td {
+td,
+.container {
   transition:
     background-color 0.3s ease,
     color 0.3s ease,
-    border-color 0.3s ease;
+    border-color 0.3s ease,
+    padding 0.3s ease,
+    gap 0.3s ease;
 }
 
 tr,
 .score-card {
   transition:
-    background-color 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease,
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
     box-shadow 0.2s ease,
     transform 0.2s ease;
 }
@@ -650,7 +691,9 @@ body.dark-theme ::-webkit-scrollbar-thumb:hover {
   position: relative;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   transform: translateY(20px);
-  transition: transform 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    padding 0.3s ease;
 }
 
 .modal-overlay.show .modal-content {
@@ -665,7 +708,10 @@ body.dark-theme ::-webkit-scrollbar-thumb:hover {
   color: var(--text-muted);
   cursor: pointer;
   line-height: 1;
-  transition: color 0.2s ease;
+  transition:
+    color 0.3s ease,
+    top 0.3s ease,
+    right 0.3s ease;
 }
 
 @media (hover: hover) {
@@ -687,7 +733,7 @@ body.dark-theme ::-webkit-scrollbar-thumb:hover {
 .manager-name-link {
   color: var(--primary);
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
 }
 @media (hover: hover) {
   .manager-name-link:hover {
