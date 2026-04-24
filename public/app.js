@@ -561,7 +561,8 @@ function renderHallOfFame(selectedSport = "All") {
               : count === 4
                 ? "Grand Slam"
                 : "Multi-Crown";
-        reigningText += `<span class="reigning-badge undisputed" title="Won ${yearSports[y].join(", ")} in ${y}">${emojis} ${crownName} ('${String(y).slice(-2)})</span>`;
+        const isHistorical = globalMaxYear - parseInt(y) >= 2;
+        reigningText += `<span class="reigning-badge undisputed${isHistorical ? " historical" : ""}" title="Won ${yearSports[y].join(", ")} in ${y}">${emojis} ${crownName} ('${String(y).slice(-2)})</span>`;
       });
     }
 
@@ -574,7 +575,8 @@ function renderHallOfFame(selectedSport = "All") {
 
       (data.undefeated_seasons || []).forEach((year) => {
         const iconStr = sportIcons[sp] || sp;
-        reigningText += `<span class="reigning-badge perfect" title="Undefeated Regular Season in ${year}">${iconStr} Perfect Reg. Season ('${String(year).slice(-2)})</span>`;
+        const isHistorical = globalMaxYear - parseInt(year) >= 2;
+        reigningText += `<span class="reigning-badge perfect${isHistorical ? " historical" : ""}" title="Undefeated Regular Season in ${year}">${iconStr} Perfect Reg. Season ('${String(year).slice(-2)})</span>`;
       });
 
       if (!data.championships || data.championships.length < 2) return;
