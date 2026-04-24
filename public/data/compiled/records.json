@@ -201,6 +201,42 @@
                         "platform": "ESPN"
                     }
                 ]
+            },
+            "longest_playoff_streak": {
+                "value": 8,
+                "holders": [
+                    {
+                        "manager": "Malachi Morgan",
+                        "start_y": 2009,
+                        "end_y": 2016
+                    },
+                    {
+                        "manager": "Jordan Naegele",
+                        "start_y": 2016,
+                        "end_y": 2023
+                    }
+                ]
+            },
+            "longest_playoff_drought": {
+                "value": 5,
+                "holders": [
+                    {
+                        "manager": "Andrew Mitchell",
+                        "start_y": 2015,
+                        "end_y": 2019
+                    }
+                ]
+            },
+            "best_team_no_champ": {
+                "value": 1.0,
+                "holders": [
+                    {
+                        "manager": "Adam Carl",
+                        "year": 2014,
+                        "record": "13-0",
+                        "platform": "ESPN"
+                    }
+                ]
             }
         },
         "NBA": {
@@ -392,6 +428,42 @@
                         "platform": "Fleaflicker"
                     }
                 ]
+            },
+            "longest_playoff_streak": {
+                "value": 5,
+                "holders": [
+                    {
+                        "manager": "Malachi Morgan",
+                        "start_y": 2009,
+                        "end_y": 2013
+                    },
+                    {
+                        "manager": "Jordan Naegele",
+                        "start_y": 2009,
+                        "end_y": 2013
+                    }
+                ]
+            },
+            "longest_playoff_drought": {
+                "value": 3,
+                "holders": [
+                    {
+                        "manager": "Eric Carl",
+                        "start_y": 2010,
+                        "end_y": 2012
+                    }
+                ]
+            },
+            "best_team_no_champ": {
+                "value": 0.9285714285714286,
+                "holders": [
+                    {
+                        "manager": "Kurtis Eveleigh",
+                        "year": 2011,
+                        "record": "13-1",
+                        "platform": "Fleaflicker"
+                    }
+                ]
             }
         },
         "MLB": {
@@ -572,6 +644,43 @@
                         "manager": "Jesten Mann",
                         "year": 2011,
                         "platform": "Fleaflicker"
+                    }
+                ]
+            },
+            "longest_playoff_streak": {
+                "value": 15,
+                "holders": [
+                    {
+                        "manager": "Malachi Morgan",
+                        "start_y": 2011,
+                        "end_y": 2025
+                    }
+                ]
+            },
+            "longest_playoff_drought": {
+                "value": 7,
+                "holders": [
+                    {
+                        "manager": "Eric Carl",
+                        "start_y": 2010,
+                        "end_y": 2016
+                    }
+                ]
+            },
+            "best_team_no_champ": {
+                "value": 0.8571428571428571,
+                "holders": [
+                    {
+                        "manager": "Daniel Bailey",
+                        "year": 2020,
+                        "record": "6-1",
+                        "platform": "ESPN"
+                    },
+                    {
+                        "manager": "Sonya Morgan",
+                        "year": 2020,
+                        "record": "6-1",
+                        "platform": "ESPN"
                     }
                 ]
             }
@@ -913,6 +1022,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "start_y": 2009,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8095238095238095,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "year": 2012,
+                                "record": "17-4",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -1102,6 +1236,47 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 8,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "start_y": 2009,
+                                "end_y": 2016
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "start_y": 2017,
+                                "end_y": 2017
+                            },
+                            {
+                                "manager": "Malachi Morgan",
+                                "start_y": 2021,
+                                "end_y": 2021
+                            },
+                            {
+                                "manager": "Malachi Morgan",
+                                "start_y": 2023,
+                                "end_y": 2023
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.9230769230769231,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "year": 2012,
+                                "record": "12-1",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "MLB": {
@@ -1282,6 +1457,37 @@
                                 "manager": "Malachi Morgan",
                                 "year": 2014,
                                 "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 15,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "start_y": 2011,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "start_y": 2010,
+                                "end_y": 2010
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8421052631578947,
+                        "holders": [
+                            {
+                                "manager": "Malachi Morgan",
+                                "year": 2017,
+                                "record": "16-3",
+                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -1622,6 +1828,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2009,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.7619047619047619,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2013,
+                                "record": "16-5",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -1815,6 +2046,42 @@
                             {
                                 "manager": "Jordan Naegele",
                                 "year": 2013,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 8,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2016,
+                                "end_y": 2023
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2014,
+                                "end_y": 2015
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2024,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6923076923076923,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2013,
+                                "record": "9-4",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -2032,6 +2299,42 @@
                             {
                                 "manager": "Jordan Naegele",
                                 "year": 2011,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 12,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2011,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2023,
+                                "end_y": 2023
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2025,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8181818181818182,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2011,
+                                "record": "18-4",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -2366,6 +2669,37 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2011,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2010,
+                                "end_y": 2010
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.7142857142857143,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "year": 2013,
+                                "record": "15-6",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -2555,6 +2889,37 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2021,
+                                "end_y": 2024
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2017,
+                                "end_y": 2020
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8571428571428571,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "year": 2023,
+                                "record": "12-2",
+                                "platform": "Sleeper"
+                            }
+                        ]
                     }
                 },
                 "MLB": {
@@ -2735,6 +3100,47 @@
                                 "manager": "Asa Morgan",
                                 "year": 2011,
                                 "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2021,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            },
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2015,
+                                "end_y": 2015
+                            },
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2020,
+                                "end_y": 2020
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.7368421052631579,
+                        "holders": [
+                            {
+                                "manager": "Asa Morgan",
+                                "year": 2017,
+                                "record": "14-5",
+                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -3104,6 +3510,37 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "start_y": 2009,
+                                "end_y": 2011
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "start_y": 2012,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.9285714285714286,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "year": 2011,
+                                "record": "13-1",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -3293,6 +3730,37 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 7,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "start_y": 2017,
+                                "end_y": 2023
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "start_y": 2013,
+                                "end_y": 2014
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6923076923076923,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "year": 2010,
+                                "record": "9-4",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "MLB": {
@@ -3473,6 +3941,37 @@
                                 "manager": "Kurtis Eveleigh",
                                 "year": 2011,
                                 "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 9,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "start_y": 2010,
+                                "end_y": 2018
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "start_y": 2023,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8421052631578947,
+                        "holders": [
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "year": 2017,
+                                "record": "16-3",
+                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -3804,6 +4303,37 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "start_y": 2011,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "start_y": 2009,
+                                "end_y": 2010
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5238095238095238,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "year": 2012,
+                                "record": "11-10",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -3983,6 +4513,42 @@
                             {
                                 "manager": "Adam Carl",
                                 "year": 2014,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "start_y": 2013,
+                                "end_y": 2016
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "start_y": 2017,
+                                "end_y": 2020
+                            },
+                            {
+                                "manager": "Adam Carl",
+                                "start_y": 2022,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 1.0,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "year": 2014,
+                                "record": "13-0",
                                 "platform": "ESPN"
                             }
                         ]
@@ -4182,6 +4748,43 @@
                                 "manager": "Adam Carl",
                                 "year": 2011,
                                 "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 7,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "start_y": 2010,
+                                "end_y": 2016
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "start_y": 2020,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6666666666666666,
+                        "holders": [
+                            {
+                                "manager": "Adam Carl",
+                                "year": 2014,
+                                "record": "14-7",
+                                "platform": "Fleaflicker"
+                            },
+                            {
+                                "manager": "Adam Carl",
+                                "year": 2019,
+                                "record": "12-6",
+                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -4520,6 +5123,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "start_y": 2010,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8571428571428571,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "year": 2013,
+                                "record": "18-3",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "MLB": {
@@ -4699,6 +5327,47 @@
                             {
                                 "manager": "Andrew Mitchell",
                                 "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "start_y": 2011,
+                                "end_y": 2012
+                            },
+                            {
+                                "manager": "Andrew Mitchell",
+                                "start_y": 2014,
+                                "end_y": 2015
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "start_y": 2018,
+                                "end_y": 2019
+                            },
+                            {
+                                "manager": "Andrew Mitchell",
+                                "start_y": 2021,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6666666666666666,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "year": 2014,
+                                "record": "14-7",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -4889,6 +5558,37 @@
                                 "manager": "Andrew Mitchell",
                                 "year": 2012,
                                 "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "start_y": 2012,
+                                "end_y": 2014
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "start_y": 2015,
+                                "end_y": 2019
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5714285714285714,
+                        "holders": [
+                            {
+                                "manager": "Andrew Mitchell",
+                                "year": 2021,
+                                "record": "8-6",
+                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -5132,6 +5832,31 @@
                             {
                                 "manager": "Max Shapiro",
                                 "year": 2024,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Max Shapiro",
+                                "start_y": 2022,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6666666666666666,
+                        "holders": [
+                            {
+                                "manager": "Max Shapiro",
+                                "year": 2022,
+                                "record": "12-6",
                                 "platform": "ESPN"
                             }
                         ]
@@ -5428,6 +6153,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "start_y": 2010,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8571428571428571,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "year": 2010,
+                                "record": "18-3",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "MLB": {
@@ -5610,6 +6360,37 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "start_y": 2011,
+                                "end_y": 2014
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "start_y": 2015,
+                                "end_y": 2017
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8181818181818182,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "year": 2011,
+                                "record": "18-4",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -5789,6 +6570,47 @@
                             {
                                 "manager": "Jesten Mann",
                                 "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "start_y": 2011,
+                                "end_y": 2013
+                            },
+                            {
+                                "manager": "Jesten Mann",
+                                "start_y": 2018,
+                                "end_y": 2020
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "start_y": 2014,
+                                "end_y": 2014
+                            },
+                            {
+                                "manager": "Jesten Mann",
+                                "start_y": 2017,
+                                "end_y": 2017
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.9230769230769231,
+                        "holders": [
+                            {
+                                "manager": "Jesten Mann",
+                                "year": 2012,
+                                "record": "12-1",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -6070,6 +6892,47 @@
                                 "manager": "Sonya Morgan",
                                 "year": 2011,
                                 "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Sonya Morgan",
+                                "start_y": 2010,
+                                "end_y": 2011
+                            },
+                            {
+                                "manager": "Sonya Morgan",
+                                "start_y": 2015,
+                                "end_y": 2016
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Sonya Morgan",
+                                "start_y": 2021,
+                                "end_y": 2022
+                            },
+                            {
+                                "manager": "Sonya Morgan",
+                                "start_y": 2024,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8571428571428571,
+                        "holders": [
+                            {
+                                "manager": "Sonya Morgan",
+                                "year": 2020,
+                                "record": "6-1",
+                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -6376,6 +7239,43 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "start_y": 2017,
+                                "end_y": 2021
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "start_y": 2009,
+                                "end_y": 2010
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6923076923076923,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "year": 2015,
+                                "record": "9-4",
+                                "platform": "ESPN"
+                            },
+                            {
+                                "manager": "Rishi Gopinath",
+                                "year": 2019,
+                                "record": "9-4",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 },
                 "NBA": {
@@ -6562,6 +7462,37 @@
                             {
                                 "manager": "Rishi Gopinath",
                                 "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "start_y": 2013,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.47619047619047616,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "year": 2012,
+                                "record": "10-11",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -6768,6 +7699,31 @@
                             {
                                 "manager": "Rishi Gopinath",
                                 "year": 2013,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "start_y": 2013,
+                                "end_y": 2015
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.3333333333333333,
+                        "holders": [
+                            {
+                                "manager": "Rishi Gopinath",
+                                "year": 2013,
+                                "record": "7-14",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -7036,6 +7992,57 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 7,
+                        "holders": [
+                            {
+                                "manager": "Kevin Morgan",
+                                "start_y": 2014,
+                                "end_y": 2020
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Kevin Morgan",
+                                "start_y": 2010,
+                                "end_y": 2010
+                            },
+                            {
+                                "manager": "Kevin Morgan",
+                                "start_y": 2013,
+                                "end_y": 2013
+                            },
+                            {
+                                "manager": "Kevin Morgan",
+                                "start_y": 2021,
+                                "end_y": 2021
+                            },
+                            {
+                                "manager": "Kevin Morgan",
+                                "start_y": 2023,
+                                "end_y": 2023
+                            },
+                            {
+                                "manager": "Kevin Morgan",
+                                "start_y": 2025,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8461538461538461,
+                        "holders": [
+                            {
+                                "manager": "Kevin Morgan",
+                                "year": 2016,
+                                "record": "11-2",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 }
             }
@@ -7279,6 +8286,31 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Thomas Ramey",
+                                "start_y": 2025,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.675,
+                        "holders": [
+                            {
+                                "manager": "Thomas Ramey",
+                                "year": 2025,
+                                "record": "13-6-1",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -7455,6 +8487,24 @@
                                 "platform": "Sleeper"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Thomas Ramey",
+                                "start_y": 2025,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.0,
+                        "holders": []
                     }
                 }
             }
@@ -7756,6 +8806,42 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "start_y": 2009,
+                                "end_y": 2009
+                            },
+                            {
+                                "manager": "Eric Carl",
+                                "start_y": 2013,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "start_y": 2010,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5238095238095238,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "year": 2013,
+                                "record": "11-10",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -7935,6 +9021,37 @@
                             {
                                 "manager": "Eric Carl",
                                 "year": 2017,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "start_y": 2011,
+                                "end_y": 2014
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "start_y": 2018,
+                                "end_y": 2021
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6923076923076923,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "year": 2017,
+                                "record": "9-4",
                                 "platform": "ESPN"
                             }
                         ]
@@ -8136,6 +9253,37 @@
                                 "manager": "Eric Carl",
                                 "year": 2012,
                                 "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "start_y": 2017,
+                                "end_y": 2017
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 7,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "start_y": 2010,
+                                "end_y": 2016
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5263157894736842,
+                        "holders": [
+                            {
+                                "manager": "Eric Carl",
+                                "year": 2017,
+                                "record": "10-9",
+                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -8427,6 +9575,53 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "start_y": 2010,
+                                "end_y": 2010
+                            },
+                            {
+                                "manager": "Dominic Moore",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "start_y": 2011,
+                                "end_y": 2011
+                            },
+                            {
+                                "manager": "Dominic Moore",
+                                "start_y": 2013,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.42857142857142855,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "year": 2011,
+                                "record": "6-8",
+                                "platform": "Fleaflicker"
+                            },
+                            {
+                                "manager": "Dominic Moore",
+                                "year": 2012,
+                                "record": "9-12",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "MLB": {
@@ -8624,6 +9819,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 6,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "start_y": 2011,
+                                "end_y": 2016
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.4090909090909091,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "year": 2011,
+                                "record": "9-13",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -8803,6 +10023,37 @@
                             {
                                 "manager": "Dominic Moore",
                                 "year": 2018,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "start_y": 2016,
+                                "end_y": 2019
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "start_y": 2013,
+                                "end_y": 2015
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6923076923076923,
+                        "holders": [
+                            {
+                                "manager": "Dominic Moore",
+                                "year": 2018,
+                                "record": "9-4",
                                 "platform": "ESPN"
                             }
                         ]
@@ -9069,6 +10320,37 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Daniel Bailey",
+                                "start_y": 2019,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Daniel Bailey",
+                                "start_y": 2023,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8571428571428571,
+                        "holders": [
+                            {
+                                "manager": "Daniel Bailey",
+                                "year": 2020,
+                                "record": "6-1",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -9249,6 +10531,37 @@
                                 "manager": "Daniel Bailey",
                                 "year": 2019,
                                 "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Daniel Bailey",
+                                "start_y": 2023,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Daniel Bailey",
+                                "start_y": 2019,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6428571428571429,
+                        "holders": [
+                            {
+                                "manager": "Daniel Bailey",
+                                "year": 2025,
+                                "record": "9-5",
+                                "platform": "Sleeper"
                             }
                         ]
                     }
@@ -9513,6 +10826,37 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Austin Baldwin",
+                                "start_y": 2015,
+                                "end_y": 2016
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Austin Baldwin",
+                                "start_y": 2017,
+                                "end_y": 2018
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.7368421052631579,
+                        "holders": [
+                            {
+                                "manager": "Austin Baldwin",
+                                "year": 2016,
+                                "record": "14-5",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -9699,6 +11043,43 @@
                             {
                                 "manager": "Austin Baldwin",
                                 "year": 2022,
+                                "platform": "Sleeper"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Austin Baldwin",
+                                "start_y": 2022,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Austin Baldwin",
+                                "start_y": 2020,
+                                "end_y": 2021
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5714285714285714,
+                        "holders": [
+                            {
+                                "manager": "Austin Baldwin",
+                                "year": 2023,
+                                "record": "8-6",
+                                "platform": "Sleeper"
+                            },
+                            {
+                                "manager": "Austin Baldwin",
+                                "year": 2025,
+                                "record": "8-6",
                                 "platform": "Sleeper"
                             }
                         ]
@@ -9981,6 +11362,37 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "start_y": 2009,
+                                "end_y": 2011
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "start_y": 2012,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5238095238095238,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "year": 2010,
+                                "record": "11-10",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -10160,6 +11572,53 @@
                             {
                                 "manager": "Evan Farley",
                                 "year": 2010,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "start_y": 2012,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "start_y": 2009,
+                                "end_y": 2009
+                            },
+                            {
+                                "manager": "Evan Farley",
+                                "start_y": 2011,
+                                "end_y": 2011
+                            },
+                            {
+                                "manager": "Evan Farley",
+                                "start_y": 2014,
+                                "end_y": 2014
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6153846153846154,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "year": 2010,
+                                "record": "8-5",
+                                "platform": "Fleaflicker"
+                            },
+                            {
+                                "manager": "Evan Farley",
+                                "year": 2012,
+                                "record": "8-5",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -10343,6 +11802,31 @@
                             {
                                 "manager": "Evan Farley",
                                 "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5909090909090909,
+                        "holders": [
+                            {
+                                "manager": "Evan Farley",
+                                "year": 2012,
+                                "record": "13-9",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -10595,6 +12079,43 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Josh Shapiro",
+                                "start_y": 2023,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Josh Shapiro",
+                                "start_y": 2022,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.6,
+                        "holders": [
+                            {
+                                "manager": "Josh Shapiro",
+                                "year": 2024,
+                                "record": "12-8",
+                                "platform": "ESPN"
+                            },
+                            {
+                                "manager": "Josh Shapiro",
+                                "year": 2025,
+                                "record": "11-7-2",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 }
             }
@@ -10831,6 +12352,42 @@
                             {
                                 "manager": "Marshawn Lunch",
                                 "year": 2024,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Marshawn Lunch",
+                                "start_y": 2019,
+                                "end_y": 2019
+                            },
+                            {
+                                "manager": "Marshawn Lunch",
+                                "start_y": 2024,
+                                "end_y": 2024
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Marshawn Lunch",
+                                "start_y": 2020,
+                                "end_y": 2023
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.65,
+                        "holders": [
+                            {
+                                "manager": "Marshawn Lunch",
+                                "year": 2024,
+                                "record": "13-7",
                                 "platform": "ESPN"
                             }
                         ]
@@ -11097,6 +12654,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Tre Wells",
+                                "start_y": 2010,
+                                "end_y": 2011
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.35714285714285715,
+                        "holders": [
+                            {
+                                "manager": "Tre Wells",
+                                "year": 2011,
+                                "record": "5-9",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "MLB": {
@@ -11286,6 +12868,37 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Tre Wells",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Tre Wells",
+                                "start_y": 2011,
+                                "end_y": 2011
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5909090909090909,
+                        "holders": [
+                            {
+                                "manager": "Tre Wells",
+                                "year": 2012,
+                                "record": "13-9",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 },
                 "NFL": {
@@ -11455,6 +13068,31 @@
                             {
                                 "manager": "Tre Wells",
                                 "year": 2013,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Tre Wells",
+                                "start_y": 2013,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.46153846153846156,
+                        "holders": [
+                            {
+                                "manager": "Tre Wells",
+                                "year": 2013,
+                                "record": "6-7",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -11691,6 +13329,31 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "start_y": 2021,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.42105263157894735,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "year": 2016,
+                                "record": "8-11",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 }
             }
@@ -11919,6 +13582,42 @@
                             {
                                 "manager": "Kristina Morgan",
                                 "year": 2024,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Kristina Morgan",
+                                "start_y": 2023,
+                                "end_y": 2023
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Kristina Morgan",
+                                "start_y": 2021,
+                                "end_y": 2021
+                            },
+                            {
+                                "manager": "Kristina Morgan",
+                                "start_y": 2024,
+                                "end_y": 2024
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.631578947368421,
+                        "holders": [
+                            {
+                                "manager": "Kristina Morgan",
+                                "year": 2023,
+                                "record": "12-7",
                                 "platform": "ESPN"
                             }
                         ]
@@ -12151,6 +13850,37 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Bill Berry",
+                                "start_y": 2017,
+                                "end_y": 2017
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Bill Berry",
+                                "start_y": 2018,
+                                "end_y": 2018
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.7368421052631579,
+                        "holders": [
+                            {
+                                "manager": "Bill Berry",
+                                "year": 2017,
+                                "record": "14-5",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 }
             }
@@ -12365,6 +14095,31 @@
                             {
                                 "manager": "Richie_N",
                                 "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Richie_N",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.8095238095238095,
+                        "holders": [
+                            {
+                                "manager": "Richie_N",
+                                "year": 2012,
+                                "record": "17-4",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -12598,6 +14353,31 @@
                                 "platform": "ESPN"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Brandon Cope",
+                                "start_y": 2023,
+                                "end_y": 2024
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.4,
+                        "holders": [
+                            {
+                                "manager": "Brandon Cope",
+                                "year": 2024,
+                                "record": "8-12",
+                                "platform": "ESPN"
+                            }
+                        ]
                     }
                 }
             }
@@ -12819,6 +14599,31 @@
                             {
                                 "manager": "Brad Dodson",
                                 "year": 2025,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Brad Dodson",
+                                "start_y": 2025,
+                                "end_y": 2025
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.75,
+                        "holders": [
+                            {
+                                "manager": "Brad Dodson",
+                                "year": 2025,
+                                "record": "15-5",
                                 "platform": "ESPN"
                             }
                         ]
@@ -13058,6 +14863,37 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "VinceYoungTen",
+                                "start_y": 2010,
+                                "end_y": 2010
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "VinceYoungTen",
+                                "start_y": 2009,
+                                "end_y": 2009
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.5384615384615384,
+                        "holders": [
+                            {
+                                "manager": "VinceYoungTen",
+                                "year": 2010,
+                                "record": "7-6",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 }
             }
@@ -13272,6 +15108,31 @@
                             {
                                 "manager": "H-twn_Allstars",
                                 "year": 2010,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "H-twn_Allstars",
+                                "start_y": 2010,
+                                "end_y": 2010
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.42857142857142855,
+                        "holders": [
+                            {
+                                "manager": "H-twn_Allstars",
+                                "year": 2010,
+                                "record": "9-12",
                                 "platform": "Fleaflicker"
                             }
                         ]
@@ -13503,6 +15364,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "ATL Red sox",
+                                "start_y": 2011,
+                                "end_y": 2011
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.3181818181818182,
+                        "holders": [
+                            {
+                                "manager": "ATL Red sox",
+                                "year": 2011,
+                                "record": "7-15",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 }
             }
@@ -13721,6 +15607,31 @@
                             {
                                 "manager": "Joe Bernstein",
                                 "year": 2017,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Joe Bernstein",
+                                "start_y": 2017,
+                                "end_y": 2017
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.3684210526315789,
+                        "holders": [
+                            {
+                                "manager": "Joe Bernstein",
+                                "year": 2017,
+                                "record": "7-12",
                                 "platform": "ESPN"
                             }
                         ]
@@ -13945,6 +15856,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Robert Mann",
+                                "start_y": 2013,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.46153846153846156,
+                        "holders": [
+                            {
+                                "manager": "Robert Mann",
+                                "year": 2013,
+                                "record": "6-7",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 }
             }
@@ -14159,6 +16095,31 @@
                             {
                                 "manager": "Matt Jacobson",
                                 "year": 2017,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Matt Jacobson",
+                                "start_y": 2017,
+                                "end_y": 2017
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.2631578947368421,
+                        "holders": [
+                            {
+                                "manager": "Matt Jacobson",
+                                "year": 2017,
+                                "record": "5-14",
                                 "platform": "ESPN"
                             }
                         ]
@@ -14404,6 +16365,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Jillyyybean",
+                                "start_y": 2011,
+                                "end_y": 2011
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.18181818181818182,
+                        "holders": [
+                            {
+                                "manager": "Jillyyybean",
+                                "year": 2011,
+                                "record": "4-18",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 }
             }
@@ -14628,6 +16614,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Michael Hong",
+                                "start_y": 2009,
+                                "end_y": 2009
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.09523809523809523,
+                        "holders": [
+                            {
+                                "manager": "Michael Hong",
+                                "year": 2009,
+                                "record": "2-19",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 }
             }
@@ -14848,6 +16859,31 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Korey Bryant",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.15384615384615385,
+                        "holders": [
+                            {
+                                "manager": "Korey Bryant",
+                                "year": 2012,
+                                "record": "2-11",
+                                "platform": "Fleaflicker"
+                            }
+                        ]
                     }
                 }
             }
@@ -15024,6 +17060,24 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Josh Cullen",
+                                "start_y": 2011,
+                                "end_y": 2011
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.0,
+                        "holders": []
                     }
                 }
             }
@@ -15200,6 +17254,24 @@
                                 "platform": "Fleaflicker"
                             }
                         ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 0,
+                        "holders": []
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "nytoatl",
+                                "start_y": 2012,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "best_team_no_champ": {
+                        "value": 0.0,
+                        "holders": []
                     }
                 }
             }

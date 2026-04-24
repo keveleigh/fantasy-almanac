@@ -141,7 +141,7 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
       } else {
         let fallbackMsg = "No records recorded.";
         if (type.includes("playoff")) fallbackMsg = "Never made the playoffs.";
-        if (type.includes("miss_playoff"))
+        if (type.includes("miss_playoff") || type.includes("drought"))
           fallbackMsg = "Never missed the playoffs.";
         holdersHtml = `<p class="meta">${fallbackMsg}</p>`;
       }
@@ -160,38 +160,6 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
                 <div class="sport-header">${icon} ${sport} Records (Regular Season) ${espnNote}</div>
                 <div class="scores-grid">
           ${buildCard(
-            "highest_score",
-            "🌋 All-Time High",
-            "Highest points scored in a single game",
-            (v) => `${v.toLocaleString()} pts`,
-            (h, v) =>
-              `Against ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
-          )}
-          ${buildCard(
-            "lowest_score",
-            "🪫 All-Time Low",
-            "Lowest points scored in a single game",
-            (v) => `${v.toLocaleString()} pts`,
-            (h, v) =>
-              `Against ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
-          )}
-          ${buildCard(
-            "longest_win_streak",
-            "🔥 On Fire",
-            "Most consecutive regular season wins",
-            (v) => `${v} Straight Wins`,
-            (h) =>
-              `Regular Season<br>Wk ${h.start_p}, ${h.start_y} to Wk ${h.end_p}, ${h.end_y}`,
-          )}
-          ${buildCard(
-            "longest_loss_streak",
-            "🧊 Ice Cold",
-            "Most consecutive regular season losses",
-            (v) => `${v} Straight Losses`,
-            (h) =>
-              `Regular Season<br>Wk ${h.start_p}, ${h.start_y} to Wk ${h.end_p}, ${h.end_y}`,
-          )}
-          ${buildCard(
             "highest_ppg",
             "🚂 The Juggernaut",
             "Highest Points Per Game For in a single season",
@@ -208,20 +176,56 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
               `Lowest scoring offense | ${h.year} | ${getPlatformIcon(h.platform)}`,
           )}
           ${buildCard(
-            "highest_ppga",
-            "🌩️ Schedule Victim",
-            "Highest Points Per Game Against in a single season",
-            (v) => `${v.toFixed(1)} PA Avg`,
-            (h) =>
-              `Hardest schedule | ${h.year} | ${getPlatformIcon(h.platform)}`,
+            "highest_score",
+            "🌋 All-Time High",
+            "Highest points scored in a single game",
+            (v) => `${v.toLocaleString()} pts`,
+            (h, v) =>
+              `Against ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
           )}
           ${buildCard(
-            "lowest_ppga",
-            "🐴 Golden Horseshoe",
-            "Lowest Points Per Game Against in a single season",
-            (v) => `${v.toFixed(1)} PA Avg`,
+            "lowest_score",
+            "🪫 All-Time Low",
+            "Lowest points scored in a single game",
+            (v) => `${v.toLocaleString()} pts`,
+            (h, v) =>
+              `Against ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "longest_playoff_streak",
+            "🏃‍♂️ The Marathon",
+            "Most consecutive seasons making the playoffs",
+            (v) => (v === 1 ? "1 Season" : `${v} Straight Seasons`),
             (h) =>
-              `Easiest schedule | ${h.year} | ${getPlatformIcon(h.platform)}`,
+              h.start_y === h.end_y
+                ? `Playoff appearance in ${h.start_y}`
+                : `Playoff appearances from ${h.start_y} to ${h.end_y}`,
+          )}
+          ${buildCard(
+            "longest_playoff_drought",
+            "🏜️ The Drought",
+            "Most consecutive seasons missing the playoffs",
+            (v) => (v === 1 ? "1 Season" : `${v} Straight Seasons`),
+            (h) =>
+              h.start_y === h.end_y
+                ? `Missed playoffs in ${h.start_y}`
+                : `Missed playoffs from ${h.start_y} to ${h.end_y}`,
+          )}
+          ${buildCard(
+            "longest_win_streak",
+            "🔥 On Fire",
+            "Most consecutive regular season wins",
+            (v) => `${v} Straight Wins`,
+            (h) =>
+              `Regular Season<br>Wk ${h.start_p}, ${h.start_y} to Wk ${h.end_p}, ${h.end_y}`,
+          )}
+          ${buildCard(
+            "longest_loss_streak",
+            "🧊 Ice Cold",
+            "Most consecutive regular season losses",
+            (v) => `${v} Straight Losses`,
+            (h) =>
+              `Regular Season<br>Wk ${h.start_p}, ${h.start_y} to Wk ${h.end_p}, ${h.end_y}`,
           )}
           ${buildCard(
             "highest_losing_score",
@@ -256,18 +260,12 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
               `Survived ${h.loser} (${h.winning_score} to ${h.losing_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
           )}
           ${buildCard(
-            "most_wins_under_median",
-            "🍀 The Luck Box",
-            "Most wins while scoring in the bottom half of the league",
-            (v) => `${v} Wins`,
-            (h) => `Career wins despite scoring<br>below the weekly median.`,
-          )}
-          ${buildCard(
-            "most_losses_over_median",
-            "🌧️ The Unlucky Box",
-            "Most career losses despite scoring in the top half of the league",
-            (v) => `${v} Losses`,
-            (h) => `Career losses despite scoring<br>above the weekly median.`,
+            "highest_miss_playoffs_ppg",
+            "🏹 Glass Cannon",
+            "Highest Points Per Game For without making the playoffs",
+            (v) => `${v.toFixed(1)} PF Avg`,
+            (h) =>
+              `Highest scoring offense to miss the playoffs | ${h.year} | ${getPlatformIcon(h.platform)}`,
           )}
           ${buildCard(
             "lowest_playoff_ppg",
@@ -278,12 +276,42 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
               `Lowest scoring offense to make the playoffs | ${h.year} | ${getPlatformIcon(h.platform)}`,
           )}
           ${buildCard(
-            "highest_miss_playoffs_ppg",
-            "🏹 Glass Cannon",
-            "Highest Points Per Game For without making the playoffs",
-            (v) => `${v.toFixed(1)} PF Avg`,
+            "highest_ppga",
+            "🌩️ Schedule Victim",
+            "Highest Points Per Game Against in a single season",
+            (v) => `${v.toFixed(1)} PA Avg`,
             (h) =>
-              `Highest scoring offense to miss the playoffs | ${h.year} | ${getPlatformIcon(h.platform)}`,
+              `Hardest schedule | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "lowest_ppga",
+            "🐴 Golden Horseshoe",
+            "Lowest Points Per Game Against in a single season",
+            (v) => `${v.toFixed(1)} PA Avg`,
+            (h) =>
+              `Easiest schedule | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "most_wins_under_median",
+            "🍀 Better Lucky Than Good",
+            "Most wins while scoring in the bottom half of the league",
+            (v) => `${v} Wins`,
+            (h) => `Career wins despite scoring<br>below the weekly median.`,
+          )}
+          ${buildCard(
+            "most_losses_over_median",
+            "🌧️ Bad Beats",
+            "Most career losses despite scoring in the top half of the league",
+            (v) => `${v} Losses`,
+            (h) => `Career losses despite scoring<br>above the weekly median.`,
+          )}
+          ${buildCard(
+            "best_team_no_champ",
+            "👑 The Best to Never Win",
+            "Highest regular season win percentage without winning the championship",
+            (v) => `${(v * 100).toFixed(1)}% Win Rate`,
+            (h) =>
+              `Went ${h.record} in ${h.year} | ${getPlatformIcon(h.platform)}`,
           )}
 
                 </div>

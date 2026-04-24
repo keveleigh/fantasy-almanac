@@ -165,6 +165,15 @@ body.dark-theme .score-card {
 .score-card.highest-miss-playoffs-ppg {
   border-top-color: #fd79a8;
 }
+.score-card.longest-playoff-streak {
+  border-top-color: #16a085;
+}
+.score-card.longest-playoff-drought {
+  border-top-color: #d35400;
+}
+.score-card.best-team-no-champ {
+  border-top-color: #d35400;
+}
 
 .score-card h3 {
   margin: 0 0 0.5rem 0;
