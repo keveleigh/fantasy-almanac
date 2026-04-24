@@ -82,11 +82,7 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
   container.innerHTML = ""; // Clear loading message
   if (!superlativesData) return;
 
-  const sortedSports = Object.keys(superlativesData).sort((a, b) => {
-    const idxA = sportOrder.indexOf(a);
-    const idxB = sportOrder.indexOf(b);
-    return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
-  });
+  const sortedSports = sortSports(Object.keys(superlativesData));
 
   const sportsToRender =
     selectedSport === "All"
@@ -561,11 +557,7 @@ function renderHallOfFame(selectedSport = "All") {
 
     const renderSports =
       safeSelectedSport === "All"
-        ? [...new Set(stat.sports_played)].sort((a, b) => {
-            const idxA = sportOrder.indexOf(a);
-            const idxB = sportOrder.indexOf(b);
-            return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
-          })
+        ? sortSports([...new Set(stat.sports_played)])
         : [safeSelectedSport];
 
     let hardwareHtmlLines = [];
@@ -622,9 +614,21 @@ function renderHallOfFame(selectedSport = "All") {
     // Reigning Champ Badge Logic (Streaks & Stale Tracking)
     const reigningText = getManagerBadges(stat, safeSelectedSport);
 
-    const regStr = `${activeData.reg_wins}-${activeData.reg_losses}${activeData.reg_ties > 0 ? "-" + activeData.reg_ties : ""}`;
-    const postStr = `${activeData.post_wins}-${activeData.post_losses}${activeData.post_ties > 0 ? "-" + activeData.post_ties : ""}`;
-    const consStr = `${activeData.consolation_wins || 0}-${activeData.consolation_losses || 0}${activeData.consolation_ties > 0 ? "-" + activeData.consolation_ties : ""}`;
+    const regStr = formatRecord(
+      activeData.reg_wins,
+      activeData.reg_losses,
+      activeData.reg_ties,
+    );
+    const postStr = formatRecord(
+      activeData.post_wins,
+      activeData.post_losses,
+      activeData.post_ties,
+    );
+    const consStr = formatRecord(
+      activeData.consolation_wins,
+      activeData.consolation_losses,
+      activeData.consolation_ties,
+    );
 
     // Calculate Active Era
     const activeYearsPlayed =
@@ -707,16 +711,7 @@ function renderChampionshipHistory() {
   // 2. Sort the axes
   const yearsArray = Array.from(yearsSet).sort((a, b) => b - a); // Descending (Newest first)
 
-  const sportsArray = Array.from(sportsSet).sort((a, b) => {
-    const indexA = sportOrder.indexOf(a);
-    const indexB = sportOrder.indexOf(b);
-
-    // If a sport isn't in the list, assign it 99 to push it to the right
-    const weightA = indexA === -1 ? 99 : indexA;
-    const weightB = indexB === -1 ? 99 : indexB;
-
-    return weightA - weightB;
-  });
+  const sportsArray = sortSports(Array.from(sportsSet));
 
   if (yearsArray.length === 0) {
     container.innerHTML =
@@ -794,16 +789,24 @@ function getWinPct(data, mode = "all") {
   return { wins, losses, ties, games, pct, pctString };
 }
 
+function sortSports(sportsArray) {
+  return sportsArray.sort((a, b) => {
+    const idxA = sportOrder.indexOf(a);
+    const idxB = sportOrder.indexOf(b);
+    return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
+  });
+}
+
+function formatRecord(wins, losses, ties) {
+  return `${wins || 0}-${losses || 0}${ties > 0 ? "-" + ties : ""}`;
+}
+
 function getUniqueSports() {
   const sportsSet = new Set();
   globalStatsData.forEach((stat) => {
     stat.sports_played.forEach((s) => sportsSet.add(s));
   });
-  return Array.from(sportsSet).sort((a, b) => {
-    const idxA = sportOrder.indexOf(a);
-    const idxB = sportOrder.indexOf(b);
-    return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
-  });
+  return sortSports(Array.from(sportsSet));
 }
 
 // --- Initialize Superlatives Filter ---
@@ -996,7 +999,7 @@ function updateHeatmap(selectedSport) {
         const m2 = allManagers[params.value[1]];
         return `<strong>${m1}</strong> vs <strong>${m2}</strong><br/>
                         Win Rate: ${params.value[2]}%<br/>
-                        Record: ${params.value[3]}-${params.value[4]}-${params.value[5]}`;
+                        Record: ${formatRecord(params.value[3], params.value[4], params.value[5])}`;
       },
     },
     grid: { height: "70%", top: "10%" },
@@ -1225,11 +1228,7 @@ function openPlayerCard(managerName) {
 
   html += `<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">`;
 
-  const renderSports = [...new Set(stat.sports_played)].sort((a, b) => {
-    const idxA = sportOrder.indexOf(a);
-    const idxB = sportOrder.indexOf(b);
-    return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
-  });
+  const renderSports = sortSports([...new Set(stat.sports_played)]);
 
   renderSports.forEach((sp) => {
     const sData = stat.by_sport[sp];
@@ -1244,7 +1243,7 @@ function openPlayerCard(managerName) {
             <div style="font-size: 2rem; margin-bottom: 0.5rem;">${sportIcons[sp] || ""}</div>
             <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">${sp}</h3>
             <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
-                Record: <strong style="color: var(--text-main);">${sWins}-${sLosses}${sTies > 0 ? "-" + sTies : ""}</strong> (${sWinPct})
+                Record: <strong style="color: var(--text-main);">${formatRecord(sWins, sLosses, sTies)}</strong> (${sWinPct})
             </div>
             <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
                 Points: <strong style="color: var(--text-main);">${(sData.points || 0).toLocaleString(undefined, { maximumFractionDigits: 2 })}</strong>
