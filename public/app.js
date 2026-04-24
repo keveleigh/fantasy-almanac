@@ -313,55 +313,178 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
   }
 }
 
-// --- Render Hall of Fame Table ---
-function renderHallOfFame(selectedSport = "All") {
-  const tbody = document.querySelector("#standings-table tbody");
-  tbody.innerHTML = "";
+// --- Badge Generation & League Context ---
+let leagueContextBuilt = false;
+let globalSportYears = {};
+let globalLatestYears = {};
+let globalSportChamps = {};
+let globalChampStreaks = {};
+let globalMaxYear = 0;
 
-  // 1. Map out the chronological timeline of seasons to detect streaks and stale trophies
-  const sportYears = {};
+function buildLeagueContext() {
+  if (leagueContextBuilt) return;
   globalStatsData.forEach((stat) => {
     for (const [sp, data] of Object.entries(stat.by_sport)) {
       if (data.championships && data.championships.length > 0) {
-        if (!sportYears[sp]) sportYears[sp] = new Set();
-        data.championships.forEach((y) => sportYears[sp].add(y));
+        if (!globalSportYears[sp]) globalSportYears[sp] = new Set();
+        data.championships.forEach((y) => globalSportYears[sp].add(y));
       }
     }
   });
 
-  const latestYears = {};
-  const sportChamps = {};
-  const champStreaks = {};
-  let globalMaxYear = 0;
-
-  for (const sp in sportYears) {
-    sportYears[sp] = Array.from(sportYears[sp]).sort((a, b) => b - a);
-    const maxYear = sportYears[sp][0];
-    latestYears[sp] = maxYear;
+  for (const sp in globalSportYears) {
+    globalSportYears[sp] = Array.from(globalSportYears[sp]).sort(
+      (a, b) => b - a,
+    );
+    const maxYear = globalSportYears[sp][0];
+    globalLatestYears[sp] = maxYear;
     if (maxYear > globalMaxYear) globalMaxYear = maxYear;
-    sportChamps[sp] = [];
-    champStreaks[sp] = {};
+    globalSportChamps[sp] = [];
+    globalChampStreaks[sp] = {};
   }
 
   globalStatsData.forEach((stat) => {
-    for (const sp in sportYears) {
+    for (const sp in globalSportYears) {
       const data = stat.by_sport[sp];
       if (
         data &&
         data.championships &&
-        data.championships.includes(latestYears[sp])
+        data.championships.includes(globalLatestYears[sp])
       ) {
-        sportChamps[sp].push(stat.manager);
+        globalSportChamps[sp].push(stat.manager);
 
         let streak = 1;
-        for (let i = 1; i < sportYears[sp].length; i++) {
-          if (data.championships.includes(sportYears[sp][i])) streak++;
+        for (let i = 1; i < globalSportYears[sp].length; i++) {
+          if (data.championships.includes(globalSportYears[sp][i])) streak++;
           else break;
         }
-        champStreaks[sp][stat.manager] = streak;
+        globalChampStreaks[sp][stat.manager] = streak;
       }
     }
   });
+  leagueContextBuilt = true;
+}
+
+function getManagerBadges(stat, selectedSport = "All") {
+  buildLeagueContext();
+  let badgesList = [];
+  const reigningSports =
+    selectedSport !== "All"
+      ? globalSportChamps[selectedSport] &&
+        globalSportChamps[selectedSport].includes(stat.manager)
+        ? [selectedSport]
+        : []
+      : Object.keys(globalSportChamps).filter((sp) =>
+          globalSportChamps[sp].includes(stat.manager),
+        );
+
+  const activeReigningSports = reigningSports.filter(
+    (sp) => globalMaxYear - globalLatestYears[sp] < 2,
+  );
+
+  if (activeReigningSports.length > 0) {
+    activeReigningSports.forEach((sp) => {
+      const streak = globalChampStreaks[sp][stat.manager];
+      let classes = "reigning-badge";
+      if (streak > 1) classes += " streak";
+      let badgeTitle = `${globalLatestYears[sp]} ${sp} Champion`;
+      let badgeLabel = ` Champion`;
+      if (streak > 1) badgeLabel = `${streak}-Peat Champion`;
+      let iconStr = sportIcons[sp] || sp;
+      badgesList.push({
+        year: globalLatestYears[sp],
+        html: `<span class="${classes}" title="${badgeTitle}">${iconStr} ${badgeLabel}</span>`,
+      });
+    });
+  }
+
+  if (selectedSport === "All") {
+    const yearSports = {};
+    for (const [sp, data] of Object.entries(stat.by_sport)) {
+      (data.championships || []).forEach((y) => {
+        if (!yearSports[y]) yearSports[y] = [];
+        yearSports[y].push(sp);
+      });
+    }
+    const undisputedYears = Object.keys(yearSports)
+      .filter((y) => yearSports[y].length > 1)
+      .sort((a, b) => b - a);
+    undisputedYears.forEach((y) => {
+      const emojis = yearSports[y].map((sp) => sportIcons[sp] || sp).join("");
+      const count = yearSports[y].length;
+      const crownName =
+        count === 2
+          ? "Dual-Crown"
+          : count === 3
+            ? "Triple-Crown"
+            : count === 4
+              ? "Grand Slam"
+              : "Multi-Crown";
+      const isHistorical = globalMaxYear - parseInt(y) >= 2;
+      badgesList.push({
+        year: parseInt(y),
+        html: `<span class="reigning-badge undisputed${isHistorical ? " historical" : ""}" title="Won ${yearSports[y].join(", ")} in ${y}">${emojis} ${crownName} ('${String(y).slice(-2)})</span>`,
+      });
+    });
+  }
+
+  // Historical Streaks (2-Peats, 3-Peats that are no longer active)
+  const sportsToEvaluate =
+    selectedSport === "All" ? Object.keys(stat.by_sport) : [selectedSport];
+  sportsToEvaluate.forEach((sp) => {
+    const data = stat.by_sport[sp];
+    if (!data) return;
+
+    (data.undefeated_seasons || []).forEach((year) => {
+      const iconStr = sportIcons[sp] || sp;
+      const isHistorical = globalMaxYear - parseInt(year) >= 2;
+      badgesList.push({
+        year: parseInt(year),
+        html: `<span class="reigning-badge perfect${isHistorical ? " historical" : ""}" title="Undefeated Regular Season in ${year}">${iconStr} Perfect Reg. Season ('${String(year).slice(-2)})</span>`,
+      });
+    });
+
+    if (!data.championships || data.championships.length < 2) return;
+    const champs = data.championships;
+    const timeline = [...globalSportYears[sp]].reverse(); // Chronological timeline (oldest to newest)
+
+    let currentStreak = 0;
+    let streakYears = [];
+
+    const evaluateStreak = () => {
+      if (currentStreak >= 2 && !streakYears.includes(globalLatestYears[sp])) {
+        const iconStr = sportIcons[sp] || sp;
+        const yearLabels = streakYears
+          .map((y) => `'${String(y).slice(-2)}`)
+          .join(", ");
+        badgesList.push({
+          year: Math.max(...streakYears),
+          html: `<span class="reigning-badge historical" title="Won consecutive championships in: ${streakYears.join(", ")}">${iconStr} ${currentStreak}-Peat (${yearLabels})</span>`,
+        });
+      }
+      currentStreak = 0;
+      streakYears = [];
+    };
+
+    timeline.forEach((year) => {
+      if (champs.includes(year)) {
+        currentStreak++;
+        streakYears.push(year);
+      } else {
+        evaluateStreak();
+      }
+    });
+    evaluateStreak();
+  });
+
+  badgesList.sort((a, b) => b.year - a.year);
+  return badgesList.map((b) => b.html).join("");
+}
+
+// --- Render Hall of Fame Table ---
+function renderHallOfFame(selectedSport = "All") {
+  const tbody = document.querySelector("#standings-table tbody");
+  tbody.innerHTML = "";
 
   // 2. Re-sort data
   const sortedData = [...globalStatsData].sort((a, b) => {
@@ -503,111 +626,7 @@ function renderHallOfFame(selectedSport = "All") {
     const champHtml = champsHtmlLines.join("");
 
     // Reigning Champ Badge Logic (Streaks & Stale Tracking)
-    let reigningText = "";
-    const reigningSports =
-      selectedSport !== "All"
-        ? sportChamps[selectedSport] &&
-          sportChamps[selectedSport].includes(stat.manager)
-          ? [selectedSport]
-          : []
-        : Object.keys(sportChamps).filter((sp) =>
-            sportChamps[sp].includes(stat.manager),
-          );
-
-    const activeReigningSports = reigningSports.filter(
-      (sp) => globalMaxYear - latestYears[sp] < 2,
-    );
-
-    if (activeReigningSports.length > 0) {
-      const badgesHtml = activeReigningSports
-        .map((sp) => {
-          const streak = champStreaks[sp][stat.manager];
-
-          let classes = "reigning-badge";
-          if (streak > 1) classes += " streak";
-
-          let badgeTitle = `${latestYears[sp]} ${sp} Champion`;
-          let badgeLabel = ` Champion`;
-
-          if (streak > 1) badgeLabel = `${streak}-Peat Champion`;
-
-          let iconStr = sportIcons[sp] || sp;
-
-          return `<span class="${classes}" title="${badgeTitle}">${iconStr} ${badgeLabel}</span>`;
-        })
-        .join("");
-      reigningText = badgesHtml;
-    }
-
-    if (selectedSport === "All") {
-      const yearSports = {};
-      for (const [sp, data] of Object.entries(stat.by_sport)) {
-        (data.championships || []).forEach((y) => {
-          if (!yearSports[y]) yearSports[y] = [];
-          yearSports[y].push(sp);
-        });
-      }
-      const undisputedYears = Object.keys(yearSports)
-        .filter((y) => yearSports[y].length > 1)
-        .sort((a, b) => b - a);
-      undisputedYears.forEach((y) => {
-        const emojis = yearSports[y].map((sp) => sportIcons[sp] || sp).join("");
-        const count = yearSports[y].length;
-        const crownName =
-          count === 2
-            ? "Dual-Crown"
-            : count === 3
-              ? "Triple-Crown"
-              : count === 4
-                ? "Grand Slam"
-                : "Multi-Crown";
-        const isHistorical = globalMaxYear - parseInt(y) >= 2;
-        reigningText += `<span class="reigning-badge undisputed${isHistorical ? " historical" : ""}" title="Won ${yearSports[y].join(", ")} in ${y}">${emojis} ${crownName} ('${String(y).slice(-2)})</span>`;
-      });
-    }
-
-    // Historical Streaks (2-Peats, 3-Peats that are no longer active)
-    const sportsToEvaluate =
-      selectedSport === "All" ? Object.keys(stat.by_sport) : [selectedSport];
-    sportsToEvaluate.forEach((sp) => {
-      const data = stat.by_sport[sp];
-      if (!data) return;
-
-      (data.undefeated_seasons || []).forEach((year) => {
-        const iconStr = sportIcons[sp] || sp;
-        const isHistorical = globalMaxYear - parseInt(year) >= 2;
-        reigningText += `<span class="reigning-badge perfect${isHistorical ? " historical" : ""}" title="Undefeated Regular Season in ${year}">${iconStr} Perfect Reg. Season ('${String(year).slice(-2)})</span>`;
-      });
-
-      if (!data.championships || data.championships.length < 2) return;
-      const champs = data.championships;
-      const timeline = [...sportYears[sp]].reverse(); // Chronological timeline (oldest to newest)
-
-      let currentStreak = 0;
-      let streakYears = [];
-
-      const evaluateStreak = () => {
-        if (currentStreak >= 2 && !streakYears.includes(latestYears[sp])) {
-          const iconStr = sportIcons[sp] || sp;
-          const yearLabels = streakYears
-            .map((y) => `'${String(y).slice(-2)}`)
-            .join(", ");
-          reigningText += `<span class="reigning-badge historical" title="Won consecutive championships in: ${streakYears.join(", ")}">${iconStr} ${currentStreak}-Peat (${yearLabels})</span>`;
-        }
-        currentStreak = 0;
-        streakYears = [];
-      };
-
-      timeline.forEach((year) => {
-        if (champs.includes(year)) {
-          currentStreak++;
-          streakYears.push(year);
-        } else {
-          evaluateStreak();
-        }
-      });
-      evaluateStreak();
-    });
+    const reigningText = getManagerBadges(stat, selectedSport);
 
     const regStr = `${activeData.reg_wins}-${activeData.reg_losses}${activeData.reg_ties > 0 ? "-" + activeData.reg_ties : ""}`;
     const postStr = `${activeData.post_wins}-${activeData.post_losses}${activeData.post_ties > 0 ? "-" + activeData.post_ties : ""}`;
@@ -1149,9 +1168,12 @@ function openPlayerCard(managerName) {
           .replace(/^0+/, "")
       : ".000";
 
+  const badgesHtml = getManagerBadges(stat, "All");
+
   let html = `
     <div style="text-align: center; margin-bottom: 2rem;">
         <h2 style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);">${stat.manager}</h2>
+        ${badgesHtml ? `<div class="badge-stack" style="flex-direction: row; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; align-items: center;">${badgesHtml}</div>` : ""}
         <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
             <div class="score-card" style="padding: 0.5rem 1rem; border-top-color: var(--primary); min-width: 100px;">
                 <h3 style="margin:0; font-size:0.8rem;">Win %</h3>
