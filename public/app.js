@@ -649,6 +649,15 @@ function renderHallOfFame(selectedSport = "All") {
       seasonsStr = `<div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">${yearRange} (${activeYearsPlayed.length} year${activeYearsPlayed.length > 1 ? "s" : ""})</div>`;
     }
 
+    // Calculate Win Percentages
+    const regMetrics = getWinPct(activeData, "reg");
+    const postMetrics = getWinPct(activeData, "post");
+    const consMetrics = getWinPct(activeData, "cons");
+
+    const regHtml = `${regStr} <span style="font-size: 0.85em; color: var(--text-muted);">(${regMetrics.pctString})</span>`;
+    const postHtml = postMetrics.games > 0 ? `${postStr} <span style="font-size: 0.85em; color: var(--text-muted);">(${postMetrics.pctString})</span>` : postStr;
+    const consHtml = consMetrics.games > 0 ? `${consStr} <span style="font-size: 0.85em; color: var(--text-muted);">(${consMetrics.pctString})</span>` : consStr;
+
     tr.innerHTML = `
             <td>
                 <div style="font-size: 1.1rem; font-weight: bold; color: var(--text-main); margin-bottom: 2px;">${stat.manager}</div>
@@ -659,9 +668,9 @@ function renderHallOfFame(selectedSport = "All") {
             </td>
             <td><div class="badge-stack">${reigningText || '<span style="color:var(--divider)">-</span>'}</div></td>
             <td>${hardwareStr}</td>
-            <td>${regStr}</td>
-            <td>${postStr}</td>
-            <td>${consStr}</td>
+            <td>${regHtml}</td>
+            <td>${postHtml}</td>
+            <td>${consHtml}</td>
         `;
     tbody.appendChild(tr);
   });
@@ -750,6 +759,41 @@ function renderChampionshipHistory() {
 }
 
 // --- Shared Helper ---
+function getWinPct(data, mode = "all") {
+  let wins = 0;
+  let losses = 0;
+  let ties = 0;
+
+  if (mode === "all") {
+    wins = (data.reg_wins || 0) + (data.post_wins || 0);
+    losses = (data.reg_losses || 0) + (data.post_losses || 0);
+    ties = (data.reg_ties || 0) + (data.post_ties || 0);
+  } else if (mode === "reg" || mode === true) {
+    wins = data.reg_wins || 0;
+    losses = data.reg_losses || 0;
+    ties = data.reg_ties || 0;
+  } else if (mode === "post") {
+    wins = data.post_wins || 0;
+    losses = data.post_losses || 0;
+    ties = data.post_ties || 0;
+  } else if (mode === "cons") {
+    wins = data.consolation_wins || 0;
+    losses = data.consolation_losses || 0;
+    ties = data.consolation_ties || 0;
+  }
+
+  const games = wins + losses + ties;
+  let pct = 0;
+  let pctString = ".000";
+
+  if (games > 0) {
+    pct = (wins + ties * 0.5) / games;
+    pctString = pct.toFixed(3).replace(/^0+/, "");
+  }
+
+  return { wins, losses, ties, games, pct, pctString };
+}
+
 function getUniqueSports() {
   const sportsSet = new Set();
   globalStatsData.forEach((stat) => {
@@ -1043,13 +1087,13 @@ function updateRadar() {
 
   // Helper to calculate Win % and Total Matches
   const getMetrics = (p) => {
-    const tWins = p.overall.reg_wins + p.overall.post_wins;
-    const tLosses = p.overall.reg_losses + p.overall.post_losses;
-    const tTies = p.overall.reg_ties + p.overall.post_ties;
-    const totalMatches = tWins + tLosses + tTies;
-    const winPct =
-      totalMatches > 0 ? ((tWins / totalMatches) * 100).toFixed(1) : 0;
-    return { totalWins: tWins, totalMatches, winPct: parseFloat(winPct) };
+    const m = getWinPct(p.overall);
+    const winPct = m.games > 0 ? (m.pct * 100).toFixed(1) : 0;
+    return {
+      totalWins: m.wins,
+      totalMatches: m.games,
+      winPct: parseFloat(winPct),
+    };
   };
 
   // Calculate the absolute maximums in the league so the web scales correctly
@@ -1153,17 +1197,8 @@ function openPlayerCard(managerName) {
 
   const body = document.getElementById("player-card-body");
 
-  const totalWins = stat.overall.reg_wins + stat.overall.post_wins;
-  const totalLosses = stat.overall.reg_losses + stat.overall.post_losses;
-  const totalTies =
-    (stat.overall.reg_ties || 0) + (stat.overall.post_ties || 0);
-  const totalGames = totalWins + totalLosses + totalTies;
-  const winPct =
-    totalGames > 0
-      ? ((totalWins + totalTies * 0.5) / totalGames)
-          .toFixed(3)
-          .replace(/^0+/, "")
-      : ".000";
+  const metrics = getWinPct(stat.overall);
+  const winPct = metrics.pctString;
 
   const badgesHtml = getManagerBadges(stat, "All");
 
@@ -1198,14 +1233,11 @@ function openPlayerCard(managerName) {
 
   renderSports.forEach((sp) => {
     const sData = stat.by_sport[sp];
-    const sWins = sData.reg_wins + sData.post_wins;
-    const sLosses = sData.reg_losses + sData.post_losses;
-    const sTies = (sData.reg_ties || 0) + (sData.post_ties || 0);
-    const sGames = sWins + sLosses + sTies;
-    const sWinPct =
-      sGames > 0
-        ? ((sWins + sTies * 0.5) / sGames).toFixed(3).replace(/^0+/, "")
-        : ".000";
+    const sMetrics = getWinPct(sData);
+    const sWins = sMetrics.wins;
+    const sLosses = sMetrics.losses;
+    const sTies = sMetrics.ties;
+    const sWinPct = sMetrics.pctString;
 
     html += `
         <div class="card" style="padding: 1rem; text-align: center;">
