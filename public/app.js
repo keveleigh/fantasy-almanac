@@ -1090,6 +1090,7 @@ function updateRadar() {
       textStyle: { color: isDark ? "#f1f5f9" : "#1a1a1a" },
     },
     radar: {
+      radius: window.innerWidth < 768 ? "50%" : "65%",
       indicator: [
         { name: "Win %", max: 100 },
         { name: "Total Wins", max: maxWins + 5 }, // Add slight buffer to outer edge

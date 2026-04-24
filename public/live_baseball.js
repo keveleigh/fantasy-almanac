@@ -39,7 +39,8 @@ async function loadLiveDashboard() {
     const res = await fetch("data/live/mlb_current_season.json");
     const data = await res.json();
 
-    document.getElementById("week-subtitle").innerText = `Week ${data.week}`;
+    document.getElementById("week-subtitle").innerHTML =
+      `Week ${data.week} <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">(Updates every Monday morning)</span>`;
 
     const prevWeekSpan = document.getElementById("prev-week-num");
     if (prevWeekSpan)
@@ -122,7 +123,8 @@ function renderTrueStandings(standings, sosData) {
     const rankDiff = actualRank - trueRank;
 
     let rankColor = "var(--text-muted)";
-    if (rankDiff > 0) rankColor = "#e74c3c"; // Actual rank is worse than true rank (Unlucky)
+    if (rankDiff > 0)
+      rankColor = "#e74c3c"; // Actual rank is worse than true rank (Unlucky)
     else if (rankDiff < 0) rankColor = "#2ecc71"; // Actual rank is better than true rank (Lucky)
 
     const actualRankHtml = `<div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; white-space: nowrap;">Actual: <span style="color: ${rankColor}; font-weight: bold;">#${actualRank}</span></div>`;
@@ -154,13 +156,17 @@ function initLuckQuadrant() {
   const chartDom = document.getElementById("luck-chart");
   luckChartInstance = echarts.init(chartDom);
   renderLuckQuadrant();
-  window.addEventListener("resize", () => luckChartInstance.resize());
+  window.addEventListener("resize", () => {
+    luckChartInstance.resize();
+    renderLuckQuadrant();
+  });
 }
 
 function renderLuckQuadrant() {
   if (!luckData || luckData.length === 0) return;
 
   const isDark = document.body.classList.contains("dark-theme");
+  const isMobile = window.innerWidth < 768;
   const textColor = isDark ? "#f1f5f9" : "#1a1a1a";
   const mutedColor = isDark ? "#94a3b8" : "#666";
   const splitLineColor = isDark ? "#334155" : "#e0e0e0";
@@ -251,26 +257,42 @@ function renderLuckQuadrant() {
           itemStyle: { color: "transparent" },
           label: {
             color: isDark ? "rgba(255, 255, 255, 0.12)" : "rgba(0, 0, 0, 0.08)",
-            fontSize: 22,
+            fontSize: isMobile ? 18 : 22,
             fontWeight: "bold",
             position: "inside",
           },
           data: [
             [
-              { name: "GOOD & LUCKY", xAxis: "min", yAxis: medianPF },
-              { xAxis: medianPA, yAxis: "max" },
-            ],
-            [
-              { name: "SCHEDULE VICTIM", xAxis: medianPA, yAxis: medianPF },
-              { xAxis: "max", yAxis: "max" },
-            ],
-            [
-              { name: "LUCKY BREAKS", xAxis: "min", yAxis: "min" },
+              {
+                name: isMobile ? "GOOD &\nLUCKY" : "GOOD & LUCKY",
+                x: "10%",
+                y: "10%",
+              },
               { xAxis: medianPA, yAxis: medianPF },
             ],
             [
-              { name: "ROUGH SEASON", xAxis: medianPA, yAxis: "min" },
-              { xAxis: "max", yAxis: medianPF },
+              {
+                name: isMobile ? "SCHEDULE\nVICTIM" : "SCHEDULE VICTIM",
+                xAxis: medianPA,
+                y: "10%",
+              },
+              { x: "90%", yAxis: medianPF },
+            ],
+            [
+              {
+                name: isMobile ? "LUCKY\nBREAKS" : "LUCKY BREAKS",
+                x: "10%",
+                yAxis: medianPF,
+              },
+              { xAxis: medianPA, y: "90%" },
+            ],
+            [
+              {
+                name: isMobile ? "ROUGH\nSEASON" : "ROUGH SEASON",
+                xAxis: medianPA,
+                yAxis: medianPF,
+              },
+              { x: "90%", y: "90%" },
             ],
           ],
         },
