@@ -52,7 +52,11 @@ async function loadLiveDashboard() {
     luckData = data.luck_quadrant;
     initLuckQuadrant();
 
-    renderPreviousMatchups(data.previous_matchups);
+    renderPreviousMatchups(
+      data.previous_matchups,
+      data.previous_week_median,
+      data.heartbreak_threshold,
+    );
     renderCurrentMatchups(
       data.current_matchups,
       data.true_standings,
@@ -277,7 +281,7 @@ function renderLuckQuadrant() {
 }
 
 // --- 3. Render Matchup Center ---
-function renderPreviousMatchups(matchups) {
+function renderPreviousMatchups(matchups, median, heartbreak_threshold) {
   const container = document.getElementById("prev-matchups-container");
   container.innerHTML = "";
 
@@ -297,10 +301,62 @@ function renderPreviousMatchups(matchups) {
         ? "font-weight:bold; color:var(--text-main);"
         : "color:var(--text-muted);";
 
+    let tagHtml = "";
+    let borderColor = "";
+
+    const winnerScore = Math.max(match.home_score, match.away_score);
+    const winnerName =
+      match.home_score > match.away_score ? match.home : match.away;
+    const loserName =
+      match.home_score > match.away_score ? match.away : match.home;
+    const loserScore =
+      match.home_score < match.away_score ? match.home_score : match.away_score;
+    const margin = Math.abs(match.home_score - match.away_score);
+    const ratio = winnerScore > 0 ? loserScore / winnerScore : 0;
+
+    const winnerRank =
+      match.home_score > match.away_score ? match.home_rank : match.away_rank;
+    const loserRank =
+      match.home_score > match.away_score ? match.away_rank : match.home_rank;
+
+    // Heartbreak: Lost despite having one of the top scores of the week
+    if (heartbreak_threshold > 0 && loserScore >= heartbreak_threshold) {
+      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #8e44ad; text-align: center; margin-bottom: 8px; font-weight: 800;">💔 HEARTBREAK</div>`;
+      borderColor = `border-top-color: #8e44ad;`;
+    }
+    // Upset: Lower rank (higher number) beats a team ranked 4+ spots higher
+    else if (
+      winnerRank &&
+      loserRank &&
+      winnerRank > loserRank &&
+      winnerRank - loserRank >= 4
+    ) {
+      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #e74c3c; text-align: center; margin-bottom: 8px; font-weight: 800;">🚨 UPSET</div>`;
+      borderColor = `border-top-color: #e74c3c;`;
+    }
+    // Nail-biter: Loser scored 95% or more of the winner's score
+    else if (winnerScore > 0 && ratio >= 0.95 && margin > 0) {
+      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #1abc9c; text-align: center; margin-bottom: 8px; font-weight: 800;">🤏 NAIL-BITER</div>`;
+      borderColor = `border-top-color: #1abc9c;`;
+    }
+    // Blowout: Loser scored 75% or less of the winner's score
+    else if (winnerScore > 0 && ratio <= 0.75) {
+      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f39c12; text-align: center; margin-bottom: 8px; font-weight: 800;">💥 BLOWOUT</div>`;
+      borderColor = `border-top-color: #f39c12;`;
+    }
+    // Lucky Win: Winning score was below the weekly median
+    else if (median && winnerScore > 0 && winnerScore < median) {
+      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #2ecc71; text-align: center; margin-bottom: 8px; font-weight: 800;">🍀 LUCKY WIN</div>`;
+      borderColor = `border-top-color: #2ecc71;`;
+    }
+
     container.innerHTML += `
-            <div class="score-card">
+            <div class="score-card" style="display: flex; flex-direction: column; ${borderColor}">
+                ${tagHtml}
+                <div style="margin-top: auto;">
                 <div style="display:flex; justify-content:space-between; margin-bottom: 8px; ${awayBold}"><span>${match.away}</span><span>${match.away_score.toFixed(1)}</span></div>
                 <div style="display:flex; justify-content:space-between; ${homeBold}"><span>${match.home}</span><span>${match.home_score.toFixed(1)}</span></div>
+                </div>
             </div>`;
   });
 }

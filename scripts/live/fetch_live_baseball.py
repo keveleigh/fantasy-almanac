@@ -1,13 +1,16 @@
 import os
 import json
 import argparse
+import statistics
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+BASE_DIR = os.path.dirname(os.path.dirname(
+    os.path.dirname(os.path.abspath(__file__))))
 LIVE_DIR = os.path.join(BASE_DIR, "public", "data", "live")
 os.makedirs(LIVE_DIR, exist_ok=True)
 
 # --- CONFIGURATION ---
-parser = argparse.ArgumentParser(description="Fetch live ESPN Fantasy Sports data.")
+parser = argparse.ArgumentParser(
+    description="Fetch live ESPN Fantasy Sports data.")
 parser.add_argument('--sport', type=str, required=True,
                     choices=['NFL', 'MLB', 'NBA'], help="The sport (NFL, MLB, or NBA)")
 parser.add_argument('--year', type=int, required=True,
@@ -30,6 +33,7 @@ elif SPORT == 'NBA':
 else:
     from espn_api.football import League
 
+
 def compile_live_stats():
     print(
         f"Fetching live season data for ESPN {SPORT} League {LEAGUE_ID} ({YEAR})...")
@@ -47,7 +51,8 @@ def compile_live_stats():
 
     # Fetch official standings directly from the API to handle tiebreakers natively
     actual_standings = league.standings()
-    actual_rank_map = {team.team_id: rank for rank, team in enumerate(actual_standings, start=1)}
+    actual_rank_map = {team.team_id: rank for rank,
+                       team in enumerate(actual_standings, start=1)}
 
     # Initialize tracking dictionaries
     teams_data = {
@@ -121,10 +126,12 @@ def compile_live_stats():
             "actual_record": f"{data['actual_wins']}-{data['actual_losses']}-{data['actual_ties']}",
             "true_record": f"{data['true_wins']}-{data['true_losses']}-{data['true_ties']}",
             "true_win_pct": round(win_pct, 3),
-            "expected_wins": round(win_pct * (data["actual_wins"] + data["actual_losses"] + data["actual_ties"]), 2)
+            "expected_wins": round(win_pct * (data["actual_wins"] + data["actual_losses"] + data["actual_ties"]), 2),
+            "pf": data["pf"]
         })
 
-    true_standings.sort(key=lambda x: x["true_win_pct"], reverse=True)
+    true_standings.sort(key=lambda x: (
+        x["true_win_pct"], x["pf"]), reverse=True)
 
     # 3. Format Luck Quadrant
     luck_quadrant = [{"team": data["name"], "pf": round(
@@ -132,16 +139,85 @@ def compile_live_stats():
 
     # 4. Matchup Center (Last Week & This Week)
     previous_matchups = []
+    previous_week_median = 0.0
+    heartbreak_threshold = 0.0
     if completed_weeks > 0:
         try:
             prev_boxes = league.box_scores(completed_weeks)
+
+            # Calculate median for the previous week to identify "lucky" wins
+            prev_week_scores = []
+            for m in prev_boxes:
+                if m.home_team and m.home_score > 0:
+                    prev_week_scores.append(m.home_score)
+                if m.away_team and m.away_score > 0:
+                    prev_week_scores.append(m.away_score)
+            if prev_week_scores:
+                previous_week_median = round(
+                    statistics.median(prev_week_scores), 2)
+
+                # Heartbreak is losing with a top 25% score (e.g., top 3 in a 12-team league)
+                prev_week_scores.sort(reverse=True)
+                num_teams = len(league.teams)
+                heartbreak_rank = num_teams // 4
+                if len(prev_week_scores) > heartbreak_rank:
+                    # The score of the Nth ranked team (e.g., 3rd place is index 2)
+                    heartbreak_threshold = prev_week_scores[heartbreak_rank - 1]
+
+            # Reverse engineer the standings going INTO the previous week for accurate Upset detection
+            prev_standings_calc = []
+            for t_id, t_data in teams_data.items():
+                won_last_week = False
+                lost_last_week = False
+                tied_last_week = False
+                points_last_week = 0
+                for m in prev_boxes:
+                    if m.home_team and m.home_team.team_id == t_id:
+                        points_last_week = m.home_score
+                        if m.home_score > m.away_score:
+                            won_last_week = True
+                        elif m.home_score < m.away_score:
+                            lost_last_week = True
+                        else:
+                            tied_last_week = True
+                    elif m.away_team and m.away_team.team_id == t_id:
+                        points_last_week = m.away_score
+                        if m.away_score > m.home_score:
+                            won_last_week = True
+                        elif m.away_score < m.home_score:
+                            lost_last_week = True
+                        else:
+                            tied_last_week = True
+
+                prev_w = t_data["actual_wins"] - (1 if won_last_week else 0)
+                prev_l = t_data["actual_losses"] - (1 if lost_last_week else 0)
+                prev_t = t_data["actual_ties"] - (1 if tied_last_week else 0)
+                prev_pf = t_data["pf"] - points_last_week
+
+                total_prev_games = prev_w + prev_l + prev_t
+                prev_win_pct = (prev_w + (prev_t * 0.5)) / \
+                    total_prev_games if total_prev_games > 0 else 0
+
+                prev_standings_calc.append({
+                    "name": t_data["name"],
+                    "prev_win_pct": prev_win_pct,
+                    "prev_pf": prev_pf
+                })
+
+            prev_standings_calc.sort(key=lambda x: (
+                x["prev_win_pct"], x["prev_pf"]), reverse=True)
+            prev_rank_map = {t["name"]: rank for rank,
+                             t in enumerate(prev_standings_calc, start=1)}
+
             for m in prev_boxes:
                 if m.home_team and m.away_team:
                     previous_matchups.append({
                         "home": m.home_team.team_name,
                         "home_score": m.home_score,
+                        "home_rank": prev_rank_map.get(m.home_team.team_name, 99),
                         "away": m.away_team.team_name,
-                        "away_score": m.away_score
+                        "away_score": m.away_score,
+                        "away_rank": prev_rank_map.get(m.away_team.team_name, 99)
                     })
         except Exception:
             pass
@@ -244,6 +320,8 @@ def compile_live_stats():
         "true_standings": true_standings,
         "luck_quadrant": luck_quadrant,
         "previous_matchups": previous_matchups,
+        "previous_week_median": previous_week_median,
+        "heartbreak_threshold": heartbreak_threshold,
         "current_matchups": current_matchups,
         "remaining_sos": remaining_sos
     }
