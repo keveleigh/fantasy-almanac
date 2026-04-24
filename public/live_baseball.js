@@ -121,11 +121,11 @@ function renderTrueStandings(standings, sosData) {
     const actualRank = team.actual_rank;
     const rankDiff = actualRank - trueRank;
 
-    let trendIcon = `<span style="color: var(--text-muted); font-size: 0.85rem;">-</span>`;
-    if (rankDiff > 0)
-      trendIcon = `<span style="color: #2ecc71; font-size: 0.85rem; font-weight: bold;" title="Actual Rank: ${actualRank}">▲${rankDiff}</span>`;
-    else if (rankDiff < 0)
-      trendIcon = `<span style="color: #e74c3c; font-size: 0.85rem; font-weight: bold;" title="Actual Rank: ${actualRank}">▼${Math.abs(rankDiff)}</span>`;
+    let rankColor = "var(--text-muted)";
+    if (rankDiff > 0) rankColor = "#e74c3c"; // Actual rank is worse than true rank (Unlucky)
+    else if (rankDiff < 0) rankColor = "#2ecc71"; // Actual rank is better than true rank (Lucky)
+
+    const actualRankHtml = `<div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; white-space: nowrap;">Actual: <span style="color: ${rankColor}; font-weight: bold;">#${actualRank}</span></div>`;
 
     const sosInfo = sosMap[team.team] || {
       ppg: "N/A",
@@ -135,8 +135,8 @@ function renderTrueStandings(standings, sosData) {
     tbody.innerHTML += `
             <tr>
                 <td style="text-align: center; vertical-align: middle;">
-                    <div style="font-size: 1.1rem; font-weight: bold;">${trueRank}</div>
-                    <div>${trendIcon}</div>
+                    <div style="font-size: 1.2rem; font-weight: bold;">${trueRank}</div>
+                    ${actualRankHtml}
                 </td>
                 <td><div style="display: flex; align-items: center; gap: 8px;">${logoHtml} <strong>${team.team}</strong></div></td>
                 <td>${team.actual_record}</td>
