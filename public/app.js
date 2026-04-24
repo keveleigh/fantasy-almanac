@@ -432,12 +432,67 @@ function renderHallOfFame(selectedSport = "All") {
       const data = stat.by_sport[sp];
       let champHtmlForSport = '<span style="color:var(--divider)">-</span>';
 
-      if (data && data.championships && data.championships.length > 0) {
-        const uniqueYears = [...new Set(data.championships)].sort(
-          (a, b) => b - a,
-        );
-        const yearsStr = uniqueYears.join(", ");
-        champHtmlForSport = `<span title="Won in: ${yearsStr}" style="cursor:help; letter-spacing: 2px;">${"🏆".repeat(uniqueYears.length)}</span>`;
+      if (data) {
+        let medalsHtml = [];
+        if (data.championships && data.championships.length > 0) {
+          const uniqueYears = [...new Set(data.championships)].sort(
+            (a, b) => b - a,
+          );
+          medalsHtml.push(
+            `<span title="1st Place: ${uniqueYears.join(", ")}" style="cursor:help;">${"🏆".repeat(uniqueYears.length)}</span>`,
+          );
+        }
+        if (data.second_place && data.second_place.length > 0) {
+          const uniqueYears = [...new Set(data.second_place)].sort(
+            (a, b) => b - a,
+          );
+          medalsHtml.push(
+            `<span title="2nd Place: ${uniqueYears.join(", ")}" style="cursor:help;">🥈x${uniqueYears.length}</span>`,
+          );
+        }
+        if (data.third_place && data.third_place.length > 0) {
+          const uniqueYears = [...new Set(data.third_place)].sort(
+            (a, b) => b - a,
+          );
+          medalsHtml.push(
+            `<span title="3rd Place: ${uniqueYears.join(", ")}" style="cursor:help;">🥉x${uniqueYears.length}</span>`,
+          );
+        }
+
+        const hasGold = data.championships && data.championships.length > 0;
+        const hasSilver = data.second_place && data.second_place.length > 0;
+        const hasBronze = data.third_place && data.third_place.length > 0;
+
+        if (hasGold || hasSilver || hasBronze) {
+          const goldStyle =
+            "min-width: 90px; display: inline-block; white-space: nowrap;";
+          const medalStyle =
+            "min-width: 45px; display: inline-block; white-space: nowrap;";
+          let goldHtml = `<span style="${goldStyle}"></span>`;
+          let silverHtml = `<span style="${medalStyle}"></span>`;
+          let bronzeHtml = `<span style="${medalStyle}"></span>`;
+
+          if (hasGold) {
+            const uniqueYears = [...new Set(data.championships)].sort(
+              (a, b) => b - a,
+            );
+            goldHtml = `<span title="1st Place: ${uniqueYears.join(", ")}" style="cursor:help; ${goldStyle}">${"🏆".repeat(uniqueYears.length)}</span>`;
+          }
+          if (hasSilver) {
+            const uniqueYears = [...new Set(data.second_place)].sort(
+              (a, b) => b - a,
+            );
+            silverHtml = `<span title="2nd Place: ${uniqueYears.join(", ")}" style="cursor:help; ${medalStyle}">🥈x${uniqueYears.length}</span>`;
+          }
+          if (hasBronze) {
+            const uniqueYears = [...new Set(data.third_place)].sort(
+              (a, b) => b - a,
+            );
+            bronzeHtml = `<span title="3rd Place: ${uniqueYears.join(", ")}" style="cursor:help; ${medalStyle}">🥉x${uniqueYears.length}</span>`;
+          }
+
+          champHtmlForSport = `<div style="display:flex; gap:4px; font-size: 0.9rem;">${goldHtml}${silverHtml}${bronzeHtml}</div>`;
+        }
       }
       champsHtmlLines.push(
         `<div style="height: 28px; display: flex; align-items: center;">${champHtmlForSport}</div>`,
