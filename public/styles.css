@@ -16,6 +16,7 @@ body.dark-theme {
   --text-main: #f1f5f9;
   --text-muted: #94a3b8;
   --divider: #334155;
+  color-scheme: dark;
 }
 
 .theme-toggle {
@@ -192,6 +193,23 @@ body.dark-theme .score-card {
 .score-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Tied Records Scrollable Container */
+.record-holders {
+  max-height: 120px;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+  padding-right: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  scrollbar-width: thin;
+}
+
+.record-holder:not(:last-child) {
+  border-bottom: 1px dashed var(--divider);
+  padding-bottom: 0.5rem;
 }
 
 .platform-icon {
@@ -487,7 +505,18 @@ tr,
   background: rgba(150, 150, 150, 0.5);
 }
 
+/* Dark Mode Scrollbars */
+body.dark-theme::-webkit-scrollbar-thumb,
+body.dark-theme ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+body.dark-theme::-webkit-scrollbar-thumb:hover,
+body.dark-theme ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 /* Prevent transitions from firing on initial load */
-.preload-theme, .preload-theme * {
+.preload-theme,
+.preload-theme * {
   transition: none !important;
 }

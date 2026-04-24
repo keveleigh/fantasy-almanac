@@ -137,7 +137,7 @@ function renderTrueStandings(standings, sosData) {
                 <td><div style="display: flex; align-items: center; gap: 8px;">${logoHtml} <strong>${team.team}</strong></div></td>
                 <td>${team.actual_record}</td>
                 <td>${(team.true_win_pct * 100).toFixed(1)}%</td>
-                <td>${team.expected_wins}</td>
+                <td>${team.expected_wins.toFixed(1)}</td>
                 <td>${luckHtml}</td>
                 <td style="color: ${sosInfo.color}; font-weight: bold;">${sosInfo.ppg}</td>
             </tr>

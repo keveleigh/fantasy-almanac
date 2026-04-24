@@ -121,7 +121,7 @@ def compile_live_stats():
             "actual_record": f"{data['actual_wins']}-{data['actual_losses']}-{data['actual_ties']}",
             "true_record": f"{data['true_wins']}-{data['true_losses']}-{data['true_ties']}",
             "true_win_pct": round(win_pct, 3),
-            "expected_wins": round(win_pct * (data["actual_wins"] + data["actual_losses"] + data["actual_ties"]), 1)
+            "expected_wins": round(win_pct * (data["actual_wins"] + data["actual_losses"] + data["actual_ties"]), 2)
         })
 
     true_standings.sort(key=lambda x: x["true_win_pct"], reverse=True)
@@ -232,7 +232,7 @@ def compile_live_stats():
             "team": team.team_name,
             "logo_url": getattr(team, 'logo_url', ''),
             "remaining_opponents": valid_opps,
-            "sos_ppg": round(avg_opp_ppg, 1)
+            "sos_ppg": round(avg_opp_ppg, 2)
         })
 
     remaining_sos.sort(key=lambda x: x["sos_ppg"], reverse=True)

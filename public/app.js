@@ -91,83 +91,8 @@ function renderSuperlatives(superlativesData) {
   for (const sport of sortedSports) {
     const superlative = superlativesData[sport];
     // Skip if no actual data was parsed for this sport yet
-    if (!superlative.highest_score || superlative.highest_score.score === 0)
+    if (!superlative.highest_score || superlative.highest_score.value === 0)
       continue;
-
-    // Fallback formatting for individual manager superlatives (in case they lack a record of that type)
-    const lowestPpgVal =
-      superlative.lowest_ppg.ppgf >= 99999
-        ? "N/A"
-        : `${superlative.lowest_ppg.ppgf.toFixed(1)} PF Avg`;
-    const lowestPpgText =
-      superlative.lowest_ppg.ppgf >= 99999
-        ? "No seasons recorded."
-        : `Lowest scoring offense | ${superlative.lowest_ppg.year} | ${getPlatformIcon(superlative.lowest_ppg.platform)}`;
-    const lowestPpgaVal =
-      superlative.lowest_ppga.ppga >= 99999
-        ? "N/A"
-        : `${superlative.lowest_ppga.ppga.toFixed(1)} PA Avg`;
-    const lowestPpgaText =
-      superlative.lowest_ppga.ppga >= 99999
-        ? "No seasons recorded."
-        : `Easiest schedule | ${superlative.lowest_ppga.year} | ${getPlatformIcon(superlative.lowest_ppga.platform)}`;
-    const lowestWinVal =
-      superlative.lowest_winning_score.score >= 99999
-        ? "N/A"
-        : `${superlative.lowest_winning_score.score.toLocaleString()} pts`;
-    const lowestWinText =
-      superlative.lowest_winning_score.score >= 99999
-        ? "No wins recorded."
-        : `Defeated ${superlative.lowest_winning_score.opponent} (${superlative.lowest_winning_score.score} to ${superlative.lowest_winning_score.opp_score})<br>Week ${superlative.lowest_winning_score.period}, ${superlative.lowest_winning_score.year} | ${getPlatformIcon(superlative.lowest_winning_score.platform)}`;
-    const highestLossVal =
-      superlative.highest_losing_score.score === 0
-        ? "N/A"
-        : `${superlative.highest_losing_score.score.toLocaleString()} pts`;
-    const highestLossText =
-      superlative.highest_losing_score.score === 0
-        ? "No losses recorded."
-        : `Lost to ${superlative.highest_losing_score.opponent} (${superlative.highest_losing_score.score} to ${superlative.highest_losing_score.opp_score})<br>Week ${superlative.highest_losing_score.period}, ${superlative.highest_losing_score.year} | ${getPlatformIcon(superlative.highest_losing_score.platform)}`;
-    const largestMarginVal =
-      superlative.largest_victory_margin.margin === 0
-        ? "N/A"
-        : `+${superlative.largest_victory_margin.margin.toLocaleString()} pts`;
-    const largestMarginText =
-      superlative.largest_victory_margin.margin === 0
-        ? "No wins recorded."
-        : `Destroyed ${superlative.largest_victory_margin.loser} (${superlative.largest_victory_margin.winning_score} to ${superlative.largest_victory_margin.losing_score})<br>Week ${superlative.largest_victory_margin.period}, ${superlative.largest_victory_margin.year} | ${getPlatformIcon(superlative.largest_victory_margin.platform)}`;
-    const smallestMarginVal =
-      superlative.smallest_victory_margin.margin >= 99999
-        ? "N/A"
-        : `+${superlative.smallest_victory_margin.margin.toLocaleString()} pts`;
-    const smallestMarginText =
-      superlative.smallest_victory_margin.margin >= 99999
-        ? "No wins recorded."
-        : `Survived ${superlative.smallest_victory_margin.loser} (${superlative.smallest_victory_margin.winning_score} to ${superlative.smallest_victory_margin.losing_score})<br>Week ${superlative.smallest_victory_margin.period}, ${superlative.smallest_victory_margin.year} | ${getPlatformIcon(superlative.smallest_victory_margin.platform)}`;
-    const lowestPlayoffPpgVal =
-      superlative.lowest_playoff_ppg.ppgf >= 99999
-        ? "N/A"
-        : `${superlative.lowest_playoff_ppg.ppgf.toFixed(1)} PF Avg`;
-    const lowestPlayoffPpgText =
-      superlative.lowest_playoff_ppg.ppgf >= 99999
-        ? "Never made the playoffs."
-        : `Lowest scoring offense to make the playoffs | ${superlative.lowest_playoff_ppg.year} | ${getPlatformIcon(superlative.lowest_playoff_ppg.platform)}`;
-    const highestMissPlayoffsPpgVal =
-      superlative.highest_miss_playoffs_ppg.ppgf === 0
-        ? "N/A"
-        : `${superlative.highest_miss_playoffs_ppg.ppgf.toFixed(1)} PF Avg`;
-    const highestMissPlayoffsPpgText =
-      superlative.highest_miss_playoffs_ppg.ppgf === 0
-        ? "Never missed the playoffs."
-        : `Highest scoring offense to miss the playoffs | ${superlative.highest_miss_playoffs_ppg.year} | ${getPlatformIcon(superlative.highest_miss_playoffs_ppg.platform)}`;
-
-    const mostWinsUnderMedianVal =
-      superlative.most_wins_under_median.wins === 0
-        ? "N/A"
-        : `${superlative.most_wins_under_median.wins} Wins`;
-    const mostLossesOverMedianVal =
-      superlative.most_losses_over_median.losses === 0
-        ? "N/A"
-        : `${superlative.most_losses_over_median.losses} Losses`;
 
     const icon = sportIcons[sport] || "🏆";
     const espnNote =
@@ -175,122 +100,181 @@ function renderSuperlatives(superlativesData) {
         ? "<span style='font-size: 0.85rem; font-weight: normal; color: var(--text-muted);'>(Not including ESPN years)</span>"
         : "";
 
+    // Generic card builder to cleanly iterate and handle arrays
+    const buildCard = (type, title, tooltip, formatVal, formatHolder) => {
+      const data = superlative[type];
+      if (!data) return "";
+
+      const isInvalid = data.value >= 99999 || data.value === 0;
+      const displayVal = isInvalid ? "N/A" : formatVal(data.value);
+
+      let holdersHtml = "";
+      if (!isInvalid && data.holders && data.holders.length > 0) {
+        if (data.holders.length === 1) {
+          const h = data.holders[0];
+          holdersHtml = `
+            <p class="manager">${h.manager || h.winner || h.loser}</p>
+            <p class="meta">${formatHolder(h, data.value)}</p>
+          `;
+        } else {
+          holdersHtml = `<div class="record-holders">`;
+          data.holders.forEach((h) => {
+            holdersHtml += `
+              <div class="record-holder">
+                <div class="manager" style="font-weight: 600; margin-bottom: 2px;">${h.manager || h.winner || h.loser}</div>
+                <div class="meta" style="font-size: 0.8rem; color: var(--text-muted); line-height: 1.4;">${formatHolder(h, data.value)}</div>
+              </div>
+            `;
+          });
+          holdersHtml += `</div>`;
+        }
+      } else {
+        let fallbackMsg = "No records recorded.";
+        if (type.includes("playoff")) fallbackMsg = "Never made the playoffs.";
+        if (type.includes("miss_playoff"))
+          fallbackMsg = "Never missed the playoffs.";
+        holdersHtml = `<p class="meta">${fallbackMsg}</p>`;
+      }
+
+      return `
+        <div class="score-card ${type.replace(/_/g, "-")}">
+          <h3 title="${tooltip}">${title}</h3>
+          <p class="metric">${displayVal}</p>
+          ${holdersHtml}
+        </div>
+      `;
+    };
+
     const sectionHtml = `
             <div class="sport-section">
                 <div class="sport-header">${icon} ${sport} Records (Regular Season) ${espnNote}</div>
                 <div class="scores-grid">
-
-                    <div class="score-card highest-score">
-                        <h3>🌋 All-Time High</h3>
-                        <p class="metric">${superlative.highest_score.score.toLocaleString()} pts</p>
-                        <p class="manager">${superlative.highest_score.manager}</p>
-                        <p class="meta">Against ${superlative.highest_score.opponent} (${superlative.highest_score.score} to ${superlative.highest_score.opp_score})<br>Week ${superlative.highest_score.period}, ${superlative.highest_score.year} | ${getPlatformIcon(superlative.highest_score.platform)}</p>
-                    </div>
-
-                    <div class="score-card lowest-score">
-                        <h3>🪫 All-Time Low</h3>
-                        <p class="metric">${superlative.lowest_score.score.toLocaleString()} pts</p>
-                        <p class="manager">${superlative.lowest_score.manager}</p>
-                        <p class="meta">Against ${superlative.lowest_score.opponent} (${superlative.lowest_score.score} to ${superlative.lowest_score.opp_score})<br>Week ${superlative.lowest_score.period}, ${superlative.lowest_score.year} | ${getPlatformIcon(superlative.lowest_score.platform)}</p>
-                    </div>
-
-                    <div class="score-card longest-win-streak">
-                        <h3 title="Most consecutive regular season wins">🔥 On Fire</h3>
-                        <p class="metric">${superlative.longest_win_streak.count} Straight Wins</p>
-                        <p class="manager">${superlative.longest_win_streak.manager}</p>
-                        <p class="meta">Regular Season<br>Wk ${superlative.longest_win_streak.start_p}, ${superlative.longest_win_streak.start_y} to Wk ${superlative.longest_win_streak.end_p}, ${superlative.longest_win_streak.end_y}</p>
-                    </div>
-
-                    <div class="score-card longest-loss-streak">
-                        <h3 title="Most consecutive regular season losses">🧊 Ice Cold</h3>
-                        <p class="metric">${superlative.longest_loss_streak.count} Straight Losses</p>
-                        <p class="manager">${superlative.longest_loss_streak.manager}</p>
-                        <p class="meta">Regular Season<br>Wk ${superlative.longest_loss_streak.start_p}, ${superlative.longest_loss_streak.start_y} to Wk ${superlative.longest_loss_streak.end_p}, ${superlative.longest_loss_streak.end_y}</p>
-                    </div>
-
-                    <div class="score-card highest-ppg">
-                        <h3 title="Highest Points Per Game For in a single season">🚂 The Juggernaut</h3>
-                        <p class="metric">${superlative.highest_ppg.ppgf.toFixed(1)} PF Avg</p>
-                        <p class="manager">${superlative.highest_ppg.manager}</p>
-                        <p class="meta">Highest scoring offense | ${superlative.highest_ppg.year} | ${getPlatformIcon(superlative.highest_ppg.platform)}</p>
-                    </div>
-
-                    <div class="score-card lowest-ppg">
-                        <h3 title="Lowest Points Per Game For in a single season">📉 Rough Season</h3>
-                        <p class="metric">${lowestPpgVal}</p>
-                        <p class="manager">${superlative.lowest_ppg.manager}</p>
-                        <p class="meta">${lowestPpgText}</p>
-                    </div>
-
-                    <div class="score-card highest-ppga">
-                        <h3 title="Highest Points Per Game Against in a single season">🌩️ Schedule Victim</h3>
-                        <p class="metric">${superlative.highest_ppga.ppga.toFixed(1)} PA Avg</p>
-                        <p class="manager">${superlative.highest_ppga.manager}</p>
-                        <p class="meta">Hardest schedule | ${superlative.highest_ppga.year} | ${getPlatformIcon(superlative.highest_ppga.platform)}</p>
-                    </div>
-
-                    <div class="score-card lowest-ppga">
-                        <h3 title="Lowest Points Per Game Against in a single season">🐴 Golden Horseshoe</h3>
-                        <p class="metric">${lowestPpgaVal}</p>
-                        <p class="manager">${superlative.lowest_ppga.manager}</p>
-                        <p class="meta">${lowestPpgaText}</p>
-                    </div>
-
-                    <div class="score-card highest-losing-score">
-                        <h3 title="Highest score in a loss">💔 The Heartbreak</h3>
-                        <p class="metric">${highestLossVal}</p>
-                        <p class="manager">${superlative.highest_losing_score.manager}</p>
-                        <p class="meta">${highestLossText}</p>
-                    </div>
-
-                    <div class="score-card lowest-winning-score">
-                        <h3 title="Lowest score in a win">🦝 The Heist</h3>
-                        <p class="metric">${lowestWinVal}</p>
-                        <p class="manager">${superlative.lowest_winning_score.manager}</p>
-                        <p class="meta">${lowestWinText}</p>
-                    </div>
-
-                    <div class="score-card largest-victory-margin">
-                        <h3 title="Largest margin of victory">🥊 Biggest Blowout</h3>
-                        <p class="metric">${largestMarginVal}</p>
-                        <p class="manager">${superlative.largest_victory_margin.winner}</p>
-                        <p class="meta">${largestMarginText}</p>
-                    </div>
-
-                    <div class="score-card smallest-victory-margin">
-                        <h3 title="Smallest margin of victory">🤏 Close One!</h3>
-                        <p class="metric">${smallestMarginVal}</p>
-                        <p class="manager">${superlative.smallest_victory_margin.winner}</p>
-                        <p class="meta">${smallestMarginText}</p>
-                    </div>
-
-                    <div class="score-card most-wins-under-median">
-                        <h3 title="Most wins while scoring in the bottom half of the league">🍀 The Luck Box</h3>
-                        <p class="metric">${mostWinsUnderMedianVal}</p>
-                        <p class="manager">${superlative.most_wins_under_median.manager}</p>
-                        <p class="meta">Career wins despite scoring<br>below the weekly median.</p>
-                    </div>
-
-                    <div class="score-card most-losses-over-median">
-                        <h3 title="Most career losses despite scoring in the top half of the league">🌧️ The Unlucky Box</h3>
-                        <p class="metric">${mostLossesOverMedianVal}</p>
-                        <p class="manager">${superlative.most_losses_over_median.manager}</p>
-                        <p class="meta">Career losses despite scoring<br>above the weekly median.</p>
-                    </div>
-
-                    <div class="score-card lowest-playoff-ppg">
-                        <h3 title="Lowest Points Per Game For while still making the playoffs">🤞 Lucky Breaks</h3>
-                        <p class="metric">${lowestPlayoffPpgVal}</p>
-                        <p class="manager">${superlative.lowest_playoff_ppg.manager}</p>
-                        <p class="meta">${lowestPlayoffPpgText}</p>
-                    </div>
-
-                    <div class="score-card highest-miss-playoffs-ppg">
-                        <h3 title="Highest Points Per Game For without making the playoffs">🏹 Glass Cannon</h3>
-                        <p class="metric">${highestMissPlayoffsPpgVal}</p>
-                        <p class="manager">${superlative.highest_miss_playoffs_ppg.manager}</p>
-                        <p class="meta">${highestMissPlayoffsPpgText}</p>
-                    </div>
+          ${buildCard(
+            "highest_score",
+            "🌋 All-Time High",
+            "Highest points scored in a single game",
+            (v) => `${v.toLocaleString()} pts`,
+            (h, v) =>
+              `Against ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "lowest_score",
+            "🪫 All-Time Low",
+            "Lowest points scored in a single game",
+            (v) => `${v.toLocaleString()} pts`,
+            (h, v) =>
+              `Against ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "longest_win_streak",
+            "🔥 On Fire",
+            "Most consecutive regular season wins",
+            (v) => `${v} Straight Wins`,
+            (h) =>
+              `Regular Season<br>Wk ${h.start_p}, ${h.start_y} to Wk ${h.end_p}, ${h.end_y}`,
+          )}
+          ${buildCard(
+            "longest_loss_streak",
+            "🧊 Ice Cold",
+            "Most consecutive regular season losses",
+            (v) => `${v} Straight Losses`,
+            (h) =>
+              `Regular Season<br>Wk ${h.start_p}, ${h.start_y} to Wk ${h.end_p}, ${h.end_y}`,
+          )}
+          ${buildCard(
+            "highest_ppg",
+            "🚂 The Juggernaut",
+            "Highest Points Per Game For in a single season",
+            (v) => `${v.toFixed(1)} PF Avg`,
+            (h) =>
+              `Highest scoring offense | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "lowest_ppg",
+            "📉 Rough Season",
+            "Lowest Points Per Game For in a single season",
+            (v) => `${v.toFixed(1)} PF Avg`,
+            (h) =>
+              `Lowest scoring offense | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "highest_ppga",
+            "🌩️ Schedule Victim",
+            "Highest Points Per Game Against in a single season",
+            (v) => `${v.toFixed(1)} PA Avg`,
+            (h) =>
+              `Hardest schedule | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "lowest_ppga",
+            "🐴 Golden Horseshoe",
+            "Lowest Points Per Game Against in a single season",
+            (v) => `${v.toFixed(1)} PA Avg`,
+            (h) =>
+              `Easiest schedule | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "highest_losing_score",
+            "💔 The Heartbreak",
+            "Highest score in a loss",
+            (v) => `${v.toLocaleString()} pts`,
+            (h, v) =>
+              `Lost to ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "lowest_winning_score",
+            "🦝 The Heist",
+            "Lowest score in a win",
+            (v) => `${v.toLocaleString()} pts`,
+            (h, v) =>
+              `Defeated ${h.opponent} (${v} to ${h.opp_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "largest_victory_margin",
+            "🥊 Biggest Blowout",
+            "Largest margin of victory",
+            (v) => `+${v.toLocaleString()} pts`,
+            (h) =>
+              `Destroyed ${h.loser} (${h.winning_score} to ${h.losing_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "smallest_victory_margin",
+            "🤏 Close One!",
+            "Smallest margin of victory",
+            (v) => `+${v.toLocaleString()} pts`,
+            (h) =>
+              `Survived ${h.loser} (${h.winning_score} to ${h.losing_score})<br>Week ${h.period}, ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "most_wins_under_median",
+            "🍀 The Luck Box",
+            "Most wins while scoring in the bottom half of the league",
+            (v) => `${v} Wins`,
+            (h) => `Career wins despite scoring<br>below the weekly median.`,
+          )}
+          ${buildCard(
+            "most_losses_over_median",
+            "🌧️ The Unlucky Box",
+            "Most career losses despite scoring in the top half of the league",
+            (v) => `${v} Losses`,
+            (h) => `Career losses despite scoring<br>above the weekly median.`,
+          )}
+          ${buildCard(
+            "lowest_playoff_ppg",
+            "🤞 Lucky Breaks",
+            "Lowest Points Per Game For while still making the playoffs",
+            (v) => `${v.toFixed(1)} PF Avg`,
+            (h) =>
+              `Lowest scoring offense to make the playoffs | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
+          ${buildCard(
+            "highest_miss_playoffs_ppg",
+            "🏹 Glass Cannon",
+            "Highest Points Per Game For without making the playoffs",
+            (v) => `${v.toFixed(1)} PF Avg`,
+            (h) =>
+              `Highest scoring offense to miss the playoffs | ${h.year} | ${getPlatformIcon(h.platform)}`,
+          )}
 
                 </div>
             </div>
