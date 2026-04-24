@@ -636,7 +636,7 @@ function renderHallOfFame(selectedSport = "All") {
 
     tr.innerHTML = `
             <td>
-                <div style="font-size: 1.05rem; font-weight: bold;">${stat.manager}</div>
+                <div class="manager-name-link" style="font-size: 1.05rem; font-weight: bold; cursor: pointer;" onclick="openPlayerCard('${stat.manager.replace(/'/g, "\\'")}')">${stat.manager}</div>
                 ${seasonsStr}
             </td>
             <td><div class="badge-stack">${reigningText || '<span style="color:var(--divider)">-</span>'}</div></td>
@@ -1109,6 +1109,126 @@ function updateRadar() {
   };
 
   radarInstance.setOption(option);
+}
+
+// --- Player Card Modal ---
+function openPlayerCard(managerName) {
+  let modal = document.getElementById("player-card-modal");
+  if (!modal) {
+    modal = document.createElement("div");
+    modal.id = "player-card-modal";
+    modal.className = "modal-overlay";
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="modal-close" onclick="closePlayerCard()">&times;</span>
+        <div id="player-card-body"></div>
+      </div>
+    `;
+    document.body.appendChild(modal);
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closePlayerCard();
+    });
+  }
+
+  const stat = globalStatsData.find((m) => m.manager === managerName);
+  if (!stat) return;
+
+  const body = document.getElementById("player-card-body");
+
+  const totalWins = stat.overall.reg_wins + stat.overall.post_wins;
+  const totalLosses = stat.overall.reg_losses + stat.overall.post_losses;
+  const totalTies =
+    (stat.overall.reg_ties || 0) + (stat.overall.post_ties || 0);
+  const totalGames = totalWins + totalLosses + totalTies;
+  const winPct =
+    totalGames > 0
+      ? ((totalWins + totalTies * 0.5) / totalGames)
+          .toFixed(3)
+          .replace(/^0+/, "")
+      : ".000";
+
+  let html = `
+    <div style="text-align: center; margin-bottom: 2rem;">
+        <h2 style="font-size: 2rem; margin-bottom: 0.5rem; color: var(--primary);">${stat.manager}</h2>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <div class="score-card" style="padding: 0.5rem 1rem; border-top-color: var(--primary); min-width: 100px;">
+                <h3 style="margin:0; font-size:0.8rem;">Win %</h3>
+                <div style="font-size:1.2rem; font-weight:bold; color: var(--text-main);">${winPct}</div>
+            </div>
+            <div class="score-card" style="padding: 0.5rem 1rem; border-top-color: #f1c40f; min-width: 100px;">
+                <h3 style="margin:0; font-size:0.8rem;">Championships</h3>
+                <div style="font-size:1.2rem; font-weight:bold; color: var(--text-main);">${stat.overall.championships.length}</div>
+            </div>
+            <div class="score-card" style="padding: 0.5rem 1rem; border-top-color: #3498db; min-width: 100px;">
+                <h3 style="margin:0; font-size:0.8rem;">Total Points</h3>
+                <div style="font-size:1.2rem; font-weight:bold; color: var(--text-main);">${stat.overall.points.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</div>
+            </div>
+        </div>
+    </div>
+  `;
+
+  html += `<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">`;
+
+  const renderSports = [...new Set(stat.sports_played)].sort((a, b) => {
+    const idxA = sportOrder.indexOf(a);
+    const idxB = sportOrder.indexOf(b);
+    return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
+  });
+
+  renderSports.forEach((sp) => {
+    const sData = stat.by_sport[sp];
+    const sWins = sData.reg_wins + sData.post_wins;
+    const sLosses = sData.reg_losses + sData.post_losses;
+    const sTies = (sData.reg_ties || 0) + (sData.post_ties || 0);
+    const sGames = sWins + sLosses + sTies;
+    const sWinPct =
+      sGames > 0
+        ? ((sWins + sTies * 0.5) / sGames).toFixed(3).replace(/^0+/, "")
+        : ".000";
+
+    html += `
+        <div class="card" style="padding: 1rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">${sportIcons[sp] || ""}</div>
+            <h3 style="margin: 0 0 0.5rem 0; color: var(--primary);">${sp}</h3>
+            <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+                Record: <strong style="color: var(--text-main);">${sWins}-${sLosses}${sTies > 0 ? "-" + sTies : ""}</strong> (${sWinPct})
+            </div>
+            <div style="font-size: 0.9rem; color: var(--text-muted);">
+                🏆 <strong>${(sData.championships || []).length}</strong> | 
+                🥈 <strong>${(sData.second_place || []).length}</strong> | 
+                🥉 <strong>${(sData.third_place || []).length}</strong>
+            </div>
+        </div>
+      `;
+  });
+
+  html += `</div>`;
+
+  html += `
+    <div style="margin-top: 2rem; text-align: center;">
+        <button class="nav-button" onclick="closePlayerCard(); document.getElementById('superlatives-manager-filter').value = '${stat.manager.replace(/'/g, "\\\\'")}'; document.getElementById('superlatives-manager-filter').dispatchEvent(new Event('change')); document.getElementById('superlatives-container').scrollIntoView({behavior: 'smooth'});">
+            View Trophy Cabinet
+        </button>
+    </div>
+  `;
+
+  body.innerHTML = html;
+  modal.style.display = "flex";
+
+  setTimeout(() => {
+    modal.classList.add("show");
+  }, 10);
+}
+
+function closePlayerCard() {
+  const modal = document.getElementById("player-card-modal");
+  if (modal) {
+    modal.classList.remove("show");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300);
+  }
 }
 
 loadDashboard();
