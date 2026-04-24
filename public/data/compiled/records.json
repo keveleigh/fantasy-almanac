@@ -591,6 +591,25 @@
                 "Sleeper",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2014,
@@ -616,6 +635,14 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [
                         2015
                     ],
@@ -631,6 +658,25 @@
                     "points": 154892.8
                 },
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2014,
                         2019,
@@ -649,6 +695,24 @@
                     "points": 26167.3
                 },
                 "MLB": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2014,
                         2015,
@@ -1237,6 +1301,25 @@
                 "Sleeper",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2009,
@@ -1261,6 +1344,14 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [
                         2009,
                         2012
@@ -1277,6 +1368,25 @@
                     "points": 165430.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2016,
                         2018,
@@ -1294,6 +1404,23 @@
                     "points": 26240.55
                 },
                 "MLB": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2013,
                         2017,
@@ -1925,6 +2052,25 @@
                 "Sleeper",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2010,
@@ -1947,6 +2093,14 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 54,
                     "reg_losses": 44,
@@ -1960,6 +2114,25 @@
                     "points": 155848.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2010,
                         2015
@@ -1976,6 +2149,24 @@
                     "points": 26655.45
                 },
                 "MLB": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2010,
                         2018,
@@ -2563,6 +2754,25 @@
                 "Sleeper",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2009,
@@ -2582,6 +2792,14 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 57,
                     "reg_losses": 41,
@@ -2595,6 +2813,25 @@
                     "points": 141779.1
                 },
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2009,
                         2017
@@ -2611,6 +2848,24 @@
                     "points": 26951.15
                 },
                 "MLB": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2012
                     ],
@@ -3237,6 +3492,25 @@
                 "Sleeper",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2011,
@@ -3256,6 +3530,14 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [
                         2011,
                         2013
@@ -3272,6 +3554,25 @@
                     "points": 149402.8
                 },
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2011
                     ],
@@ -3287,6 +3588,21 @@
                     "points": 25761.5
                 },
                 "MLB": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022
+                    ],
                     "championships": [],
                     "reg_wins": 127,
                     "reg_losses": 118,
@@ -3885,6 +4201,23 @@
                 "Sleeper",
                 "Manual"
             ],
+            "years_played": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024
+            ],
             "overall": {
                 "championships": [
                     2010,
@@ -3904,6 +4237,13 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [
                         2010
                     ],
@@ -3919,6 +4259,19 @@
                     "points": 122952.9
                 },
                 "MLB": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2021,
+                        2022
+                    ],
                     "championships": [],
                     "reg_wins": 86,
                     "reg_losses": 130,
@@ -3932,6 +4285,22 @@
                     "points": 60468.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024
+                    ],
                     "championships": [
                         2012,
                         2013
@@ -4534,6 +4903,12 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2023,
@@ -4553,6 +4928,12 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2023,
                         2024,
@@ -4770,6 +5151,19 @@
                 "ESPN",
                 "Manual"
             ],
+            "years_played": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020
+            ],
             "overall": {
                 "championships": [
                     2014,
@@ -4788,6 +5182,13 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 56,
                     "reg_losses": 21,
@@ -4801,6 +5202,15 @@
                     "points": 126921.2
                 },
                 "MLB": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017
+                    ],
                     "championships": [
                         2014
                     ],
@@ -4816,6 +5226,18 @@
                     "points": 41685.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020
+                    ],
                     "championships": [
                         2019
                     ],
@@ -5383,6 +5805,24 @@
                 "Fleaflicker",
                 "ESPN"
             ],
+            "years_played": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2011
@@ -5400,6 +5840,24 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2011
                     ],
@@ -5631,6 +6089,25 @@
                 "Sleeper",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2021
@@ -5648,6 +6125,25 @@
             },
             "by_sport": {
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2021
                     ],
@@ -5663,6 +6159,11 @@
                     "points": 26205.3
                 },
                 "NBA": {
+                    "years_played": [
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 15,
                     "reg_losses": 27,
@@ -5676,6 +6177,11 @@
                     "points": 49435.3
                 },
                 "MLB": {
+                    "years_played": [
+                        2013,
+                        2014,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 16,
                     "reg_losses": 45,
@@ -6279,6 +6785,25 @@
                 "ESPN",
                 "Sleeper"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [
                     2020
@@ -6296,6 +6821,25 @@
             },
             "by_sport": {
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [
                         2020
                     ],
@@ -6506,6 +7050,9 @@
                 "ESPN",
                 "Sleeper"
             ],
+            "years_played": [
+                2025
+            ],
             "overall": {
                 "championships": [
                     2025
@@ -6523,6 +7070,9 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 13,
                     "reg_losses": 6,
@@ -6536,6 +7086,9 @@
                     "points": 7455.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2025
+                    ],
                     "championships": [
                         2025
                     ],
@@ -6918,6 +7471,21 @@
                 "ESPN",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 163,
@@ -6933,6 +7501,14 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 36,
                     "reg_losses": 62,
@@ -6946,6 +7522,21 @@
                     "points": 131576.7
                 },
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021
+                    ],
                     "championships": [],
                     "reg_wins": 65,
                     "reg_losses": 105,
@@ -6959,6 +7550,18 @@
                     "points": 17620.25
                 },
                 "MLB": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019
+                    ],
                     "championships": [],
                     "reg_wins": 62,
                     "reg_losses": 140,
@@ -7551,6 +8154,18 @@
                 "ESPN",
                 "Manual"
             ],
+            "years_played": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 103,
@@ -7566,6 +8181,13 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 25,
                     "reg_losses": 52,
@@ -7579,6 +8201,14 @@
                     "points": 99198.8
                 },
                 "MLB": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016
+                    ],
                     "championships": [],
                     "reg_wins": 20,
                     "reg_losses": 104,
@@ -7592,6 +8222,17 @@
                     "points": 23648.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019
+                    ],
                     "championships": [],
                     "reg_wins": 58,
                     "reg_losses": 59,
@@ -8179,6 +8820,15 @@
                 "ESPN",
                 "Sleeper"
             ],
+            "years_played": [
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 99,
@@ -8194,6 +8844,15 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 58,
                     "reg_losses": 63,
@@ -8207,6 +8866,15 @@
                     "points": 41140.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 41,
                     "reg_losses": 55,
@@ -8597,6 +9265,18 @@
                 "ESPN",
                 "Sleeper"
             ],
+            "years_played": [
+                2015,
+                2016,
+                2017,
+                2018,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 81,
@@ -8612,6 +9292,12 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2015,
+                        2016,
+                        2017,
+                        2018
+                    ],
                     "championships": [],
                     "reg_wins": 39,
                     "reg_losses": 35,
@@ -8625,6 +9311,14 @@
                     "points": 25347.0
                 },
                 "NFL": {
+                    "years_played": [
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 42,
                     "reg_losses": 41,
@@ -9024,6 +9718,15 @@
                 "ESPN",
                 "Manual"
             ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 79,
@@ -9039,6 +9742,14 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 31,
                     "reg_losses": 67,
@@ -9052,6 +9763,14 @@
                     "points": 125291.8
                 },
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014
+                    ],
                     "championships": [],
                     "reg_wins": 35,
                     "reg_losses": 43,
@@ -9065,6 +9784,9 @@
                     "points": 7303.3
                 },
                 "MLB": {
+                    "years_played": [
+                        2012
+                    ],
                     "championships": [],
                     "reg_wins": 13,
                     "reg_losses": 9,
@@ -9636,6 +10358,13 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 54,
@@ -9651,6 +10380,13 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 54,
                     "reg_losses": 40,
@@ -9871,6 +10607,15 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 51,
@@ -9886,6 +10631,15 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 51,
                     "reg_losses": 70,
@@ -10095,6 +10849,13 @@
                 "Fleaflicker",
                 "Manual"
             ],
+            "years_played": [
+                2010,
+                2011,
+                2012,
+                2013,
+                2015
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 35,
@@ -10110,6 +10871,11 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2010,
+                        2011,
+                        2015
+                    ],
                     "championships": [],
                     "reg_wins": 12,
                     "reg_losses": 23,
@@ -10123,6 +10889,10 @@
                     "points": 45027.3
                 },
                 "MLB": {
+                    "years_played": [
+                        2011,
+                        2012
+                    ],
                     "championships": [],
                     "reg_wins": 17,
                     "reg_losses": 27,
@@ -10136,6 +10906,9 @@
                     "points": 8758.5
                 },
                 "NFL": {
+                    "years_played": [
+                        2013
+                    ],
                     "championships": [],
                     "reg_wins": 6,
                     "reg_losses": 7,
@@ -10697,6 +11470,15 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2016,
+                2017,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 32,
@@ -10712,6 +11494,15 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2016,
+                        2017,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 32,
                     "reg_losses": 101,
@@ -10912,6 +11703,11 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2021,
+                2023,
+                2024
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 26,
@@ -10927,6 +11723,11 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2021,
+                        2023,
+                        2024
+                    ],
                     "championships": [],
                     "reg_wins": 26,
                     "reg_losses": 32,
@@ -11133,6 +11934,10 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2017,
+                2018
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 19,
@@ -11148,6 +11953,10 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2017,
+                        2018
+                    ],
                     "championships": [],
                     "reg_wins": 19,
                     "reg_losses": 18,
@@ -11354,6 +12163,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2012
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 17,
@@ -11369,6 +12181,9 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2012
+                    ],
                     "championships": [],
                     "reg_wins": 17,
                     "reg_losses": 4,
@@ -11565,6 +12380,10 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2023,
+                2024
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 15,
@@ -11580,6 +12399,10 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2023,
+                        2024
+                    ],
                     "championships": [],
                     "reg_wins": 15,
                     "reg_losses": 24,
@@ -11787,6 +12610,9 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2025
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 15,
@@ -11802,6 +12628,9 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2025
+                    ],
                     "championships": [],
                     "reg_wins": 15,
                     "reg_losses": 5,
@@ -12005,6 +12834,10 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2009,
+                2010
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 13,
@@ -12020,6 +12853,10 @@
             },
             "by_sport": {
                 "NFL": {
+                    "years_played": [
+                        2009,
+                        2010
+                    ],
                     "championships": [],
                     "reg_wins": 13,
                     "reg_losses": 13,
@@ -12233,6 +13070,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2010
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 9,
@@ -12248,6 +13088,9 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2010
+                    ],
                     "championships": [],
                     "reg_wins": 9,
                     "reg_losses": 12,
@@ -12444,6 +13287,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2011
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 7,
@@ -12459,6 +13305,9 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2011
+                    ],
                     "championships": [],
                     "reg_wins": 7,
                     "reg_losses": 15,
@@ -12666,6 +13515,9 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2017
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 7,
@@ -12681,6 +13533,9 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2017
+                    ],
                     "championships": [],
                     "reg_wins": 7,
                     "reg_losses": 12,
@@ -12881,6 +13736,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2013
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 6,
@@ -12896,6 +13754,9 @@
             },
             "by_sport": {
                 "NFL": {
+                    "years_played": [
+                        2013
+                    ],
                     "championships": [],
                     "reg_wins": 6,
                     "reg_losses": 7,
@@ -13096,6 +13957,9 @@
             "platforms_played": [
                 "ESPN"
             ],
+            "years_played": [
+                2017
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 5,
@@ -13111,6 +13975,9 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2017
+                    ],
                     "championships": [],
                     "reg_wins": 5,
                     "reg_losses": 14,
@@ -13307,6 +14174,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2011
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 4,
@@ -13322,6 +14192,9 @@
             },
             "by_sport": {
                 "MLB": {
+                    "years_played": [
+                        2011
+                    ],
                     "championships": [],
                     "reg_wins": 4,
                     "reg_losses": 18,
@@ -13543,6 +14416,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2009
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 2,
@@ -13558,6 +14434,9 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2009
+                    ],
                     "championships": [],
                     "reg_wins": 2,
                     "reg_losses": 19,
@@ -13761,6 +14640,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2012
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 2,
@@ -13776,6 +14658,9 @@
             },
             "by_sport": {
                 "NFL": {
+                    "years_played": [
+                        2012
+                    ],
                     "championships": [],
                     "reg_wins": 2,
                     "reg_losses": 11,
@@ -13975,6 +14860,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2011
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 0,
@@ -13990,6 +14878,9 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2011
+                    ],
                     "championships": [],
                     "reg_wins": 0,
                     "reg_losses": 14,
@@ -14145,6 +15036,9 @@
             "platforms_played": [
                 "Fleaflicker"
             ],
+            "years_played": [
+                2012
+            ],
             "overall": {
                 "championships": [],
                 "reg_wins": 0,
@@ -14160,6 +15054,9 @@
             },
             "by_sport": {
                 "NBA": {
+                    "years_played": [
+                        2012
+                    ],
                     "championships": [],
                     "reg_wins": 0,
                     "reg_losses": 21,

@@ -504,8 +504,34 @@ function renderHallOfFame(selectedSport = "All") {
     const postStr = `${activeData.post_wins}-${activeData.post_losses}${activeData.post_ties > 0 ? "-" + activeData.post_ties : ""}`;
     const consStr = `${activeData.consolation_wins || 0}-${activeData.consolation_losses || 0}${activeData.consolation_ties > 0 ? "-" + activeData.consolation_ties : ""}`;
 
+    // Calculate Active Era
+    const activeYearsPlayed =
+      selectedSport === "All"
+        ? stat.years_played
+        : stat.by_sport[selectedSport]?.years_played || [];
+    let seasonsStr = "";
+    if (activeYearsPlayed && activeYearsPlayed.length > 0) {
+      const ranges = [];
+      let start = activeYearsPlayed[0];
+      let end = activeYearsPlayed[0];
+      for (let i = 1; i < activeYearsPlayed.length; i++) {
+        if (activeYearsPlayed[i] === end + 1) {
+          end = activeYearsPlayed[i];
+        } else {
+          ranges.push(start === end ? `${start}` : `${start}-${end}`);
+          start = end = activeYearsPlayed[i];
+        }
+      }
+      ranges.push(start === end ? `${start}` : `${start}-${end}`);
+      const yearRange = ranges.join(", ");
+      seasonsStr = `<div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; line-height: 1.4;"><strong style="color: var(--text-main);">${activeYearsPlayed.length} Year${activeYearsPlayed.length > 1 ? "s" : ""}</strong><br>${yearRange}</div>`;
+    }
+
     tr.innerHTML = `
-            <td><strong>${stat.manager}</strong></td>
+            <td>
+                <div style="font-size: 1.05rem; font-weight: bold;">${stat.manager}</div>
+                ${seasonsStr}
+            </td>
             <td><div class="badge-stack">${reigningText || '<span style="color:var(--divider)">-</span>'}</div></td>
             <td>${sportsStr}</td>
             <td>${champHtml}</td>
