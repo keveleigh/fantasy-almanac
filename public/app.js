@@ -378,8 +378,34 @@ function renderHallOfFame(selectedSport = "All") {
     return bData.reg_wins - aData.reg_wins;
   });
 
+  // Filter inactive managers if toggled
+  const hideInactive = document.getElementById("hide-inactive-toggle")?.checked;
+  let filteredData = sortedData;
+  if (hideInactive) {
+    let maxYearPlayed = 0;
+    globalStatsData.forEach((stat) => {
+      const years =
+        selectedSport === "All"
+          ? stat.years_played
+          : stat.by_sport[selectedSport]?.years_played || [];
+      if (years && years.length > 0) {
+        const max = Math.max(...years);
+        if (max > maxYearPlayed) maxYearPlayed = max;
+      }
+    });
+
+    filteredData = sortedData.filter((stat) => {
+      const years =
+        selectedSport === "All"
+          ? stat.years_played
+          : stat.by_sport[selectedSport]?.years_played || [];
+      if (!years || years.length === 0) return false;
+      return Math.max(...years) >= maxYearPlayed - 1;
+    });
+  }
+
   // 3. Render Table
-  sortedData.forEach((stat) => {
+  filteredData.forEach((stat) => {
     const activeData =
       selectedSport === "All" ? stat.overall : stat.by_sport[selectedSport];
     if (!activeData) return;
@@ -726,6 +752,37 @@ function initHallOfFame() {
   hofDropdown.addEventListener("change", (e) =>
     renderHallOfFame(e.target.value),
   );
+
+  const filterContainer = document.createElement("div");
+  filterContainer.style.display = "flex";
+  filterContainer.style.alignItems = "center";
+  filterContainer.style.gap = "15px";
+
+  // Dynamically inject the Hide Inactive toggle next to the dropdown
+  const toggleLabel = document.createElement("label");
+  toggleLabel.style.display = "flex";
+  toggleLabel.style.alignItems = "center";
+  toggleLabel.style.gap = "8px";
+  toggleLabel.style.cursor = "pointer";
+  toggleLabel.style.fontSize = "0.95rem";
+  toggleLabel.style.fontWeight = "600";
+  toggleLabel.style.color = "var(--text-muted)";
+
+  const toggleInput = document.createElement("input");
+  toggleInput.type = "checkbox";
+  toggleInput.id = "hide-inactive-toggle";
+  toggleInput.addEventListener("change", () =>
+    renderHallOfFame(hofDropdown.value),
+  );
+
+  toggleLabel.appendChild(toggleInput);
+  toggleLabel.appendChild(document.createTextNode("Hide Inactive"));
+
+  if (hofDropdown.parentElement) {
+    hofDropdown.parentElement.insertBefore(filterContainer, hofDropdown);
+    filterContainer.appendChild(hofDropdown);
+    filterContainer.appendChild(toggleLabel);
+  }
 
   renderHallOfFame("All");
 }
