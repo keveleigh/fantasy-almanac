@@ -488,17 +488,34 @@ function renderHallOfFame(selectedSport = "All") {
 
   // 2. Re-sort data
   const sortedData = [...globalStatsData].sort((a, b) => {
+    const defaultData = {
+      championships: [],
+      second_place: [],
+      third_place: [],
+      reg_wins: 0,
+    };
     const aData =
       selectedSport === "All"
         ? a.overall
-        : a.by_sport[selectedSport] || { championships: [], reg_wins: 0 };
+        : a.by_sport[selectedSport] || defaultData;
     const bData =
       selectedSport === "All"
         ? b.overall
-        : b.by_sport[selectedSport] || { championships: [], reg_wins: 0 };
-    if (bData.championships.length !== aData.championships.length)
-      return bData.championships.length - aData.championships.length;
-    return bData.reg_wins - aData.reg_wins;
+        : b.by_sport[selectedSport] || defaultData;
+
+    const a1st = (aData.championships || []).length;
+    const b1st = (bData.championships || []).length;
+    if (b1st !== a1st) return b1st - a1st;
+
+    const a2nd = (aData.second_place || []).length;
+    const b2nd = (bData.second_place || []).length;
+    if (b2nd !== a2nd) return b2nd - a2nd;
+
+    const a3rd = (aData.third_place || []).length;
+    const b3rd = (bData.third_place || []).length;
+    if (b3rd !== a3rd) return b3rd - a3rd;
+
+    return (bData.reg_wins || 0) - (aData.reg_wins || 0);
   });
 
   // Filter inactive managers if toggled
