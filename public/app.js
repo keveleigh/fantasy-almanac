@@ -305,14 +305,6 @@ function renderSuperlatives(superlativesData, selectedSport = "All") {
             (v) => `${v} Losses`,
             (h) => `Career losses despite scoring<br>above the weekly median.`,
           )}
-          ${buildCard(
-            "best_team_no_champ",
-            "👑 The Best to Never Win",
-            "Highest regular season win percentage without winning the championship",
-            (v) => `${(v * 100).toFixed(1)}% Win Rate`,
-            (h) =>
-              `Went ${h.record} in ${h.year} | ${getPlatformIcon(h.platform)}`,
-          )}
 
                 </div>
             </div>
@@ -497,8 +489,14 @@ function renderHallOfFame(selectedSport = "All") {
       selectedSport === "All" ? Object.keys(stat.by_sport) : [selectedSport];
     sportsToEvaluate.forEach((sp) => {
       const data = stat.by_sport[sp];
-      if (!data || !data.championships || data.championships.length < 2) return;
+      if (!data) return;
 
+      (data.undefeated_seasons || []).forEach((year) => {
+        const iconStr = sportIcons[sp] || sp;
+        reigningText += `<span class="reigning-badge perfect" title="Undefeated Regular Season in ${year}">${iconStr} Perfect Reg. Season ('${String(year).slice(-2)})</span>`;
+      });
+
+      if (!data.championships || data.championships.length < 2) return;
       const champs = data.championships;
       const timeline = [...sportYears[sp]].reverse(); // Chronological timeline (oldest to newest)
 

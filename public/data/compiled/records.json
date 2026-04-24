@@ -226,17 +226,6 @@
                         "end_y": 2019
                     }
                 ]
-            },
-            "best_team_no_champ": {
-                "value": 1.0,
-                "holders": [
-                    {
-                        "manager": "Adam Carl",
-                        "year": 2014,
-                        "record": "13-0",
-                        "platform": "ESPN"
-                    }
-                ]
             }
         },
         "NBA": {
@@ -453,17 +442,6 @@
                         "end_y": 2012
                     }
                 ]
-            },
-            "best_team_no_champ": {
-                "value": 0.9285714285714286,
-                "holders": [
-                    {
-                        "manager": "Kurtis Eveleigh",
-                        "year": 2011,
-                        "record": "13-1",
-                        "platform": "Fleaflicker"
-                    }
-                ]
             }
         },
         "MLB": {
@@ -666,23 +644,6 @@
                         "end_y": 2016
                     }
                 ]
-            },
-            "best_team_no_champ": {
-                "value": 0.8571428571428571,
-                "holders": [
-                    {
-                        "manager": "Daniel Bailey",
-                        "year": 2020,
-                        "record": "6-1",
-                        "platform": "ESPN"
-                    },
-                    {
-                        "manager": "Sonya Morgan",
-                        "year": 2020,
-                        "record": "6-1",
-                        "platform": "ESPN"
-                    }
-                ]
             }
         }
     },
@@ -731,6 +692,7 @@
                     2022,
                     2024
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 397,
                 "reg_losses": 232,
                 "reg_ties": 0,
@@ -755,6 +717,7 @@
                     "championships": [
                         2015
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 64,
                     "reg_losses": 34,
                     "reg_ties": 0,
@@ -792,6 +755,7 @@
                         2022,
                         2024
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 122,
                     "reg_losses": 104,
                     "reg_ties": 0,
@@ -828,6 +792,7 @@
                         2016,
                         2020
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 211,
                     "reg_losses": 94,
                     "reg_ties": 0,
@@ -1036,17 +1001,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8095238095238095,
-                        "holders": [
-                            {
-                                "manager": "Malachi Morgan",
-                                "year": 2012,
-                                "record": "17-4",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -1266,17 +1220,6 @@
                                 "end_y": 2023
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.9230769230769231,
-                        "holders": [
-                            {
-                                "manager": "Malachi Morgan",
-                                "year": 2012,
-                                "record": "12-1",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "MLB": {
@@ -1479,17 +1422,6 @@
                                 "end_y": 2010
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8421052631578947,
-                        "holders": [
-                            {
-                                "manager": "Malachi Morgan",
-                                "year": 2017,
-                                "record": "16-3",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -1537,6 +1469,7 @@
                     2019,
                     2023
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 372,
                 "reg_losses": 233,
                 "reg_ties": 1,
@@ -1562,6 +1495,7 @@
                         2009,
                         2012
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 73,
                     "reg_losses": 25,
                     "reg_ties": 0,
@@ -1598,6 +1532,7 @@
                         2018,
                         2023
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 122,
                     "reg_losses": 104,
                     "reg_ties": 0,
@@ -1632,6 +1567,7 @@
                         2017,
                         2019
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 177,
                     "reg_losses": 104,
                     "reg_ties": 1,
@@ -1842,17 +1778,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.7619047619047619,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2013,
-                                "record": "16-5",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -2072,17 +1997,6 @@
                                 "manager": "Jordan Naegele",
                                 "start_y": 2024,
                                 "end_y": 2025
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6923076923076923,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2013,
-                                "record": "9-4",
-                                "platform": "Fleaflicker"
                             }
                         ]
                     }
@@ -2327,17 +2241,6 @@
                                 "end_y": 2025
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8181818181818182,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2011,
-                                "record": "18-4",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -2383,6 +2286,7 @@
                     2021,
                     2022
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 368,
                 "reg_losses": 283,
                 "reg_ties": 0,
@@ -2405,6 +2309,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 54,
                     "reg_losses": 44,
                     "reg_ties": 0,
@@ -2440,6 +2345,7 @@
                         2010,
                         2015
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 115,
                     "reg_losses": 111,
                     "reg_ties": 0,
@@ -2476,6 +2382,7 @@
                         2021,
                         2022
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 199,
                     "reg_losses": 128,
                     "reg_ties": 0,
@@ -2689,17 +2596,6 @@
                                 "end_y": 2010
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.7142857142857143,
-                        "holders": [
-                            {
-                                "manager": "Asa Morgan",
-                                "year": 2013,
-                                "record": "15-6",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -2907,17 +2803,6 @@
                                 "manager": "Asa Morgan",
                                 "start_y": 2017,
                                 "end_y": 2020
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8571428571428571,
-                        "holders": [
-                            {
-                                "manager": "Asa Morgan",
-                                "year": 2023,
-                                "record": "12-2",
-                                "platform": "Sleeper"
                             }
                         ]
                     }
@@ -3132,17 +3017,6 @@
                                 "end_y": 2020
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.7368421052631579,
-                        "holders": [
-                            {
-                                "manager": "Asa Morgan",
-                                "year": 2017,
-                                "record": "14-5",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -3185,6 +3059,7 @@
                     2012,
                     2017
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 363,
                 "reg_losses": 266,
                 "reg_ties": 0,
@@ -3207,6 +3082,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 57,
                     "reg_losses": 41,
                     "reg_ties": 0,
@@ -3242,6 +3118,7 @@
                         2009,
                         2017
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 123,
                     "reg_losses": 103,
                     "reg_ties": 0,
@@ -3275,6 +3152,7 @@
                     "championships": [
                         2012
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 183,
                     "reg_losses": 122,
                     "reg_ties": 0,
@@ -3530,17 +3408,6 @@
                                 "end_y": 2013
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.9285714285714286,
-                        "holders": [
-                            {
-                                "manager": "Kurtis Eveleigh",
-                                "year": 2011,
-                                "record": "13-1",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -3750,17 +3617,6 @@
                                 "end_y": 2014
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6923076923076923,
-                        "holders": [
-                            {
-                                "manager": "Kurtis Eveleigh",
-                                "year": 2010,
-                                "record": "9-4",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "MLB": {
@@ -3963,17 +3819,6 @@
                                 "end_y": 2025
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8421052631578947,
-                        "holders": [
-                            {
-                                "manager": "Kurtis Eveleigh",
-                                "year": 2017,
-                                "record": "16-3",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -4016,6 +3861,9 @@
                     2011,
                     2013
                 ],
+                "undefeated_seasons": [
+                    2014
+                ],
                 "reg_wins": 292,
                 "reg_losses": 277,
                 "reg_ties": 1,
@@ -4041,6 +3889,7 @@
                         2011,
                         2013
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 51,
                     "reg_losses": 47,
                     "reg_ties": 0,
@@ -4075,6 +3924,9 @@
                     "championships": [
                         2011
                     ],
+                    "undefeated_seasons": [
+                        2014
+                    ],
                     "reg_wins": 114,
                     "reg_losses": 112,
                     "reg_ties": 0,
@@ -4103,6 +3955,7 @@
                         2022
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 127,
                     "reg_losses": 118,
                     "reg_ties": 1,
@@ -4323,17 +4176,6 @@
                                 "end_y": 2010
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5238095238095238,
-                        "holders": [
-                            {
-                                "manager": "Adam Carl",
-                                "year": 2012,
-                                "record": "11-10",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -4539,17 +4381,6 @@
                                 "manager": "Adam Carl",
                                 "start_y": 2022,
                                 "end_y": 2025
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 1.0,
-                        "holders": [
-                            {
-                                "manager": "Adam Carl",
-                                "year": 2014,
-                                "record": "13-0",
-                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -4770,23 +4601,6 @@
                                 "end_y": 2022
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6666666666666666,
-                        "holders": [
-                            {
-                                "manager": "Adam Carl",
-                                "year": 2014,
-                                "record": "14-7",
-                                "platform": "Fleaflicker"
-                            },
-                            {
-                                "manager": "Adam Carl",
-                                "year": 2019,
-                                "record": "12-6",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -4827,6 +4641,7 @@
                     2012,
                     2013
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 211,
                 "reg_losses": 268,
                 "reg_ties": 0,
@@ -4850,6 +4665,7 @@
                     "championships": [
                         2010
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 52,
                     "reg_losses": 25,
                     "reg_ties": 0,
@@ -4876,6 +4692,7 @@
                         2022
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 86,
                     "reg_losses": 130,
                     "reg_ties": 0,
@@ -4908,6 +4725,7 @@
                         2012,
                         2013
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 73,
                     "reg_losses": 113,
                     "reg_ties": 0,
@@ -5137,17 +4955,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8571428571428571,
-                        "holders": [
-                            {
-                                "manager": "Andrew Mitchell",
-                                "year": 2013,
-                                "record": "18-3",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "MLB": {
@@ -5360,17 +5167,6 @@
                                 "end_y": 2022
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6666666666666666,
-                        "holders": [
-                            {
-                                "manager": "Andrew Mitchell",
-                                "year": 2014,
-                                "record": "14-7",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -5580,17 +5376,6 @@
                                 "end_y": 2019
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5714285714285714,
-                        "holders": [
-                            {
-                                "manager": "Andrew Mitchell",
-                                "year": 2021,
-                                "record": "8-6",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -5615,6 +5400,7 @@
                     2024,
                     2025
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 52,
                 "reg_losses": 25,
                 "reg_ties": 0,
@@ -5639,6 +5425,7 @@
                         2024,
                         2025
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 52,
                     "reg_losses": 25,
                     "reg_ties": 0,
@@ -5849,17 +5636,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6666666666666666,
-                        "holders": [
-                            {
-                                "manager": "Max Shapiro",
-                                "year": 2022,
-                                "record": "12-6",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -5894,6 +5670,7 @@
                     2014,
                     2019
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 206,
                 "reg_losses": 144,
                 "reg_ties": 0,
@@ -5915,6 +5692,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 56,
                     "reg_losses": 21,
                     "reg_ties": 0,
@@ -5939,6 +5717,7 @@
                     "championships": [
                         2014
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 81,
                     "reg_losses": 62,
                     "reg_ties": 0,
@@ -5966,6 +5745,7 @@
                     "championships": [
                         2019
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 69,
                     "reg_losses": 61,
                     "reg_ties": 0,
@@ -6167,17 +5947,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8571428571428571,
-                        "holders": [
-                            {
-                                "manager": "Jesten Mann",
-                                "year": 2010,
-                                "record": "18-3",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "MLB": {
@@ -6378,17 +6147,6 @@
                                 "manager": "Jesten Mann",
                                 "start_y": 2015,
                                 "end_y": 2017
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8181818181818182,
-                        "holders": [
-                            {
-                                "manager": "Jesten Mann",
-                                "year": 2011,
-                                "record": "18-4",
-                                "platform": "Fleaflicker"
                             }
                         ]
                     }
@@ -6603,17 +6361,6 @@
                                 "end_y": 2017
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.9230769230769231,
-                        "holders": [
-                            {
-                                "manager": "Jesten Mann",
-                                "year": 2012,
-                                "record": "12-1",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -6649,6 +6396,7 @@
                 "championships": [
                     2011
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 156,
                 "reg_losses": 148,
                 "reg_ties": 1,
@@ -6683,6 +6431,7 @@
                     "championships": [
                         2011
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 156,
                     "reg_losses": 148,
                     "reg_ties": 1,
@@ -6924,17 +6673,6 @@
                                 "end_y": 2025
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8571428571428571,
-                        "holders": [
-                            {
-                                "manager": "Sonya Morgan",
-                                "year": 2020,
-                                "record": "6-1",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -6975,6 +6713,7 @@
                 "championships": [
                     2021
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 147,
                 "reg_losses": 182,
                 "reg_ties": 0,
@@ -7010,6 +6749,7 @@
                     "championships": [
                         2021
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 116,
                     "reg_losses": 110,
                     "reg_ties": 0,
@@ -7028,6 +6768,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 15,
                     "reg_losses": 27,
                     "reg_ties": 0,
@@ -7046,6 +6787,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 16,
                     "reg_losses": 45,
                     "reg_ties": 0,
@@ -7259,23 +7001,6 @@
                                 "end_y": 2010
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6923076923076923,
-                        "holders": [
-                            {
-                                "manager": "Rishi Gopinath",
-                                "year": 2015,
-                                "record": "9-4",
-                                "platform": "ESPN"
-                            },
-                            {
-                                "manager": "Rishi Gopinath",
-                                "year": 2019,
-                                "record": "9-4",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 },
                 "NBA": {
@@ -7483,17 +7208,6 @@
                                 "manager": "Rishi Gopinath",
                                 "start_y": 2013,
                                 "end_y": 2013
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.47619047619047616,
-                        "holders": [
-                            {
-                                "manager": "Rishi Gopinath",
-                                "year": 2012,
-                                "record": "10-11",
-                                "platform": "Fleaflicker"
                             }
                         ]
                     }
@@ -7716,17 +7430,6 @@
                                 "end_y": 2015
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.3333333333333333,
-                        "holders": [
-                            {
-                                "manager": "Rishi Gopinath",
-                                "year": 2013,
-                                "record": "7-14",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -7764,6 +7467,7 @@
                 "championships": [
                     2020
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 127,
                 "reg_losses": 99,
                 "reg_ties": 0,
@@ -7799,6 +7503,7 @@
                     "championships": [
                         2020
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 127,
                     "reg_losses": 99,
                     "reg_ties": 0,
@@ -8032,17 +7737,6 @@
                                 "end_y": 2025
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8461538461538461,
-                        "holders": [
-                            {
-                                "manager": "Kevin Morgan",
-                                "year": 2016,
-                                "record": "11-2",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -8064,6 +7758,7 @@
                 "championships": [
                     2025
                 ],
+                "undefeated_seasons": [],
                 "reg_wins": 22,
                 "reg_losses": 11,
                 "reg_ties": 1,
@@ -8081,6 +7776,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 13,
                     "reg_losses": 6,
                     "reg_ties": 1,
@@ -8099,6 +7795,7 @@
                     "championships": [
                         2025
                     ],
+                    "undefeated_seasons": [],
                     "reg_wins": 9,
                     "reg_losses": 5,
                     "reg_ties": 0,
@@ -8300,17 +7997,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.675,
-                        "holders": [
-                            {
-                                "manager": "Thomas Ramey",
-                                "year": 2025,
-                                "record": "13-6-1",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -8501,10 +8187,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.0,
-                        "holders": []
                     }
                 }
             }
@@ -8538,6 +8220,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 163,
                 "reg_losses": 307,
                 "reg_ties": 0,
@@ -8560,6 +8243,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 36,
                     "reg_losses": 62,
                     "reg_ties": 0,
@@ -8588,6 +8272,7 @@
                         2021
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 65,
                     "reg_losses": 105,
                     "reg_ties": 0,
@@ -8613,6 +8298,7 @@
                         2019
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 62,
                     "reg_losses": 140,
                     "reg_ties": 0,
@@ -8831,17 +8517,6 @@
                                 "end_y": 2012
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5238095238095238,
-                        "holders": [
-                            {
-                                "manager": "Eric Carl",
-                                "year": 2013,
-                                "record": "11-10",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -9042,17 +8717,6 @@
                                 "manager": "Eric Carl",
                                 "start_y": 2018,
                                 "end_y": 2021
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6923076923076923,
-                        "holders": [
-                            {
-                                "manager": "Eric Carl",
-                                "year": 2017,
-                                "record": "9-4",
-                                "platform": "ESPN"
                             }
                         ]
                     }
@@ -9275,17 +8939,6 @@
                                 "end_y": 2016
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5263157894736842,
-                        "holders": [
-                            {
-                                "manager": "Eric Carl",
-                                "year": 2017,
-                                "record": "10-9",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -9316,6 +8969,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 103,
                 "reg_losses": 215,
                 "reg_ties": 0,
@@ -9337,6 +8991,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 25,
                     "reg_losses": 52,
                     "reg_ties": 0,
@@ -9358,6 +9013,7 @@
                         2016
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 20,
                     "reg_losses": 104,
                     "reg_ties": 0,
@@ -9382,6 +9038,7 @@
                         2019
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 58,
                     "reg_losses": 59,
                     "reg_ties": 0,
@@ -9605,23 +9262,6 @@
                                 "end_y": 2013
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.42857142857142855,
-                        "holders": [
-                            {
-                                "manager": "Dominic Moore",
-                                "year": 2011,
-                                "record": "6-8",
-                                "platform": "Fleaflicker"
-                            },
-                            {
-                                "manager": "Dominic Moore",
-                                "year": 2012,
-                                "record": "9-12",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "MLB": {
@@ -9833,17 +9473,6 @@
                                 "end_y": 2016
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.4090909090909091,
-                        "holders": [
-                            {
-                                "manager": "Dominic Moore",
-                                "year": 2011,
-                                "record": "9-13",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -10046,17 +9675,6 @@
                                 "end_y": 2015
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6923076923076923,
-                        "holders": [
-                            {
-                                "manager": "Dominic Moore",
-                                "year": 2018,
-                                "record": "9-4",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -10082,6 +9700,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 99,
                 "reg_losses": 118,
                 "reg_ties": 0,
@@ -10105,6 +9724,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 58,
                     "reg_losses": 63,
                     "reg_ties": 0,
@@ -10127,6 +9747,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 41,
                     "reg_losses": 55,
                     "reg_ties": 0,
@@ -10340,17 +9961,6 @@
                                 "end_y": 2025
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8571428571428571,
-                        "holders": [
-                            {
-                                "manager": "Daniel Bailey",
-                                "year": 2020,
-                                "record": "6-1",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -10553,17 +10163,6 @@
                                 "end_y": 2022
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6428571428571429,
-                        "holders": [
-                            {
-                                "manager": "Daniel Bailey",
-                                "year": 2025,
-                                "record": "9-5",
-                                "platform": "Sleeper"
-                            }
-                        ]
                     }
                 }
             }
@@ -10592,6 +10191,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 81,
                 "reg_losses": 76,
                 "reg_ties": 1,
@@ -10612,6 +10212,7 @@
                         2018
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 39,
                     "reg_losses": 35,
                     "reg_ties": 1,
@@ -10633,6 +10234,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 42,
                     "reg_losses": 41,
                     "reg_ties": 0,
@@ -10846,17 +10448,6 @@
                                 "end_y": 2018
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.7368421052631579,
-                        "holders": [
-                            {
-                                "manager": "Austin Baldwin",
-                                "year": 2016,
-                                "record": "14-5",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -11066,23 +10657,6 @@
                                 "end_y": 2021
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5714285714285714,
-                        "holders": [
-                            {
-                                "manager": "Austin Baldwin",
-                                "year": 2023,
-                                "record": "8-6",
-                                "platform": "Sleeper"
-                            },
-                            {
-                                "manager": "Austin Baldwin",
-                                "year": 2025,
-                                "record": "8-6",
-                                "platform": "Sleeper"
-                            }
-                        ]
                     }
                 }
             }
@@ -11110,6 +10684,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 79,
                 "reg_losses": 119,
                 "reg_ties": 0,
@@ -11132,6 +10707,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 31,
                     "reg_losses": 67,
                     "reg_ties": 0,
@@ -11153,6 +10729,7 @@
                         2014
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 35,
                     "reg_losses": 43,
                     "reg_ties": 0,
@@ -11169,6 +10746,7 @@
                         2012
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 13,
                     "reg_losses": 9,
                     "reg_ties": 0,
@@ -11380,17 +10958,6 @@
                                 "manager": "Evan Farley",
                                 "start_y": 2012,
                                 "end_y": 2013
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5238095238095238,
-                        "holders": [
-                            {
-                                "manager": "Evan Farley",
-                                "year": 2010,
-                                "record": "11-10",
-                                "platform": "Fleaflicker"
                             }
                         ]
                     }
@@ -11605,23 +11172,6 @@
                                 "end_y": 2014
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6153846153846154,
-                        "holders": [
-                            {
-                                "manager": "Evan Farley",
-                                "year": 2010,
-                                "record": "8-5",
-                                "platform": "Fleaflicker"
-                            },
-                            {
-                                "manager": "Evan Farley",
-                                "year": 2012,
-                                "record": "8-5",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "MLB": {
@@ -11819,17 +11369,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5909090909090909,
-                        "holders": [
-                            {
-                                "manager": "Evan Farley",
-                                "year": 2012,
-                                "record": "13-9",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -11851,6 +11390,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 54,
                 "reg_losses": 40,
                 "reg_ties": 2,
@@ -11872,6 +11412,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 54,
                     "reg_losses": 40,
                     "reg_ties": 2,
@@ -12099,23 +11640,6 @@
                                 "end_y": 2022
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.6,
-                        "holders": [
-                            {
-                                "manager": "Josh Shapiro",
-                                "year": 2024,
-                                "record": "12-8",
-                                "platform": "ESPN"
-                            },
-                            {
-                                "manager": "Josh Shapiro",
-                                "year": 2025,
-                                "record": "11-7-2",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -12139,6 +11663,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 51,
                 "reg_losses": 70,
                 "reg_ties": 0,
@@ -12162,6 +11687,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 51,
                     "reg_losses": 70,
                     "reg_ties": 0,
@@ -12380,17 +11906,6 @@
                                 "end_y": 2023
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.65,
-                        "holders": [
-                            {
-                                "manager": "Marshawn Lunch",
-                                "year": 2024,
-                                "record": "13-7",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -12415,6 +11930,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 35,
                 "reg_losses": 57,
                 "reg_ties": 0,
@@ -12434,6 +11950,7 @@
                         2015
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 12,
                     "reg_losses": 23,
                     "reg_ties": 0,
@@ -12451,6 +11968,7 @@
                         2012
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 17,
                     "reg_losses": 27,
                     "reg_ties": 0,
@@ -12467,6 +11985,7 @@
                         2013
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 6,
                     "reg_losses": 7,
                     "reg_ties": 0,
@@ -12666,17 +12185,6 @@
                                 "manager": "Tre Wells",
                                 "start_y": 2010,
                                 "end_y": 2011
-                            }
-                        ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.35714285714285715,
-                        "holders": [
-                            {
-                                "manager": "Tre Wells",
-                                "year": 2011,
-                                "record": "5-9",
-                                "platform": "Fleaflicker"
                             }
                         ]
                     }
@@ -12888,17 +12396,6 @@
                                 "end_y": 2011
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5909090909090909,
-                        "holders": [
-                            {
-                                "manager": "Tre Wells",
-                                "year": 2012,
-                                "record": "13-9",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 },
                 "NFL": {
@@ -13085,17 +12582,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.46153846153846156,
-                        "holders": [
-                            {
-                                "manager": "Tre Wells",
-                                "year": 2013,
-                                "record": "6-7",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -13119,6 +12605,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 32,
                 "reg_losses": 101,
                 "reg_ties": 1,
@@ -13142,6 +12629,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 32,
                     "reg_losses": 101,
                     "reg_ties": 1,
@@ -13343,17 +12831,6 @@
                                 "end_y": 2025
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.42105263157894735,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "year": 2016,
-                                "record": "8-11",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -13373,6 +12850,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 26,
                 "reg_losses": 32,
                 "reg_ties": 0,
@@ -13392,6 +12870,7 @@
                         2024
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 26,
                     "reg_losses": 32,
                     "reg_ties": 0,
@@ -13610,17 +13089,6 @@
                                 "end_y": 2024
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.631578947368421,
-                        "holders": [
-                            {
-                                "manager": "Kristina Morgan",
-                                "year": 2023,
-                                "record": "12-7",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -13639,6 +13107,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 19,
                 "reg_losses": 18,
                 "reg_ties": 0,
@@ -13657,6 +13126,7 @@
                         2018
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 19,
                     "reg_losses": 18,
                     "reg_ties": 0,
@@ -13870,17 +13340,6 @@
                                 "end_y": 2018
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.7368421052631579,
-                        "holders": [
-                            {
-                                "manager": "Bill Berry",
-                                "year": 2017,
-                                "record": "14-5",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -13898,6 +13357,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 17,
                 "reg_losses": 4,
                 "reg_ties": 0,
@@ -13915,6 +13375,7 @@
                         2012
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 17,
                     "reg_losses": 4,
                     "reg_ties": 0,
@@ -14112,17 +13573,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.8095238095238095,
-                        "holders": [
-                            {
-                                "manager": "Richie_N",
-                                "year": 2012,
-                                "record": "17-4",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -14141,6 +13591,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 15,
                 "reg_losses": 24,
                 "reg_ties": 0,
@@ -14159,6 +13610,7 @@
                         2024
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 15,
                     "reg_losses": 24,
                     "reg_ties": 0,
@@ -14367,17 +13819,6 @@
                                 "end_y": 2024
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.4,
-                        "holders": [
-                            {
-                                "manager": "Brandon Cope",
-                                "year": 2024,
-                                "record": "8-12",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -14395,6 +13836,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 15,
                 "reg_losses": 5,
                 "reg_ties": 0,
@@ -14412,6 +13854,7 @@
                         2025
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 15,
                     "reg_losses": 5,
                     "reg_ties": 0,
@@ -14616,17 +14059,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.75,
-                        "holders": [
-                            {
-                                "manager": "Brad Dodson",
-                                "year": 2025,
-                                "record": "15-5",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -14645,6 +14077,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 13,
                 "reg_losses": 13,
                 "reg_ties": 0,
@@ -14663,6 +14096,7 @@
                         2010
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 13,
                     "reg_losses": 13,
                     "reg_ties": 0,
@@ -14883,17 +14317,6 @@
                                 "end_y": 2009
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.5384615384615384,
-                        "holders": [
-                            {
-                                "manager": "VinceYoungTen",
-                                "year": 2010,
-                                "record": "7-6",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -14911,6 +14334,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 9,
                 "reg_losses": 12,
                 "reg_ties": 0,
@@ -14928,6 +14352,7 @@
                         2010
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 9,
                     "reg_losses": 12,
                     "reg_ties": 0,
@@ -15125,17 +14550,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.42857142857142855,
-                        "holders": [
-                            {
-                                "manager": "H-twn_Allstars",
-                                "year": 2010,
-                                "record": "9-12",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -15153,6 +14567,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 7,
                 "reg_losses": 15,
                 "reg_ties": 0,
@@ -15170,6 +14585,7 @@
                         2011
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 7,
                     "reg_losses": 15,
                     "reg_ties": 0,
@@ -15378,17 +14794,6 @@
                                 "end_y": 2011
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.3181818181818182,
-                        "holders": [
-                            {
-                                "manager": "ATL Red sox",
-                                "year": 2011,
-                                "record": "7-15",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -15406,6 +14811,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 7,
                 "reg_losses": 12,
                 "reg_ties": 0,
@@ -15423,6 +14829,7 @@
                         2017
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 7,
                     "reg_losses": 12,
                     "reg_ties": 0,
@@ -15624,17 +15031,6 @@
                                 "end_y": 2017
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.3684210526315789,
-                        "holders": [
-                            {
-                                "manager": "Joe Bernstein",
-                                "year": 2017,
-                                "record": "7-12",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -15652,6 +15048,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 6,
                 "reg_losses": 7,
                 "reg_ties": 0,
@@ -15669,6 +15066,7 @@
                         2013
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 6,
                     "reg_losses": 7,
                     "reg_ties": 0,
@@ -15870,17 +15268,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.46153846153846156,
-                        "holders": [
-                            {
-                                "manager": "Robert Mann",
-                                "year": 2013,
-                                "record": "6-7",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -15898,6 +15285,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 5,
                 "reg_losses": 14,
                 "reg_ties": 0,
@@ -15915,6 +15303,7 @@
                         2017
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 5,
                     "reg_losses": 14,
                     "reg_ties": 0,
@@ -16112,17 +15501,6 @@
                                 "end_y": 2017
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.2631578947368421,
-                        "holders": [
-                            {
-                                "manager": "Matt Jacobson",
-                                "year": 2017,
-                                "record": "5-14",
-                                "platform": "ESPN"
-                            }
-                        ]
                     }
                 }
             }
@@ -16140,6 +15518,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 4,
                 "reg_losses": 18,
                 "reg_ties": 0,
@@ -16157,6 +15536,7 @@
                         2011
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 4,
                     "reg_losses": 18,
                     "reg_ties": 0,
@@ -16379,17 +15759,6 @@
                                 "end_y": 2011
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.18181818181818182,
-                        "holders": [
-                            {
-                                "manager": "Jillyyybean",
-                                "year": 2011,
-                                "record": "4-18",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -16407,6 +15776,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 2,
                 "reg_losses": 19,
                 "reg_ties": 0,
@@ -16424,6 +15794,7 @@
                         2009
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 2,
                     "reg_losses": 19,
                     "reg_ties": 0,
@@ -16628,17 +15999,6 @@
                                 "end_y": 2009
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.09523809523809523,
-                        "holders": [
-                            {
-                                "manager": "Michael Hong",
-                                "year": 2009,
-                                "record": "2-19",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -16656,6 +16016,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 2,
                 "reg_losses": 11,
                 "reg_ties": 0,
@@ -16673,6 +16034,7 @@
                         2012
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 2,
                     "reg_losses": 11,
                     "reg_ties": 0,
@@ -16873,17 +16235,6 @@
                                 "end_y": 2012
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.15384615384615385,
-                        "holders": [
-                            {
-                                "manager": "Korey Bryant",
-                                "year": 2012,
-                                "record": "2-11",
-                                "platform": "Fleaflicker"
-                            }
-                        ]
                     }
                 }
             }
@@ -16901,6 +16252,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 0,
                 "reg_losses": 14,
                 "reg_ties": 0,
@@ -16918,6 +16270,7 @@
                         2011
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 0,
                     "reg_losses": 14,
                     "reg_ties": 0,
@@ -17074,10 +16427,6 @@
                                 "end_y": 2011
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.0,
-                        "holders": []
                     }
                 }
             }
@@ -17095,6 +16444,7 @@
             ],
             "overall": {
                 "championships": [],
+                "undefeated_seasons": [],
                 "reg_wins": 0,
                 "reg_losses": 21,
                 "reg_ties": 0,
@@ -17112,6 +16462,7 @@
                         2012
                     ],
                     "championships": [],
+                    "undefeated_seasons": [],
                     "reg_wins": 0,
                     "reg_losses": 21,
                     "reg_ties": 0,
@@ -17268,10 +16619,6 @@
                                 "end_y": 2012
                             }
                         ]
-                    },
-                    "best_team_no_champ": {
-                        "value": 0.0,
-                        "holders": []
                     }
                 }
             }

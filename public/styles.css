@@ -171,9 +171,6 @@ body.dark-theme .score-card {
 .score-card.longest-playoff-drought {
   border-top-color: #d35400;
 }
-.score-card.best-team-no-champ {
-  border-top-color: #d35400;
-}
 
 .score-card h3 {
   margin: 0 0 0.5rem 0;
@@ -230,7 +227,7 @@ body.dark-theme .score-card {
 }
 
 .reigning-badge {
-  background-color: rgba(241, 196, 15, 0.1);
+  background-color: rgba(241, 196, 15, 0.15);
   color: #b8860b;
   font-size: 0.8rem;
   padding: 4px 10px;
@@ -243,24 +240,38 @@ body.dark-theme .score-card {
   letter-spacing: 0.5px;
   cursor: default;
   white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(241, 196, 15, 0.15);
 }
 
 .reigning-badge.streak {
   border-color: #e67e22;
   color: #d35400;
-  background-color: rgba(230, 126, 34, 0.1);
+  background-color: rgba(230, 126, 34, 0.15);
+  box-shadow: 0 2px 4px rgba(230, 126, 34, 0.15);
 }
 
 .reigning-badge.undisputed {
-  border-color: #9b59b6;
+  border: 1px dashed rgba(155, 89, 182, 0.6);
   color: #8e44ad;
-  background-color: rgba(155, 89, 182, 0.1);
+  background-color: rgba(155, 89, 182, 0.05);
+  font-weight: 700;
+  box-shadow: none;
 }
 
 .reigning-badge.historical {
-  border-color: #95a5a6;
-  color: #34495e;
-  background-color: rgba(149, 165, 166, 0.1);
+  border: 1px dashed rgba(149, 165, 166, 0.6);
+  color: #5d6d7e;
+  background-color: rgba(149, 165, 166, 0.05);
+  font-weight: 600;
+  box-shadow: none;
+}
+
+.reigning-badge.perfect {
+  border: 1px dashed rgba(26, 188, 156, 0.6);
+  color: #16a085;
+  background-color: rgba(26, 188, 156, 0.05);
+  font-weight: 700;
+  box-shadow: none;
 }
 
 .badge-stack {
@@ -272,27 +283,38 @@ body.dark-theme .score-card {
 
 /* Dark Mode Badge Overrides for WCAG Compliance */
 body.dark-theme .reigning-badge {
-  color: #fde047;
+  color: #fef08a;
   border-color: #fde047;
-  background-color: rgba(253, 224, 71, 0.1);
+  background-color: rgba(253, 224, 71, 0.15);
+  box-shadow: 0 2px 6px rgba(253, 224, 71, 0.15);
 }
 
 body.dark-theme .reigning-badge.streak {
-  color: #fdba74;
+  color: #fed7aa;
   border-color: #fdba74;
-  background-color: rgba(253, 186, 116, 0.1);
+  background-color: rgba(253, 186, 116, 0.15);
+  box-shadow: 0 2px 6px rgba(253, 186, 116, 0.15);
 }
 
 body.dark-theme .reigning-badge.undisputed {
-  color: #d8b4fe;
-  border-color: #d8b4fe;
-  background-color: rgba(216, 180, 254, 0.1);
+  color: #c084fc;
+  border-color: rgba(216, 180, 254, 0.5);
+  background-color: rgba(216, 180, 254, 0.05);
+  box-shadow: none;
 }
 
 body.dark-theme .reigning-badge.historical {
-  color: #cbd5e1;
-  border-color: #cbd5e1;
-  background-color: rgba(203, 213, 225, 0.1);
+  color: #94a3b8;
+  border-color: rgba(148, 163, 184, 0.5);
+  background-color: rgba(148, 163, 184, 0.05);
+  box-shadow: none;
+}
+
+body.dark-theme .reigning-badge.perfect {
+  color: #2dd4bf;
+  border-color: rgba(94, 234, 212, 0.5);
+  background-color: rgba(94, 234, 212, 0.05);
+  box-shadow: none;
 }
 
 .table-responsive {
