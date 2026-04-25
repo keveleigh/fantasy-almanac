@@ -730,18 +730,6 @@ body.dark-theme ::-webkit-scrollbar-thumb:hover {
   }
 }
 
-.manager-name-link {
-  color: var(--primary);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-@media (hover: hover) {
-  .manager-name-link:hover {
-    color: var(--highlight);
-    text-decoration: underline;
-  }
-}
-
 /* Prevent transitions from firing on initial load */
 .preload-theme,
 .preload-theme * {
