@@ -328,10 +328,6 @@ function renderPreviousMatchups(matchups, median, heartbreak_threshold) {
     let borderColor = "";
 
     const winnerScore = Math.max(match.home_score, match.away_score);
-    const winnerName =
-      match.home_score > match.away_score ? match.home : match.away;
-    const loserName =
-      match.home_score > match.away_score ? match.away : match.home;
     const loserScore =
       match.home_score < match.away_score ? match.home_score : match.away_score;
     const margin = Math.abs(match.home_score - match.away_score);

@@ -1016,7 +1016,7 @@ function initRadar() {
   const p1Dropdown = document.getElementById("radar-p1-filter");
   const p2Dropdown = document.getElementById("radar-p2-filter");
 
-  globalStatsData.forEach((stat, index) => {
+  globalStatsData.forEach((stat) => {
     const opt1 = new Option(stat.manager, stat.manager);
     const opt2 = new Option(stat.manager, stat.manager);
     p1Dropdown.add(opt1);
