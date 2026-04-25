@@ -561,44 +561,15 @@ function renderHallOfFame(selectedSport = "All") {
           })
         : [selectedSport];
 
-    let sportsHtmlLines = [];
-    let champsHtmlLines = [];
+    let hardwareHtmlLines = [];
 
     renderSports.forEach((sp) => {
-      sportsHtmlLines.push(
-        `<div style="height: 28px; display: flex; align-items: center; justify-content: flex-end;" title="${sp}">${sportIcons[sp] || sp}</div>`,
-      );
+      const sportIconHtml = `<div style="width: 20px; text-align: center;" title="${sp}">${sportIcons[sp] || sp}</div>`;
 
       const data = stat.by_sport[sp];
       let champHtmlForSport = '<span style="color:var(--divider)">-</span>';
 
       if (data) {
-        let medalsHtml = [];
-        if (data.championships && data.championships.length > 0) {
-          const uniqueYears = [...new Set(data.championships)].sort(
-            (a, b) => b - a,
-          );
-          medalsHtml.push(
-            `<span title="1st Place: ${uniqueYears.join(", ")}" style="cursor:help;">${"🏆".repeat(uniqueYears.length)}</span>`,
-          );
-        }
-        if (data.second_place && data.second_place.length > 0) {
-          const uniqueYears = [...new Set(data.second_place)].sort(
-            (a, b) => b - a,
-          );
-          medalsHtml.push(
-            `<span title="2nd Place: ${uniqueYears.join(", ")}" style="cursor:help;">🥈x${uniqueYears.length}</span>`,
-          );
-        }
-        if (data.third_place && data.third_place.length > 0) {
-          const uniqueYears = [...new Set(data.third_place)].sort(
-            (a, b) => b - a,
-          );
-          medalsHtml.push(
-            `<span title="3rd Place: ${uniqueYears.join(", ")}" style="cursor:help;">🥉x${uniqueYears.length}</span>`,
-          );
-        }
-
         const hasGold = data.championships && data.championships.length > 0;
         const hasSilver = data.second_place && data.second_place.length > 0;
         const hasBronze = data.third_place && data.third_place.length > 0;
@@ -634,13 +605,12 @@ function renderHallOfFame(selectedSport = "All") {
           champHtmlForSport = `<div style="display:flex; gap:4px; font-size: 0.9rem;">${goldHtml}${silverHtml}${bronzeHtml}</div>`;
         }
       }
-      champsHtmlLines.push(
-        `<div style="height: 28px; display: flex; align-items: center;">${champHtmlForSport}</div>`,
+      hardwareHtmlLines.push(
+        `<div style="height: 28px; display: flex; align-items: center; gap: 6px;">${sportIconHtml}${champHtmlForSport}</div>`,
       );
     });
 
-    const sportsStr = sportsHtmlLines.join("");
-    const champHtml = champsHtmlLines.join("");
+    const hardwareStr = hardwareHtmlLines.join("");
 
     // Reigning Champ Badge Logic (Streaks & Stale Tracking)
     const reigningText = getManagerBadges(stat, selectedSport);
@@ -669,22 +639,19 @@ function renderHallOfFame(selectedSport = "All") {
       }
       ranges.push(start === end ? `${start}` : `${start}-${end}`);
       const yearRange = ranges.join(", ");
-      seasonsStr = `<div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px; line-height: 1.4;"><strong style="color: var(--text-main);">${activeYearsPlayed.length} Year${activeYearsPlayed.length > 1 ? "s" : ""}</strong><br>${yearRange}</div>`;
+      seasonsStr = `<div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;">${yearRange} (${activeYearsPlayed.length} year${activeYearsPlayed.length > 1 ? "s" : ""})</div>`;
     }
 
     tr.innerHTML = `
             <td>
-                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                    <div style="font-size: 1.05rem; font-weight: bold; color: var(--text-main);">${stat.manager}</div>
-                    <button class="nav-button" style="height: 26px; padding: 0 10px; font-size: 0.75rem; cursor: pointer;" onclick="openPlayerCard('${stat.manager.replace(/'/g, "\\'")}')" title="View Manager Card">
-                        📊 Card
-                    </button>
-                </div>
+                <div style="font-size: 1.1rem; font-weight: bold; color: var(--text-main); margin-bottom: 2px;">${stat.manager}</div>
                 ${seasonsStr}
+                <button class="nav-button" style="height: 24px; padding: 0 10px; font-size: 0.75rem; cursor: pointer; margin-top: 6px;" onclick="openPlayerCard('${stat.manager.replace(/'/g, "\\'")}')" title="View Manager Card">
+                    📊 View Card
+                </button>
             </td>
             <td><div class="badge-stack">${reigningText || '<span style="color:var(--divider)">-</span>'}</div></td>
-            <td>${sportsStr}</td>
-            <td>${champHtml}</td>
+            <td>${hardwareStr}</td>
             <td>${regStr}</td>
             <td>${postStr}</td>
             <td>${consStr}</td>
