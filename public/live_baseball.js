@@ -63,6 +63,7 @@ async function loadLiveDashboard() {
       data.true_standings,
       data.playoff_team_count,
     );
+    renderMatchupLegend();
   } catch (error) {
     console.error("Error loading live JSON data:", error);
     document.getElementById("week-subtitle").innerHTML =
@@ -445,6 +446,43 @@ function renderCurrentMatchups(matchups, standings, playoffCount = 6) {
                 </div>
             </div>`;
   });
+}
+
+function renderMatchupLegend() {
+  const currMatchups = document.getElementById("curr-matchups-container");
+  if (!currMatchups) return;
+
+  const existingLegend = document.getElementById("matchup-legend");
+  if (existingLegend) existingLegend.remove();
+
+  const legendDiv = document.createElement("div");
+  legendDiv.id = "matchup-legend";
+  legendDiv.style.marginTop = "2rem";
+  legendDiv.style.paddingTop = "1.5rem";
+  legendDiv.style.borderTop = "1px solid var(--divider)";
+  
+  legendDiv.innerHTML = `
+    <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--primary); text-align: center; margin-bottom: 1rem;">Matchup Tags Legend</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; font-size: 0.85rem; color: var(--text-main);">
+        <div style="flex: 1; min-width: 250px; max-width: 400px;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Previous Matchups</h4>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #8e44ad;">💔 HEARTBREAK:</span></strong> Lost despite scoring in the top 25% of the league</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #e74c3c;">🚨 UPSET:</span></strong> Lower ranked team beat a team ranked 4+ spots higher</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #1abc9c;">🤏 NAIL-BITER:</span></strong> Loser scored 95% or more of the winner's score</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #f39c12;">💥 BLOWOUT:</span></strong> Loser scored 75% or less of the winner's score</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #2ecc71;">🍀 LUCKY WIN:</span></strong> Won despite scoring below the weekly median</div>
+        </div>
+        <div style="flex: 1; min-width: 250px; max-width: 400px;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Current Matchups</h4>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #f39c12;">🏟️ MARQUEE MATCHUP:</span></strong> Both teams are ranked in the Top 4</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #e74c3c;">🎟️ WILD CARD RACE:</span></strong> Both teams are battling near the playoff cutline</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #95a5a6;">🗑️ THE CELLAR:</span></strong> Both teams are ranked in the bottom 3</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #3498db;">🪨 DAVID VS GOLIATH:</span></strong> Matchup between teams separated by 8+ ranking spots</div>
+        </div>
+    </div>
+  `;
+
+  currMatchups.parentElement.appendChild(legendDiv);
 }
 
 loadLiveDashboard();
