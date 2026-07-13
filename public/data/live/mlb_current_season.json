@@ -20,7 +20,7 @@
             "true_record": "113-40-1",
             "true_win_pct": 0.734,
             "expected_wins": 10.27,
-            "pf": 4204.0
+            "pf": 4206.0
         },
         {
             "team": "Seattle Mudkipz",
@@ -126,7 +126,7 @@
     "luck_quadrant": [
         {
             "team": "We Do Bat Flips Here",
-            "pf": 300.29,
+            "pf": 300.43,
             "pa": 276.21
         },
         {
@@ -157,7 +157,7 @@
         {
             "team": "Utah Chisholm",
             "pf": 249.57,
-            "pa": 260.64
+            "pa": 260.79
         },
         {
             "team": "Swingin' on a Prayer",
@@ -231,7 +231,7 @@
             "home_score": 205.0,
             "home_rank": 7,
             "away": "We Do Bat Flips Here",
-            "away_score": 244.0,
+            "away_score": 246.0,
             "away_rank": 2
         }
     ],
@@ -286,7 +286,7 @@
             "team": "Kristina's Top-Notch Team",
             "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/3.svg",
             "remaining_opponents": 5,
-            "sos_ppg": 300.29
+            "sos_ppg": 300.43
         },
         {
             "team": "Imaginary Friends",
