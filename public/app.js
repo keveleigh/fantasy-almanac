@@ -483,6 +483,11 @@ function getManagerBadges(stat, selectedSport = "All") {
 
 // --- Render Hall of Fame Table ---
 function renderHallOfFame(selectedSport = "All") {
+  const allowedSports = new Set(["All", ...sportOrder]);
+  const safeSelectedSport = allowedSports.has(selectedSport)
+    ? selectedSport
+    : "All";
+
   const tbody = document.querySelector("#standings-table tbody");
   tbody.innerHTML = "";
 
@@ -525,9 +530,9 @@ function renderHallOfFame(selectedSport = "All") {
     let maxYearPlayed = 0;
     globalStatsData.forEach((stat) => {
       const years =
-        selectedSport === "All"
+        safeSelectedSport === "All"
           ? stat.years_played
-          : stat.by_sport[selectedSport]?.years_played || [];
+          : stat.by_sport[safeSelectedSport]?.years_played || [];
       if (years && years.length > 0) {
         const max = Math.max(...years);
         if (max > maxYearPlayed) maxYearPlayed = max;
@@ -536,9 +541,9 @@ function renderHallOfFame(selectedSport = "All") {
 
     filteredData = sortedData.filter((stat) => {
       const years =
-        selectedSport === "All"
+        safeSelectedSport === "All"
           ? stat.years_played
-          : stat.by_sport[selectedSport]?.years_played || [];
+          : stat.by_sport[safeSelectedSport]?.years_played || [];
       if (!years || years.length === 0) return false;
       return Math.max(...years) >= maxYearPlayed - 1;
     });
@@ -547,19 +552,21 @@ function renderHallOfFame(selectedSport = "All") {
   // 3. Render Table
   filteredData.forEach((stat) => {
     const activeData =
-      selectedSport === "All" ? stat.overall : stat.by_sport[selectedSport];
+      safeSelectedSport === "All"
+        ? stat.overall
+        : stat.by_sport[safeSelectedSport];
     if (!activeData) return;
 
     const tr = document.createElement("tr");
 
     const renderSports =
-      selectedSport === "All"
+      safeSelectedSport === "All"
         ? [...new Set(stat.sports_played)].sort((a, b) => {
             const idxA = sportOrder.indexOf(a);
             const idxB = sportOrder.indexOf(b);
             return (idxA === -1 ? 99 : idxA) - (idxB === -1 ? 99 : idxB);
           })
-        : [selectedSport];
+        : [safeSelectedSport];
 
     let hardwareHtmlLines = [];
 
@@ -613,7 +620,7 @@ function renderHallOfFame(selectedSport = "All") {
     const hardwareStr = hardwareHtmlLines.join("");
 
     // Reigning Champ Badge Logic (Streaks & Stale Tracking)
-    const reigningText = getManagerBadges(stat, selectedSport);
+    const reigningText = getManagerBadges(stat, safeSelectedSport);
 
     const regStr = `${activeData.reg_wins}-${activeData.reg_losses}${activeData.reg_ties > 0 ? "-" + activeData.reg_ties : ""}`;
     const postStr = `${activeData.post_wins}-${activeData.post_losses}${activeData.post_ties > 0 ? "-" + activeData.post_ties : ""}`;
