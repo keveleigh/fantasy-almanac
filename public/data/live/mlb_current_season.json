@@ -1,352 +1,352 @@
 {
-    "week": 17,
+    "week": 18,
     "playoff_team_count": 6,
     "true_standings": [
         {
             "team": "The Swingin\u2019 Bunts",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Sheilds-of-Glory-L-Dopa/L-Dopa_FantasyBasebal-05.svg",
             "actual_rank": 1,
-            "actual_record": "15-1-0",
-            "true_record": "146-29-1",
-            "true_win_pct": 0.83,
-            "expected_wins": 13.27,
-            "pf": 5700.0
+            "actual_record": "16-1-0",
+            "true_record": "156-30-1",
+            "true_win_pct": 0.834,
+            "expected_wins": 14.18,
+            "pf": 6055.0
         },
         {
             "team": "We Do Bat Flips Here",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Sheilds-of-Glory-L-Dopa/L-Dopa_FantasyBasebal-11.svg",
             "actual_rank": 2,
-            "actual_record": "11-5-0",
-            "true_record": "128-47-1",
-            "true_win_pct": 0.727,
-            "expected_wins": 11.64,
-            "pf": 4998.0
+            "actual_record": "12-5-0",
+            "true_record": "139-47-1",
+            "true_win_pct": 0.743,
+            "expected_wins": 12.64,
+            "pf": 5381.0
         },
         {
             "team": "Seattle Mudkipz",
             "logo_url": "https://i.imgur.com/H5bonby_d.png",
             "actual_rank": 5,
-            "actual_record": "8-8-0",
-            "true_record": "104-72-0",
-            "true_win_pct": 0.591,
-            "expected_wins": 9.45,
-            "pf": 4660.0
+            "actual_record": "8-9-0",
+            "true_record": "108-79-0",
+            "true_win_pct": 0.578,
+            "expected_wins": 9.82,
+            "pf": 4887.0
         },
         {
             "team": "Gunnars Only",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Conies-Todd-Detwiler/espn_conies_12.svg",
-            "actual_rank": 7,
-            "actual_record": "7-9-0",
-            "true_record": "97-79-0",
-            "true_win_pct": 0.551,
-            "expected_wins": 8.82,
-            "pf": 4547.0
+            "actual_rank": 8,
+            "actual_record": "7-10-0",
+            "true_record": "106-81-0",
+            "true_win_pct": 0.567,
+            "expected_wins": 9.64,
+            "pf": 4863.0
         },
         {
             "team": "Cubs Win Circa 2016",
             "logo_url": "http://content.sportslogos.net/logos/54/54/full/2920.png",
             "actual_rank": 3,
-            "actual_record": "10-6-0",
-            "true_record": "95-81-0",
-            "true_win_pct": 0.54,
-            "expected_wins": 8.64,
-            "pf": 4622.0
-        },
-        {
-            "team": "Imaginary Friends",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Middle-Infield-Monsters-Andrew-Janik/monster10.svg",
-            "actual_rank": 4,
-            "actual_record": "9-7-0",
-            "true_record": "88-88-0",
-            "true_win_pct": 0.5,
-            "expected_wins": 8.0,
-            "pf": 4501.0
+            "actual_record": "10-7-0",
+            "true_record": "100-87-0",
+            "true_win_pct": 0.535,
+            "expected_wins": 9.09,
+            "pf": 4865.0
         },
         {
             "team": "The Redemption Tour",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/At-the-Ballpark-Robb-Harskamp/Ballpark-11.svg",
             "actual_rank": 6,
-            "actual_record": "8-8-0",
-            "true_record": "84-92-0",
-            "true_win_pct": 0.477,
+            "actual_record": "8-9-0",
+            "true_record": "91-96-0",
+            "true_win_pct": 0.487,
+            "expected_wins": 8.27,
+            "pf": 4614.0
+        },
+        {
+            "team": "Imaginary Friends",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Middle-Infield-Monsters-Andrew-Janik/monster10.svg",
+            "actual_rank": 4,
+            "actual_record": "10-7-0",
+            "true_record": "90-97-0",
+            "true_win_pct": 0.481,
+            "expected_wins": 8.18,
+            "pf": 4703.0
+        },
+        {
+            "team": "Swingin' on a Prayer",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--11.svg",
+            "actual_rank": 7,
+            "actual_record": "8-9-0",
+            "true_record": "84-101-2",
+            "true_win_pct": 0.449,
             "expected_wins": 7.64,
-            "pf": 4309.0
+            "pf": 4485.0
         },
         {
             "team": "Kristina's Top-Notch Team",
             "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/3.svg",
             "actual_rank": 11,
-            "actual_record": "5-11-0",
-            "true_record": "80-95-1",
-            "true_win_pct": 0.455,
-            "expected_wins": 7.27,
-            "pf": 4271.0
-        },
-        {
-            "team": "Swingin' on a Prayer",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--11.svg",
-            "actual_rank": 8,
-            "actual_record": "7-9-0",
-            "true_record": "76-98-2",
-            "true_win_pct": 0.432,
-            "expected_wins": 6.91,
-            "pf": 4179.0
+            "actual_record": "6-11-0",
+            "true_record": "83-103-1",
+            "true_win_pct": 0.444,
+            "expected_wins": 7.55,
+            "pf": 4483.0
         },
         {
             "team": "Utah Chisholm",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StadiumFoods-ESPN/stadium-foods_hot-dog.svg",
             "actual_rank": 9,
-            "actual_record": "7-9-0",
-            "true_record": "67-107-2",
-            "true_win_pct": 0.381,
-            "expected_wins": 6.09,
-            "pf": 4049.0
+            "actual_record": "7-10-0",
+            "true_record": "68-117-2",
+            "true_win_pct": 0.364,
+            "expected_wins": 6.18,
+            "pf": 4218.0
         },
         {
             "team": "Top League's Final Boss",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Middle-Infield-Monsters-Andrew-Janik/monster7.svg",
             "actual_rank": 10,
-            "actual_record": "6-10-0",
-            "true_record": "58-118-0",
-            "true_win_pct": 0.33,
-            "expected_wins": 5.27,
-            "pf": 3950.0
+            "actual_record": "7-10-0",
+            "true_record": "64-123-0",
+            "true_win_pct": 0.342,
+            "expected_wins": 5.82,
+            "pf": 4217.0
         },
         {
             "team": "Team We Got Locks!",
             "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/8.svg",
             "actual_rank": 12,
-            "actual_record": "3-13-0",
-            "true_record": "29-146-1",
-            "true_win_pct": 0.165,
+            "actual_record": "3-14-0",
+            "true_record": "29-157-1",
+            "true_win_pct": 0.155,
             "expected_wins": 2.64,
-            "pf": 3315.0
+            "pf": 3470.0
         }
     ],
     "luck_quadrant": [
         {
             "team": "We Do Bat Flips Here",
-            "pf": 312.38,
-            "pa": 283.06
+            "pf": 316.53,
+            "pa": 285.0
         },
         {
             "team": "Seattle Mudkipz",
-            "pf": 291.25,
-            "pa": 300.0
+            "pf": 287.47,
+            "pa": 300.35
         },
         {
             "team": "Team We Got Locks!",
-            "pf": 207.19,
-            "pa": 288.06
+            "pf": 204.12,
+            "pa": 283.59
         },
         {
             "team": "Gunnars Only",
-            "pf": 284.19,
-            "pa": 299.81
+            "pf": 286.06,
+            "pa": 304.65
         },
         {
             "team": "Cubs Win Circa 2016",
-            "pf": 288.88,
-            "pa": 269.62
+            "pf": 286.18,
+            "pa": 269.47
         },
         {
             "team": "Kristina's Top-Notch Team",
-            "pf": 266.94,
-            "pa": 303.69
+            "pf": 263.71,
+            "pa": 294.94
         },
         {
             "team": "Utah Chisholm",
-            "pf": 253.06,
-            "pa": 272.94
+            "pf": 248.12,
+            "pa": 268.76
         },
         {
             "team": "Swingin' on a Prayer",
-            "pf": 261.19,
-            "pa": 265.38
+            "pf": 263.82,
+            "pa": 263.18
         },
         {
             "team": "The Redemption Tour",
-            "pf": 269.31,
-            "pa": 261.06
+            "pf": 271.41,
+            "pa": 266.59
         },
         {
             "team": "Top League's Final Boss",
-            "pf": 246.88,
-            "pa": 270.06
+            "pf": 248.06,
+            "pa": 268.47
         },
         {
             "team": "Imaginary Friends",
-            "pf": 281.31,
-            "pa": 262.12
+            "pf": 276.65,
+            "pa": 256.65
         },
         {
             "team": "The Swingin\u2019 Bunts",
-            "pf": 356.25,
-            "pa": 243.0
+            "pf": 356.18,
+            "pa": 246.65
         }
     ],
     "previous_matchups": [
         {
-            "home": "Cubs Win Circa 2016",
-            "home_score": 290.0,
-            "home_rank": 3,
-            "away": "Swingin' on a Prayer",
-            "away_score": 260.0,
-            "away_rank": 8
-        },
-        {
             "home": "Top League's Final Boss",
-            "home_score": 212.0,
+            "home_score": 267.0,
             "home_rank": 10,
-            "away": "Imaginary Friends",
-            "away_score": 299.0,
-            "away_rank": 4
-        },
-        {
-            "home": "Seattle Mudkipz",
-            "home_score": 377.0,
-            "home_rank": 5,
-            "away": "Gunnars Only",
-            "away_score": 308.0,
-            "away_rank": 6
-        },
-        {
-            "home": "Utah Chisholm",
-            "home_score": 206.0,
-            "home_rank": 9,
-            "away": "Team We Got Locks!",
-            "away_score": 178.0,
-            "away_rank": 12
-        },
-        {
-            "home": "We Do Bat Flips Here",
-            "home_score": 240.0,
-            "home_rank": 2,
-            "away": "The Redemption Tour",
-            "away_score": 255.0,
-            "away_rank": 7
-        },
-        {
-            "home": "Kristina's Top-Notch Team",
-            "home_score": 235.0,
-            "home_rank": 11,
-            "away": "The Swingin\u2019 Bunts",
-            "away_score": 394.0,
-            "away_rank": 1
-        }
-    ],
-    "previous_week_median": 257.5,
-    "heartbreak_threshold": 308.0,
-    "current_matchups": [
-        {
-            "home": "Top League's Final Boss",
-            "home_record": "6-10",
             "away": "Cubs Win Circa 2016",
-            "away_record": "10-6"
+            "away_score": 243.0,
+            "away_rank": 3
         },
         {
             "home": "Swingin' on a Prayer",
-            "home_record": "7-9",
+            "home_score": 306.0,
+            "home_rank": 8,
             "away": "Seattle Mudkipz",
-            "away_record": "8-8"
+            "away_score": 228.0,
+            "away_rank": 5
         },
         {
             "home": "Imaginary Friends",
-            "home_record": "9-7",
+            "home_score": 202.0,
+            "home_rank": 4,
             "away": "Utah Chisholm",
-            "away_record": "7-9"
+            "away_score": 169.0,
+            "away_rank": 9
         },
         {
             "home": "Gunnars Only",
-            "home_record": "7-9",
+            "home_score": 316.0,
+            "home_rank": 7,
             "away": "We Do Bat Flips Here",
-            "away_record": "11-5"
+            "away_score": 383.0,
+            "away_rank": 2
         },
         {
             "home": "Team We Got Locks!",
-            "home_record": "3-13",
+            "home_score": 155.0,
+            "home_rank": 12,
             "away": "Kristina's Top-Notch Team",
-            "away_record": "5-11"
+            "away_score": 212.0,
+            "away_rank": 11
         },
         {
             "home": "The Redemption Tour",
-            "home_record": "8-8",
+            "home_score": 305.0,
+            "home_rank": 6,
             "away": "The Swingin\u2019 Bunts",
-            "away_record": "15-1"
+            "away_score": 355.0,
+            "away_rank": 1
+        }
+    ],
+    "previous_week_median": 255.0,
+    "heartbreak_threshold": 316.0,
+    "current_matchups": [
+        {
+            "home": "Cubs Win Circa 2016",
+            "home_record": "10-7",
+            "away": "Seattle Mudkipz",
+            "away_record": "8-9"
+        },
+        {
+            "home": "Utah Chisholm",
+            "home_record": "7-10",
+            "away": "Top League's Final Boss",
+            "away_record": "7-10"
+        },
+        {
+            "home": "We Do Bat Flips Here",
+            "home_record": "12-5",
+            "away": "Swingin' on a Prayer",
+            "away_record": "8-9"
+        },
+        {
+            "home": "Kristina's Top-Notch Team",
+            "home_record": "6-11",
+            "away": "Imaginary Friends",
+            "away_record": "10-7"
+        },
+        {
+            "home": "The Swingin\u2019 Bunts",
+            "home_record": "16-1",
+            "away": "Gunnars Only",
+            "away_record": "7-10"
+        },
+        {
+            "home": "The Redemption Tour",
+            "home_record": "8-9",
+            "away": "Team We Got Locks!",
+            "away_record": "3-14"
         }
     ],
     "remaining_sos": [
         {
-            "team": "The Redemption Tour",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/At-the-Ballpark-Robb-Harskamp/Ballpark-11.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 356.25
-        },
-        {
             "team": "Gunnars Only",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Conies-Todd-Detwiler/espn_conies_12.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 312.38
+            "remaining_opponents": 2,
+            "sos_ppg": 356.18
         },
         {
             "team": "Swingin' on a Prayer",
             "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/fake-team-logos-martin-laksman/logos--11.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 291.25
-        },
-        {
-            "team": "Top League's Final Boss",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Middle-Infield-Monsters-Andrew-Janik/monster7.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 288.88
-        },
-        {
-            "team": "We Do Bat Flips Here",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Sheilds-of-Glory-L-Dopa/L-Dopa_FantasyBasebal-11.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 284.19
-        },
-        {
-            "team": "Utah Chisholm",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StadiumFoods-ESPN/stadium-foods_hot-dog.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 281.31
-        },
-        {
-            "team": "The Swingin\u2019 Bunts",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Sheilds-of-Glory-L-Dopa/L-Dopa_FantasyBasebal-05.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 269.31
-        },
-        {
-            "team": "Team We Got Locks!",
-            "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/8.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 266.94
-        },
-        {
-            "team": "Seattle Mudkipz",
-            "logo_url": "https://i.imgur.com/H5bonby_d.png",
-            "remaining_opponents": 3,
-            "sos_ppg": 261.19
-        },
-        {
-            "team": "Imaginary Friends",
-            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Middle-Infield-Monsters-Andrew-Janik/monster10.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 253.06
+            "remaining_opponents": 2,
+            "sos_ppg": 316.53
         },
         {
             "team": "Cubs Win Circa 2016",
             "logo_url": "http://content.sportslogos.net/logos/54/54/full/2920.png",
-            "remaining_opponents": 3,
-            "sos_ppg": 246.88
+            "remaining_opponents": 2,
+            "sos_ppg": 287.47
+        },
+        {
+            "team": "Seattle Mudkipz",
+            "logo_url": "https://i.imgur.com/H5bonby_d.png",
+            "remaining_opponents": 2,
+            "sos_ppg": 286.18
+        },
+        {
+            "team": "The Swingin\u2019 Bunts",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Sheilds-of-Glory-L-Dopa/L-Dopa_FantasyBasebal-05.svg",
+            "remaining_opponents": 2,
+            "sos_ppg": 286.06
         },
         {
             "team": "Kristina's Top-Notch Team",
             "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/3.svg",
-            "remaining_opponents": 3,
-            "sos_ppg": 207.19
+            "remaining_opponents": 2,
+            "sos_ppg": 276.65
+        },
+        {
+            "team": "Team We Got Locks!",
+            "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/8.svg",
+            "remaining_opponents": 2,
+            "sos_ppg": 271.41
+        },
+        {
+            "team": "We Do Bat Flips Here",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Sheilds-of-Glory-L-Dopa/L-Dopa_FantasyBasebal-11.svg",
+            "remaining_opponents": 2,
+            "sos_ppg": 263.82
+        },
+        {
+            "team": "Imaginary Friends",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Middle-Infield-Monsters-Andrew-Janik/monster10.svg",
+            "remaining_opponents": 2,
+            "sos_ppg": 263.71
+        },
+        {
+            "team": "Top League's Final Boss",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/Middle-Infield-Monsters-Andrew-Janik/monster7.svg",
+            "remaining_opponents": 2,
+            "sos_ppg": 248.12
+        },
+        {
+            "team": "Utah Chisholm",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StadiumFoods-ESPN/stadium-foods_hot-dog.svg",
+            "remaining_opponents": 2,
+            "sos_ppg": 248.06
+        },
+        {
+            "team": "The Redemption Tour",
+            "logo_url": "https://g.espncdn.com/lm-static/logo-packs/flb/At-the-Ballpark-Robb-Harskamp/Ballpark-11.svg",
+            "remaining_opponents": 2,
+            "sos_ppg": 204.12
         }
     ]
 }
