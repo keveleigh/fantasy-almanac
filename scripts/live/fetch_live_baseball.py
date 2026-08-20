@@ -17,6 +17,8 @@ parser.add_argument('--year', type=int, required=True,
                     help="The season year (e.g., 2026)")
 parser.add_argument('--league_id', type=int, required=True,
                     help="The ESPN League ID")
+parser.add_argument('--reg_season_count', type=int, default=0,
+                    help="Optional override for regular season length (useful for MLB)")
 args = parser.parse_args()
 
 SPORT = args.sport.upper()
@@ -45,6 +47,12 @@ def compile_live_stats():
     completed_weeks = max(
         [team.wins + team.losses + getattr(team, 'ties', 0) for team in league.teams])
     current_week = completed_weeks + 1
+
+    reg_season_count = args.reg_season_count
+    if reg_season_count == 0:
+        reg_season_count = getattr(league.settings, 'reg_season_count', 0)
+    if reg_season_count == 0:
+        reg_season_count = 20  # Standard fallback for MLB regular seasons
 
     print(
         f" - Completed Weeks: {completed_weeks} | Active Week: {current_week}")
@@ -224,6 +232,14 @@ def compile_live_stats():
         except Exception:
             pass
 
+    # Pre-calculate playoff teams for matchup type determination
+    true_playoff_count = getattr(league.settings, 'playoff_team_count', 6)
+    playoff_team_ids = []
+    for team in league.teams:
+        rank = getattr(team, 'final_rank', team.standing)
+        if rank <= true_playoff_count:
+            playoff_team_ids.append(team.team_id)
+
     current_matchups = []
     try:
         curr_boxes = league.box_scores(current_week)
@@ -237,22 +253,47 @@ def compile_live_stats():
                 away_rec = f"{away_data.get('actual_wins', 0)}-{away_data.get('actual_losses', 0)}" + (
                     f"-{away_data.get('actual_ties')}" if away_data.get('actual_ties', 0) > 0 else "")
 
+                if current_week <= reg_season_count:
+                    matchup_type = "REGULAR"
+                else:
+                    if m.home_team.team_id in playoff_team_ids:
+                        matchup_type = "PLAYOFF"
+                    else:
+                        matchup_type = "CONSOLATION"
+
                 current_matchups.append({
                     "home": m.home_team.team_name,
                     "home_record": home_rec,
                     "away": m.away_team.team_name,
-                    "away_record": away_rec
+                    "away_record": away_rec,
+                    "matchup_type": matchup_type
+                })
+            elif m.home_team or m.away_team:
+                team = m.home_team if m.home_team else m.away_team
+                team_data = teams_data.get(team.team_id, {})
+                team_rec = f"{team_data.get('actual_wins', 0)}-{team_data.get('actual_losses', 0)}" + (
+                    f"-{team_data.get('actual_ties')}" if team_data.get('actual_ties', 0) > 0 else "")
+
+                if current_week <= reg_season_count:
+                    matchup_type = "REGULAR"
+                else:
+                    if team.team_id in playoff_team_ids:
+                        matchup_type = "PLAYOFF_BYE"
+                    else:
+                        continue
+
+                current_matchups.append({
+                    "home": team.team_name,
+                    "home_record": team_rec,
+                    "away": "BYE",
+                    "away_record": "-",
+                    "matchup_type": matchup_type
                 })
     except Exception:
         pass
 
     # 5. Remaining Strength of Schedule (SOS)
     remaining_sos = []
-
-    # ESPN API Quirk: reg_season_count is often 0 or missing entirely in the settings object for MLB.
-    reg_season_count = getattr(league.settings, 'reg_season_count', 0)
-    if reg_season_count == 0:
-        reg_season_count = 22  # Standard fallback for MLB regular seasons
 
     team_remaining_opps = {team.team_id: [] for team in league.teams}
 

@@ -30,7 +30,7 @@ jobs:
         env:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
           ESPN_S2: ${{ secrets.ESPN_S2 }}
-        run: python scripts/live/fetch_live_baseball.py --sport MLB --year 2026 --league_id 114502
+        run: python scripts/live/fetch_live_baseball.py --sport MLB --year 2026 --league_id 114502 --reg_season_count 19
 
       - name: Commit and Push Data
         run: |
