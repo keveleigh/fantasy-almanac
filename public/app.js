@@ -666,7 +666,7 @@ function renderHallOfFame(selectedSport = "All") {
             <td>
                 <div style="font-size: 1.1rem; font-weight: bold; color: var(--text-main); margin-bottom: 2px;">${stat.manager}</div>
                 ${seasonsStr}
-                <button class="nav-button" style="height: 24px; padding: 0 10px; font-size: 0.75rem; cursor: pointer; margin-top: 6px;" onclick="openPlayerCard('${stat.manager.replace(/'/g, "\\'")}')" title="View Manager Card">
+                <button class="nav-button" style="height: 24px; padding: 0 10px; font-size: 0.75rem; cursor: pointer; margin-top: 6px;" onclick="openPlayerCard('${String(stat.manager).replace(/\\/g, "\\\\").replace(/'/g, "\\'")}')" title="View Manager Card">
                     📊 View Card
                 </button>
             </td>
