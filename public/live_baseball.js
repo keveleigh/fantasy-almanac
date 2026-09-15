@@ -39,8 +39,13 @@ async function loadLiveDashboard() {
     const res = await fetch("data/live/mlb_current_season.json");
     const data = await res.json();
 
-    document.getElementById("week-subtitle").innerHTML =
-      `Week ${data.week} <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">(Updates every Monday morning)</span>`;
+    if (data.season_complete) {
+      document.getElementById("week-subtitle").innerHTML =
+        `Week ${data.week} (Final Results) <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">🏆 Season Concluded</span>`;
+    } else {
+      document.getElementById("week-subtitle").innerHTML =
+        `Week ${data.week} <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">(Updates every Monday morning)</span>`;
+    }
 
     const prevWeekSpan = document.getElementById("prev-week-num");
     if (prevWeekSpan)
@@ -386,7 +391,7 @@ function renderCurrentMatchups(matchups, standings, playoffCount = 6) {
 
   if (!matchups || matchups.length === 0) {
     container.innerHTML =
-      "<p style='color: var(--text-muted);'>No matchups available for the current week.</p>";
+      "<p style='color: var(--text-muted); font-size: 1rem; text-align: center; padding: 1.5rem 0;'>🏆 Season Concluded! All matchups are final.</p>";
     return;
   }
 

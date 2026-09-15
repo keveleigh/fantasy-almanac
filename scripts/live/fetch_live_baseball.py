@@ -52,10 +52,29 @@ def compile_live_stats():
 
     league = League(league_id=LEAGUE_ID, year=YEAR, swid=SWID, espn_s2=ESPN_S2)
 
+    # Total matchup periods in season (e.g., 22)
+    total_matchup_periods = len(getattr(league.settings, 'matchup_periods', {}))
+
     # In ESPN API, league.currentMatchupPeriod reflects the active matchup week (e.g. 22 for playoff round 3),
     # whereas league.current_week in baseball/basketball returns the daily scoring period (day 1 to ~180).
     current_matchup_period = getattr(league, 'currentMatchupPeriod', None)
-    if current_matchup_period and current_matchup_period > 0:
+
+    # Check if the season has concluded:
+    # ESPN indicates season over when currentMatchupPeriod exceeds total periods,
+    # or latestScoringPeriod reaches finalScoringPeriod.
+    is_season_over = False
+    try:
+        raw_status = league.espn_request.get_league().get('status', {})
+        if (current_matchup_period and total_matchup_periods > 0 and current_matchup_period > total_matchup_periods) or \
+           (raw_status.get('latestScoringPeriod', 0) >= raw_status.get('finalScoringPeriod', 999999) and raw_status.get('finalScoringPeriod', 0) > 0):
+            is_season_over = True
+    except Exception:
+        pass
+
+    if is_season_over:
+        current_week = total_matchup_periods if total_matchup_periods > 0 else (current_matchup_period or 22)
+        completed_weeks = current_week
+    elif current_matchup_period and current_matchup_period > 0:
         current_week = current_matchup_period
         completed_weeks = max(0, current_week - 1)
     else:
@@ -291,54 +310,55 @@ def compile_live_stats():
             pass
 
     current_matchups = []
-    try:
-        curr_boxes = league.box_scores(current_week)
-        for m in curr_boxes:
-            if m.home_team and m.away_team:
-                home_data = teams_data.get(m.home_team.team_id, {})
-                away_data = teams_data.get(m.away_team.team_id, {})
+    if not is_season_over:
+        try:
+            curr_boxes = league.box_scores(current_week)
+            for m in curr_boxes:
+                if m.home_team and m.away_team:
+                    home_data = teams_data.get(m.home_team.team_id, {})
+                    away_data = teams_data.get(m.away_team.team_id, {})
 
-                home_rec = f"{home_data.get('actual_wins', 0)}-{home_data.get('actual_losses', 0)}" + (
-                    f"-{home_data.get('actual_ties')}" if home_data.get('actual_ties', 0) > 0 else "")
-                away_rec = f"{away_data.get('actual_wins', 0)}-{away_data.get('actual_losses', 0)}" + (
-                    f"-{away_data.get('actual_ties')}" if away_data.get('actual_ties', 0) > 0 else "")
+                    home_rec = f"{home_data.get('actual_wins', 0)}-{home_data.get('actual_losses', 0)}" + (
+                        f"-{home_data.get('actual_ties')}" if home_data.get('actual_ties', 0) > 0 else "")
+                    away_rec = f"{away_data.get('actual_wins', 0)}-{away_data.get('actual_losses', 0)}" + (
+                        f"-{away_data.get('actual_ties')}" if away_data.get('actual_ties', 0) > 0 else "")
 
-                if current_week <= reg_season_count:
-                    matchup_type = "REGULAR"
-                else:
-                    matchup_type = get_playoff_matchup_type(m, is_final_week)
-
-                current_matchups.append({
-                    "home": m.home_team.team_name,
-                    "home_record": home_rec,
-                    "away": m.away_team.team_name,
-                    "away_record": away_rec,
-                    "matchup_type": matchup_type
-                })
-            elif m.home_team or m.away_team:
-                team = m.home_team if m.home_team else m.away_team
-                team_data = teams_data.get(team.team_id, {})
-                team_rec = f"{team_data.get('actual_wins', 0)}-{team_data.get('actual_losses', 0)}" + (
-                    f"-{team_data.get('actual_ties')}" if team_data.get('actual_ties', 0) > 0 else "")
-
-                if current_week <= reg_season_count:
-                    matchup_type = "REGULAR"
-                else:
-                    tier = getattr(m, 'playoff_tier_type', None)
-                    if tier == 'WINNERS_BRACKET' or team.team_id in playoff_team_ids:
-                        matchup_type = "PLAYOFF_BYE"
+                    if current_week <= reg_season_count:
+                        matchup_type = "REGULAR"
                     else:
-                        continue
+                        matchup_type = get_playoff_matchup_type(m, is_final_week)
 
-                current_matchups.append({
-                    "home": team.team_name,
-                    "home_record": team_rec,
-                    "away": "BYE",
-                    "away_record": "-",
-                    "matchup_type": matchup_type
-                })
-    except Exception:
-        pass
+                    current_matchups.append({
+                        "home": m.home_team.team_name,
+                        "home_record": home_rec,
+                        "away": m.away_team.team_name,
+                        "away_record": away_rec,
+                        "matchup_type": matchup_type
+                    })
+                elif m.home_team or m.away_team:
+                    team = m.home_team if m.home_team else m.away_team
+                    team_data = teams_data.get(team.team_id, {})
+                    team_rec = f"{team_data.get('actual_wins', 0)}-{team_data.get('actual_losses', 0)}" + (
+                        f"-{team_data.get('actual_ties')}" if team_data.get('actual_ties', 0) > 0 else "")
+
+                    if current_week <= reg_season_count:
+                        matchup_type = "REGULAR"
+                    else:
+                        tier = getattr(m, 'playoff_tier_type', None)
+                        if tier == 'WINNERS_BRACKET' or team.team_id in playoff_team_ids:
+                            matchup_type = "PLAYOFF_BYE"
+                        else:
+                            continue
+
+                    current_matchups.append({
+                        "home": team.team_name,
+                        "home_record": team_rec,
+                        "away": "BYE",
+                        "away_record": "-",
+                        "matchup_type": matchup_type
+                    })
+        except Exception:
+            pass
 
     # 5. Remaining Strength of Schedule (SOS)
     remaining_sos = []
@@ -407,6 +427,7 @@ def compile_live_stats():
     # Compile JSON payload
     live_data = {
         "week": current_week,
+        "season_complete": is_season_over,
         "playoff_team_count": getattr(league.settings, 'playoff_team_count', -1),
         "true_standings": true_standings,
         "luck_quadrant": luck_quadrant,
