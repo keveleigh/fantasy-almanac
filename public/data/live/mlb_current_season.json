@@ -1,5 +1,5 @@
 {
-    "week": 20,
+    "week": 22,
     "playoff_team_count": 6,
     "true_standings": [
         {
@@ -187,84 +187,77 @@
     ],
     "previous_matchups": [
         {
-            "home": "Utah Chisholm",
-            "home_score": 246.0,
-            "home_rank": 10,
-            "away": "Cubs Win Circa 2016",
-            "away_score": 278.0,
-            "away_rank": 3
-        },
-        {
-            "home": "Seattle Mudkipz",
-            "home_score": 317.0,
-            "home_rank": 7,
-            "away": "We Do Bat Flips Here",
-            "away_score": 251.0,
-            "away_rank": 2
-        },
-        {
-            "home": "Top League's Final Boss",
-            "home_score": 222.0,
-            "home_rank": 9,
-            "away": "Kristina's Top-Notch Team",
-            "away_score": 159.0,
-            "away_rank": 11
-        },
-        {
-            "home": "Swingin' on a Prayer",
-            "home_score": 244.0,
-            "home_rank": 8,
-            "away": "The Swingin\u2019 Bunts",
-            "away_score": 319.0,
-            "away_rank": 1
-        },
-        {
-            "home": "Imaginary Friends",
-            "home_score": 160.0,
-            "home_rank": 4,
+            "home": "The Swingin\u2019 Bunts",
+            "home_score": 576.0,
+            "home_rank": 1,
             "away": "The Redemption Tour",
-            "away_score": 257.0,
+            "away_score": 479.0,
             "away_rank": 5
         },
         {
+            "home": "We Do Bat Flips Here",
+            "home_score": 584.0,
+            "home_rank": 2,
+            "away": "Cubs Win Circa 2016",
+            "away_score": 734.0,
+            "away_rank": 3
+        },
+        {
+            "home": "Imaginary Friends",
+            "home_score": 520.0,
+            "home_rank": 4,
+            "away": "Seattle Mudkipz",
+            "away_score": 529.0,
+            "away_rank": 6
+        },
+        {
+            "home": "Top League's Final Boss",
+            "home_score": 505.0,
+            "home_rank": 8,
+            "away": "Utah Chisholm",
+            "away_score": 332.0,
+            "away_rank": 10
+        },
+        {
             "home": "Gunnars Only",
-            "home_score": 230.0,
-            "home_rank": 6,
+            "home_score": 398.0,
+            "home_rank": 7,
             "away": "Team We Got Locks!",
-            "away_score": 179.0,
+            "away_score": 238.0,
             "away_rank": 12
+        },
+        {
+            "home": "Swingin' on a Prayer",
+            "home_score": 295.0,
+            "home_rank": 9,
+            "away": "Kristina's Top-Notch Team",
+            "away_score": 368.0,
+            "away_rank": 11
         }
     ],
-    "previous_week_median": 245.0,
-    "heartbreak_threshold": 278.0,
+    "previous_week_median": 492.0,
+    "heartbreak_threshold": 576.0,
     "current_matchups": [
         {
             "home": "The Swingin\u2019 Bunts",
             "home_record": "17-2",
-            "away": "BYE",
-            "away_record": "-",
-            "matchup_type": "PLAYOFF_BYE"
-        },
-        {
-            "home": "Imaginary Friends",
-            "home_record": "11-8",
-            "away": "The Redemption Tour",
-            "away_record": "10-9",
-            "matchup_type": "PLAYOFF"
-        },
-        {
-            "home": "Cubs Win Circa 2016",
-            "home_record": "12-7",
-            "away": "Seattle Mudkipz",
-            "away_record": "9-10",
+            "away": "Cubs Win Circa 2016",
+            "away_record": "12-7",
             "matchup_type": "PLAYOFF"
         },
         {
             "home": "We Do Bat Flips Here",
             "home_record": "13-6",
-            "away": "BYE",
-            "away_record": "-",
-            "matchup_type": "PLAYOFF_BYE"
+            "away": "The Redemption Tour",
+            "away_record": "10-9",
+            "matchup_type": "PLAYOFF"
+        },
+        {
+            "home": "Imaginary Friends",
+            "home_record": "11-8",
+            "away": "Seattle Mudkipz",
+            "away_record": "9-10",
+            "matchup_type": "PLAYOFF"
         },
         {
             "home": "Gunnars Only",
@@ -274,15 +267,15 @@
             "matchup_type": "CONSOLATION"
         },
         {
-            "home": "Swingin' on a Prayer",
-            "home_record": "8-11",
-            "away": "Utah Chisholm",
-            "away_record": "7-12",
+            "home": "Utah Chisholm",
+            "home_record": "7-12",
+            "away": "Kristina's Top-Notch Team",
+            "away_record": "6-13",
             "matchup_type": "CONSOLATION"
         },
         {
-            "home": "Kristina's Top-Notch Team",
-            "home_record": "6-13",
+            "home": "Swingin' on a Prayer",
+            "home_record": "8-11",
             "away": "Team We Got Locks!",
             "away_record": "3-16",
             "matchup_type": "CONSOLATION"

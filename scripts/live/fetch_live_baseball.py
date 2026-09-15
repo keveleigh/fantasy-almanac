@@ -42,11 +42,17 @@ def compile_live_stats():
 
     league = League(league_id=LEAGUE_ID, year=YEAR, swid=SWID, espn_s2=ESPN_S2)
 
-    # ESPN API quirk: current_week often returns the scoring period (day) instead of the matchup week.
-    # We calculate the exact completed weeks by checking the maximum games played in the standings!
-    completed_weeks = max(
-        [team.wins + team.losses + getattr(team, 'ties', 0) for team in league.teams])
-    current_week = completed_weeks + 1
+    # In ESPN API, league.currentMatchupPeriod reflects the active matchup week (e.g. 22 for playoff round 3),
+    # whereas league.current_week in baseball/basketball returns the daily scoring period (day 1 to ~180).
+    current_matchup_period = getattr(league, 'currentMatchupPeriod', None)
+    if current_matchup_period and current_matchup_period > 0:
+        current_week = current_matchup_period
+        completed_weeks = max(0, current_week - 1)
+    else:
+        # Fallback to standings calculation if currentMatchupPeriod is unavailable
+        completed_weeks = max(
+            [team.wins + team.losses + getattr(team, 'ties', 0) for team in league.teams])
+        current_week = completed_weeks + 1
 
     reg_season_count = args.reg_season_count
     if reg_season_count == 0:
@@ -55,7 +61,7 @@ def compile_live_stats():
         reg_season_count = 20  # Standard fallback for MLB regular seasons
 
     print(
-        f" - Completed Weeks: {completed_weeks} | Active Week: {current_week}")
+        f" - Completed Weeks: {completed_weeks} | Active Week: {current_week} | Reg Season Count: {reg_season_count}")
 
     # Fetch official standings directly from the API to handle tiebreakers natively
     actual_standings = league.standings()
@@ -80,8 +86,10 @@ def compile_live_stats():
         for team in league.teams
     }
 
-    # 1. Process all completed weeks for True Standings and Luck
-    for week in range(1, completed_weeks + 1):
+    # 1. Process regular season completed weeks for True Standings and Luck
+    # True Standings and Luck evaluate all-play regular season performance and must not be distorted by playoff byes
+    reg_completed_weeks = min(completed_weeks, reg_season_count)
+    for week in range(1, reg_completed_weeks + 1):
         box_scores = league.box_scores(week)
 
         # Gather all scores for the week to calculate "All-Play" record
@@ -143,8 +151,8 @@ def compile_live_stats():
 
     # 3. Format Luck Quadrant
     luck_quadrant = [{"team": data["name"], 
-                      "pf": round(data["pf"] / completed_weeks, 2) if completed_weeks > 0 else 0.0, 
-                      "pa": round(data["pa"] / completed_weeks, 2) if completed_weeks > 0 else 0.0} 
+                      "pf": round(data["pf"] / reg_completed_weeks, 2) if reg_completed_weeks > 0 else 0.0, 
+                      "pa": round(data["pa"] / reg_completed_weeks, 2) if reg_completed_weeks > 0 else 0.0} 
                      for data in teams_data.values()]
 
     # 4. Matchup Center (Last Week & This Week)
@@ -174,50 +182,55 @@ def compile_live_stats():
                     # The score of the Nth ranked team (e.g., 3rd place is index 2)
                     heartbreak_threshold = prev_week_scores[heartbreak_rank - 1]
 
-            # Reverse engineer the standings going INTO the previous week for accurate Upset detection
-            prev_standings_calc = []
-            for t_id, t_data in teams_data.items():
-                won_last_week = False
-                lost_last_week = False
-                tied_last_week = False
-                points_last_week = 0
-                for m in prev_boxes:
-                    if m.home_team and m.home_team.team_id == t_id:
-                        points_last_week = m.home_score
-                        if m.home_score > m.away_score:
-                            won_last_week = True
-                        elif m.home_score < m.away_score:
-                            lost_last_week = True
-                        else:
-                            tied_last_week = True
-                    elif m.away_team and m.away_team.team_id == t_id:
-                        points_last_week = m.away_score
-                        if m.away_score > m.home_score:
-                            won_last_week = True
-                        elif m.away_score < m.home_score:
-                            lost_last_week = True
-                        else:
-                            tied_last_week = True
+            # Determine team ranks for accurate Upset detection
+            if completed_weeks <= reg_season_count:
+                # Reverse engineer the standings going INTO the previous regular season week
+                prev_standings_calc = []
+                for t_id, t_data in teams_data.items():
+                    won_last_week = False
+                    lost_last_week = False
+                    tied_last_week = False
+                    points_last_week = 0
+                    for m in prev_boxes:
+                        if m.home_team and m.home_team.team_id == t_id:
+                            points_last_week = m.home_score
+                            if m.home_score > m.away_score:
+                                won_last_week = True
+                            elif m.home_score < m.away_score:
+                                lost_last_week = True
+                            else:
+                                tied_last_week = True
+                        elif m.away_team and m.away_team.team_id == t_id:
+                            points_last_week = m.away_score
+                            if m.away_score > m.home_score:
+                                won_last_week = True
+                            elif m.away_score < m.home_score:
+                                lost_last_week = True
+                            else:
+                                tied_last_week = True
 
-                prev_w = t_data["actual_wins"] - (1 if won_last_week else 0)
-                prev_l = t_data["actual_losses"] - (1 if lost_last_week else 0)
-                prev_t = t_data["actual_ties"] - (1 if tied_last_week else 0)
-                prev_pf = t_data["pf"] - points_last_week
+                    prev_w = t_data["actual_wins"] - (1 if won_last_week else 0)
+                    prev_l = t_data["actual_losses"] - (1 if lost_last_week else 0)
+                    prev_t = t_data["actual_ties"] - (1 if tied_last_week else 0)
+                    prev_pf = t_data["pf"] - points_last_week
 
-                total_prev_games = prev_w + prev_l + prev_t
-                prev_win_pct = (prev_w + (prev_t * 0.5)) / \
-                    total_prev_games if total_prev_games > 0 else 0
+                    total_prev_games = prev_w + prev_l + prev_t
+                    prev_win_pct = (prev_w + (prev_t * 0.5)) / \
+                        total_prev_games if total_prev_games > 0 else 0
 
-                prev_standings_calc.append({
-                    "name": t_data["name"],
-                    "prev_win_pct": prev_win_pct,
-                    "prev_pf": prev_pf
-                })
+                    prev_standings_calc.append({
+                        "name": t_data["name"],
+                        "prev_win_pct": prev_win_pct,
+                        "prev_pf": prev_pf
+                    })
 
-            prev_standings_calc.sort(key=lambda x: (
-                x["prev_win_pct"], x["prev_pf"]), reverse=True)
-            prev_rank_map = {t["name"]: rank for rank,
-                             t in enumerate(prev_standings_calc, start=1)}
+                prev_standings_calc.sort(key=lambda x: (
+                    x["prev_win_pct"], x["prev_pf"]), reverse=True)
+                prev_rank_map = {t["name"]: rank for rank,
+                                 t in enumerate(prev_standings_calc, start=1)}
+            else:
+                # During playoffs, rank is the official playoff seed (regular season standings rank)
+                prev_rank_map = {t["name"]: t["actual_rank"] for t in teams_data.values()}
 
             for m in prev_boxes:
                 if m.home_team and m.away_team:
@@ -256,7 +269,7 @@ def compile_live_stats():
                 if current_week <= reg_season_count:
                     matchup_type = "REGULAR"
                 else:
-                    if m.home_team.team_id in playoff_team_ids:
+                    if m.home_team.team_id in playoff_team_ids and m.away_team.team_id in playoff_team_ids:
                         matchup_type = "PLAYOFF"
                     else:
                         matchup_type = "CONSOLATION"
@@ -370,10 +383,10 @@ def compile_live_stats():
     }
 
     filename = f"{SPORT.lower()}_current_season.json"
-    with open(os.path.join(LIVE_DIR, filename), "w") as f:
+    with open(os.path.join(LIVE_DIR, filename), "w", encoding="utf-8") as f:
         json.dump(live_data, f, indent=4)
 
-    print("✅ Successfully generated live season data!")
+    print("Successfully generated live season data!")
 
 
 if __name__ == "__main__":
