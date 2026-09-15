@@ -407,12 +407,18 @@ function renderCurrentMatchups(matchups, standings, playoffCount = 6) {
     const rank1 = actualRanks[match.home];
     const rank2 = actualRanks[match.away];
 
-    if (match.matchup_type && match.matchup_type.toUpperCase() === 'PLAYOFF_BYE') {
+    if (match.matchup_type && match.matchup_type.toUpperCase() === 'CHAMPIONSHIP') {
+      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f1c40f; text-align: center; margin-bottom: 8px; font-weight: 800;">👑 Championship</div>`;
+      borderColor = `border-top-color: #f1c40f;`;
+    } else if (match.matchup_type && match.matchup_type.toUpperCase() === 'PLAYOFF_BYE') {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f1c40f; text-align: center; margin-bottom: 8px; font-weight: 800;">🏖️ Playoff Bye</div>`;
       borderColor = `border-top-color: #f1c40f;`;
     } else if (match.matchup_type && match.matchup_type.toUpperCase() === 'PLAYOFF') {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #2ecc71; text-align: center; margin-bottom: 8px; font-weight: 800;">🏆 Playoff Bracket</div>`;
       borderColor = `border-top-color: #2ecc71;`;
+    } else if (match.matchup_type && (match.matchup_type.toUpperCase() === 'WINNERS_CONSOLATION' || match.matchup_type.toUpperCase() === 'PLAYOFF_CONSOLATION')) {
+      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #3498db; text-align: center; margin-bottom: 8px; font-weight: 800;">🥉 Playoff Consolation</div>`;
+      borderColor = `border-top-color: #3498db;`;
     } else if (match.matchup_type && match.matchup_type.toUpperCase() === 'CONSOLATION') {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #95a5a6; text-align: center; margin-bottom: 8px; font-weight: 800;">🥈 Consolation Bracket</div>`;
       borderColor = `border-top-color: #95a5a6;`;
@@ -477,12 +483,20 @@ function renderMatchupLegend() {
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #f39c12;">💥 BLOWOUT:</span></strong> Loser scored 75% or less of the winner's score</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #2ecc71;">🍀 LUCKY WIN:</span></strong> Won despite scoring below the weekly median</div>
         </div>
-        <div style="flex: 1; min-width: 250px; max-width: 400px;">
-            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Current Matchups (Regular Season Only)</h4>
+        <div style="flex: 1; min-width: 250px; max-width: 350px;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Current Matchups (Regular Season)</h4>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #f39c12;">🏟️ MARQUEE MATCHUP:</span></strong> Both teams are ranked in the Top 4</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #e74c3c;">🎟️ WILD CARD RACE:</span></strong> Both teams are battling near the playoff cutline</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #95a5a6;">🗑️ THE CELLAR:</span></strong> Both teams are ranked in the bottom 3</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #3498db;">🪨 DAVID VS GOLIATH:</span></strong> Matchup between teams separated by 8+ ranking spots</div>
+        </div>
+        <div style="flex: 1; min-width: 250px; max-width: 350px;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Current Matchups (Playoffs)</h4>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #f1c40f;">👑 CHAMPIONSHIP:</span></strong> The league title matchup</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #2ecc71;">🏆 PLAYOFF BRACKET:</span></strong> Championship bracket game</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #3498db;">🥉 PLAYOFF CONSOLATION:</span></strong> Knocked-out playoff teams (3rd/5th place)</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #95a5a6;">🥈 CONSOLATION BRACKET:</span></strong> Non-playoff teams matchup</div>
+            <div style="margin-bottom: 0.5rem;"><strong><span style="color: #f1c40f;">🏖️ PLAYOFF BYE:</span></strong> First-round bye for top seeds</div>
         </div>
     </div>
   `;

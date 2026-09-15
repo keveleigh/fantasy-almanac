@@ -192,7 +192,8 @@
             "home_rank": 1,
             "away": "The Redemption Tour",
             "away_score": 479.0,
-            "away_rank": 5
+            "away_rank": 5,
+            "matchup_type": "PLAYOFF"
         },
         {
             "home": "We Do Bat Flips Here",
@@ -200,7 +201,8 @@
             "home_rank": 2,
             "away": "Cubs Win Circa 2016",
             "away_score": 734.0,
-            "away_rank": 3
+            "away_rank": 3,
+            "matchup_type": "PLAYOFF"
         },
         {
             "home": "Imaginary Friends",
@@ -208,7 +210,8 @@
             "home_rank": 4,
             "away": "Seattle Mudkipz",
             "away_score": 529.0,
-            "away_rank": 6
+            "away_rank": 6,
+            "matchup_type": "PLAYOFF_CONSOLATION"
         },
         {
             "home": "Top League's Final Boss",
@@ -216,7 +219,8 @@
             "home_rank": 8,
             "away": "Utah Chisholm",
             "away_score": 332.0,
-            "away_rank": 10
+            "away_rank": 10,
+            "matchup_type": "CONSOLATION"
         },
         {
             "home": "Gunnars Only",
@@ -224,7 +228,8 @@
             "home_rank": 7,
             "away": "Team We Got Locks!",
             "away_score": 238.0,
-            "away_rank": 12
+            "away_rank": 12,
+            "matchup_type": "CONSOLATION"
         },
         {
             "home": "Swingin' on a Prayer",
@@ -232,7 +237,8 @@
             "home_rank": 9,
             "away": "Kristina's Top-Notch Team",
             "away_score": 368.0,
-            "away_rank": 11
+            "away_rank": 11,
+            "matchup_type": "CONSOLATION"
         }
     ],
     "previous_week_median": 492.0,
@@ -243,21 +249,21 @@
             "home_record": "17-2",
             "away": "Cubs Win Circa 2016",
             "away_record": "12-7",
-            "matchup_type": "PLAYOFF"
+            "matchup_type": "CHAMPIONSHIP"
         },
         {
             "home": "We Do Bat Flips Here",
             "home_record": "13-6",
             "away": "The Redemption Tour",
             "away_record": "10-9",
-            "matchup_type": "PLAYOFF"
+            "matchup_type": "PLAYOFF_CONSOLATION"
         },
         {
             "home": "Imaginary Friends",
             "home_record": "11-8",
             "away": "Seattle Mudkipz",
             "away_record": "9-10",
-            "matchup_type": "PLAYOFF"
+            "matchup_type": "PLAYOFF_CONSOLATION"
         },
         {
             "home": "Gunnars Only",

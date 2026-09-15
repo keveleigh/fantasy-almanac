@@ -30,10 +30,20 @@ ESPN_S2 = os.environ.get("ESPN_S2")
 
 if SPORT == 'MLB':
     from espn_api.baseball import League
+    from espn_api.baseball.box_score import BoxScore
 elif SPORT == 'NBA':
     from espn_api.basketball import League
+    from espn_api.basketball.box_score import BoxScore
 else:
     from espn_api.football import League
+    from espn_api.football.box_score import BoxScore
+
+# Preserve playoffTierType from raw ESPN API data on the BoxScore object
+_orig_box_score_init = BoxScore.__init__
+def _custom_box_score_init(self, data, *args, **kwargs):
+    _orig_box_score_init(self, data, *args, **kwargs)
+    self.playoff_tier_type = data.get('playoffTierType')
+BoxScore.__init__ = _custom_box_score_init
 
 
 def compile_live_stats():
@@ -156,6 +166,35 @@ def compile_live_stats():
                      for data in teams_data.values()]
 
     # 4. Matchup Center (Last Week & This Week)
+    # Total matchup periods in season to detect championship week
+    total_matchup_periods = len(getattr(league.settings, 'matchup_periods', {}))
+    is_final_week = (current_week >= total_matchup_periods and total_matchup_periods > 0)
+    is_prev_final = (completed_weeks >= total_matchup_periods and total_matchup_periods > 0)
+
+    # Pre-calculate playoff teams for matchup type determination
+    true_playoff_count = getattr(league.settings, 'playoff_team_count', 6)
+    playoff_team_ids = []
+    for team in league.teams:
+        rank = getattr(team, 'final_rank', team.standing)
+        if rank <= true_playoff_count:
+            playoff_team_ids.append(team.team_id)
+
+    def get_playoff_matchup_type(matchup, is_championship_week):
+        tier = getattr(matchup, 'playoff_tier_type', None)
+        if tier == 'WINNERS_BRACKET':
+            return "CHAMPIONSHIP" if is_championship_week else "PLAYOFF"
+        elif tier == 'WINNERS_CONSOLATION_LADDER':
+            return "PLAYOFF_CONSOLATION"
+        elif tier == 'LOSERS_CONSOLATION_LADDER':
+            return "CONSOLATION"
+        else:
+            # Fallback based on team seed
+            home_id = getattr(matchup.home_team, 'team_id', 0) if matchup.home_team else 0
+            away_id = getattr(matchup.away_team, 'team_id', 0) if matchup.away_team else 0
+            if home_id in playoff_team_ids and away_id in playoff_team_ids:
+                return "CHAMPIONSHIP" if is_championship_week else "PLAYOFF"
+            return "CONSOLATION"
+
     previous_matchups = []
     previous_week_median = 0.0
     heartbreak_threshold = 0.0
@@ -234,24 +273,22 @@ def compile_live_stats():
 
             for m in prev_boxes:
                 if m.home_team and m.away_team:
+                    if completed_weeks <= reg_season_count:
+                        prev_m_type = "REGULAR"
+                    else:
+                        prev_m_type = get_playoff_matchup_type(m, is_prev_final)
+
                     previous_matchups.append({
                         "home": m.home_team.team_name,
                         "home_score": m.home_score,
                         "home_rank": prev_rank_map.get(m.home_team.team_name, 99),
                         "away": m.away_team.team_name,
                         "away_score": m.away_score,
-                        "away_rank": prev_rank_map.get(m.away_team.team_name, 99)
+                        "away_rank": prev_rank_map.get(m.away_team.team_name, 99),
+                        "matchup_type": prev_m_type
                     })
         except Exception:
             pass
-
-    # Pre-calculate playoff teams for matchup type determination
-    true_playoff_count = getattr(league.settings, 'playoff_team_count', 6)
-    playoff_team_ids = []
-    for team in league.teams:
-        rank = getattr(team, 'final_rank', team.standing)
-        if rank <= true_playoff_count:
-            playoff_team_ids.append(team.team_id)
 
     current_matchups = []
     try:
@@ -269,10 +306,7 @@ def compile_live_stats():
                 if current_week <= reg_season_count:
                     matchup_type = "REGULAR"
                 else:
-                    if m.home_team.team_id in playoff_team_ids and m.away_team.team_id in playoff_team_ids:
-                        matchup_type = "PLAYOFF"
-                    else:
-                        matchup_type = "CONSOLATION"
+                    matchup_type = get_playoff_matchup_type(m, is_final_week)
 
                 current_matchups.append({
                     "home": m.home_team.team_name,
@@ -290,7 +324,8 @@ def compile_live_stats():
                 if current_week <= reg_season_count:
                     matchup_type = "REGULAR"
                 else:
-                    if team.team_id in playoff_team_ids:
+                    tier = getattr(m, 'playoff_tier_type', None)
+                    if tier == 'WINNERS_BRACKET' or team.team_id in playoff_team_ids:
                         matchup_type = "PLAYOFF_BYE"
                     else:
                         continue
