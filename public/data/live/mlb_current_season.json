@@ -1,7 +1,16 @@
 {
+    "year": 2026,
     "week": 22,
     "season_complete": true,
     "playoff_team_count": 6,
+    "champion": {
+        "team": "Cubs Win Circa 2016",
+        "logo_url": "http://content.sportslogos.net/logos/54/54/full/2920.png",
+        "score": 581.0,
+        "opponent": "The Swingin\u2019 Bunts",
+        "opponent_score": 483.0,
+        "record": "12-7-0"
+    },
     "true_standings": [
         {
             "team": "The Swingin\u2019 Bunts",

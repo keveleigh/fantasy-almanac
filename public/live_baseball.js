@@ -33,27 +33,184 @@ themeToggle.addEventListener("click", () =>
   setTheme(!document.body.classList.contains("dark-theme")),
 );
 
+// --- Helper: Extract Champion Info ---
+function getChampionInfo(data) {
+  // 1. Explicit champion object provided in data
+  if (data.champion && data.champion.team) {
+    const champ = { ...data.champion };
+    if (!champ.logo_url && data.true_standings) {
+      const found = data.true_standings.find((t) => t.team === champ.team);
+      if (found) champ.logo_url = found.logo_url;
+    }
+    return champ;
+  }
+
+  // 2. Look for CHAMPIONSHIP matchup in previous_matchups
+  if (data.previous_matchups && data.previous_matchups.length > 0) {
+    const champMatch = data.previous_matchups.find(
+      (m) => m.matchup_type && m.matchup_type.toUpperCase() === "CHAMPIONSHIP",
+    );
+    if (champMatch) {
+      let winnerName = "";
+      let winnerScore = 0;
+      let loserName = "";
+      let loserScore = 0;
+
+      if (champMatch.home_score > champMatch.away_score) {
+        winnerName = champMatch.home;
+        winnerScore = champMatch.home_score;
+        loserName = champMatch.away;
+        loserScore = champMatch.away_score;
+      } else if (champMatch.away_score > champMatch.home_score) {
+        winnerName = champMatch.away;
+        winnerScore = champMatch.away_score;
+        loserName = champMatch.home;
+        loserScore = champMatch.home_score;
+      }
+
+      if (winnerName) {
+        let logoUrl = "";
+        let record = "";
+        let actualRank = 1;
+        if (data.true_standings) {
+          const tData = data.true_standings.find((t) => t.team === winnerName);
+          if (tData) {
+            logoUrl = tData.logo_url || "";
+            record = tData.actual_record || "";
+            actualRank = tData.actual_rank || 1;
+          }
+        }
+        return {
+          team: winnerName,
+          logo_url: logoUrl,
+          score: winnerScore,
+          opponent: loserName,
+          opponent_score: loserScore,
+          record: record,
+          actual_rank: actualRank,
+        };
+      }
+    }
+  }
+
+  // 3. Fallback: if season_complete is true, find team with actual_rank === 1
+  if (data.season_complete && data.true_standings) {
+    const champTeam = data.true_standings.find((t) => t.actual_rank === 1);
+    if (champTeam) {
+      return {
+        team: champTeam.team,
+        logo_url: champTeam.logo_url || "",
+        score: null,
+        opponent: null,
+        opponent_score: null,
+        record: champTeam.actual_record || "",
+        actual_rank: 1,
+      };
+    }
+  }
+
+  return null;
+}
+
+// --- Render Champion Showcase Card ---
+function renderChampionCard(champ, year) {
+  const card = document.getElementById("champion-card");
+  if (!card) return;
+
+  if (!champ) {
+    card.style.display = "none";
+    return;
+  }
+
+  const fallbackLogo = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#cbd5e1"/><text x="50" y="50" text-anchor="middle" dy=".3em" font-size="50">👤</text></svg>')}`;
+  const logoUrl = champ.logo_url || fallbackLogo;
+
+  let recapHtml = "";
+  if (champ.opponent && champ.score != null && champ.opponent_score != null) {
+    recapHtml = `Defeated <strong>${champ.opponent}</strong> (${champ.score.toFixed(1)} – ${champ.opponent_score.toFixed(1)}) in the Championship Final`;
+  } else {
+    recapHtml = "Crowned League Champion";
+  }
+
+  const metaParts = [];
+  if (champ.record) metaParts.push(`Final Record: <strong>${champ.record}</strong>`);
+  if (champ.actual_rank) metaParts.push(`Overall Rank: <strong>#${champ.actual_rank}</strong>`);
+  const metaHtml = metaParts.length > 0 ? `<p class="champion-submeta">${metaParts.join(" • ")}</p>` : "";
+
+  card.innerHTML = `
+    <div class="champion-card-inner">
+      <div class="champion-badge-pill">🏆 ${year} League Champion</div>
+      <div class="champion-hero">
+        <img src="${logoUrl}" class="champion-avatar" alt="${champ.team} Logo" onerror="this.onerror=null;this.src='${fallbackLogo}'">
+        <div class="champion-info">
+          <h2 class="champion-name">${champ.team}</h2>
+          <p class="champion-meta">${recapHtml}</p>
+          ${metaHtml}
+        </div>
+      </div>
+    </div>
+  `;
+  card.style.display = "block";
+}
+
 // --- Live Dashboard Initializer ---
 async function loadLiveDashboard() {
   try {
     const res = await fetch("data/live/mlb_current_season.json");
     const data = await res.json();
 
+    const champ = getChampionInfo(data);
+    const seasonYear = data.year || new Date().getFullYear();
+
     if (data.season_complete) {
+      const champSubtitle = champ
+        ? ` • Champion: <strong>${champ.team}</strong>`
+        : "";
       document.getElementById("week-subtitle").innerHTML =
-        `Week ${data.week} (Final Results) <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">🏆 Season Concluded</span>`;
+        `Week ${data.week} (Final Results) <span style="font-size: 0.95rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 6px;">🏆 Season Concluded${champSubtitle}</span>`;
+
+      renderChampionCard(champ, seasonYear);
+
+      const matchupSubtitle = document.getElementById(
+        "matchup-center-subtitle",
+      );
+      if (matchupSubtitle) {
+        matchupSubtitle.innerText =
+          "Final playoff results and championship outcome.";
+      }
+
+      const prevWeekHeader = document.getElementById("prev-week-header");
+      if (prevWeekHeader) {
+        prevWeekHeader.innerHTML = `Final Results (Week <span id="prev-week-num">${data.week}</span>)`;
+      }
+
+      const currWeekHeader = document.getElementById("curr-week-header");
+      if (currWeekHeader) {
+        currWeekHeader.style.display = "none";
+      }
+      const currMatchupsContainer = document.getElementById(
+        "curr-matchups-container",
+      );
+      if (currMatchupsContainer) {
+        currMatchupsContainer.style.display = "none";
+      }
     } else {
       document.getElementById("week-subtitle").innerHTML =
         `Week ${data.week} <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">(Updates every Monday morning)</span>`;
+
+      const prevWeekSpan = document.getElementById("prev-week-num");
+      if (prevWeekSpan)
+        prevWeekSpan.innerText = data.week > 1 ? data.week - 1 : "-";
+      const currWeekSpan = document.getElementById("curr-week-num");
+      if (currWeekSpan) currWeekSpan.innerText = data.week;
     }
 
-    const prevWeekSpan = document.getElementById("prev-week-num");
-    if (prevWeekSpan)
-      prevWeekSpan.innerText = data.week > 1 ? data.week - 1 : "-";
-    const currWeekSpan = document.getElementById("curr-week-num");
-    if (currWeekSpan) currWeekSpan.innerText = data.week;
-
-    renderTrueStandings(data.true_standings, data.remaining_sos);
+    renderTrueStandings(
+      data.true_standings,
+      data.remaining_sos,
+      champ ? champ.team : null,
+      data.season_complete,
+    );
 
     luckData = data.luck_quadrant;
     initLuckQuadrant();
@@ -63,11 +220,15 @@ async function loadLiveDashboard() {
       data.previous_week_median,
       data.heartbreak_threshold,
     );
-    renderCurrentMatchups(
-      data.current_matchups,
-      data.true_standings,
-      data.playoff_team_count,
-    );
+
+    if (!data.season_complete) {
+      renderCurrentMatchups(
+        data.current_matchups,
+        data.true_standings,
+        data.playoff_team_count,
+      );
+    }
+
     renderMatchupLegend();
   } catch (error) {
     console.error("Error loading live JSON data:", error);
@@ -77,7 +238,12 @@ async function loadLiveDashboard() {
 }
 
 // --- 1. Render True Standings ---
-function renderTrueStandings(standings, sosData) {
+function renderTrueStandings(
+  standings,
+  sosData,
+  champTeamName = null,
+  isSeasonComplete = false,
+) {
   const tbody = document.querySelector("#true-standings-table tbody");
   tbody.innerHTML = "";
 
@@ -133,7 +299,16 @@ function renderTrueStandings(standings, sosData) {
       rankColor = "#e74c3c"; // Actual rank is worse than true rank (Unlucky)
     else if (rankDiff < 0) rankColor = "#2ecc71"; // Actual rank is better than true rank (Lucky)
 
-    const actualRankHtml = `<div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; white-space: nowrap;">Actual: <span style="color: ${rankColor}; font-weight: bold;">#${actualRank}</span></div>`;
+    const isChamp =
+      isSeasonComplete &&
+      (team.team === champTeamName || actualRank === 1);
+    const champBadge = isChamp
+      ? `<span class="reigning-badge" style="margin-left: 8px; font-size: 0.7rem; padding: 2px 7px;">🏆 Champion</span>`
+      : "";
+
+    const actualRankHtml = isChamp
+      ? `<div class="champ-rank-text" style="font-size: 0.75rem; margin-top: 4px; white-space: nowrap;">🏆 Champion (#1)</div>`
+      : `<div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px; white-space: nowrap;">Actual: <span style="color: ${rankColor}; font-weight: bold;">#${actualRank}</span></div>`;
 
     const sosInfo = sosMap[team.team] || {
       ppg: "N/A",
@@ -146,7 +321,7 @@ function renderTrueStandings(standings, sosData) {
                     <div style="font-size: 1.2rem; font-weight: bold;">${trueRank}</div>
                     ${actualRankHtml}
                 </td>
-                <td><div style="display: flex; align-items: center; gap: 8px;">${logoHtml} <strong>${team.team}</strong></div></td>
+                <td><div style="display: flex; align-items: center; gap: 8px;">${logoHtml} <strong>${team.team}</strong>${champBadge}</div></td>
                 <td>${team.actual_record}</td>
                 <td>${(team.true_win_pct * 100).toFixed(1)}%</td>
                 <td>${team.expected_wins.toFixed(1)}</td>
@@ -320,14 +495,14 @@ function renderPreviousMatchups(matchups, median, heartbreak_threshold) {
   }
 
   matchups.forEach((match) => {
-    const homeBold =
-      match.home_score > match.away_score
-        ? "font-weight:bold; color:var(--text-main);"
-        : "color:var(--text-muted);";
-    const awayBold =
-      match.away_score > match.home_score
-        ? "font-weight:bold; color:var(--text-main);"
-        : "color:var(--text-muted);";
+    const isHomeWinner = match.home_score > match.away_score;
+    const isAwayWinner = match.away_score > match.home_score;
+    const homeBold = isHomeWinner
+      ? "font-weight:bold; color:var(--text-main);"
+      : "color:var(--text-muted);";
+    const awayBold = isAwayWinner
+      ? "font-weight:bold; color:var(--text-main);"
+      : "color:var(--text-muted);";
 
     let tagHtml = "";
     let borderColor = "";
@@ -338,48 +513,90 @@ function renderPreviousMatchups(matchups, median, heartbreak_threshold) {
     const margin = Math.abs(match.home_score - match.away_score);
     const ratio = winnerScore > 0 ? loserScore / winnerScore : 0;
 
-    const winnerRank =
-      match.home_score > match.away_score ? match.home_rank : match.away_rank;
-    const loserRank =
-      match.home_score > match.away_score ? match.away_rank : match.home_rank;
+    const winnerRank = isHomeWinner ? match.home_rank : match.away_rank;
+    const loserRank = isHomeWinner ? match.away_rank : match.home_rank;
 
-    // Heartbreak: Lost despite having one of the top scores of the week
-    if (heartbreak_threshold > 0 && loserScore >= heartbreak_threshold) {
-      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #8e44ad; text-align: center; margin-bottom: 8px; font-weight: 800;">💔 HEARTBREAK</div>`;
-      borderColor = `border-top-color: #8e44ad;`;
+    const mType = (match.matchup_type || "").toUpperCase();
+    const isPlayoffMatchup = mType && mType !== "REGULAR";
+
+    if (isPlayoffMatchup) {
+      if (mType === "CHAMPIONSHIP") {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f1c40f; text-align: center; margin-bottom: 8px; font-weight: 800;">👑 Championship</div>`;
+        borderColor = `border-top-color: #f1c40f;`;
+      } else if (mType === "PLAYOFF_BYE") {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f1c40f; text-align: center; margin-bottom: 8px; font-weight: 800;">🏖️ Playoff Bye</div>`;
+        borderColor = `border-top-color: #f1c40f;`;
+      } else if (mType === "PLAYOFF") {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #2ecc71; text-align: center; margin-bottom: 8px; font-weight: 800;">🏆 Playoff Bracket</div>`;
+        borderColor = `border-top-color: #2ecc71;`;
+      } else if (
+        mType === "WINNERS_CONSOLATION" ||
+        mType === "PLAYOFF_CONSOLATION"
+      ) {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #3498db; text-align: center; margin-bottom: 8px; font-weight: 800;">🥉 Playoff Consolation</div>`;
+        borderColor = `border-top-color: #3498db;`;
+      } else if (mType === "CONSOLATION") {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #95a5a6; text-align: center; margin-bottom: 8px; font-weight: 800;">🥈 Consolation Bracket</div>`;
+        borderColor = `border-top-color: #95a5a6;`;
+      }
+    } else {
+      // Regular season accolades
+      // Heartbreak: Lost despite having one of the top scores of the week
+      if (heartbreak_threshold > 0 && loserScore >= heartbreak_threshold) {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #8e44ad; text-align: center; margin-bottom: 8px; font-weight: 800;">💔 HEARTBREAK</div>`;
+        borderColor = `border-top-color: #8e44ad;`;
+      }
+      // Upset: Lower rank (higher number) beats a team ranked 4+ spots higher
+      else if (
+        winnerRank &&
+        loserRank &&
+        winnerRank > loserRank &&
+        winnerRank - loserRank >= 4
+      ) {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #e74c3c; text-align: center; margin-bottom: 8px; font-weight: 800;">🚨 UPSET</div>`;
+        borderColor = `border-top-color: #e74c3c;`;
+      }
+      // Nail-biter: Loser scored 95% or more of the winner's score
+      else if (winnerScore > 0 && ratio >= 0.95 && margin > 0) {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #1abc9c; text-align: center; margin-bottom: 8px; font-weight: 800;">🤏 NAIL-BITER</div>`;
+        borderColor = `border-top-color: #1abc9c;`;
+      }
+      // Blowout: Loser scored 75% or less of the winner's score
+      else if (winnerScore > 0 && ratio <= 0.75) {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f39c12; text-align: center; margin-bottom: 8px; font-weight: 800;">💥 BLOWOUT</div>`;
+        borderColor = `border-top-color: #f39c12;`;
+      }
+      // Lucky Win: Winning score was below the weekly median
+      else if (median && winnerScore > 0 && winnerScore < median) {
+        tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #2ecc71; text-align: center; margin-bottom: 8px; font-weight: 800;">🍀 LUCKY WIN</div>`;
+        borderColor = `border-top-color: #2ecc71;`;
+      }
     }
-    // Upset: Lower rank (higher number) beats a team ranked 4+ spots higher
-    else if (
-      winnerRank &&
-      loserRank &&
-      winnerRank > loserRank &&
-      winnerRank - loserRank >= 4
-    ) {
-      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #e74c3c; text-align: center; margin-bottom: 8px; font-weight: 800;">🚨 UPSET</div>`;
-      borderColor = `border-top-color: #e74c3c;`;
-    }
-    // Nail-biter: Loser scored 95% or more of the winner's score
-    else if (winnerScore > 0 && ratio >= 0.95 && margin > 0) {
-      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #1abc9c; text-align: center; margin-bottom: 8px; font-weight: 800;">🤏 NAIL-BITER</div>`;
-      borderColor = `border-top-color: #1abc9c;`;
-    }
-    // Blowout: Loser scored 75% or less of the winner's score
-    else if (winnerScore > 0 && ratio <= 0.75) {
-      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f39c12; text-align: center; margin-bottom: 8px; font-weight: 800;">💥 BLOWOUT</div>`;
-      borderColor = `border-top-color: #f39c12;`;
-    }
-    // Lucky Win: Winning score was below the weekly median
-    else if (median && winnerScore > 0 && winnerScore < median) {
-      tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #2ecc71; text-align: center; margin-bottom: 8px; font-weight: 800;">🍀 LUCKY WIN</div>`;
-      borderColor = `border-top-color: #2ecc71;`;
-    }
+
+    const awayScoreStr =
+      match.away === "BYE"
+        ? "-"
+        : match.away_score != null
+          ? match.away_score.toFixed(1)
+          : "-";
+    const homeScoreStr =
+      match.home === "BYE"
+        ? "-"
+        : match.home_score != null
+          ? match.home_score.toFixed(1)
+          : "-";
+
+    const awayChampIcon =
+      mType === "CHAMPIONSHIP" && isAwayWinner ? "🏆 " : "";
+    const homeChampIcon =
+      mType === "CHAMPIONSHIP" && isHomeWinner ? "🏆 " : "";
 
     container.innerHTML += `
             <div class="score-card" style="display: flex; flex-direction: column; ${borderColor}">
                 ${tagHtml}
                 <div style="margin-top: auto;">
-                <div style="display:flex; justify-content:space-between; margin-bottom: 8px; ${awayBold}"><span>${match.away}</span><span>${match.away_score.toFixed(1)}</span></div>
-                <div style="display:flex; justify-content:space-between; ${homeBold}"><span>${match.home}</span><span>${match.home_score.toFixed(1)}</span></div>
+                <div style="display:flex; justify-content:space-between; margin-bottom: 8px; ${awayBold}"><span>${awayChampIcon}${match.away}</span><span>${awayScoreStr}</span></div>
+                <div style="display:flex; justify-content:space-between; ${homeBold}"><span>${homeChampIcon}${match.home}</span><span>${homeScoreStr}</span></div>
                 </div>
             </div>`;
   });
@@ -465,8 +682,10 @@ function renderCurrentMatchups(matchups, standings, playoffCount = 6) {
 }
 
 function renderMatchupLegend() {
-  const currMatchups = document.getElementById("curr-matchups-container");
-  if (!currMatchups) return;
+  const matchupCard =
+    document.querySelector("#prev-matchups-container")?.closest(".card") ||
+    document.getElementById("curr-matchups-container")?.parentElement;
+  if (!matchupCard) return;
 
   const existingLegend = document.getElementById("matchup-legend");
   if (existingLegend) existingLegend.remove();
@@ -476,12 +695,12 @@ function renderMatchupLegend() {
   legendDiv.style.marginTop = "2rem";
   legendDiv.style.paddingTop = "1.5rem";
   legendDiv.style.borderTop = "1px solid var(--divider)";
-  
+
   legendDiv.innerHTML = `
     <h3 style="margin-top: 0; font-size: 1.1rem; color: var(--primary); text-align: center; margin-bottom: 1rem;">Matchup Tags Legend</h3>
     <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; font-size: 0.85rem; color: var(--text-main);">
-        <div style="flex: 1; min-width: 250px; max-width: 400px;">
-            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Previous Matchups</h4>
+        <div style="flex: 1; min-width: 250px; max-width: 350px;">
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Previous Matchups (Regular Season)</h4>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #8e44ad;">💔 HEARTBREAK:</span></strong> Lost despite scoring in the top 25% of the league</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #e74c3c;">🚨 UPSET:</span></strong> Lower ranked team beat a team ranked 4+ spots higher</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #1abc9c;">🤏 NAIL-BITER:</span></strong> Loser scored 95% or more of the winner's score</div>
@@ -496,7 +715,7 @@ function renderMatchupLegend() {
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #3498db;">🪨 DAVID VS GOLIATH:</span></strong> Matchup between teams separated by 8+ ranking spots</div>
         </div>
         <div style="flex: 1; min-width: 250px; max-width: 350px;">
-            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Current Matchups (Playoffs)</h4>
+            <h4 style="margin: 0 0 0.5rem 0; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; font-size: 0.75rem; border-bottom: 1px dashed var(--divider); padding-bottom: 4px;">Playoff Matchups</h4>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #f1c40f;">👑 CHAMPIONSHIP:</span></strong> The league title matchup</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #2ecc71;">🏆 PLAYOFF BRACKET:</span></strong> Championship bracket game</div>
             <div style="margin-bottom: 0.5rem;"><strong><span style="color: #3498db;">🥉 PLAYOFF CONSOLATION:</span></strong> Knocked-out playoff teams (3rd/5th place)</div>
@@ -506,7 +725,7 @@ function renderMatchupLegend() {
     </div>
   `;
 
-  currMatchups.parentElement.appendChild(legendDiv);
+  matchupCard.appendChild(legendDiv);
 }
 
 loadLiveDashboard();

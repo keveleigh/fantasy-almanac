@@ -306,6 +306,20 @@ def compile_live_stats():
                         "away_rank": prev_rank_map.get(m.away_team.team_name, 99),
                         "matchup_type": prev_m_type
                     })
+                elif m.home_team or m.away_team:
+                    team = m.home_team if m.home_team else m.away_team
+                    tier = getattr(m, 'playoff_tier_type', None)
+                    if completed_weeks > reg_season_count and (tier == 'WINNERS_BRACKET' or team.team_id in playoff_team_ids):
+                        score = m.home_score if m.home_team else m.away_score
+                        previous_matchups.append({
+                            "home": team.team_name,
+                            "home_score": score,
+                            "home_rank": prev_rank_map.get(team.team_name, 99),
+                            "away": "BYE",
+                            "away_score": 0.0,
+                            "away_rank": 99,
+                            "matchup_type": "PLAYOFF_BYE"
+                        })
         except Exception:
             pass
 
@@ -424,11 +438,61 @@ def compile_live_stats():
 
     remaining_sos.sort(key=lambda x: x["sos_ppg"], reverse=True)
 
+    # Determine Champion if season is complete or championship game has concluded
+    champion = None
+    if is_season_over or is_prev_final:
+        for m in previous_matchups:
+            if m.get("matchup_type") == "CHAMPIONSHIP":
+                h_score = m.get("home_score", 0)
+                a_score = m.get("away_score", 0)
+                if h_score > a_score:
+                    champ_name = m["home"]
+                    runner_up = m["away"]
+                    champ_score = h_score
+                    runner_score = a_score
+                elif a_score > h_score:
+                    champ_name = m["away"]
+                    runner_up = m["home"]
+                    champ_score = a_score
+                    runner_score = h_score
+                else:
+                    champ_name = None
+
+                if champ_name:
+                    champ_logo = next(
+                        (t["logo_url"] for t in true_standings if t["team"] == champ_name), "")
+                    champ_rec = next(
+                        (t["actual_record"] for t in true_standings if t["team"] == champ_name), "")
+                    champion = {
+                        "team": champ_name,
+                        "logo_url": champ_logo,
+                        "score": champ_score,
+                        "opponent": runner_up,
+                        "opponent_score": runner_score,
+                        "record": champ_rec
+                    }
+                break
+
+        if not champion and is_season_over:
+            for t in true_standings:
+                if t.get("actual_rank") == 1:
+                    champion = {
+                        "team": t["team"],
+                        "logo_url": t.get("logo_url", ""),
+                        "score": None,
+                        "opponent": None,
+                        "opponent_score": None,
+                        "record": t.get("actual_record", "")
+                    }
+                    break
+
     # Compile JSON payload
     live_data = {
+        "year": YEAR,
         "week": current_week,
         "season_complete": is_season_over,
         "playoff_team_count": getattr(league.settings, 'playoff_team_count', -1),
+        "champion": champion,
         "true_standings": true_standings,
         "luck_quadrant": luck_quadrant,
         "previous_matchups": previous_matchups,

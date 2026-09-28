@@ -735,3 +735,127 @@ body.dark-theme ::-webkit-scrollbar-thumb:hover {
 .preload-theme * {
   transition: none !important;
 }
+
+/* --- Champion Showcase Card --- */
+.champion-card {
+  border: 2px solid #f1c40f;
+  background: linear-gradient(
+    135deg,
+    rgba(241, 196, 15, 0.12) 0%,
+    var(--surface) 100%
+  );
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(241, 196, 15, 0.18);
+  animation: championGlow 3s ease-in-out infinite alternate;
+}
+
+body.dark-theme .champion-card {
+  border-color: #fde047;
+  background: linear-gradient(
+    135deg,
+    rgba(253, 224, 71, 0.12) 0%,
+    var(--surface) 100%
+  );
+  box-shadow: 0 4px 20px rgba(253, 224, 71, 0.15);
+}
+
+@keyframes championGlow {
+  0% {
+    box-shadow: 0 4px 12px rgba(241, 196, 15, 0.15);
+  }
+  100% {
+    box-shadow: 0 8px 24px rgba(241, 196, 15, 0.3);
+  }
+}
+
+.champion-card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.champion-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1c40f;
+  color: #1a1a1a;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 18px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(241, 196, 15, 0.3);
+}
+
+body.dark-theme .champion-badge-pill {
+  background: #fde047;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(253, 224, 71, 0.25);
+}
+
+.champion-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.champion-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #f1c40f;
+  object-fit: cover;
+  background: var(--surface);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+body.dark-theme .champion-avatar {
+  border-color: #fde047;
+}
+
+.champion-info {
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .champion-info {
+    text-align: center;
+  }
+}
+
+.champion-name {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.champion-meta {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.05rem;
+  color: var(--text-main);
+}
+
+.champion-submeta {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.champ-rank-text {
+  color: #b8860b;
+  font-weight: bold;
+}
+
+body.dark-theme .champ-rank-text {
+  color: #fde047;
+}
+
