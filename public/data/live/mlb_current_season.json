@@ -234,7 +234,7 @@
         },
         {
             "home": "Utah Chisholm",
-            "home_score": 388.0,
+            "home_score": 387.0,
             "home_rank": 10,
             "away": "Kristina's Top-Notch Team",
             "away_score": 438.0,
@@ -251,7 +251,7 @@
             "matchup_type": "CONSOLATION"
         }
     ],
-    "previous_week_median": 410.5,
+    "previous_week_median": 410.0,
     "heartbreak_threshold": 483.0,
     "current_matchups": [],
     "remaining_sos": []
