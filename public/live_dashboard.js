@@ -266,7 +266,7 @@ function renderTrueStandings(
   }
 
   if (!standings || standings.length === 0) {
-    tbody.innerHTML = `<tr><td colspan='${hasPowerRankings ? 8 : 7}' style='text-align:center;'>No standings data yet.</td></tr>`;
+    tbody.innerHTML = `<tr><td colspan='${hasPowerRankings ? 7 : 6}' style='text-align:center;'>No standings data yet.</td></tr>`;
     return;
   }
 
@@ -308,7 +308,7 @@ function renderTrueStandings(
       sign = "";
     } // Unlucky (Red)
 
-    const luckHtml = `<span style="color: ${luckColor}; font-weight:bold;">${sign}${luckDiff}</span>`;
+    const luckHtml = `<span style="color: ${luckColor}; font-weight:bold;" title="Expected Wins: ${team.expected_wins.toFixed(1)}">${sign}${luckDiff}</span>`;
 
     const fallbackLogo = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="50" fill="#cbd5e1"/><text x="50" y="50" text-anchor="middle" dy=".3em" font-size="50">👤</text></svg>')}`;
     const logoUrl = team.logo_url || fallbackLogo;
@@ -350,7 +350,7 @@ function renderTrueStandings(
       let streakIcon = "";
       let streakColor = "var(--text-muted)";
       if (streakVal >= 3) {
-        streakColor = "#e74c3c";
+        streakColor = "#f39c12";
         streakIcon = "🔥 ";
       } else if (streakVal > 0) {
         streakColor = "#2ecc71";
@@ -378,8 +378,7 @@ function renderTrueStandings(
                 </td>
                 <td><div style="display: flex; align-items: center; gap: 8px;">${logoHtml} <strong>${team.team}</strong>${champBadge}</div></td>
                 <td>${team.actual_record}</td>
-                <td>${(team.true_win_pct * 100).toFixed(1)}%</td>
-                <td>${team.expected_wins.toFixed(1)}</td>
+                <td title="All-Play Record: ${team.true_record}">${(team.true_win_pct * 100).toFixed(1)}%</td>
                 <td>${luckHtml}</td>
                 <td style="color: ${sosInfo.color}; font-weight: bold;">${sosInfo.ppg}</td>
                 ${streakCellHtml}
