@@ -110,7 +110,9 @@ def compile_live_stats():
             "true_losses": 0,
             "true_ties": 0,
             "pf": 0.0,
-            "pa": 0.0
+            "pa": 0.0,
+            "recent_points": [],
+            "streak": 0
         }
         for team in league.teams
     }
@@ -144,6 +146,22 @@ def compile_live_stats():
 
                 teams_data[team.team_id]["pf"] += score
                 teams_data[team.team_id]["pa"] += opp_score
+                teams_data[team.team_id]["recent_points"].append(score)
+
+                if score > opp_score:
+                    teams_data[team.team_id]["streak"] = (
+                        teams_data[team.team_id]["streak"] + 1
+                        if teams_data[team.team_id]["streak"] > 0
+                        else 1
+                    )
+                elif score < opp_score:
+                    teams_data[team.team_id]["streak"] = (
+                        teams_data[team.team_id]["streak"] - 1
+                        if teams_data[team.team_id]["streak"] < 0
+                        else -1
+                    )
+                else:
+                    teams_data[team.team_id]["streak"] = 0
 
                 # Compare against the rest of the league for True Standings
                 for other_team_id, other_score in week_scores:
@@ -177,6 +195,27 @@ def compile_live_stats():
 
     true_standings.sort(key=lambda x: (
         x["true_win_pct"], x["pf"]), reverse=True)
+
+    # 2.5 Format Power Rankings
+    power_rankings = []
+    for team_id, data in teams_data.items():
+        recent_games = data["recent_points"][-3:]
+        recent_avg = sum(recent_games) / len(recent_games) if recent_games else 0
+        season_avg = data["pf"] / reg_completed_weeks if reg_completed_weeks > 0 else 0
+
+        # 60% Recent Form, 40% Season Form, +/- 2.5% per streak game
+        base_power = (recent_avg * 0.6) + (season_avg * 0.4)
+        streak_multiplier = 1.0 + (data["streak"] * 0.025)
+        power_score = base_power * streak_multiplier
+
+        power_rankings.append({
+            "team": data["name"],
+            "logo_url": data["logo_url"],
+            "power_score": round(power_score, 2),
+            "streak": data["streak"]
+        })
+
+    power_rankings.sort(key=lambda x: x["power_score"], reverse=True)
 
     # 3. Format Luck Quadrant
     luck_quadrant = [{"team": data["name"], 
@@ -494,6 +533,7 @@ def compile_live_stats():
         "playoff_team_count": getattr(league.settings, 'playoff_team_count', -1),
         "champion": champion,
         "true_standings": true_standings,
+        "power_rankings": power_rankings,
         "luck_quadrant": luck_quadrant,
         "previous_matchups": previous_matchups,
         "previous_week_median": previous_week_median,

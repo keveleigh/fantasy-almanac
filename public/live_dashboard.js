@@ -6,6 +6,10 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 let luckChartInstance = null;
 let luckData = [];
 
+const jsonUrl =
+  document.body.dataset.jsonUrl || "data/live/mlb_current_season.json";
+const updateDay = document.body.dataset.updateDay || "Monday";
+
 function setTheme(isDark) {
   if (isDark) {
     document.body.classList.add("dark-theme");
@@ -133,9 +137,14 @@ function renderChampionCard(champ, year) {
   }
 
   const metaParts = [];
-  if (champ.record) metaParts.push(`Final Record: <strong>${champ.record}</strong>`);
-  if (champ.actual_rank) metaParts.push(`Overall Rank: <strong>#${champ.actual_rank}</strong>`);
-  const metaHtml = metaParts.length > 0 ? `<p class="champion-submeta">${metaParts.join(" • ")}</p>` : "";
+  if (champ.record)
+    metaParts.push(`Final Record: <strong>${champ.record}</strong>`);
+  if (champ.actual_rank)
+    metaParts.push(`Overall Rank: <strong>#${champ.actual_rank}</strong>`);
+  const metaHtml =
+    metaParts.length > 0
+      ? `<p class="champion-submeta">${metaParts.join(" • ")}</p>`
+      : "";
 
   card.innerHTML = `
     <div class="champion-card-inner">
@@ -156,7 +165,7 @@ function renderChampionCard(champ, year) {
 // --- Live Dashboard Initializer ---
 async function loadLiveDashboard() {
   try {
-    const res = await fetch("data/live/mlb_current_season.json");
+    const res = await fetch(jsonUrl);
     const data = await res.json();
 
     const champ = getChampionInfo(data);
@@ -196,7 +205,7 @@ async function loadLiveDashboard() {
       }
     } else {
       document.getElementById("week-subtitle").innerHTML =
-        `Week ${data.week} <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">(Updates every Monday morning)</span>`;
+        `Week ${data.week} <span style="font-size: 0.85rem; font-weight: normal; color: var(--text-muted); display: block; margin-top: 4px;">(Updates every ${updateDay} morning)</span>`;
 
       const prevWeekSpan = document.getElementById("prev-week-num");
       if (prevWeekSpan)
@@ -208,6 +217,7 @@ async function loadLiveDashboard() {
     renderTrueStandings(
       data.true_standings,
       data.remaining_sos,
+      data.power_rankings,
       champ ? champ.team : null,
       data.season_complete,
     );
@@ -241,15 +251,22 @@ async function loadLiveDashboard() {
 function renderTrueStandings(
   standings,
   sosData,
+  powerRankings,
   champTeamName = null,
   isSeasonComplete = false,
 ) {
   const tbody = document.querySelector("#true-standings-table tbody");
   tbody.innerHTML = "";
 
+  const hasPowerRankings =
+    Array.isArray(powerRankings) && powerRankings.length > 0;
+  const streakHeader = document.getElementById("streak-header");
+  if (streakHeader) {
+    streakHeader.style.display = hasPowerRankings ? "" : "none";
+  }
+
   if (!standings || standings.length === 0) {
-    tbody.innerHTML =
-      "<tr><td colspan='7' style='text-align:center;'>No standings data yet.</td></tr>";
+    tbody.innerHTML = `<tr><td colspan='${hasPowerRankings ? 8 : 7}' style='text-align:center;'>No standings data yet.</td></tr>`;
     return;
   }
 
@@ -266,6 +283,13 @@ function renderTrueStandings(
         ppg: teamSOS.sos_ppg.toFixed(1),
         color: color,
       };
+    });
+  }
+
+  const powerMap = {};
+  if (hasPowerRankings) {
+    powerRankings.forEach((pr, index) => {
+      powerMap[pr.team] = { ...pr, rank: index + 1 };
     });
   }
 
@@ -315,6 +339,37 @@ function renderTrueStandings(
       color: "var(--text-muted)",
     };
 
+    let streakCellHtml = "";
+    if (hasPowerRankings) {
+      const prInfo = powerMap[team.team] || {
+        streak: 0,
+        power_score: 0,
+        rank: "-",
+      };
+      const streakVal = prInfo.streak;
+      let streakIcon = "";
+      let streakColor = "var(--text-muted)";
+      if (streakVal >= 3) {
+        streakColor = "#e74c3c";
+        streakIcon = "🔥 ";
+      } else if (streakVal > 0) {
+        streakColor = "#2ecc71";
+      } else if (streakVal <= -3) {
+        streakColor = "#3498db";
+        streakIcon = "🧊 ";
+      } else if (streakVal < 0) {
+        streakColor = "#95a5a6";
+      }
+      const streakStr =
+        streakVal > 0
+          ? `W${streakVal}`
+          : streakVal < 0
+            ? `L${Math.abs(streakVal)}`
+            : "-";
+      const streakHtml = `<span style="color: ${streakColor}; font-weight:bold;" title="Power Rank: #${prInfo.rank} | Power Score: ${prInfo.power_score.toFixed(2)}">${streakIcon}${streakStr}</span>`;
+      streakCellHtml = `<td>${streakHtml}</td>`;
+    }
+
     tbody.innerHTML += `
             <tr>
                 <td style="text-align: center; vertical-align: middle;">
@@ -327,6 +382,7 @@ function renderTrueStandings(
                 <td>${team.expected_wins.toFixed(1)}</td>
                 <td>${luckHtml}</td>
                 <td style="color: ${sosInfo.color}; font-weight: bold;">${sosInfo.ppg}</td>
+                ${streakCellHtml}
             </tr>
         `;
   });
@@ -629,19 +685,35 @@ function renderCurrentMatchups(matchups, standings, playoffCount = 6) {
     const rank1 = actualRanks[match.home];
     const rank2 = actualRanks[match.away];
 
-    if (match.matchup_type && match.matchup_type.toUpperCase() === 'CHAMPIONSHIP') {
+    if (
+      match.matchup_type &&
+      match.matchup_type.toUpperCase() === "CHAMPIONSHIP"
+    ) {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f1c40f; text-align: center; margin-bottom: 8px; font-weight: 800;">👑 Championship</div>`;
       borderColor = `border-top-color: #f1c40f;`;
-    } else if (match.matchup_type && match.matchup_type.toUpperCase() === 'PLAYOFF_BYE') {
+    } else if (
+      match.matchup_type &&
+      match.matchup_type.toUpperCase() === "PLAYOFF_BYE"
+    ) {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #f1c40f; text-align: center; margin-bottom: 8px; font-weight: 800;">🏖️ Playoff Bye</div>`;
       borderColor = `border-top-color: #f1c40f;`;
-    } else if (match.matchup_type && match.matchup_type.toUpperCase() === 'PLAYOFF') {
+    } else if (
+      match.matchup_type &&
+      match.matchup_type.toUpperCase() === "PLAYOFF"
+    ) {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #2ecc71; text-align: center; margin-bottom: 8px; font-weight: 800;">🏆 Playoff Bracket</div>`;
       borderColor = `border-top-color: #2ecc71;`;
-    } else if (match.matchup_type && (match.matchup_type.toUpperCase() === 'WINNERS_CONSOLATION' || match.matchup_type.toUpperCase() === 'PLAYOFF_CONSOLATION')) {
+    } else if (
+      match.matchup_type &&
+      (match.matchup_type.toUpperCase() === "WINNERS_CONSOLATION" ||
+        match.matchup_type.toUpperCase() === "PLAYOFF_CONSOLATION")
+    ) {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #3498db; text-align: center; margin-bottom: 8px; font-weight: 800;">🥉 Playoff Consolation</div>`;
       borderColor = `border-top-color: #3498db;`;
-    } else if (match.matchup_type && match.matchup_type.toUpperCase() === 'CONSOLATION') {
+    } else if (
+      match.matchup_type &&
+      match.matchup_type.toUpperCase() === "CONSOLATION"
+    ) {
       tagHtml = `<div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: #95a5a6; text-align: center; margin-bottom: 8px; font-weight: 800;">🥈 Consolation Bracket</div>`;
       borderColor = `border-top-color: #95a5a6;`;
     } else if (rank1 && rank2) {

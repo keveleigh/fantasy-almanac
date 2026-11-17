@@ -8,16 +8,10 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏈</text></svg>"
     />
-
-    <!-- FormKit AutoAnimate -->
-    <script type="module">
-      import autoAnimate from 'https://cdn.jsdelivr.net/npm/@formkit/auto-animate@0.8.2/index.min.js';
-      document.querySelectorAll('tbody, .scores-grid').forEach(autoAnimate);
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-json-url="data/live/nfl_current_season.json" data-update-day="Tuesday">
     <button
       id="theme-toggle"
       class="theme-toggle"
@@ -48,9 +42,12 @@
         </p>
       </div>
 
+      <div id="champion-card" class="card champion-card" style="display: none"></div>
+
       <div class="card">
         <h2 style="margin-bottom: 4px">🏟️ Matchup Center</h2>
         <p
+          id="matchup-center-subtitle"
           style="
             color: var(--text-muted);
             font-size: 0.9rem;
@@ -62,6 +59,7 @@
         </p>
 
         <h3
+          id="prev-week-header"
           style="margin-bottom: 12px; font-size: 1.1rem; color: var(--primary)"
         >
           Last Week's Results (Week <span id="prev-week-num"></span>)
@@ -75,6 +73,7 @@
         </div>
 
         <h3
+          id="curr-week-header"
           style="margin-bottom: 12px; font-size: 1.1rem; color: var(--primary)"
         >
           This Week's Slate (Week <span id="curr-week-num"></span>)
@@ -111,6 +110,13 @@
                 >
                   Remaining SOS
                 </th>
+                <th
+                  id="streak-header"
+                  title="Win/Loss Streak (Hover for Power Ranking)"
+                  style="display: none"
+                >
+                  Streak
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -137,6 +143,6 @@
       </div>
     </div>
 
-    <script src="live_football.js"></script>
+    <script src="live_dashboard.js"></script>
   </body>
 </html>
