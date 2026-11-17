@@ -9,7 +9,7 @@ on:
 
     # Run automatically after the live data is updated
     workflow_run:
-        workflows: ["Update Live Baseball Data"]
+        workflows: ["Update Live Baseball Data", "Update Live Football Data"]
         types:
             - completed
 
