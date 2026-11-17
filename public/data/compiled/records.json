@@ -498,15 +498,15 @@
                 ]
             },
             "largest_victory_margin": {
-                "value": 287.0,
+                "value": 312.0,
                 "holders": [
                     {
-                        "winner": "Malachi Morgan",
-                        "loser": "Asa Morgan",
-                        "winning_score": 513.0,
-                        "losing_score": 226.0,
-                        "year": 2020,
-                        "period": 4,
+                        "winner": "Thomas Ramey",
+                        "loser": "Sonya Morgan",
+                        "winning_score": 572.0,
+                        "losing_score": 260.0,
+                        "year": 2026,
+                        "period": 1,
                         "platform": "ESPN"
                     }
                 ]
@@ -550,7 +550,7 @@
                 ]
             },
             "most_wins_under_median": {
-                "value": 40,
+                "value": 41,
                 "holders": [
                     {
                         "manager": "Kurtis Eveleigh"
@@ -558,7 +558,7 @@
                 ]
             },
             "most_losses_over_median": {
-                "value": 46,
+                "value": 48,
                 "holders": [
                     {
                         "manager": "Asa Morgan"
@@ -626,12 +626,12 @@
                 ]
             },
             "longest_playoff_streak": {
-                "value": 15,
+                "value": 16,
                 "holders": [
                     {
                         "manager": "Malachi Morgan",
                         "start_y": 2011,
-                        "end_y": 2025
+                        "end_y": 2026
                     }
                 ]
             },
@@ -648,6 +648,864 @@
         }
     },
     "manager_lifetime_stats": [
+        {
+            "manager": "Jordan Naegele",
+            "sports_played": [
+                "NFL",
+                "NBA",
+                "MLB"
+            ],
+            "platforms_played": [
+                "Fleaflicker",
+                "ESPN",
+                "Sleeper",
+                "Manual"
+            ],
+            "years_played": [
+                2009,
+                2010,
+                2011,
+                2012,
+                2013,
+                2014,
+                2015,
+                2016,
+                2017,
+                2018,
+                2019,
+                2020,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "overall": {
+                "championships": [
+                    2009,
+                    2012,
+                    2013,
+                    2016,
+                    2017,
+                    2018,
+                    2019,
+                    2023,
+                    2026
+                ],
+                "second_place": [
+                    2011,
+                    2015,
+                    2017,
+                    2020,
+                    2021
+                ],
+                "third_place": [
+                    2011,
+                    2012
+                ],
+                "undefeated_seasons": [],
+                "reg_wins": 384,
+                "reg_losses": 240,
+                "reg_ties": 1,
+                "post_wins": 44,
+                "post_losses": 35,
+                "post_ties": 0,
+                "consolation_wins": 6,
+                "consolation_losses": 10,
+                "consolation_ties": 0,
+                "points": 295466.05
+            },
+            "by_sport": {
+                "NBA": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2015
+                    ],
+                    "championships": [
+                        2009,
+                        2012
+                    ],
+                    "second_place": [],
+                    "third_place": [
+                        2011
+                    ],
+                    "undefeated_seasons": [],
+                    "reg_wins": 73,
+                    "reg_losses": 25,
+                    "reg_ties": 0,
+                    "post_wins": 8,
+                    "post_losses": 4,
+                    "post_ties": 0,
+                    "consolation_wins": 0,
+                    "consolation_losses": 0,
+                    "consolation_ties": 0,
+                    "points": 165430.0
+                },
+                "NFL": {
+                    "years_played": [
+                        2009,
+                        2010,
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025
+                    ],
+                    "championships": [
+                        2016,
+                        2018,
+                        2023
+                    ],
+                    "second_place": [
+                        2017,
+                        2021
+                    ],
+                    "third_place": [],
+                    "undefeated_seasons": [],
+                    "reg_wins": 122,
+                    "reg_losses": 104,
+                    "reg_ties": 0,
+                    "post_wins": 15,
+                    "post_losses": 13,
+                    "post_ties": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 6,
+                    "consolation_ties": 0,
+                    "points": 26240.55
+                },
+                "MLB": {
+                    "years_played": [
+                        2011,
+                        2012,
+                        2013,
+                        2014,
+                        2015,
+                        2016,
+                        2017,
+                        2018,
+                        2019,
+                        2020,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025,
+                        2026
+                    ],
+                    "championships": [
+                        2013,
+                        2017,
+                        2019,
+                        2026
+                    ],
+                    "second_place": [
+                        2011,
+                        2015,
+                        2020
+                    ],
+                    "third_place": [
+                        2012
+                    ],
+                    "undefeated_seasons": [],
+                    "reg_wins": 189,
+                    "reg_losses": 111,
+                    "reg_ties": 1,
+                    "post_wins": 21,
+                    "post_losses": 18,
+                    "post_ties": 0,
+                    "consolation_wins": 2,
+                    "consolation_losses": 4,
+                    "consolation_ties": 0,
+                    "points": 103795.5
+                }
+            },
+            "superlatives": {
+                "NBA": {
+                    "highest_score": {
+                        "value": 2119.7,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Kurtis Eveleigh",
+                                "opp_score": 1762.8,
+                                "year": 2009,
+                                "period": 8,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "lowest_score": {
+                        "value": 727.0,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Kurtis Eveleigh",
+                                "opp_score": 679.4,
+                                "year": 2009,
+                                "period": 16,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "highest_losing_score": {
+                        "value": 1778.0,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Andrew Mitchell",
+                                "opp_score": 1819.6,
+                                "year": 2013,
+                                "period": 21,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "lowest_winning_score": {
+                        "value": 727.0,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Kurtis Eveleigh",
+                                "opp_score": 679.4,
+                                "year": 2009,
+                                "period": 16,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "largest_victory_margin": {
+                        "value": 1150.9,
+                        "holders": [
+                            {
+                                "winner": "Jordan Naegele",
+                                "loser": "Asa Morgan",
+                                "winning_score": 2104.4,
+                                "losing_score": 953.5,
+                                "year": 2009,
+                                "period": 21,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "smallest_victory_margin": {
+                        "value": 6.4,
+                        "holders": [
+                            {
+                                "winner": "Jordan Naegele",
+                                "loser": "Evan Farley",
+                                "winning_score": 975.6,
+                                "losing_score": 969.2,
+                                "year": 2009,
+                                "period": 1,
+                                "platform": "Fleaflicker"
+                            },
+                            {
+                                "winner": "Jordan Naegele",
+                                "loser": "Andrew Mitchell",
+                                "winning_score": 1053.2,
+                                "losing_score": 1046.8,
+                                "year": 2010,
+                                "period": 1,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_win_streak": {
+                        "value": 11,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 12,
+                                "start_y": 2009,
+                                "end_p": 1,
+                                "end_y": 2010
+                            }
+                        ]
+                    },
+                    "longest_loss_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 13,
+                                "start_y": 2011,
+                                "end_p": 2,
+                                "end_y": 2012
+                            }
+                        ]
+                    },
+                    "most_wins_under_median": {
+                        "value": 7,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele"
+                            }
+                        ]
+                    },
+                    "most_losses_over_median": {
+                        "value": 18,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele"
+                            }
+                        ]
+                    },
+                    "highest_miss_playoffs_ppg": {
+                        "value": 0.0,
+                        "holders": []
+                    },
+                    "lowest_playoff_ppg": {
+                        "value": 1406.1619047619047,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "highest_ppga": {
+                        "value": 1365.9999999999998,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2011,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "highest_ppg": {
+                        "value": 1645.161904761905,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2009,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "lowest_ppg": {
+                        "value": 1406.1619047619047,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "lowest_ppga": {
+                        "value": 1178.2047619047617,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2013,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2009,
+                                "end_y": 2013
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 0,
+                        "holders": []
+                    }
+                },
+                "NFL": {
+                    "highest_score": {
+                        "value": 174.1,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Adam Carl",
+                                "opp_score": 97.4,
+                                "year": 2023,
+                                "period": 4,
+                                "platform": "Sleeper"
+                            }
+                        ]
+                    },
+                    "lowest_score": {
+                        "value": 44.8,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Rishi Gopinath",
+                                "opp_score": 88.45,
+                                "year": 2015,
+                                "period": 5,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "highest_losing_score": {
+                        "value": 157.6,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Asa Morgan",
+                                "opp_score": 197.7,
+                                "year": 2021,
+                                "period": 5,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_winning_score": {
+                        "value": 69.15,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Kevin Morgan",
+                                "opp_score": 63.35,
+                                "year": 2017,
+                                "period": 7,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "largest_victory_margin": {
+                        "value": 82.2,
+                        "holders": [
+                            {
+                                "winner": "Jordan Naegele",
+                                "loser": "Adam Carl",
+                                "winning_score": 158.5,
+                                "losing_score": 76.3,
+                                "year": 2021,
+                                "period": 11,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "smallest_victory_margin": {
+                        "value": 0.3,
+                        "holders": [
+                            {
+                                "winner": "Jordan Naegele",
+                                "loser": "Rishi Gopinath",
+                                "winning_score": 94.05,
+                                "losing_score": 93.75,
+                                "year": 2011,
+                                "period": 4,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_win_streak": {
+                        "value": 6,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 9,
+                                "start_y": 2013,
+                                "end_p": 1,
+                                "end_y": 2014
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 5,
+                                "start_y": 2017,
+                                "end_p": 10,
+                                "end_y": 2017
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 10,
+                                "start_y": 2023,
+                                "end_p": 1,
+                                "end_y": 2024
+                            }
+                        ]
+                    },
+                    "longest_loss_streak": {
+                        "value": 6,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 10,
+                                "start_y": 2014,
+                                "end_p": 2,
+                                "end_y": 2015
+                            }
+                        ]
+                    },
+                    "most_wins_under_median": {
+                        "value": 26,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele"
+                            }
+                        ]
+                    },
+                    "most_losses_over_median": {
+                        "value": 22,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele"
+                            }
+                        ]
+                    },
+                    "highest_miss_playoffs_ppg": {
+                        "value": 106.925,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2025,
+                                "platform": "Sleeper"
+                            }
+                        ]
+                    },
+                    "lowest_playoff_ppg": {
+                        "value": 87.53076923076922,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "highest_ppga": {
+                        "value": 118.82142857142856,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2021,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "highest_ppg": {
+                        "value": 128.225,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2023,
+                                "platform": "Sleeper"
+                            }
+                        ]
+                    },
+                    "lowest_ppg": {
+                        "value": 86.43076923076923,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2015,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_ppga": {
+                        "value": 80.07692307692308,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2013,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 8,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2016,
+                                "end_y": 2023
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 2,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2014,
+                                "end_y": 2015
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2024,
+                                "end_y": 2025
+                            }
+                        ]
+                    }
+                },
+                "MLB": {
+                    "highest_score": {
+                        "value": 530.0,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Andrew Mitchell",
+                                "opp_score": 317.0,
+                                "year": 2018,
+                                "period": 1,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_score": {
+                        "value": 114.0,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Max Shapiro",
+                                "opp_score": 336.0,
+                                "year": 2022,
+                                "period": 17,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "highest_losing_score": {
+                        "value": 460.0,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Andrew Mitchell",
+                                "opp_score": 535.0,
+                                "year": 2015,
+                                "period": 15,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_winning_score": {
+                        "value": 117.0,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "opponent": "Andrew Mitchell",
+                                "opp_score": 95.0,
+                                "year": 2012,
+                                "period": 1,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "largest_victory_margin": {
+                        "value": 243.0,
+                        "holders": [
+                            {
+                                "winner": "Jordan Naegele",
+                                "loser": "Sonya Morgan",
+                                "winning_score": 395.0,
+                                "losing_score": 152.0,
+                                "year": 2026,
+                                "period": 13,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "smallest_victory_margin": {
+                        "value": 1.0,
+                        "holders": [
+                            {
+                                "winner": "Jordan Naegele",
+                                "loser": "Rishi Gopinath",
+                                "winning_score": 188.0,
+                                "losing_score": 187.0,
+                                "year": 2013,
+                                "period": 3,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_win_streak": {
+                        "value": 8,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 10,
+                                "start_y": 2016,
+                                "end_p": 17,
+                                "end_y": 2016
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 15,
+                                "start_y": 2021,
+                                "end_p": 3,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "longest_loss_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 13,
+                                "start_y": 2012,
+                                "end_p": 16,
+                                "end_y": 2012
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 5,
+                                "start_y": 2013,
+                                "end_p": 8,
+                                "end_y": 2013
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 14,
+                                "start_y": 2015,
+                                "end_p": 17,
+                                "end_y": 2015
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 15,
+                                "start_y": 2022,
+                                "end_p": 18,
+                                "end_y": 2022
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 4,
+                                "start_y": 2023,
+                                "end_p": 7,
+                                "end_y": 2023
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_p": 20,
+                                "start_y": 2025,
+                                "end_p": 3,
+                                "end_y": 2026
+                            }
+                        ]
+                    },
+                    "most_wins_under_median": {
+                        "value": 34,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele"
+                            }
+                        ]
+                    },
+                    "most_losses_over_median": {
+                        "value": 46,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele"
+                            }
+                        ]
+                    },
+                    "highest_miss_playoffs_ppg": {
+                        "value": 270.57894736842104,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2023,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_playoff_ppg": {
+                        "value": 230.3181818181818,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "highest_ppga": {
+                        "value": 329.14285714285717,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2020,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "highest_ppg": {
+                        "value": 354.57142857142856,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2020,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_ppg": {
+                        "value": 230.3181818181818,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2012,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "lowest_ppga": {
+                        "value": 201.22727272727272,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "year": 2011,
+                                "platform": "Fleaflicker"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 12,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2011,
+                                "end_y": 2022
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2023,
+                                "end_y": 2023
+                            },
+                            {
+                                "manager": "Jordan Naegele",
+                                "start_y": 2025,
+                                "end_y": 2025
+                            }
+                        ]
+                    }
+                }
+            }
+        },
         {
             "manager": "Malachi Morgan",
             "sports_played": [
@@ -678,7 +1536,8 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [
@@ -708,19 +1567,20 @@
                     2018,
                     2019,
                     2020,
-                    2025
+                    2025,
+                    2026
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 397,
-                "reg_losses": 232,
+                "reg_wins": 410,
+                "reg_losses": 238,
                 "reg_ties": 0,
-                "post_wins": 47,
-                "post_losses": 28,
+                "post_wins": 48,
+                "post_losses": 29,
                 "post_ties": 0,
                 "consolation_wins": 4,
                 "consolation_losses": 4,
                 "consolation_ties": 0,
-                "points": 287879.1
+                "points": 294908.1
             },
             "by_sport": {
                 "NBA": {
@@ -816,7 +1676,8 @@
                         2022,
                         2023,
                         2024,
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [
                         2014,
@@ -833,19 +1694,20 @@
                         2013,
                         2017,
                         2018,
-                        2019
+                        2019,
+                        2026
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 211,
-                    "reg_losses": 94,
+                    "reg_wins": 224,
+                    "reg_losses": 100,
                     "reg_ties": 0,
-                    "post_wins": 23,
-                    "post_losses": 12,
+                    "post_wins": 24,
+                    "post_losses": 13,
                     "post_ties": 0,
                     "consolation_wins": 0,
                     "consolation_losses": 0,
                     "consolation_ties": 0,
-                    "points": 106819.0
+                    "points": 113848.0
                 }
             },
             "superlatives": {
@@ -1371,7 +2233,7 @@
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 19,
+                        "value": 20,
                         "holders": [
                             {
                                 "manager": "Malachi Morgan"
@@ -1379,7 +2241,7 @@
                         ]
                     },
                     "most_losses_over_median": {
-                        "value": 41,
+                        "value": 44,
                         "holders": [
                             {
                                 "manager": "Malachi Morgan"
@@ -1447,12 +2309,12 @@
                         ]
                     },
                     "longest_playoff_streak": {
-                        "value": 15,
+                        "value": 16,
                         "holders": [
                             {
                                 "manager": "Malachi Morgan",
                                 "start_y": 2011,
-                                "end_y": 2025
+                                "end_y": 2026
                             }
                         ]
                     },
@@ -1463,853 +2325,6 @@
                                 "manager": "Malachi Morgan",
                                 "start_y": 2010,
                                 "end_y": 2010
-                            }
-                        ]
-                    }
-                }
-            }
-        },
-        {
-            "manager": "Jordan Naegele",
-            "sports_played": [
-                "NFL",
-                "NBA",
-                "MLB"
-            ],
-            "platforms_played": [
-                "Fleaflicker",
-                "ESPN",
-                "Sleeper",
-                "Manual"
-            ],
-            "years_played": [
-                2009,
-                2010,
-                2011,
-                2012,
-                2013,
-                2014,
-                2015,
-                2016,
-                2017,
-                2018,
-                2019,
-                2020,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "overall": {
-                "championships": [
-                    2009,
-                    2012,
-                    2013,
-                    2016,
-                    2017,
-                    2018,
-                    2019,
-                    2023
-                ],
-                "second_place": [
-                    2011,
-                    2015,
-                    2017,
-                    2020,
-                    2021
-                ],
-                "third_place": [
-                    2011,
-                    2012
-                ],
-                "undefeated_seasons": [],
-                "reg_wins": 372,
-                "reg_losses": 233,
-                "reg_ties": 1,
-                "post_wins": 41,
-                "post_losses": 35,
-                "post_ties": 0,
-                "consolation_wins": 6,
-                "consolation_losses": 10,
-                "consolation_ties": 0,
-                "points": 288084.05
-            },
-            "by_sport": {
-                "NBA": {
-                    "years_played": [
-                        2009,
-                        2010,
-                        2011,
-                        2012,
-                        2013,
-                        2015
-                    ],
-                    "championships": [
-                        2009,
-                        2012
-                    ],
-                    "second_place": [],
-                    "third_place": [
-                        2011
-                    ],
-                    "undefeated_seasons": [],
-                    "reg_wins": 73,
-                    "reg_losses": 25,
-                    "reg_ties": 0,
-                    "post_wins": 8,
-                    "post_losses": 4,
-                    "post_ties": 0,
-                    "consolation_wins": 0,
-                    "consolation_losses": 0,
-                    "consolation_ties": 0,
-                    "points": 165430.0
-                },
-                "NFL": {
-                    "years_played": [
-                        2009,
-                        2010,
-                        2011,
-                        2012,
-                        2013,
-                        2014,
-                        2015,
-                        2016,
-                        2017,
-                        2018,
-                        2019,
-                        2020,
-                        2021,
-                        2022,
-                        2023,
-                        2024,
-                        2025
-                    ],
-                    "championships": [
-                        2016,
-                        2018,
-                        2023
-                    ],
-                    "second_place": [
-                        2017,
-                        2021
-                    ],
-                    "third_place": [],
-                    "undefeated_seasons": [],
-                    "reg_wins": 122,
-                    "reg_losses": 104,
-                    "reg_ties": 0,
-                    "post_wins": 15,
-                    "post_losses": 13,
-                    "post_ties": 0,
-                    "consolation_wins": 4,
-                    "consolation_losses": 6,
-                    "consolation_ties": 0,
-                    "points": 26240.55
-                },
-                "MLB": {
-                    "years_played": [
-                        2011,
-                        2012,
-                        2013,
-                        2014,
-                        2015,
-                        2016,
-                        2017,
-                        2018,
-                        2019,
-                        2020,
-                        2021,
-                        2022,
-                        2023,
-                        2024,
-                        2025
-                    ],
-                    "championships": [
-                        2013,
-                        2017,
-                        2019
-                    ],
-                    "second_place": [
-                        2011,
-                        2015,
-                        2020
-                    ],
-                    "third_place": [
-                        2012
-                    ],
-                    "undefeated_seasons": [],
-                    "reg_wins": 177,
-                    "reg_losses": 104,
-                    "reg_ties": 1,
-                    "post_wins": 18,
-                    "post_losses": 18,
-                    "post_ties": 0,
-                    "consolation_wins": 2,
-                    "consolation_losses": 4,
-                    "consolation_ties": 0,
-                    "points": 96413.5
-                }
-            },
-            "superlatives": {
-                "NBA": {
-                    "highest_score": {
-                        "value": 2119.7,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Kurtis Eveleigh",
-                                "opp_score": 1762.8,
-                                "year": 2009,
-                                "period": 8,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "lowest_score": {
-                        "value": 727.0,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Kurtis Eveleigh",
-                                "opp_score": 679.4,
-                                "year": 2009,
-                                "period": 16,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "highest_losing_score": {
-                        "value": 1778.0,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Andrew Mitchell",
-                                "opp_score": 1819.6,
-                                "year": 2013,
-                                "period": 21,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "lowest_winning_score": {
-                        "value": 727.0,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Kurtis Eveleigh",
-                                "opp_score": 679.4,
-                                "year": 2009,
-                                "period": 16,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "largest_victory_margin": {
-                        "value": 1150.9,
-                        "holders": [
-                            {
-                                "winner": "Jordan Naegele",
-                                "loser": "Asa Morgan",
-                                "winning_score": 2104.4,
-                                "losing_score": 953.5,
-                                "year": 2009,
-                                "period": 21,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "smallest_victory_margin": {
-                        "value": 6.4,
-                        "holders": [
-                            {
-                                "winner": "Jordan Naegele",
-                                "loser": "Evan Farley",
-                                "winning_score": 975.6,
-                                "losing_score": 969.2,
-                                "year": 2009,
-                                "period": 1,
-                                "platform": "Fleaflicker"
-                            },
-                            {
-                                "winner": "Jordan Naegele",
-                                "loser": "Andrew Mitchell",
-                                "winning_score": 1053.2,
-                                "losing_score": 1046.8,
-                                "year": 2010,
-                                "period": 1,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "longest_win_streak": {
-                        "value": 11,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 12,
-                                "start_y": 2009,
-                                "end_p": 1,
-                                "end_y": 2010
-                            }
-                        ]
-                    },
-                    "longest_loss_streak": {
-                        "value": 4,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 13,
-                                "start_y": 2011,
-                                "end_p": 2,
-                                "end_y": 2012
-                            }
-                        ]
-                    },
-                    "most_wins_under_median": {
-                        "value": 7,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele"
-                            }
-                        ]
-                    },
-                    "most_losses_over_median": {
-                        "value": 18,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele"
-                            }
-                        ]
-                    },
-                    "highest_miss_playoffs_ppg": {
-                        "value": 0.0,
-                        "holders": []
-                    },
-                    "lowest_playoff_ppg": {
-                        "value": 1406.1619047619047,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2012,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "highest_ppga": {
-                        "value": 1365.9999999999998,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2011,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "highest_ppg": {
-                        "value": 1645.161904761905,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2009,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "lowest_ppg": {
-                        "value": 1406.1619047619047,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2012,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "lowest_ppga": {
-                        "value": 1178.2047619047617,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2013,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "longest_playoff_streak": {
-                        "value": 5,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_y": 2009,
-                                "end_y": 2013
-                            }
-                        ]
-                    },
-                    "longest_playoff_drought": {
-                        "value": 0,
-                        "holders": []
-                    }
-                },
-                "NFL": {
-                    "highest_score": {
-                        "value": 174.1,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Adam Carl",
-                                "opp_score": 97.4,
-                                "year": 2023,
-                                "period": 4,
-                                "platform": "Sleeper"
-                            }
-                        ]
-                    },
-                    "lowest_score": {
-                        "value": 44.8,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Rishi Gopinath",
-                                "opp_score": 88.45,
-                                "year": 2015,
-                                "period": 5,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "highest_losing_score": {
-                        "value": 157.6,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Asa Morgan",
-                                "opp_score": 197.7,
-                                "year": 2021,
-                                "period": 5,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_winning_score": {
-                        "value": 69.15,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Kevin Morgan",
-                                "opp_score": 63.35,
-                                "year": 2017,
-                                "period": 7,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "largest_victory_margin": {
-                        "value": 82.2,
-                        "holders": [
-                            {
-                                "winner": "Jordan Naegele",
-                                "loser": "Adam Carl",
-                                "winning_score": 158.5,
-                                "losing_score": 76.3,
-                                "year": 2021,
-                                "period": 11,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "smallest_victory_margin": {
-                        "value": 0.3,
-                        "holders": [
-                            {
-                                "winner": "Jordan Naegele",
-                                "loser": "Rishi Gopinath",
-                                "winning_score": 94.05,
-                                "losing_score": 93.75,
-                                "year": 2011,
-                                "period": 4,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "longest_win_streak": {
-                        "value": 6,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 9,
-                                "start_y": 2013,
-                                "end_p": 1,
-                                "end_y": 2014
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 5,
-                                "start_y": 2017,
-                                "end_p": 10,
-                                "end_y": 2017
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 10,
-                                "start_y": 2023,
-                                "end_p": 1,
-                                "end_y": 2024
-                            }
-                        ]
-                    },
-                    "longest_loss_streak": {
-                        "value": 6,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 10,
-                                "start_y": 2014,
-                                "end_p": 2,
-                                "end_y": 2015
-                            }
-                        ]
-                    },
-                    "most_wins_under_median": {
-                        "value": 26,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele"
-                            }
-                        ]
-                    },
-                    "most_losses_over_median": {
-                        "value": 22,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele"
-                            }
-                        ]
-                    },
-                    "highest_miss_playoffs_ppg": {
-                        "value": 106.925,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2025,
-                                "platform": "Sleeper"
-                            }
-                        ]
-                    },
-                    "lowest_playoff_ppg": {
-                        "value": 87.53076923076922,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2012,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "highest_ppga": {
-                        "value": 118.82142857142856,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2021,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "highest_ppg": {
-                        "value": 128.225,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2023,
-                                "platform": "Sleeper"
-                            }
-                        ]
-                    },
-                    "lowest_ppg": {
-                        "value": 86.43076923076923,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2015,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_ppga": {
-                        "value": 80.07692307692308,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2013,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "longest_playoff_streak": {
-                        "value": 8,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_y": 2016,
-                                "end_y": 2023
-                            }
-                        ]
-                    },
-                    "longest_playoff_drought": {
-                        "value": 2,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_y": 2014,
-                                "end_y": 2015
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_y": 2024,
-                                "end_y": 2025
-                            }
-                        ]
-                    }
-                },
-                "MLB": {
-                    "highest_score": {
-                        "value": 530.0,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Andrew Mitchell",
-                                "opp_score": 317.0,
-                                "year": 2018,
-                                "period": 1,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_score": {
-                        "value": 114.0,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Max Shapiro",
-                                "opp_score": 336.0,
-                                "year": 2022,
-                                "period": 17,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "highest_losing_score": {
-                        "value": 460.0,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Andrew Mitchell",
-                                "opp_score": 535.0,
-                                "year": 2015,
-                                "period": 15,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_winning_score": {
-                        "value": 117.0,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "opponent": "Andrew Mitchell",
-                                "opp_score": 95.0,
-                                "year": 2012,
-                                "period": 1,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "largest_victory_margin": {
-                        "value": 236.0,
-                        "holders": [
-                            {
-                                "winner": "Jordan Naegele",
-                                "loser": "ATL Red sox",
-                                "winning_score": 325.0,
-                                "losing_score": 89.0,
-                                "year": 2011,
-                                "period": 10,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "smallest_victory_margin": {
-                        "value": 1.0,
-                        "holders": [
-                            {
-                                "winner": "Jordan Naegele",
-                                "loser": "Rishi Gopinath",
-                                "winning_score": 188.0,
-                                "losing_score": 187.0,
-                                "year": 2013,
-                                "period": 3,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "longest_win_streak": {
-                        "value": 8,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 10,
-                                "start_y": 2016,
-                                "end_p": 17,
-                                "end_y": 2016
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 15,
-                                "start_y": 2021,
-                                "end_p": 3,
-                                "end_y": 2022
-                            }
-                        ]
-                    },
-                    "longest_loss_streak": {
-                        "value": 4,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 13,
-                                "start_y": 2012,
-                                "end_p": 16,
-                                "end_y": 2012
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 5,
-                                "start_y": 2013,
-                                "end_p": 8,
-                                "end_y": 2013
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 14,
-                                "start_y": 2015,
-                                "end_p": 17,
-                                "end_y": 2015
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 15,
-                                "start_y": 2022,
-                                "end_p": 18,
-                                "end_y": 2022
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_p": 4,
-                                "start_y": 2023,
-                                "end_p": 7,
-                                "end_y": 2023
-                            }
-                        ]
-                    },
-                    "most_wins_under_median": {
-                        "value": 32,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele"
-                            }
-                        ]
-                    },
-                    "most_losses_over_median": {
-                        "value": 43,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele"
-                            }
-                        ]
-                    },
-                    "highest_miss_playoffs_ppg": {
-                        "value": 270.57894736842104,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2023,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_playoff_ppg": {
-                        "value": 230.3181818181818,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2012,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "highest_ppga": {
-                        "value": 329.14285714285717,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2020,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "highest_ppg": {
-                        "value": 354.57142857142856,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2020,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_ppg": {
-                        "value": 230.3181818181818,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2012,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "lowest_ppga": {
-                        "value": 201.22727272727272,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "year": 2011,
-                                "platform": "Fleaflicker"
-                            }
-                        ]
-                    },
-                    "longest_playoff_streak": {
-                        "value": 12,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_y": 2011,
-                                "end_y": 2022
-                            }
-                        ]
-                    },
-                    "longest_playoff_drought": {
-                        "value": 1,
-                        "holders": [
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_y": 2023,
-                                "end_y": 2023
-                            },
-                            {
-                                "manager": "Jordan Naegele",
-                                "start_y": 2025,
-                                "end_y": 2025
                             }
                         ]
                     }
@@ -2346,7 +2361,8 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [
@@ -2372,16 +2388,16 @@
                     2016
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 368,
-                "reg_losses": 283,
+                "reg_wins": 377,
+                "reg_losses": 293,
                 "reg_ties": 0,
                 "post_wins": 33,
                 "post_losses": 29,
                 "post_ties": 1,
-                "consolation_wins": 20,
-                "consolation_losses": 11,
+                "consolation_wins": 21,
+                "consolation_losses": 13,
                 "consolation_ties": 0,
-                "points": 290680.95
+                "points": 297236.95
             },
             "by_sport": {
                 "NBA": {
@@ -2472,7 +2488,8 @@
                         2022,
                         2023,
                         2024,
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [
                         2010,
@@ -2488,16 +2505,16 @@
                     ],
                     "third_place": [],
                     "undefeated_seasons": [],
-                    "reg_wins": 199,
-                    "reg_losses": 128,
+                    "reg_wins": 208,
+                    "reg_losses": 138,
                     "reg_ties": 0,
                     "post_wins": 17,
                     "post_losses": 14,
                     "post_ties": 1,
-                    "consolation_wins": 5,
-                    "consolation_losses": 4,
+                    "consolation_wins": 6,
+                    "consolation_losses": 6,
                     "consolation_ties": 0,
-                    "points": 108177.5
+                    "points": 114733.5
                 }
             },
             "superlatives": {
@@ -3018,7 +3035,7 @@
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 28,
+                        "value": 30,
                         "holders": [
                             {
                                 "manager": "Asa Morgan"
@@ -3026,7 +3043,7 @@
                         ]
                     },
                     "most_losses_over_median": {
-                        "value": 46,
+                        "value": 48,
                         "holders": [
                             {
                                 "manager": "Asa Morgan"
@@ -3120,6 +3137,11 @@
                                 "manager": "Asa Morgan",
                                 "start_y": 2020,
                                 "end_y": 2020
+                            },
+                            {
+                                "manager": "Asa Morgan",
+                                "start_y": 2026,
+                                "end_y": 2026
                             }
                         ]
                     }
@@ -3969,7 +3991,8 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [
@@ -3989,16 +4012,16 @@
                     2015
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 363,
-                "reg_losses": 266,
+                "reg_wins": 372,
+                "reg_losses": 276,
                 "reg_ties": 0,
-                "post_wins": 25,
-                "post_losses": 36,
+                "post_wins": 27,
+                "post_losses": 37,
                 "post_ties": 0,
                 "consolation_wins": 22,
                 "consolation_losses": 6,
                 "consolation_ties": 0,
-                "points": 268199.75
+                "points": 275286.75
             },
             "by_sport": {
                 "NBA": {
@@ -4086,7 +4109,8 @@
                         2022,
                         2023,
                         2024,
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [
                         2012
@@ -4099,16 +4123,16 @@
                         2015
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 183,
-                    "reg_losses": 122,
+                    "reg_wins": 192,
+                    "reg_losses": 132,
                     "reg_ties": 0,
-                    "post_wins": 9,
-                    "post_losses": 16,
+                    "post_wins": 11,
+                    "post_losses": 17,
                     "post_ties": 0,
                     "consolation_wins": 12,
                     "consolation_losses": 2,
                     "consolation_ties": 0,
-                    "points": 99469.5
+                    "points": 106556.5
                 }
             },
             "superlatives": {
@@ -4667,11 +4691,18 @@
                                 "start_y": 2025,
                                 "end_p": 20,
                                 "end_y": 2025
+                            },
+                            {
+                                "manager": "Kurtis Eveleigh",
+                                "start_p": 4,
+                                "start_y": 2026,
+                                "end_p": 10,
+                                "end_y": 2026
                             }
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 40,
+                        "value": 41,
                         "holders": [
                             {
                                 "manager": "Kurtis Eveleigh"
@@ -4679,7 +4710,7 @@
                         ]
                     },
                     "most_losses_over_median": {
-                        "value": 38,
+                        "value": 42,
                         "holders": [
                             {
                                 "manager": "Kurtis Eveleigh"
@@ -5575,7 +5606,8 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [
@@ -5588,16 +5620,16 @@
                     2022
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 52,
-                "reg_losses": 25,
+                "reg_wins": 61,
+                "reg_losses": 35,
                 "reg_ties": 0,
                 "post_wins": 10,
                 "post_losses": 1,
                 "post_ties": 0,
-                "consolation_wins": 0,
+                "consolation_wins": 3,
                 "consolation_losses": 0,
                 "consolation_ties": 0,
-                "points": 29163.0
+                "points": 35431.0
             },
             "by_sport": {
                 "MLB": {
@@ -5605,7 +5637,8 @@
                         2022,
                         2023,
                         2024,
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [
                         2023,
@@ -5617,16 +5650,16 @@
                         2022
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 52,
-                    "reg_losses": 25,
+                    "reg_wins": 61,
+                    "reg_losses": 35,
                     "reg_ties": 0,
                     "post_wins": 10,
                     "post_losses": 1,
                     "post_ties": 0,
-                    "consolation_wins": 0,
+                    "consolation_wins": 3,
                     "consolation_losses": 0,
                     "consolation_ties": 0,
-                    "points": 29163.0
+                    "points": 35431.0
                 }
             },
             "superlatives": {
@@ -5741,11 +5774,18 @@
                                 "start_y": 2023,
                                 "end_p": 5,
                                 "end_y": 2023
+                            },
+                            {
+                                "manager": "Max Shapiro",
+                                "start_p": 11,
+                                "start_y": 2026,
+                                "end_p": 14,
+                                "end_y": 2026
                             }
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 4,
+                        "value": 7,
                         "holders": [
                             {
                                 "manager": "Max Shapiro"
@@ -5761,8 +5801,14 @@
                         ]
                     },
                     "highest_miss_playoffs_ppg": {
-                        "value": 0.0,
-                        "holders": []
+                        "value": 254.05263157894737,
+                        "holders": [
+                            {
+                                "manager": "Max Shapiro",
+                                "year": 2026,
+                                "platform": "ESPN"
+                            }
+                        ]
                     },
                     "lowest_playoff_ppg": {
                         "value": 278.42105263157896,
@@ -5795,11 +5841,11 @@
                         ]
                     },
                     "lowest_ppg": {
-                        "value": 278.42105263157896,
+                        "value": 254.05263157894737,
                         "holders": [
                             {
                                 "manager": "Max Shapiro",
-                                "year": 2023,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
@@ -5825,8 +5871,14 @@
                         ]
                     },
                     "longest_playoff_drought": {
-                        "value": 0,
-                        "holders": []
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Max Shapiro",
+                                "start_y": 2026,
+                                "end_y": 2026
+                            }
+                        ]
                     }
                 }
             }
@@ -7700,49 +7752,53 @@
                 "Sleeper"
             ],
             "years_played": [
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [
                     2025
                 ],
                 "second_place": [
-                    2025
+                    2025,
+                    2026
                 ],
                 "third_place": [],
                 "undefeated_seasons": [],
-                "reg_wins": 22,
-                "reg_losses": 11,
+                "reg_wins": 39,
+                "reg_losses": 13,
                 "reg_ties": 1,
-                "post_wins": 4,
-                "post_losses": 1,
+                "post_wins": 5,
+                "post_losses": 2,
                 "post_ties": 0,
                 "consolation_wins": 0,
                 "consolation_losses": 0,
                 "consolation_ties": 0,
-                "points": 9381.15
+                "points": 17037.15
             },
             "by_sport": {
                 "MLB": {
                     "years_played": [
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [],
                     "second_place": [
-                        2025
+                        2025,
+                        2026
                     ],
                     "third_place": [],
                     "undefeated_seasons": [],
-                    "reg_wins": 13,
-                    "reg_losses": 6,
+                    "reg_wins": 30,
+                    "reg_losses": 8,
                     "reg_ties": 1,
-                    "post_wins": 2,
-                    "post_losses": 1,
+                    "post_wins": 3,
+                    "post_losses": 2,
                     "post_ties": 0,
                     "consolation_wins": 0,
                     "consolation_losses": 0,
                     "consolation_ties": 0,
-                    "points": 7455.0
+                    "points": 15111.0
                 },
                 "NFL": {
                     "years_played": [
@@ -7769,14 +7825,14 @@
             "superlatives": {
                 "MLB": {
                     "highest_score": {
-                        "value": 386.0,
+                        "value": 572.0,
                         "holders": [
                             {
                                 "manager": "Thomas Ramey",
-                                "opponent": "Daniel Bailey",
-                                "opp_score": 182.0,
-                                "year": 2025,
-                                "period": 5,
+                                "opponent": "Sonya Morgan",
+                                "opp_score": 260.0,
+                                "year": 2026,
+                                "period": 1,
                                 "platform": "ESPN"
                             }
                         ]
@@ -7821,15 +7877,15 @@
                         ]
                     },
                     "largest_victory_margin": {
-                        "value": 204.0,
+                        "value": 312.0,
                         "holders": [
                             {
                                 "winner": "Thomas Ramey",
-                                "loser": "Daniel Bailey",
-                                "winning_score": 386.0,
-                                "losing_score": 182.0,
-                                "year": 2025,
-                                "period": 5,
+                                "loser": "Sonya Morgan",
+                                "winning_score": 572.0,
+                                "losing_score": 260.0,
+                                "year": 2026,
+                                "period": 1,
                                 "platform": "ESPN"
                             }
                         ]
@@ -7849,14 +7905,14 @@
                         ]
                     },
                     "longest_win_streak": {
-                        "value": 6,
+                        "value": 14,
                         "holders": [
                             {
                                 "manager": "Thomas Ramey",
-                                "start_p": 12,
-                                "start_y": 2025,
+                                "start_p": 4,
+                                "start_y": 2026,
                                 "end_p": 17,
-                                "end_y": 2025
+                                "end_y": 2026
                             }
                         ]
                     },
@@ -7913,11 +7969,11 @@
                         ]
                     },
                     "highest_ppg": {
-                        "value": 291.05,
+                        "value": 347.2105263157895,
                         "holders": [
                             {
                                 "manager": "Thomas Ramey",
-                                "year": 2025,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
@@ -7933,22 +7989,22 @@
                         ]
                     },
                     "lowest_ppga": {
-                        "value": 256.8,
+                        "value": 251.10526315789474,
                         "holders": [
                             {
                                 "manager": "Thomas Ramey",
-                                "year": 2025,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
                     },
                     "longest_playoff_streak": {
-                        "value": 1,
+                        "value": 2,
                         "holders": [
                             {
                                 "manager": "Thomas Ramey",
                                 "start_y": 2025,
-                                "end_y": 2025
+                                "end_y": 2026
                             }
                         ]
                     },
@@ -8174,7 +8230,8 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [
@@ -8185,16 +8242,16 @@
                     2010
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 156,
-                "reg_losses": 148,
+                "reg_wins": 159,
+                "reg_losses": 164,
                 "reg_ties": 1,
                 "post_wins": 7,
                 "post_losses": 12,
                 "post_ties": 0,
-                "consolation_wins": 4,
-                "consolation_losses": 17,
+                "consolation_wins": 5,
+                "consolation_losses": 19,
                 "consolation_ties": 1,
-                "points": 93613.0
+                "points": 98256.0
             },
             "by_sport": {
                 "MLB": {
@@ -8214,7 +8271,8 @@
                         2022,
                         2023,
                         2024,
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [
                         2011
@@ -8224,16 +8282,16 @@
                         2010
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 156,
-                    "reg_losses": 148,
+                    "reg_wins": 159,
+                    "reg_losses": 164,
                     "reg_ties": 1,
                     "post_wins": 7,
                     "post_losses": 12,
                     "post_ties": 0,
-                    "consolation_wins": 4,
-                    "consolation_losses": 17,
+                    "consolation_wins": 5,
+                    "consolation_losses": 19,
                     "consolation_ties": 1,
-                    "points": 93613.0
+                    "points": 98256.0
                 }
             },
             "superlatives": {
@@ -8361,7 +8419,7 @@
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 32,
+                        "value": 34,
                         "holders": [
                             {
                                 "manager": "Sonya Morgan"
@@ -8417,12 +8475,12 @@
                         ]
                     },
                     "lowest_ppg": {
-                        "value": 207.77272727272728,
+                        "value": 199.89473684210526,
                         "holders": [
                             {
                                 "manager": "Sonya Morgan",
-                                "year": 2012,
-                                "platform": "Fleaflicker"
+                                "year": 2026,
+                                "platform": "ESPN"
                             }
                         ]
                     },
@@ -8452,17 +8510,12 @@
                         ]
                     },
                     "longest_playoff_drought": {
-                        "value": 2,
+                        "value": 3,
                         "holders": [
                             {
                                 "manager": "Sonya Morgan",
-                                "start_y": 2021,
-                                "end_y": 2022
-                            },
-                            {
-                                "manager": "Sonya Morgan",
                                 "start_y": 2024,
-                                "end_y": 2025
+                                "end_y": 2026
                             }
                         ]
                     }
@@ -12485,7 +12538,8 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [],
@@ -12494,16 +12548,16 @@
                     2021
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 54,
-                "reg_losses": 40,
+                "reg_wins": 62,
+                "reg_losses": 51,
                 "reg_ties": 2,
                 "post_wins": 5,
                 "post_losses": 7,
                 "post_ties": 0,
-                "consolation_wins": 3,
-                "consolation_losses": 0,
+                "consolation_wins": 4,
+                "consolation_losses": 2,
                 "consolation_ties": 0,
-                "points": 34859.0
+                "points": 40919.0
             },
             "by_sport": {
                 "MLB": {
@@ -12512,7 +12566,8 @@
                         2022,
                         2023,
                         2024,
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [],
                     "second_place": [],
@@ -12520,16 +12575,16 @@
                         2021
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 54,
-                    "reg_losses": 40,
+                    "reg_wins": 62,
+                    "reg_losses": 51,
                     "reg_ties": 2,
                     "post_wins": 5,
                     "post_losses": 7,
                     "post_ties": 0,
-                    "consolation_wins": 3,
-                    "consolation_losses": 0,
+                    "consolation_wins": 4,
+                    "consolation_losses": 2,
                     "consolation_ties": 0,
-                    "points": 34859.0
+                    "points": 40919.0
                 }
             },
             "superlatives": {
@@ -12574,14 +12629,14 @@
                         ]
                     },
                     "lowest_winning_score": {
-                        "value": 211.0,
+                        "value": 210.0,
                         "holders": [
                             {
                                 "manager": "Josh Shapiro",
-                                "opponent": "Brandon Cope",
-                                "opp_score": 184.0,
-                                "year": 2024,
-                                "period": 10,
+                                "opponent": "Nikolai Washington",
+                                "opp_score": 172.0,
+                                "year": 2026,
+                                "period": 3,
                                 "platform": "ESPN"
                             }
                         ]
@@ -12627,33 +12682,19 @@
                         ]
                     },
                     "longest_loss_streak": {
-                        "value": 4,
+                        "value": 5,
                         "holders": [
                             {
                                 "manager": "Josh Shapiro",
-                                "start_p": 11,
-                                "start_y": 2022,
-                                "end_p": 14,
-                                "end_y": 2022
-                            },
-                            {
-                                "manager": "Josh Shapiro",
-                                "start_p": 18,
-                                "start_y": 2022,
-                                "end_p": 3,
-                                "end_y": 2023
-                            },
-                            {
-                                "manager": "Josh Shapiro",
-                                "start_p": 4,
-                                "start_y": 2024,
-                                "end_p": 7,
-                                "end_y": 2024
+                                "start_p": 12,
+                                "start_y": 2026,
+                                "end_p": 16,
+                                "end_y": 2026
                             }
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 10,
+                        "value": 13,
                         "holders": [
                             {
                                 "manager": "Josh Shapiro"
@@ -12661,7 +12702,7 @@
                         ]
                     },
                     "most_losses_over_median": {
-                        "value": 13,
+                        "value": 16,
                         "holders": [
                             {
                                 "manager": "Josh Shapiro"
@@ -12745,6 +12786,11 @@
                                 "manager": "Josh Shapiro",
                                 "start_y": 2022,
                                 "end_y": 2022
+                            },
+                            {
+                                "manager": "Josh Shapiro",
+                                "start_y": 2026,
+                                "end_y": 2026
                             }
                         ]
                     }
@@ -12766,7 +12812,8 @@
                 2022,
                 2023,
                 2024,
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [],
@@ -12775,16 +12822,16 @@
                     2024
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 51,
-                "reg_losses": 70,
+                "reg_wins": 58,
+                "reg_losses": 82,
                 "reg_ties": 0,
                 "post_wins": 2,
                 "post_losses": 2,
                 "post_ties": 1,
-                "consolation_wins": 8,
-                "consolation_losses": 6,
+                "consolation_wins": 9,
+                "consolation_losses": 8,
                 "consolation_ties": 0,
-                "points": 39080.0
+                "points": 44840.0
             },
             "by_sport": {
                 "MLB": {
@@ -12795,7 +12842,8 @@
                         2022,
                         2023,
                         2024,
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [],
                     "second_place": [],
@@ -12803,16 +12851,16 @@
                         2024
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 51,
-                    "reg_losses": 70,
+                    "reg_wins": 58,
+                    "reg_losses": 82,
                     "reg_ties": 0,
                     "post_wins": 2,
                     "post_losses": 2,
                     "post_ties": 1,
-                    "consolation_wins": 8,
-                    "consolation_losses": 6,
+                    "consolation_wins": 9,
+                    "consolation_losses": 8,
                     "consolation_ties": 0,
-                    "points": 39080.0
+                    "points": 44840.0
                 }
             },
             "superlatives": {
@@ -12844,14 +12892,14 @@
                         ]
                     },
                     "highest_losing_score": {
-                        "value": 347.0,
+                        "value": 349.0,
                         "holders": [
                             {
                                 "manager": "Marshawn Lunch",
-                                "opponent": "Daniel Bailey",
-                                "opp_score": 348.0,
-                                "year": 2019,
-                                "period": 1,
+                                "opponent": "Thomas Ramey",
+                                "opp_score": 538.0,
+                                "year": 2026,
+                                "period": 15,
                                 "platform": "ESPN"
                             }
                         ]
@@ -12922,7 +12970,7 @@
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 8,
+                        "value": 12,
                         "holders": [
                             {
                                 "manager": "Marshawn Lunch"
@@ -12930,7 +12978,7 @@
                         ]
                     },
                     "most_losses_over_median": {
-                        "value": 7,
+                        "value": 11,
                         "holders": [
                             {
                                 "manager": "Marshawn Lunch"
@@ -13036,7 +13084,8 @@
             "years_played": [
                 2021,
                 2023,
-                2024
+                2024,
+                2026
             ],
             "overall": {
                 "championships": [],
@@ -13045,23 +13094,24 @@
                     2023
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 26,
-                "reg_losses": 32,
+                "reg_wins": 32,
+                "reg_losses": 45,
                 "reg_ties": 0,
                 "post_wins": 1,
                 "post_losses": 1,
                 "post_ties": 0,
-                "consolation_wins": 5,
-                "consolation_losses": 1,
+                "consolation_wins": 7,
+                "consolation_losses": 2,
                 "consolation_ties": 0,
-                "points": 18255.0
+                "points": 24296.0
             },
             "by_sport": {
                 "MLB": {
                     "years_played": [
                         2021,
                         2023,
-                        2024
+                        2024,
+                        2026
                     ],
                     "championships": [],
                     "second_place": [],
@@ -13069,16 +13119,16 @@
                         2023
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 26,
-                    "reg_losses": 32,
+                    "reg_wins": 32,
+                    "reg_losses": 45,
                     "reg_ties": 0,
                     "post_wins": 1,
                     "post_losses": 1,
                     "post_ties": 0,
-                    "consolation_wins": 5,
-                    "consolation_losses": 1,
+                    "consolation_wins": 7,
+                    "consolation_losses": 2,
                     "consolation_ties": 0,
-                    "points": 18255.0
+                    "points": 24296.0
                 }
             },
             "superlatives": {
@@ -13110,14 +13160,14 @@
                         ]
                     },
                     "highest_losing_score": {
-                        "value": 359.0,
+                        "value": 407.0,
                         "holders": [
                             {
                                 "manager": "Kristina Morgan",
-                                "opponent": "Jordan Naegele",
-                                "opp_score": 427.0,
-                                "year": 2021,
-                                "period": 1,
+                                "opponent": "Malachi Morgan",
+                                "opp_score": 552.0,
+                                "year": 2026,
+                                "period": 15,
                                 "platform": "ESPN"
                             }
                         ]
@@ -13188,7 +13238,7 @@
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 11,
+                        "value": 12,
                         "holders": [
                             {
                                 "manager": "Kristina Morgan"
@@ -13196,7 +13246,7 @@
                         ]
                     },
                     "most_losses_over_median": {
-                        "value": 8,
+                        "value": 11,
                         "holders": [
                             {
                                 "manager": "Kristina Morgan"
@@ -13204,11 +13254,11 @@
                         ]
                     },
                     "highest_miss_playoffs_ppg": {
-                        "value": 251.31578947368422,
+                        "value": 257.4736842105263,
                         "holders": [
                             {
                                 "manager": "Kristina Morgan",
-                                "year": 2021,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
@@ -13224,11 +13274,11 @@
                         ]
                     },
                     "highest_ppga": {
-                        "value": 286.4736842105263,
+                        "value": 289.7894736842105,
                         "holders": [
                             {
                                 "manager": "Kristina Morgan",
-                                "year": 2021,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
@@ -13285,6 +13335,11 @@
                                 "manager": "Kristina Morgan",
                                 "start_y": 2024,
                                 "end_y": 2024
+                            },
+                            {
+                                "manager": "Kristina Morgan",
+                                "start_y": 2026,
+                                "end_y": 2026
                             }
                         ]
                     }
@@ -13300,7 +13355,8 @@
                 "ESPN"
             ],
             "years_played": [
-                2025
+                2025,
+                2026
             ],
             "overall": {
                 "championships": [],
@@ -13309,21 +13365,22 @@
                     2025
                 ],
                 "undefeated_seasons": [],
-                "reg_wins": 15,
-                "reg_losses": 5,
+                "reg_wins": 26,
+                "reg_losses": 13,
                 "reg_ties": 0,
                 "post_wins": 1,
-                "post_losses": 1,
+                "post_losses": 4,
                 "post_ties": 0,
                 "consolation_wins": 0,
                 "consolation_losses": 0,
                 "consolation_ties": 0,
-                "points": 6901.0
+                "points": 13234.0
             },
             "by_sport": {
                 "MLB": {
                     "years_played": [
-                        2025
+                        2025,
+                        2026
                     ],
                     "championships": [],
                     "second_place": [],
@@ -13331,42 +13388,42 @@
                         2025
                     ],
                     "undefeated_seasons": [],
-                    "reg_wins": 15,
-                    "reg_losses": 5,
+                    "reg_wins": 26,
+                    "reg_losses": 13,
                     "reg_ties": 0,
                     "post_wins": 1,
-                    "post_losses": 1,
+                    "post_losses": 4,
                     "post_ties": 0,
                     "consolation_wins": 0,
                     "consolation_losses": 0,
                     "consolation_ties": 0,
-                    "points": 6901.0
+                    "points": 13234.0
                 }
             },
             "superlatives": {
                 "MLB": {
                     "highest_score": {
-                        "value": 392.0,
+                        "value": 439.0,
                         "holders": [
                             {
                                 "manager": "Brad Dodson",
-                                "opponent": "Max Shapiro",
-                                "opp_score": 407.0,
-                                "year": 2025,
-                                "period": 16,
+                                "opponent": "Malachi Morgan",
+                                "opp_score": 374.0,
+                                "year": 2026,
+                                "period": 1,
                                 "platform": "ESPN"
                             }
                         ]
                     },
                     "lowest_score": {
-                        "value": 184.0,
+                        "value": 160.0,
                         "holders": [
                             {
                                 "manager": "Brad Dodson",
-                                "opponent": "Marshawn Lunch",
-                                "opp_score": 216.0,
-                                "year": 2025,
-                                "period": 17,
+                                "opponent": "Nikolai Washington",
+                                "opp_score": 257.0,
+                                "year": 2026,
+                                "period": 19,
                                 "platform": "ESPN"
                             }
                         ]
@@ -13394,6 +13451,14 @@
                                 "year": 2025,
                                 "period": 1,
                                 "platform": "ESPN"
+                            },
+                            {
+                                "manager": "Brad Dodson",
+                                "opponent": "Marshawn Lunch",
+                                "opp_score": 169.0,
+                                "year": 2026,
+                                "period": 17,
+                                "platform": "ESPN"
                             }
                         ]
                     },
@@ -13412,15 +13477,15 @@
                         ]
                     },
                     "smallest_victory_margin": {
-                        "value": 15.0,
+                        "value": 4.0,
                         "holders": [
                             {
                                 "winner": "Brad Dodson",
-                                "loser": "Asa Morgan",
-                                "winning_score": 270.0,
-                                "losing_score": 255.0,
-                                "year": 2025,
-                                "period": 20,
+                                "loser": "Josh Shapiro",
+                                "winning_score": 272.0,
+                                "losing_score": 268.0,
+                                "year": 2026,
+                                "period": 10,
                                 "platform": "ESPN"
                             }
                         ]
@@ -13441,27 +13506,38 @@
                                 "start_y": 2025,
                                 "end_p": 9,
                                 "end_y": 2025
+                            },
+                            {
+                                "manager": "Brad Dodson",
+                                "start_p": 18,
+                                "start_y": 2025,
+                                "end_p": 1,
+                                "end_y": 2026
                             }
                         ]
                     },
                     "longest_loss_streak": {
-                        "value": 2,
+                        "value": 3,
                         "holders": [
                             {
                                 "manager": "Brad Dodson",
-                                "start_p": 16,
-                                "start_y": 2025,
-                                "end_p": 17,
-                                "end_y": 2025
+                                "start_p": 11,
+                                "start_y": 2026,
+                                "end_p": 13,
+                                "end_y": 2026
                             }
                         ]
                     },
                     "most_wins_under_median": {
-                        "value": 0,
-                        "holders": []
+                        "value": 3,
+                        "holders": [
+                            {
+                                "manager": "Brad Dodson"
+                            }
+                        ]
                     },
                     "most_losses_over_median": {
-                        "value": 1,
+                        "value": 3,
                         "holders": [
                             {
                                 "manager": "Brad Dodson"
@@ -13473,21 +13549,21 @@
                         "holders": []
                     },
                     "lowest_playoff_ppg": {
-                        "value": 294.5,
+                        "value": 270.63157894736844,
                         "holders": [
                             {
                                 "manager": "Brad Dodson",
-                                "year": 2025,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
                     },
                     "highest_ppga": {
-                        "value": 237.8,
+                        "value": 256.3157894736842,
                         "holders": [
                             {
                                 "manager": "Brad Dodson",
-                                "year": 2025,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
@@ -13503,11 +13579,11 @@
                         ]
                     },
                     "lowest_ppg": {
-                        "value": 294.5,
+                        "value": 270.63157894736844,
                         "holders": [
                             {
                                 "manager": "Brad Dodson",
-                                "year": 2025,
+                                "year": 2026,
                                 "platform": "ESPN"
                             }
                         ]
@@ -13523,18 +13599,285 @@
                         ]
                     },
                     "longest_playoff_streak": {
-                        "value": 1,
+                        "value": 2,
                         "holders": [
                             {
                                 "manager": "Brad Dodson",
                                 "start_y": 2025,
-                                "end_y": 2025
+                                "end_y": 2026
                             }
                         ]
                     },
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
+                    }
+                }
+            }
+        },
+        {
+            "manager": "Nikolai Washington",
+            "sports_played": [
+                "MLB"
+            ],
+            "platforms_played": [
+                "ESPN"
+            ],
+            "years_played": [
+                2016,
+                2017,
+                2021,
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+            ],
+            "overall": {
+                "championships": [],
+                "second_place": [],
+                "third_place": [],
+                "undefeated_seasons": [],
+                "reg_wins": 42,
+                "reg_losses": 110,
+                "reg_ties": 1,
+                "post_wins": 1,
+                "post_losses": 2,
+                "post_ties": 0,
+                "consolation_wins": 7,
+                "consolation_losses": 12,
+                "consolation_ties": 0,
+                "points": 41538.0
+            },
+            "by_sport": {
+                "MLB": {
+                    "years_played": [
+                        2016,
+                        2017,
+                        2021,
+                        2022,
+                        2023,
+                        2024,
+                        2025,
+                        2026
+                    ],
+                    "championships": [],
+                    "second_place": [],
+                    "third_place": [],
+                    "undefeated_seasons": [],
+                    "reg_wins": 42,
+                    "reg_losses": 110,
+                    "reg_ties": 1,
+                    "post_wins": 1,
+                    "post_losses": 2,
+                    "post_ties": 0,
+                    "consolation_wins": 7,
+                    "consolation_losses": 12,
+                    "consolation_ties": 0,
+                    "points": 41538.0
+                }
+            },
+            "superlatives": {
+                "MLB": {
+                    "highest_score": {
+                        "value": 477.0,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "opponent": "Jordan Naegele",
+                                "opp_score": 401.0,
+                                "year": 2026,
+                                "period": 1,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_score": {
+                        "value": 97.0,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "opponent": "Daniel Bailey",
+                                "opp_score": 221.0,
+                                "year": 2023,
+                                "period": 9,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "highest_losing_score": {
+                        "value": 352.0,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "opponent": "Marshawn Lunch",
+                                "opp_score": 375.0,
+                                "year": 2022,
+                                "period": 14,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_winning_score": {
+                        "value": 157.0,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "opponent": "Jordan Naegele",
+                                "opp_score": 152.0,
+                                "year": 2025,
+                                "period": 1,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "largest_victory_margin": {
+                        "value": 201.0,
+                        "holders": [
+                            {
+                                "winner": "Nikolai Washington",
+                                "loser": "Andrew Mitchell",
+                                "winning_score": 388.0,
+                                "losing_score": 187.0,
+                                "year": 2016,
+                                "period": 15,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "smallest_victory_margin": {
+                        "value": 1.0,
+                        "holders": [
+                            {
+                                "winner": "Nikolai Washington",
+                                "loser": "Marshawn Lunch",
+                                "winning_score": 245.0,
+                                "losing_score": 244.0,
+                                "year": 2025,
+                                "period": 10,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_win_streak": {
+                        "value": 4,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "start_p": 13,
+                                "start_y": 2026,
+                                "end_p": 16,
+                                "end_y": 2026
+                            }
+                        ]
+                    },
+                    "longest_loss_streak": {
+                        "value": 15,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "start_p": 9,
+                                "start_y": 2017,
+                                "end_p": 4,
+                                "end_y": 2021
+                            }
+                        ]
+                    },
+                    "most_wins_under_median": {
+                        "value": 20,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington"
+                            }
+                        ]
+                    },
+                    "most_losses_over_median": {
+                        "value": 10,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington"
+                            }
+                        ]
+                    },
+                    "highest_miss_playoffs_ppg": {
+                        "value": 233.05555555555554,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "year": 2022,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_playoff_ppg": {
+                        "value": 269.2105263157895,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "year": 2026,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "highest_ppga": {
+                        "value": 280.42105263157896,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "year": 2021,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "highest_ppg": {
+                        "value": 269.2105263157895,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "year": 2026,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_ppg": {
+                        "value": 177.68421052631578,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "year": 2017,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "lowest_ppga": {
+                        "value": 232.78947368421052,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "year": 2017,
+                                "platform": "ESPN"
+                            }
+                        ]
+                    },
+                    "longest_playoff_streak": {
+                        "value": 1,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "start_y": 2026,
+                                "end_y": 2026
+                            }
+                        ]
+                    },
+                    "longest_playoff_drought": {
+                        "value": 5,
+                        "holders": [
+                            {
+                                "manager": "Nikolai Washington",
+                                "start_y": 2021,
+                                "end_y": 2025
+                            }
+                        ]
                     }
                 }
             }
@@ -14219,259 +14562,6 @@
                     "longest_playoff_drought": {
                         "value": 0,
                         "holders": []
-                    }
-                }
-            }
-        },
-        {
-            "manager": "Nikolai Washington",
-            "sports_played": [
-                "MLB"
-            ],
-            "platforms_played": [
-                "ESPN"
-            ],
-            "years_played": [
-                2016,
-                2017,
-                2021,
-                2022,
-                2023,
-                2024,
-                2025
-            ],
-            "overall": {
-                "championships": [],
-                "second_place": [],
-                "third_place": [],
-                "undefeated_seasons": [],
-                "reg_wins": 32,
-                "reg_losses": 101,
-                "reg_ties": 1,
-                "post_wins": 0,
-                "post_losses": 0,
-                "post_ties": 0,
-                "consolation_wins": 7,
-                "consolation_losses": 12,
-                "consolation_ties": 0,
-                "points": 35040.0
-            },
-            "by_sport": {
-                "MLB": {
-                    "years_played": [
-                        2016,
-                        2017,
-                        2021,
-                        2022,
-                        2023,
-                        2024,
-                        2025
-                    ],
-                    "championships": [],
-                    "second_place": [],
-                    "third_place": [],
-                    "undefeated_seasons": [],
-                    "reg_wins": 32,
-                    "reg_losses": 101,
-                    "reg_ties": 1,
-                    "post_wins": 0,
-                    "post_losses": 0,
-                    "post_ties": 0,
-                    "consolation_wins": 7,
-                    "consolation_losses": 12,
-                    "consolation_ties": 0,
-                    "points": 35040.0
-                }
-            },
-            "superlatives": {
-                "MLB": {
-                    "highest_score": {
-                        "value": 388.0,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "opponent": "Andrew Mitchell",
-                                "opp_score": 187.0,
-                                "year": 2016,
-                                "period": 15,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_score": {
-                        "value": 97.0,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "opponent": "Daniel Bailey",
-                                "opp_score": 221.0,
-                                "year": 2023,
-                                "period": 9,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "highest_losing_score": {
-                        "value": 352.0,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "opponent": "Marshawn Lunch",
-                                "opp_score": 375.0,
-                                "year": 2022,
-                                "period": 14,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_winning_score": {
-                        "value": 157.0,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "opponent": "Jordan Naegele",
-                                "opp_score": 152.0,
-                                "year": 2025,
-                                "period": 1,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "largest_victory_margin": {
-                        "value": 201.0,
-                        "holders": [
-                            {
-                                "winner": "Nikolai Washington",
-                                "loser": "Andrew Mitchell",
-                                "winning_score": 388.0,
-                                "losing_score": 187.0,
-                                "year": 2016,
-                                "period": 15,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "smallest_victory_margin": {
-                        "value": 1.0,
-                        "holders": [
-                            {
-                                "winner": "Nikolai Washington",
-                                "loser": "Marshawn Lunch",
-                                "winning_score": 245.0,
-                                "losing_score": 244.0,
-                                "year": 2025,
-                                "period": 10,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "longest_win_streak": {
-                        "value": 3,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "start_p": 17,
-                                "start_y": 2024,
-                                "end_p": 19,
-                                "end_y": 2024
-                            }
-                        ]
-                    },
-                    "longest_loss_streak": {
-                        "value": 15,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "start_p": 9,
-                                "start_y": 2017,
-                                "end_p": 4,
-                                "end_y": 2021
-                            }
-                        ]
-                    },
-                    "most_wins_under_median": {
-                        "value": 17,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington"
-                            }
-                        ]
-                    },
-                    "most_losses_over_median": {
-                        "value": 8,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington"
-                            }
-                        ]
-                    },
-                    "highest_miss_playoffs_ppg": {
-                        "value": 233.05555555555554,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "year": 2022,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_playoff_ppg": {
-                        "value": 99999.0,
-                        "holders": []
-                    },
-                    "highest_ppga": {
-                        "value": 280.42105263157896,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "year": 2021,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "highest_ppg": {
-                        "value": 233.05555555555554,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "year": 2022,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_ppg": {
-                        "value": 177.68421052631578,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "year": 2017,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "lowest_ppga": {
-                        "value": 232.78947368421052,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "year": 2017,
-                                "platform": "ESPN"
-                            }
-                        ]
-                    },
-                    "longest_playoff_streak": {
-                        "value": 0,
-                        "holders": []
-                    },
-                    "longest_playoff_drought": {
-                        "value": 5,
-                        "holders": [
-                            {
-                                "manager": "Nikolai Washington",
-                                "start_y": 2021,
-                                "end_y": 2025
-                            }
-                        ]
                     }
                 }
             }

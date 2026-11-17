@@ -30,10 +30,10 @@
     {
         "manager_1": "Kurtis Eveleigh",
         "manager_2": "Malachi Morgan",
-        "manager_1_wins": 36,
-        "manager_2_wins": 50,
+        "manager_1_wins": 37,
+        "manager_2_wins": 51,
         "ties": 0,
-        "total_matchups": 86,
+        "total_matchups": 88,
         "by_sport": {
             "NBA": {
                 "manager_1_wins": 7,
@@ -48,10 +48,10 @@
                 "total_matchups": 33
             },
             "MLB": {
-                "manager_1_wins": 15,
-                "manager_2_wins": 26,
+                "manager_1_wins": 16,
+                "manager_2_wins": 27,
                 "ties": 0,
-                "total_matchups": 41
+                "total_matchups": 43
             }
         }
     },
@@ -174,10 +174,10 @@
     {
         "manager_1": "Asa Morgan",
         "manager_2": "Jordan Naegele",
-        "manager_1_wins": 46,
+        "manager_1_wins": 48,
         "manager_2_wins": 40,
         "ties": 0,
-        "total_matchups": 86,
+        "total_matchups": 88,
         "by_sport": {
             "NBA": {
                 "manager_1_wins": 8,
@@ -192,10 +192,10 @@
                 "total_matchups": 32
             },
             "MLB": {
-                "manager_1_wins": 20,
+                "manager_1_wins": 22,
                 "manager_2_wins": 19,
                 "ties": 0,
-                "total_matchups": 39
+                "total_matchups": 41
             }
         }
     },
@@ -358,10 +358,10 @@
     {
         "manager_1": "Jordan Naegele",
         "manager_2": "Malachi Morgan",
-        "manager_1_wins": 32,
+        "manager_1_wins": 34,
         "manager_2_wins": 38,
         "ties": 0,
-        "total_matchups": 70,
+        "total_matchups": 72,
         "by_sport": {
             "NBA": {
                 "manager_1_wins": 6,
@@ -376,10 +376,10 @@
                 "total_matchups": 27
             },
             "MLB": {
-                "manager_1_wins": 13,
+                "manager_1_wins": 15,
                 "manager_2_wins": 20,
                 "ties": 0,
-                "total_matchups": 33
+                "total_matchups": 35
             }
         }
     },
@@ -430,10 +430,10 @@
     {
         "manager_1": "Jordan Naegele",
         "manager_2": "Kurtis Eveleigh",
-        "manager_1_wins": 36,
+        "manager_1_wins": 39,
         "manager_2_wins": 29,
         "ties": 0,
-        "total_matchups": 65,
+        "total_matchups": 68,
         "by_sport": {
             "NBA": {
                 "manager_1_wins": 9,
@@ -448,10 +448,10 @@
                 "total_matchups": 27
             },
             "MLB": {
-                "manager_1_wins": 14,
+                "manager_1_wins": 17,
                 "manager_2_wins": 14,
                 "ties": 0,
-                "total_matchups": 28
+                "total_matchups": 31
             }
         }
     },
@@ -459,9 +459,9 @@
         "manager_1": "Asa Morgan",
         "manager_2": "Malachi Morgan",
         "manager_1_wins": 32,
-        "manager_2_wins": 39,
+        "manager_2_wins": 41,
         "ties": 0,
-        "total_matchups": 71,
+        "total_matchups": 73,
         "by_sport": {
             "NBA": {
                 "manager_1_wins": 4,
@@ -477,9 +477,9 @@
             },
             "MLB": {
                 "manager_1_wins": 15,
-                "manager_2_wins": 19,
+                "manager_2_wins": 21,
                 "ties": 0,
-                "total_matchups": 34
+                "total_matchups": 36
             }
         }
     },
@@ -558,10 +558,10 @@
     {
         "manager_1": "Asa Morgan",
         "manager_2": "Kurtis Eveleigh",
-        "manager_1_wins": 41,
-        "manager_2_wins": 32,
+        "manager_1_wins": 42,
+        "manager_2_wins": 33,
         "ties": 0,
-        "total_matchups": 73,
+        "total_matchups": 75,
         "by_sport": {
             "NBA": {
                 "manager_1_wins": 5,
@@ -576,10 +576,10 @@
                 "total_matchups": 24
             },
             "MLB": {
-                "manager_1_wins": 21,
-                "manager_2_wins": 18,
+                "manager_1_wins": 22,
+                "manager_2_wins": 19,
                 "ties": 0,
-                "total_matchups": 39
+                "total_matchups": 41
             }
         }
     },
@@ -1165,15 +1165,15 @@
         "manager_1": "Kurtis Eveleigh",
         "manager_2": "Sonya Morgan",
         "manager_1_wins": 21,
-        "manager_2_wins": 17,
+        "manager_2_wins": 18,
         "ties": 0,
-        "total_matchups": 38,
+        "total_matchups": 39,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 21,
-                "manager_2_wins": 17,
+                "manager_2_wins": 18,
                 "ties": 0,
-                "total_matchups": 38
+                "total_matchups": 39
             }
         }
     },
@@ -1196,32 +1196,32 @@
     {
         "manager_1": "Asa Morgan",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 23,
+        "manager_1_wins": 26,
         "manager_2_wins": 16,
         "ties": 0,
-        "total_matchups": 39,
+        "total_matchups": 42,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 23,
+                "manager_1_wins": 26,
                 "manager_2_wins": 16,
                 "ties": 0,
-                "total_matchups": 39
+                "total_matchups": 42
             }
         }
     },
     {
         "manager_1": "Malachi Morgan",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 22,
+        "manager_1_wins": 23,
         "manager_2_wins": 13,
         "ties": 1,
-        "total_matchups": 36,
+        "total_matchups": 37,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 22,
+                "manager_1_wins": 23,
                 "manager_2_wins": 13,
                 "ties": 1,
-                "total_matchups": 36
+                "total_matchups": 37
             }
         }
     },
@@ -2402,16 +2402,16 @@
     {
         "manager_1": "Jordan Naegele",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 22,
-        "manager_2_wins": 12,
+        "manager_1_wins": 23,
+        "manager_2_wins": 13,
         "ties": 0,
-        "total_matchups": 34,
+        "total_matchups": 36,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 22,
-                "manager_2_wins": 12,
+                "manager_1_wins": 23,
+                "manager_2_wins": 13,
                 "ties": 0,
-                "total_matchups": 34
+                "total_matchups": 36
             }
         }
     },
@@ -4189,15 +4189,15 @@
         "manager_1": "Asa Morgan",
         "manager_2": "Nikolai Washington",
         "manager_1_wins": 14,
-        "manager_2_wins": 0,
+        "manager_2_wins": 2,
         "ties": 0,
-        "total_matchups": 14,
+        "total_matchups": 16,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 14,
-                "manager_2_wins": 0,
+                "manager_2_wins": 2,
                 "ties": 0,
-                "total_matchups": 14
+                "total_matchups": 16
             }
         }
     },
@@ -4220,16 +4220,16 @@
     {
         "manager_1": "Jordan Naegele",
         "manager_2": "Nikolai Washington",
-        "manager_1_wins": 11,
-        "manager_2_wins": 3,
+        "manager_1_wins": 12,
+        "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 14,
+        "total_matchups": 16,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 11,
-                "manager_2_wins": 3,
+                "manager_1_wins": 12,
+                "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 14
+                "total_matchups": 16
             }
         }
     },
@@ -4316,16 +4316,16 @@
     {
         "manager_1": "Nikolai Washington",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 4,
+        "manager_1_wins": 6,
         "manager_2_wins": 10,
         "ties": 0,
-        "total_matchups": 14,
+        "total_matchups": 16,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 4,
+                "manager_1_wins": 6,
                 "manager_2_wins": 10,
                 "ties": 0,
-                "total_matchups": 14
+                "total_matchups": 16
             }
         }
     },
@@ -4333,31 +4333,31 @@
         "manager_1": "Kurtis Eveleigh",
         "manager_2": "Nikolai Washington",
         "manager_1_wins": 10,
-        "manager_2_wins": 2,
+        "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 12,
+        "total_matchups": 14,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 10,
-                "manager_2_wins": 2,
+                "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 12
+                "total_matchups": 14
             }
         }
     },
     {
         "manager_1": "Malachi Morgan",
         "manager_2": "Nikolai Washington",
-        "manager_1_wins": 10,
-        "manager_2_wins": 0,
+        "manager_1_wins": 12,
+        "manager_2_wins": 1,
         "ties": 0,
-        "total_matchups": 10,
+        "total_matchups": 13,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 10,
-                "manager_2_wins": 0,
+                "manager_1_wins": 12,
+                "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 10
+                "total_matchups": 13
             }
         }
     },
@@ -4956,16 +4956,16 @@
     {
         "manager_1": "Marshawn Lunch",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 5,
+        "manager_1_wins": 7,
         "manager_2_wins": 8,
         "ties": 0,
-        "total_matchups": 13,
+        "total_matchups": 15,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 5,
+                "manager_1_wins": 7,
                 "manager_2_wins": 8,
                 "ties": 0,
-                "total_matchups": 13
+                "total_matchups": 15
             }
         }
     },
@@ -4994,16 +4994,16 @@
     {
         "manager_1": "Kurtis Eveleigh",
         "manager_2": "Marshawn Lunch",
-        "manager_1_wins": 8,
+        "manager_1_wins": 10,
         "manager_2_wins": 5,
         "ties": 0,
-        "total_matchups": 13,
+        "total_matchups": 15,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 8,
+                "manager_1_wins": 10,
                 "manager_2_wins": 5,
                 "ties": 0,
-                "total_matchups": 13
+                "total_matchups": 15
             }
         }
     },
@@ -5032,16 +5032,16 @@
     {
         "manager_1": "Malachi Morgan",
         "manager_2": "Marshawn Lunch",
-        "manager_1_wins": 8,
+        "manager_1_wins": 10,
         "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 12,
+        "total_matchups": 14,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 8,
+                "manager_1_wins": 10,
                 "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 12
+                "total_matchups": 14
             }
         }
     },
@@ -5162,16 +5162,16 @@
     {
         "manager_1": "Jordan Naegele",
         "manager_2": "Marshawn Lunch",
-        "manager_1_wins": 10,
+        "manager_1_wins": 12,
         "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 13,
+        "total_matchups": 15,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 10,
+                "manager_1_wins": 12,
                 "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 13
+                "total_matchups": 15
             }
         }
     },
@@ -5233,15 +5233,15 @@
         "manager_1": "Asa Morgan",
         "manager_2": "Marshawn Lunch",
         "manager_1_wins": 9,
-        "manager_2_wins": 2,
+        "manager_2_wins": 3,
         "ties": 1,
-        "total_matchups": 12,
+        "total_matchups": 13,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 9,
-                "manager_2_wins": 2,
+                "manager_2_wins": 3,
                 "ties": 1,
-                "total_matchups": 12
+                "total_matchups": 13
             }
         }
     },
@@ -5344,16 +5344,16 @@
     {
         "manager_1": "Josh Shapiro",
         "manager_2": "Kurtis Eveleigh",
-        "manager_1_wins": 6,
+        "manager_1_wins": 8,
         "manager_2_wins": 5,
         "ties": 0,
-        "total_matchups": 11,
+        "total_matchups": 13,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 6,
+                "manager_1_wins": 8,
                 "manager_2_wins": 5,
                 "ties": 0,
-                "total_matchups": 11
+                "total_matchups": 13
             }
         }
     },
@@ -5361,79 +5361,79 @@
         "manager_1": "Jordan Naegele",
         "manager_2": "Kristina Morgan",
         "manager_1_wins": 3,
-        "manager_2_wins": 1,
+        "manager_2_wins": 2,
         "ties": 0,
-        "total_matchups": 4,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 3,
-                "manager_2_wins": 1,
+                "manager_2_wins": 2,
                 "ties": 0,
-                "total_matchups": 4
+                "total_matchups": 5
             }
         }
     },
     {
         "manager_1": "Marshawn Lunch",
         "manager_2": "Nikolai Washington",
-        "manager_1_wins": 7,
+        "manager_1_wins": 8,
         "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 11,
+        "total_matchups": 12,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 7,
+                "manager_1_wins": 8,
                 "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 11
+                "total_matchups": 12
             }
         }
     },
     {
         "manager_1": "Asa Morgan",
         "manager_2": "Josh Shapiro",
-        "manager_1_wins": 8,
-        "manager_2_wins": 6,
+        "manager_1_wins": 9,
+        "manager_2_wins": 7,
         "ties": 0,
-        "total_matchups": 14,
+        "total_matchups": 16,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 8,
-                "manager_2_wins": 6,
+                "manager_1_wins": 9,
+                "manager_2_wins": 7,
                 "ties": 0,
-                "total_matchups": 14
+                "total_matchups": 16
             }
         }
     },
     {
         "manager_1": "Kristina Morgan",
         "manager_2": "Nikolai Washington",
-        "manager_1_wins": 5,
+        "manager_1_wins": 6,
         "manager_2_wins": 1,
         "ties": 0,
-        "total_matchups": 6,
+        "total_matchups": 7,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 5,
+                "manager_1_wins": 6,
                 "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 6
+                "total_matchups": 7
             }
         }
     },
     {
         "manager_1": "Josh Shapiro",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 7,
+        "manager_1_wins": 9,
         "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 11,
+        "total_matchups": 13,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 7,
+                "manager_1_wins": 9,
                 "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 11
+                "total_matchups": 13
             }
         }
     },
@@ -5456,16 +5456,16 @@
     {
         "manager_1": "Jordan Naegele",
         "manager_2": "Josh Shapiro",
-        "manager_1_wins": 5,
+        "manager_1_wins": 7,
         "manager_2_wins": 4,
         "ties": 1,
-        "total_matchups": 10,
+        "total_matchups": 12,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 5,
+                "manager_1_wins": 7,
                 "manager_2_wins": 4,
                 "ties": 1,
-                "total_matchups": 10
+                "total_matchups": 12
             }
         }
     },
@@ -5488,32 +5488,32 @@
     {
         "manager_1": "Josh Shapiro",
         "manager_2": "Nikolai Washington",
-        "manager_1_wins": 9,
-        "manager_2_wins": 1,
+        "manager_1_wins": 10,
+        "manager_2_wins": 2,
         "ties": 0,
-        "total_matchups": 10,
+        "total_matchups": 12,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 9,
-                "manager_2_wins": 1,
+                "manager_1_wins": 10,
+                "manager_2_wins": 2,
                 "ties": 0,
-                "total_matchups": 10
+                "total_matchups": 12
             }
         }
     },
     {
         "manager_1": "Kristina Morgan",
         "manager_2": "Malachi Morgan",
-        "manager_1_wins": 2,
-        "manager_2_wins": 3,
+        "manager_1_wins": 3,
+        "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 5,
+        "total_matchups": 7,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 2,
-                "manager_2_wins": 3,
+                "manager_1_wins": 3,
+                "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 5
+                "total_matchups": 7
             }
         }
     },
@@ -5552,16 +5552,16 @@
     {
         "manager_1": "Kristina Morgan",
         "manager_2": "Marshawn Lunch",
-        "manager_1_wins": 4,
-        "manager_2_wins": 3,
+        "manager_1_wins": 5,
+        "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 7,
+        "total_matchups": 9,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 4,
-                "manager_2_wins": 3,
+                "manager_1_wins": 5,
+                "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 7
+                "total_matchups": 9
             }
         }
     },
@@ -5584,16 +5584,16 @@
     {
         "manager_1": "Kristina Morgan",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 4,
-        "manager_2_wins": 4,
+        "manager_1_wins": 5,
+        "manager_2_wins": 6,
         "ties": 0,
-        "total_matchups": 8,
+        "total_matchups": 11,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 4,
-                "manager_2_wins": 4,
+                "manager_1_wins": 5,
+                "manager_2_wins": 6,
                 "ties": 0,
-                "total_matchups": 8
+                "total_matchups": 11
             }
         }
     },
@@ -5601,15 +5601,15 @@
         "manager_1": "Josh Shapiro",
         "manager_2": "Malachi Morgan",
         "manager_1_wins": 4,
-        "manager_2_wins": 7,
+        "manager_2_wins": 9,
         "ties": 0,
-        "total_matchups": 11,
+        "total_matchups": 13,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 4,
-                "manager_2_wins": 7,
+                "manager_2_wins": 9,
                 "ties": 0,
-                "total_matchups": 11
+                "total_matchups": 13
             }
         }
     },
@@ -5617,15 +5617,15 @@
         "manager_1": "Kristina Morgan",
         "manager_2": "Kurtis Eveleigh",
         "manager_1_wins": 2,
-        "manager_2_wins": 3,
+        "manager_2_wins": 5,
         "ties": 0,
-        "total_matchups": 5,
+        "total_matchups": 7,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 2,
-                "manager_2_wins": 3,
+                "manager_2_wins": 5,
                 "ties": 0,
-                "total_matchups": 5
+                "total_matchups": 7
             }
         }
     },
@@ -5648,48 +5648,48 @@
     {
         "manager_1": "Asa Morgan",
         "manager_2": "Kristina Morgan",
-        "manager_1_wins": 3,
+        "manager_1_wins": 5,
         "manager_2_wins": 1,
         "ties": 0,
-        "total_matchups": 4,
+        "total_matchups": 6,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 3,
+                "manager_1_wins": 5,
                 "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 4
+                "total_matchups": 6
             }
         }
     },
     {
         "manager_1": "Josh Shapiro",
         "manager_2": "Marshawn Lunch",
-        "manager_1_wins": 5,
-        "manager_2_wins": 5,
+        "manager_1_wins": 6,
+        "manager_2_wins": 7,
         "ties": 0,
-        "total_matchups": 10,
+        "total_matchups": 13,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 5,
-                "manager_2_wins": 5,
+                "manager_1_wins": 6,
+                "manager_2_wins": 7,
                 "ties": 0,
-                "total_matchups": 10
+                "total_matchups": 13
             }
         }
     },
     {
         "manager_1": "Josh Shapiro",
         "manager_2": "Kristina Morgan",
-        "manager_1_wins": 2,
-        "manager_2_wins": 3,
+        "manager_1_wins": 3,
+        "manager_2_wins": 5,
         "ties": 0,
-        "total_matchups": 5,
+        "total_matchups": 8,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 2,
-                "manager_2_wins": 3,
+                "manager_1_wins": 3,
+                "manager_2_wins": 5,
                 "ties": 0,
-                "total_matchups": 5
+                "total_matchups": 8
             }
         }
     },
@@ -5728,96 +5728,96 @@
     {
         "manager_1": "Malachi Morgan",
         "manager_2": "Max Shapiro",
-        "manager_1_wins": 5,
+        "manager_1_wins": 7,
         "manager_2_wins": 5,
         "ties": 0,
-        "total_matchups": 10,
+        "total_matchups": 12,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 5,
+                "manager_1_wins": 7,
                 "manager_2_wins": 5,
                 "ties": 0,
-                "total_matchups": 10
+                "total_matchups": 12
             }
         }
     },
     {
         "manager_1": "Josh Shapiro",
         "manager_2": "Max Shapiro",
-        "manager_1_wins": 2,
+        "manager_1_wins": 3,
         "manager_2_wins": 4,
-        "ties": 0,
-        "total_matchups": 6,
-        "by_sport": {
-            "MLB": {
-                "manager_1_wins": 2,
-                "manager_2_wins": 4,
-                "ties": 0,
-                "total_matchups": 6
-            }
-        }
-    },
-    {
-        "manager_1": "Kurtis Eveleigh",
-        "manager_2": "Max Shapiro",
-        "manager_1_wins": 2,
-        "manager_2_wins": 7,
-        "ties": 0,
-        "total_matchups": 9,
-        "by_sport": {
-            "MLB": {
-                "manager_1_wins": 2,
-                "manager_2_wins": 7,
-                "ties": 0,
-                "total_matchups": 9
-            }
-        }
-    },
-    {
-        "manager_1": "Max Shapiro",
-        "manager_2": "Sonya Morgan",
-        "manager_1_wins": 6,
-        "manager_2_wins": 1,
         "ties": 0,
         "total_matchups": 7,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 6,
-                "manager_2_wins": 1,
+                "manager_1_wins": 3,
+                "manager_2_wins": 4,
                 "ties": 0,
                 "total_matchups": 7
             }
         }
     },
     {
-        "manager_1": "Jordan Naegele",
+        "manager_1": "Kurtis Eveleigh",
         "manager_2": "Max Shapiro",
         "manager_1_wins": 4,
-        "manager_2_wins": 5,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Max Shapiro",
+        "manager_2": "Sonya Morgan",
+        "manager_1_wins": 8,
+        "manager_2_wins": 1,
         "ties": 0,
         "total_matchups": 9,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 4,
-                "manager_2_wins": 5,
+                "manager_1_wins": 8,
+                "manager_2_wins": 1,
                 "ties": 0,
                 "total_matchups": 9
             }
         }
     },
     {
-        "manager_1": "Marshawn Lunch",
+        "manager_1": "Jordan Naegele",
         "manager_2": "Max Shapiro",
-        "manager_1_wins": 3,
-        "manager_2_wins": 5,
+        "manager_1_wins": 5,
+        "manager_2_wins": 6,
         "ties": 0,
-        "total_matchups": 8,
+        "total_matchups": 11,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 3,
-                "manager_2_wins": 5,
+                "manager_1_wins": 5,
+                "manager_2_wins": 6,
                 "ties": 0,
-                "total_matchups": 8
+                "total_matchups": 11
+            }
+        }
+    },
+    {
+        "manager_1": "Marshawn Lunch",
+        "manager_2": "Max Shapiro",
+        "manager_1_wins": 4,
+        "manager_2_wins": 7,
+        "ties": 0,
+        "total_matchups": 11,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 4,
+                "manager_2_wins": 7,
+                "ties": 0,
+                "total_matchups": 11
             }
         }
     },
@@ -5857,31 +5857,31 @@
         "manager_1": "Asa Morgan",
         "manager_2": "Max Shapiro",
         "manager_1_wins": 3,
-        "manager_2_wins": 5,
+        "manager_2_wins": 8,
         "ties": 0,
-        "total_matchups": 8,
+        "total_matchups": 11,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 3,
-                "manager_2_wins": 5,
+                "manager_2_wins": 8,
                 "ties": 0,
-                "total_matchups": 8
+                "total_matchups": 11
             }
         }
     },
     {
         "manager_1": "Max Shapiro",
         "manager_2": "Nikolai Washington",
-        "manager_1_wins": 5,
+        "manager_1_wins": 6,
         "manager_2_wins": 1,
         "ties": 0,
-        "total_matchups": 6,
+        "total_matchups": 7,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 5,
+                "manager_1_wins": 6,
                 "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 6
+                "total_matchups": 7
             }
         }
     },
@@ -5969,15 +5969,15 @@
         "manager_1": "Kristina Morgan",
         "manager_2": "Max Shapiro",
         "manager_1_wins": 1,
-        "manager_2_wins": 4,
+        "manager_2_wins": 6,
         "ties": 0,
-        "total_matchups": 5,
+        "total_matchups": 7,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 1,
-                "manager_2_wins": 4,
+                "manager_2_wins": 6,
                 "ties": 0,
-                "total_matchups": 5
+                "total_matchups": 7
             }
         }
     },
@@ -6081,31 +6081,31 @@
         "manager_1": "Sonya Morgan",
         "manager_2": "Thomas Ramey",
         "manager_1_wins": 0,
-        "manager_2_wins": 2,
+        "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 4,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 0,
-                "manager_2_wins": 2,
+                "manager_2_wins": 4,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 4
             }
         }
     },
     {
         "manager_1": "Brad Dodson",
         "manager_2": "Malachi Morgan",
-        "manager_1_wins": 3,
-        "manager_2_wins": 0,
+        "manager_1_wins": 4,
+        "manager_2_wins": 1,
         "ties": 0,
-        "total_matchups": 3,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 3,
-                "manager_2_wins": 0,
+                "manager_1_wins": 4,
+                "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 3
+                "total_matchups": 5
             }
         }
     },
@@ -6113,47 +6113,47 @@
         "manager_1": "Brad Dodson",
         "manager_2": "Thomas Ramey",
         "manager_1_wins": 1,
-        "manager_2_wins": 1,
+        "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 4,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 1,
-                "manager_2_wins": 1,
+                "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 4
             }
         }
     },
     {
         "manager_1": "Brad Dodson",
         "manager_2": "Sonya Morgan",
-        "manager_1_wins": 2,
+        "manager_1_wins": 4,
         "manager_2_wins": 0,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 4,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 2,
+                "manager_1_wins": 4,
                 "manager_2_wins": 0,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 4
             }
         }
     },
     {
         "manager_1": "Max Shapiro",
         "manager_2": "Thomas Ramey",
-        "manager_1_wins": 1,
-        "manager_2_wins": 2,
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 3,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 1,
-                "manager_2_wins": 2,
+                "manager_1_wins": 2,
+                "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 3
+                "total_matchups": 5
             }
         }
     },
@@ -6161,15 +6161,15 @@
         "manager_1": "Brad Dodson",
         "manager_2": "Jordan Naegele",
         "manager_1_wins": 2,
-        "manager_2_wins": 0,
+        "manager_2_wins": 2,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 4,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 2,
-                "manager_2_wins": 0,
+                "manager_2_wins": 2,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 4
             }
         }
     },
@@ -6177,31 +6177,31 @@
         "manager_1": "Marshawn Lunch",
         "manager_2": "Thomas Ramey",
         "manager_1_wins": 1,
-        "manager_2_wins": 1,
+        "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 4,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 1,
-                "manager_2_wins": 1,
+                "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 4
             }
         }
     },
     {
         "manager_1": "Brad Dodson",
         "manager_2": "Max Shapiro",
-        "manager_1_wins": 0,
+        "manager_1_wins": 2,
         "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 3,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 0,
+                "manager_1_wins": 2,
                 "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 3
+                "total_matchups": 5
             }
         }
     },
@@ -6230,16 +6230,16 @@
     {
         "manager_1": "Brad Dodson",
         "manager_2": "Marshawn Lunch",
-        "manager_1_wins": 1,
+        "manager_1_wins": 3,
         "manager_2_wins": 1,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 4,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 1,
+                "manager_1_wins": 3,
                 "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 4
             }
         }
     },
@@ -6247,15 +6247,15 @@
         "manager_1": "Nikolai Washington",
         "manager_2": "Thomas Ramey",
         "manager_1_wins": 0,
-        "manager_2_wins": 2,
+        "manager_2_wins": 5,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 0,
-                "manager_2_wins": 2,
+                "manager_2_wins": 5,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 5
             }
         }
     },
@@ -6278,16 +6278,16 @@
     {
         "manager_1": "Asa Morgan",
         "manager_2": "Thomas Ramey",
-        "manager_1_wins": 1,
-        "manager_2_wins": 3,
+        "manager_1_wins": 2,
+        "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 4,
+        "total_matchups": 6,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 1,
-                "manager_2_wins": 1,
+                "manager_1_wins": 2,
+                "manager_2_wins": 2,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 4
             },
             "NFL": {
                 "manager_1_wins": 0,
@@ -6301,31 +6301,31 @@
         "manager_1": "Josh Shapiro",
         "manager_2": "Thomas Ramey",
         "manager_1_wins": 1,
-        "manager_2_wins": 1,
+        "manager_2_wins": 3,
         "ties": 1,
-        "total_matchups": 3,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 1,
-                "manager_2_wins": 1,
+                "manager_2_wins": 3,
                 "ties": 1,
-                "total_matchups": 3
+                "total_matchups": 5
             }
         }
     },
     {
         "manager_1": "Brad Dodson",
         "manager_2": "Nikolai Washington",
-        "manager_1_wins": 2,
-        "manager_2_wins": 0,
+        "manager_1_wins": 3,
+        "manager_2_wins": 2,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 2,
-                "manager_2_wins": 0,
+                "manager_1_wins": 3,
+                "manager_2_wins": 2,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 5
             }
         }
     },
@@ -6333,15 +6333,15 @@
         "manager_1": "Kurtis Eveleigh",
         "manager_2": "Thomas Ramey",
         "manager_1_wins": 2,
-        "manager_2_wins": 2,
+        "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 4,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 1,
-                "manager_2_wins": 1,
+                "manager_2_wins": 2,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 3
             },
             "NFL": {
                 "manager_1_wins": 1,
@@ -6355,15 +6355,15 @@
         "manager_1": "Asa Morgan",
         "manager_2": "Brad Dodson",
         "manager_1_wins": 0,
-        "manager_2_wins": 2,
+        "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 2,
+        "total_matchups": 3,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 0,
-                "manager_2_wins": 2,
+                "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 3
             }
         }
     },
@@ -6371,15 +6371,15 @@
         "manager_1": "Malachi Morgan",
         "manager_2": "Thomas Ramey",
         "manager_1_wins": 1,
-        "manager_2_wins": 3,
+        "manager_2_wins": 4,
         "ties": 0,
-        "total_matchups": 4,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 0,
-                "manager_2_wins": 2,
+                "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 2
+                "total_matchups": 3
             },
             "NFL": {
                 "manager_1_wins": 1,
@@ -6392,32 +6392,32 @@
     {
         "manager_1": "Brad Dodson",
         "manager_2": "Josh Shapiro",
-        "manager_1_wins": 0,
+        "manager_1_wins": 1,
         "manager_2_wins": 1,
         "ties": 0,
-        "total_matchups": 1,
+        "total_matchups": 2,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 0,
+                "manager_1_wins": 1,
                 "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 1
+                "total_matchups": 2
             }
         }
     },
     {
         "manager_1": "Jordan Naegele",
         "manager_2": "Thomas Ramey",
-        "manager_1_wins": 1,
-        "manager_2_wins": 2,
+        "manager_1_wins": 2,
+        "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 3,
+        "total_matchups": 5,
         "by_sport": {
             "MLB": {
-                "manager_1_wins": 1,
-                "manager_2_wins": 0,
+                "manager_1_wins": 2,
+                "manager_2_wins": 1,
                 "ties": 0,
-                "total_matchups": 1
+                "total_matchups": 3
             },
             "NFL": {
                 "manager_1_wins": 0,
@@ -6431,15 +6431,15 @@
         "manager_1": "Brad Dodson",
         "manager_2": "Kurtis Eveleigh",
         "manager_1_wins": 1,
-        "manager_2_wins": 0,
+        "manager_2_wins": 3,
         "ties": 0,
-        "total_matchups": 1,
+        "total_matchups": 4,
         "by_sport": {
             "MLB": {
                 "manager_1_wins": 1,
-                "manager_2_wins": 0,
+                "manager_2_wins": 3,
                 "ties": 0,
-                "total_matchups": 1
+                "total_matchups": 4
             }
         }
     },
@@ -6504,6 +6504,38 @@
                 "manager_2_wins": 1,
                 "ties": 0,
                 "total_matchups": 1
+            }
+        }
+    },
+    {
+        "manager_1": "Kristina Morgan",
+        "manager_2": "Thomas Ramey",
+        "manager_1_wins": 0,
+        "manager_2_wins": 2,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 0,
+                "manager_2_wins": 2,
+                "ties": 0,
+                "total_matchups": 2
+            }
+        }
+    },
+    {
+        "manager_1": "Brad Dodson",
+        "manager_2": "Kristina Morgan",
+        "manager_1_wins": 1,
+        "manager_2_wins": 1,
+        "ties": 0,
+        "total_matchups": 2,
+        "by_sport": {
+            "MLB": {
+                "manager_1_wins": 1,
+                "manager_2_wins": 1,
+                "ties": 0,
+                "total_matchups": 2
             }
         }
     }
