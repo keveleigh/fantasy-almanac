@@ -1,308 +1,308 @@
 {
     "year": 2026,
-    "week": 11,
+    "week": 12,
     "season_complete": false,
     "playoff_team_count": 6,
     "champion": null,
     "true_standings": [
         {
-            "team": "To Infinity and Bijan",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/950ec1ee6010115a99db575200ce1765",
-            "actual_rank": 4,
-            "actual_record": "6-4-0",
-            "true_record": "64-26-0",
-            "true_win_pct": 0.711,
-            "expected_wins": 7.11,
-            "pf": 1273.95
-        },
-        {
             "team": "Seattle Mudkipz",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/d7b22bd091ecba1cb1a8f0be604bd218",
             "actual_rank": 2,
-            "actual_record": "7-3-0",
-            "true_record": "62-28-0",
-            "true_win_pct": 0.689,
-            "expected_wins": 6.89,
-            "pf": 1272.95
+            "actual_record": "8-3-0",
+            "true_record": "70-29-0",
+            "true_win_pct": 0.707,
+            "expected_wins": 7.78,
+            "pf": 1397.25
+        },
+        {
+            "team": "To Infinity and Bijan",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/950ec1ee6010115a99db575200ce1765",
+            "actual_rank": 4,
+            "actual_record": "7-4-0",
+            "true_record": "69-30-0",
+            "true_win_pct": 0.697,
+            "expected_wins": 7.67,
+            "pf": 1393.2
         },
         {
             "team": "malamorgan6",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
             "actual_rank": 3,
-            "actual_record": "7-3-0",
-            "true_record": "62-28-0",
-            "true_win_pct": 0.689,
-            "expected_wins": 6.89,
-            "pf": 1267.95
+            "actual_record": "8-3-0",
+            "true_record": "69-30-0",
+            "true_win_pct": 0.697,
+            "expected_wins": 7.67,
+            "pf": 1390.35
         },
         {
             "team": "JSN FC",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/f3669911ca1dce15d7aad6af285ab2da",
             "actual_rank": 1,
-            "actual_record": "9-1-0",
-            "true_record": "58-32-0",
-            "true_win_pct": 0.644,
-            "expected_wins": 6.44,
-            "pf": 1254.85
+            "actual_record": "9-2-0",
+            "true_record": "60-39-0",
+            "true_win_pct": 0.606,
+            "expected_wins": 6.67,
+            "pf": 1354.05
         },
         {
             "team": "Chase & Chase",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/82aec8e811b839b8ec25d7b458afd57b",
             "actual_rank": 5,
-            "actual_record": "4-6-0",
-            "true_record": "48-42-0",
-            "true_win_pct": 0.533,
-            "expected_wins": 5.33,
-            "pf": 1136.35
+            "actual_record": "5-6-0",
+            "true_record": "57-42-0",
+            "true_win_pct": 0.576,
+            "expected_wins": 6.33,
+            "pf": 1266.6
         },
         {
             "team": "Bear Jordan",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
-            "actual_rank": 7,
-            "actual_record": "4-6-0",
-            "true_record": "42-48-0",
-            "true_win_pct": 0.467,
-            "expected_wins": 4.67,
-            "pf": 1108.3
+            "actual_rank": 6,
+            "actual_record": "5-6-0",
+            "true_record": "48-51-0",
+            "true_win_pct": 0.485,
+            "expected_wins": 5.33,
+            "pf": 1228.1
         },
         {
             "team": "baldy",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/b3338675f635c2c1f42b469621d38ec6",
-            "actual_rank": 6,
-            "actual_record": "4-6-0",
-            "true_record": "36-54-0",
-            "true_win_pct": 0.4,
-            "expected_wins": 4.0,
-            "pf": 1122.3
+            "actual_rank": 7,
+            "actual_record": "4-7-0",
+            "true_record": "40-59-0",
+            "true_win_pct": 0.404,
+            "expected_wins": 4.44,
+            "pf": 1237.9
         },
         {
             "team": "YaySports!",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183",
             "actual_rank": 8,
-            "actual_record": "4-6-0",
-            "true_record": "35-55-0",
-            "true_win_pct": 0.389,
-            "expected_wins": 3.89,
-            "pf": 1058.4
+            "actual_record": "4-7-0",
+            "true_record": "38-61-0",
+            "true_win_pct": 0.384,
+            "expected_wins": 4.22,
+            "pf": 1162.5
         },
         {
             "team": "Darkside12",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e",
             "actual_rank": 9,
-            "actual_record": "4-6-0",
-            "true_record": "23-67-0",
-            "true_win_pct": 0.256,
-            "expected_wins": 2.56,
-            "pf": 920.45
+            "actual_record": "4-7-0",
+            "true_record": "24-75-0",
+            "true_win_pct": 0.242,
+            "expected_wins": 2.67,
+            "pf": 1007.3
         },
         {
             "team": "rkg23",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/1aefabfa5b809f39930f5c30e4cb05de",
             "actual_rank": 10,
-            "actual_record": "1-9-0",
-            "true_record": "20-70-0",
-            "true_win_pct": 0.222,
+            "actual_record": "1-10-0",
+            "true_record": "20-79-0",
+            "true_win_pct": 0.202,
             "expected_wins": 2.22,
-            "pf": 908.15
+            "pf": 992.05
         }
     ],
     "power_rankings": [
         {
-            "team": "JSN FC",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/f3669911ca1dce15d7aad6af285ab2da",
-            "power_score": 152.3,
-            "streak": 6
-        },
-        {
             "team": "Seattle Mudkipz",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/d7b22bd091ecba1cb1a8f0be604bd218",
-            "power_score": 144.55,
-            "streak": 4
-        },
-        {
-            "team": "malamorgan6",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
-            "power_score": 138.45,
-            "streak": 1
+            "power_score": 139.34,
+            "streak": 5
         },
         {
             "team": "To Infinity and Bijan",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/950ec1ee6010115a99db575200ce1765",
-            "power_score": 127.26,
-            "streak": -2
+            "power_score": 135.78,
+            "streak": 1
+        },
+        {
+            "team": "malamorgan6",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
+            "power_score": 134.78,
+            "streak": 2
         },
         {
             "team": "Chase & Chase",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/82aec8e811b839b8ec25d7b458afd57b",
-            "power_score": 113.81,
-            "streak": 1
+            "power_score": 127.68,
+            "streak": 2
+        },
+        {
+            "team": "JSN FC",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/f3669911ca1dce15d7aad6af285ab2da",
+            "power_score": 124.9,
+            "streak": -1
         },
         {
             "team": "YaySports!",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183",
-            "power_score": 113.32,
-            "streak": -1
-        },
-        {
-            "team": "baldy",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/b3338675f635c2c1f42b469621d38ec6",
-            "power_score": 103.35,
-            "streak": -1
-        },
-        {
-            "team": "Darkside12",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e",
-            "power_score": 96.43,
-            "streak": 2
+            "power_score": 109.71,
+            "streak": -2
         },
         {
             "team": "Bear Jordan",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
-            "power_score": 87.36,
-            "streak": -5
+            "power_score": 107.19,
+            "streak": 1
+        },
+        {
+            "team": "baldy",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/b3338675f635c2c1f42b469621d38ec6",
+            "power_score": 99.84,
+            "streak": -2
+        },
+        {
+            "team": "Darkside12",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e",
+            "power_score": 90.31,
+            "streak": -1
         },
         {
             "team": "rkg23",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/1aefabfa5b809f39930f5c30e4cb05de",
-            "power_score": 67.12,
-            "streak": -8
+            "power_score": 70.89,
+            "streak": -9
         }
     ],
     "luck_quadrant": [
         {
             "team": "malamorgan6",
-            "pf": 126.8,
-            "pa": 119.54
+            "pf": 126.4,
+            "pa": 116.56
         },
         {
             "team": "Seattle Mudkipz",
-            "pf": 127.29,
-            "pa": 109.01
+            "pf": 127.02,
+            "pa": 109.61
         },
         {
             "team": "rkg23",
-            "pf": 90.81,
-            "pa": 111.37
+            "pf": 90.19,
+            "pa": 112.08
         },
         {
             "team": "To Infinity and Bijan",
-            "pf": 127.4,
-            "pa": 122.81
+            "pf": 126.65,
+            "pa": 119.27
         },
         {
             "team": "Chase & Chase",
-            "pf": 113.63,
-            "pa": 110.38
+            "pf": 115.15,
+            "pa": 109.36
         },
         {
             "team": "JSN FC",
-            "pf": 125.49,
-            "pa": 99.78
+            "pf": 123.1,
+            "pa": 102.55
         },
         {
             "team": "YaySports!",
-            "pf": 105.84,
-            "pa": 115.36
+            "pf": 105.68,
+            "pa": 115.77
         },
         {
             "team": "baldy",
-            "pf": 112.23,
-            "pa": 121.62
+            "pf": 112.54,
+            "pa": 121.86
         },
         {
             "team": "Darkside12",
-            "pf": 92.05,
-            "pa": 111.92
+            "pf": 91.57,
+            "pa": 112.87
         },
         {
             "team": "Bear Jordan",
-            "pf": 110.83,
-            "pa": 110.59
+            "pf": 111.65,
+            "pa": 110.0
         }
     ],
     "previous_matchups": [
         {
             "home": "malamorgan6",
-            "home_score": 170.15,
-            "home_rank": 4,
-            "away": "To Infinity and Bijan",
-            "away_score": 147.4,
-            "away_rank": 3,
+            "home_score": 122.4,
+            "home_rank": 3,
+            "away": "Darkside12",
+            "away_score": 86.85,
+            "away_rank": 9,
             "matchup_type": "REGULAR"
         },
         {
             "home": "Seattle Mudkipz",
-            "home_score": 124.35,
+            "home_score": 124.3,
             "home_rank": 2,
-            "away": "Bear Jordan",
-            "away_score": 118.6,
+            "away": "baldy",
+            "away_score": 115.6,
             "away_rank": 6,
             "matchup_type": "REGULAR"
         },
         {
             "home": "rkg23",
-            "home_score": 99.0,
+            "home_score": 83.9,
             "home_rank": 10,
+            "away": "To Infinity and Bijan",
+            "away_score": 119.25,
+            "away_rank": 4,
+            "matchup_type": "REGULAR"
+        },
+        {
+            "home": "Chase & Chase",
+            "home_score": 130.25,
+            "home_rank": 5,
             "away": "JSN FC",
-            "away_score": 135.9,
+            "away_score": 99.2,
             "away_rank": 1,
             "matchup_type": "REGULAR"
         },
         {
-            "home": "Chase & Chase",
-            "home_score": 147.65,
-            "home_rank": 8,
-            "away": "baldy",
-            "away_score": 90.2,
-            "away_rank": 5,
-            "matchup_type": "REGULAR"
-        },
-        {
             "home": "YaySports!",
-            "home_score": 92.95,
-            "home_rank": 7,
-            "away": "Darkside12",
-            "away_score": 97.25,
-            "away_rank": 9,
+            "home_score": 104.1,
+            "home_rank": 8,
+            "away": "Bear Jordan",
+            "away_score": 119.8,
+            "away_rank": 7,
             "matchup_type": "REGULAR"
         }
     ],
-    "previous_week_median": 121.47,
-    "heartbreak_threshold": 147.65,
+    "previous_week_median": 117.42,
+    "heartbreak_threshold": 124.3,
     "current_matchups": [
         {
             "home": "malamorgan6",
-            "home_record": "7-3",
-            "away": "Darkside12",
-            "away_record": "4-6",
+            "home_record": "8-3",
+            "away": "Bear Jordan",
+            "away_record": "5-6",
             "matchup_type": "REGULAR"
         },
         {
             "home": "Seattle Mudkipz",
-            "home_record": "7-3",
-            "away": "baldy",
-            "away_record": "4-6",
+            "home_record": "8-3",
+            "away": "YaySports!",
+            "away_record": "4-7",
             "matchup_type": "REGULAR"
         },
         {
             "home": "rkg23",
-            "home_record": "1-9",
-            "away": "To Infinity and Bijan",
-            "away_record": "6-4",
+            "home_record": "1-10",
+            "away": "Darkside12",
+            "away_record": "4-7",
             "matchup_type": "REGULAR"
         },
         {
-            "home": "Chase & Chase",
-            "home_record": "4-6",
-            "away": "JSN FC",
-            "away_record": "9-1",
+            "home": "To Infinity and Bijan",
+            "home_record": "7-4",
+            "away": "Chase & Chase",
+            "away_record": "5-6",
             "matchup_type": "REGULAR"
         },
         {
-            "home": "YaySports!",
-            "home_record": "4-6",
-            "away": "Bear Jordan",
-            "away_record": "4-6",
+            "home": "JSN FC",
+            "home_record": "9-2",
+            "away": "baldy",
+            "away_record": "4-7",
             "matchup_type": "REGULAR"
         }
     ],
@@ -310,62 +310,62 @@
         {
             "team": "JSN FC",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/f3669911ca1dce15d7aad6af285ab2da",
-            "remaining_opponents": 4,
-            "sos_ppg": 120.14
-        },
-        {
-            "team": "baldy",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/b3338675f635c2c1f42b469621d38ec6",
-            "remaining_opponents": 4,
-            "sos_ppg": 118.06
+            "remaining_opponents": 3,
+            "sos_ppg": 122.07
         },
         {
             "team": "Seattle Mudkipz",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/d7b22bd091ecba1cb1a8f0be604bd218",
-            "remaining_opponents": 4,
-            "sos_ppg": 117.59
-        },
-        {
-            "team": "Chase & Chase",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/82aec8e811b839b8ec25d7b458afd57b",
-            "remaining_opponents": 4,
-            "sos_ppg": 113.94
-        },
-        {
-            "team": "YaySports!",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183",
-            "remaining_opponents": 4,
-            "sos_ppg": 113.93
-        },
-        {
-            "team": "Darkside12",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e",
-            "remaining_opponents": 4,
-            "sos_ppg": 110.87
+            "remaining_opponents": 3,
+            "sos_ppg": 118.39
         },
         {
             "team": "To Infinity and Bijan",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/950ec1ee6010115a99db575200ce1765",
-            "remaining_opponents": 4,
-            "sos_ppg": 110.54
-        },
-        {
-            "team": "Bear Jordan",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
-            "remaining_opponents": 4,
-            "sos_ppg": 109.27
-        },
-        {
-            "team": "rkg23",
-            "logo_url": "https://sleepercdn.com/avatars/thumbs/1aefabfa5b809f39930f5c30e4cb05de",
-            "remaining_opponents": 4,
-            "sos_ppg": 109.03
+            "remaining_opponents": 3,
+            "sos_ppg": 116.93
         },
         {
             "team": "malamorgan6",
             "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
-            "remaining_opponents": 4,
-            "sos_ppg": 109.0
+            "remaining_opponents": 3,
+            "sos_ppg": 114.78
+        },
+        {
+            "team": "YaySports!",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/7572250c2fb084c434fed0e82229e183",
+            "remaining_opponents": 3,
+            "sos_ppg": 114.53
+        },
+        {
+            "team": "baldy",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/b3338675f635c2c1f42b469621d38ec6",
+            "remaining_opponents": 3,
+            "sos_ppg": 113.77
+        },
+        {
+            "team": "Bear Jordan",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
+            "remaining_opponents": 3,
+            "sos_ppg": 110.58
+        },
+        {
+            "team": "Chase & Chase",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/82aec8e811b839b8ec25d7b458afd57b",
+            "remaining_opponents": 3,
+            "sos_ppg": 109.96
+        },
+        {
+            "team": "Darkside12",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e",
+            "remaining_opponents": 3,
+            "sos_ppg": 105.96
+        },
+        {
+            "team": "rkg23",
+            "logo_url": "https://sleepercdn.com/avatars/thumbs/1aefabfa5b809f39930f5c30e4cb05de",
+            "remaining_opponents": 3,
+            "sos_ppg": 102.97
         }
     ]
 }
